@@ -283,11 +283,12 @@ function xqfbMouseenter(ele, isl) {
     if (isl == 'left') {
         ele.next().children().eq(1).css("background", "#035ade");
     } else {
-        ele.css("background", "url('libs/imgs/hover_bg_r.png')");
         ele.prev().children().eq(1).css("background", "#035ade");
     }
     ele.children('.shadow').stop();
-    ele.children('.shadow').animate({ opacity: 0.8 }, 500)
+    ele.children('.shadow').animate({ opacity: 0.8 }, 500);
+    ele.children('.shadow-btns').stop();
+    ele.children('.shadow-btns').fadeIn(500);
 }
 
 // 校区分布交互效果(鼠标离开)
@@ -295,11 +296,12 @@ function xqfbMouseLeave(ele, isl) {
     if (isl == 'left') {
         ele.next().children().eq(1).css("background", "#f7f7f7");
     } else {
-        ele.css("background", "url('libs/imgs/main-bg-r.png')");
         ele.prev().children().eq(1).css("background", "#f7f7f7");
     }
     ele.children('.shadow').stop();
-    ele.children('.shadow').animate({ opacity: 0 }, 500)
+    ele.children('.shadow').animate({ opacity: 0 }, 500);
+    ele.children('.shadow-btns').stop();
+    ele.children('.shadow-btns').fadeOut(500);
 }
 
 // 返回顶部

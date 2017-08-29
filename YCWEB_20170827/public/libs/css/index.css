@@ -718,6 +718,7 @@ ul.floor7-xqfb-list li .xqnr-bg-l .shadow {
     color: #fff;
     text-align: center;
     opacity: 0;
+    filter: alpha(opacity=0);
     background: url('../imgs/hover_bg_l.png');
 }
 ul.floor7-xqfb-list li .xqnr-bg-r .shadow {
@@ -729,8 +730,16 @@ ul.floor7-xqfb-list li .xqnr-bg-r .shadow {
     color: #fff;
     text-align: center;
     opacity: 0;
+    filter: alpha(opacity=0);
     background: url('../imgs/hover_bg_r.png');
 }
+ul.floor7-xqfb-list li .xqnr-bg-l .shadow-btns,
+ul.floor7-xqfb-list li .xqnr-bg-r .shadow-btns{
+    z-index: 1000;
+    right: -5px;
+    display: none;
+}
+
 ul.floor7-xqfb-list li .xqnr-bg-l p:nth-child(1),
 ul.floor7-xqfb-list li .xqnr-bg-r p:nth-child(1) {
     font-size: 18px;
@@ -768,6 +777,14 @@ ul.floor7-xqfb-list li .time-axis .circ {
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
+/*左右原点线对其*/
+ul.floor7-xqfb-list li.right .time-axis .circ{
+    left: -2px;
+}
+ul.floor7-xqfb-list li.right .time-axis .line{
+    left: 10px;
+}
+
 ul.floor7-xqfb-list li.left .xqcl {
     width: 464px;
     padding: 40px 20px;
