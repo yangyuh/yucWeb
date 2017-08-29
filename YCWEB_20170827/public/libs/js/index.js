@@ -1,52 +1,8 @@
 $(function() {
     initPage();
-    // banner轮播
-    var timer = LeftMoveAuto(4, 4000);
-
-    // 鼠标进入轮播停止
-    $(".banner").hover(function() {
-        clearInterval(timer);
-    }, function() {
-        timer = LeftMoveAuto(4, 4000);
-    })
-
-    // 轮播小圆点控制
-    $(".banner-btns li").on("click", function() {
-        $(".banner-btns").stop();
-        $(".banner-btns").find("li").removeClass("active");
-        $(this).addClass("active");
-        var index = $(".banner-btns").find("li").index(this);
-        LeftMove(index);
-    })
-
-    // 首页导航选中操作 
-    $(".nav-list li").on("click", function() {
-        $(".nav-list").find("li").removeClass("active");
-        $(this).addClass("active");
-    })
-
-    // 导航显示下拉菜单
-    $(".ejmeun-leftnav li").on("click", function() {
-        $(".ejmeun-leftnav").find("li").removeClass("active");
-        $(this).addClass("active");
-    })
-
-    // 显示二级菜单的导航
-    $(".nav-list li.showem a").hover(function() {
-        $(".ejmeun .middle-page").stop();
-        $(".ejmeun .middle-page").animate({ height: '278px' }, 300);
-    }, function() {
-        $(".ejmeun .middle-page").stop();
-        $(".ejmeun .middle-page").animate({ height: 0 }, 300);
-    })
-
-    // 鼠标离开二级菜单
-    $(".ejmeun").hover(function() {
-        $(".ejmeun .middle-page").stop();
-        $(".ejmeun .middle-page").animate({ height: '278px' }, 300);
-    }, function() {
-        $(".ejmeun .middle-page").stop();
-        $(".ejmeun .middle-page").animate({ height: 0 }, 300);
+    // 监听窗口大小变化
+    $(window).resize(function() {
+        initPage();
     })
 
     // 精品面授过程阴影过渡效果
@@ -158,34 +114,6 @@ $(function() {
         xqfbMouseLeave($(this).prev(), "right");
     })
 
-    // 底部图片效果
-    $(".bottom-photo-test ul li").mouseenter(function() {
-        if ($(this).css('background') == "rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box") {
-            $(this).css({
-                transform: 'scaleX(-1)',
-                background: "#fff"
-            }, 500)
-        } else {
-            $(this).css({
-                background: "#000",
-                transform: 'scaleX(1)'
-            }, 500)
-        }
-    });
-
-    // 底部图片效果
-    $(".bottom-photo").hover(function() {
-        $(this).children().eq(1).stop();
-        $(this).children().eq(0).stop();
-        $(this).children().eq(1).fadeIn(1000);
-        $(this).children().eq(0).fadeOut(1000);
-    }, function() {
-        $(this).children().eq(1).stop();
-        $(this).children().eq(0).stop();
-        $(this).children().eq(1).fadeOut(1000);
-        $(this).children().eq(0).fadeIn(1000);
-    })
-
     // 侧边固定导航交互效果
     $(".right-nav li").hover(function() {
         // 边框变化
@@ -222,61 +150,7 @@ $(function() {
         }
     })
 
-    // 监听窗口大小变化
-    $(window).resize(function() {
-        initPage();
-    })
 });
-
-
-// 移动动画
-function LeftMove(index) {
-    $("ul.banner-imgs").animate({
-        left: -(index * ($("ul.banner-imgs>li:nth-child(1)").outerWidth()))
-    }, 1000);
-}
-
-// 自动移动
-function LeftMoveAuto(num, t) {
-    var index = 0;
-    var timer = setInterval(function() {
-        index++;
-        if (index == num) {
-            index = 0
-        }
-        LeftMove(index)
-        $(".banner-btns").children().eq(index).addClass("active").siblings().removeClass('active')
-    }, t);
-    return timer;
-}
-
-// 轮播像左滑
-function turnLeft(){
-    var w = $("ul.banner-imgs>li:nth-child(1)").outerWidth();
-    var left = $("ul.banner-imgs").css("left").replace(/px/, "") - 0;
-    var length = $("ul.banner-imgs").children().length;
-    if (left == 0) {
-        left = -(length )*w;
-    }
-    left += w;
-    $("ul.banner-imgs").animate({
-        left: left + "px"
-    }, 1000);
-} 
-
-// 轮播像左滑
-function turnRight(){
-    var w = $("ul.banner-imgs>li:nth-child(1)").outerWidth();
-    var left = $("ul.banner-imgs").css("left").replace(/px/, "") - 0;
-    var length = $("ul.banner-imgs").children().length;
-    left -= w;
-    if (left == -(length)*w) {
-        left = 0;
-    }
-    $("ul.banner-imgs").animate({
-        left: left + "px"
-    }, 1000);
-} 
 
 // 校区分布交互效果(鼠标进入)
 function xqfbMouseenter(ele, isl) {
@@ -304,19 +178,9 @@ function xqfbMouseLeave(ele, isl) {
     ele.children('.shadow-btns').fadeOut(500);
 }
 
-// 返回顶部
-function backTop() {
-    $('html, body').animate({ scrollTop: 0 }, 500);
-    $('html, body').mouseenter()
-}
-
 // 初始化加载
 function initPage() {
     ViewMSZBContent();
-    // 设置轮播背景图片高度
-    getdblHeight($(".banner"), 470);
-    // 设置底部背景图片高度
-    getdblHeight($(".bottom-photo"), 438);
 }
 
 // 加载名师直播模块
@@ -340,10 +204,4 @@ function ViewJPLBontent() {
         //  myPlayer.play();
         // });
     });
-}
-
-// 获取背景图片等比例高度
-function getdblHeight(ele, imgheight) {
-    var h = $(document).innerWidth() * imgheight / 1920;
-    ele.css("height", h + "px");
 }

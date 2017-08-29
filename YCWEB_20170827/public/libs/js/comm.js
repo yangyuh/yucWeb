@@ -1,5 +1,10 @@
-$(function(){
-	initPage();
+$(function() {
+    initbgh();
+
+    // 监听窗口变化
+    $(window).resize(function(event) {
+        initbgh();
+    });
 
     // banner轮播
     var timer = LeftMoveAuto(4, 4000);
@@ -86,26 +91,26 @@ function LeftMoveAuto(num, t) {
 }
 
 // 轮播像左滑
-function turnLeft(){
+function turnLeft() {
     var w = $("ul.banner-imgs>li:nth-child(1)").outerWidth();
     var left = $("ul.banner-imgs").css("left").replace(/px/, "") - 0;
     var length = $("ul.banner-imgs").children().length;
     if (left == 0) {
-        left = -(length )*w;
+        left = -(length) * w;
     }
     left += w;
     $("ul.banner-imgs").animate({
         left: left + "px"
     }, 1000);
-} 
+}
 
 // 轮播像左滑
-function turnRight(){
+function turnRight() {
     var w = $("ul.banner-imgs>li:nth-child(1)").outerWidth();
     var left = $("ul.banner-imgs").css("left").replace(/px/, "") - 0;
     var length = $("ul.banner-imgs").children().length;
     left -= w;
-    if (left == -(length)*w) {
+    if (left == -(length) * w) {
         left = 0;
     }
     $("ul.banner-imgs").animate({
@@ -113,8 +118,15 @@ function turnRight(){
     }, 1000);
 }
 
+
+// 返回顶部
+function backTop() {
+    $('html, body').animate({ scrollTop: 0 }, 500);
+    $('html, body').mouseenter()
+}
+
 // 初始化加载
-function initPage() {
+function initbgh() {
     // 设置轮播背景图片高度
     getdblHeight($(".banner"), 470);
     // 设置底部背景图片高度

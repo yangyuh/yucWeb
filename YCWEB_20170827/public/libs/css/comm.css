@@ -19,21 +19,18 @@ a:hover {
     overflow: hidden;
     margin: 0 auto;
 }
-/*模块*/
-
+/*模块标题*/
 .module-title {
     position: relative;
     text-align: center;
     padding: 122px 0 40px 0;
 }
-
 .module-title h3 {
     font-size: 30px;
     color: #494747;
     margin-bottom: 15px;
     font-weight: bold;
 }
-
 .module-title span {
     display: inline-block;
     color: #787878;
@@ -54,21 +51,17 @@ a:hover {
     color: #787878;
     bottom: 40px;
     font-size: 16px;
-    /*background: url('../imgs/more_icon.png') no-repeat right 4px;*/
 }
-
 .module-title-more a {
     color: #787878;
     text-decoration: none;
 }
-
 .module-title-more a:hover {
     text-decoration: underline;
     color: #035ade;
 }
 
 /*********************************header*********************************/
-
 .top {
     position: fixed;
     background: #e8e7e7;
