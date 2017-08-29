@@ -1,7 +1,5 @@
 
-
 /*********************************精品面授课程*********************************/
-
 .floor1 {
     width: 1238px;
     margin: 0 auto;
@@ -49,7 +47,6 @@
 }
 
 /*咨询详情公共样式*/
-
 .shadow-btns {
     overflow: hidden;
     height: 24px;
@@ -187,6 +184,7 @@
     right: 5px;
     margin-bottom: 0;
 }
+/*精彩录播*/
 .floor2-content-live .video-warper{
     width: 543px;
     height: 335px;
@@ -204,6 +202,35 @@
     left: 50%;
     transform: translate(-50%);
 }
+/*智能题库*/
+.floor2-content-live .zntk{
+    text-align: center;
+    width: 340px;
+    height: 138px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -69px;
+    margin-left: -175px;
+}
+.floor2-content-live .zntk .zntk_scyl{
+    margin-right: 136px;
+}
+.floor2-content-live .zntk .zntk_scyl span{
+    display: inline-block;
+    background: url('../imgs/zntk_01_01.png');
+    width: 102px;
+    height: 104px;
+    margin-bottom: 10px;
+}
+.floor2-content-live .zntk .zntk_khzy span{
+    display: inline-block;
+    background: url('../imgs/zntk_02.png');
+    width: 102px;
+    height: 104px;
+    margin-bottom: 10px;
+}
+/*网络学院导航*/
 .floor2-content-nav {
     position: absolute;
     bottom: 0;

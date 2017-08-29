@@ -1,24 +1,39 @@
 .floor_01 h1,
 .floor_02 h1,
-.floor_03 h1{
+.floor_03 h1,
+.floor_04 h1,
+.floor_05 h1,
+.floor_06 h1,
+.floor_07 h1,
+.floor_08 h1{
 	font-size: 60px;
 	font-weight: bolder; 
 	padding-bottom: 30px;
+	text-align: center;
+
 }
 .floor_01 p,
 .floor_02 p,
-.floor_03 p{
+.floor_03 p,
+.floor_04 p,
+.floor_05 p,
+.floor_06 p,
+.floor_07 p,
+.floor_08 p{
 	font-size: 30px;
 	padding-bottom: 10px;
+	text-align: center;
 }
-
+ p.blu{
+	color: #035bde;
+}
 /*在线报名*/
 button.zxbm_btn{
 	background: #fff;
 	border-radius: 4px;
 	color: #035bde;
 	height: 68px;
-	line-height: 68px;
+	line-height: 60px;
 	width: 288px;
 	text-align: center;
 	outline: none;
@@ -153,4 +168,234 @@ button.zxbm_btn{
 .floor_03 .btns button.zxbm_btn{
 	background: #035bde;
 	color: #fff;
+}
+/************************************西南财经大学自考本科获取流程************************************/
+.floor_04{
+	background: url("../imgs/xlkc/floor_04_bg.jpg");
+	height: 1541px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	padding-top: 85px;
+}
+.floor_04_list {
+	padding-top: 85px;
+}
+.floor_04_list li{
+	width: 33.33333%;
+	float: left;
+	margin-bottom: 60px;
+}
+.floor_04_list li .item{
+	width: 254px;
+	height: 254px;
+	background: url("../imgs/xlkc/floor_04_li.png");
+	line-height: 254px;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 auto;
+}
+.floor_04_list li p{
+	width: 254px;
+	margin: 50px auto 0;
+}
+.floor_04 button.zxbm_btn{
+	background: #035bde;
+	color: #fff;
+	border: 1px solid #035bde;
+}
+/************************************官方授权，内部资料，毕业有保障************************************/
+.floor_05{
+	text-align: center;
+	padding: 106px 0;
+}
+.floor_05 ul{
+	overflow: hidden;
+	padding: 42px 0;
+}
+.floor_05 ul.first-child{
+	border-bottom: 1px solid #eee;
+	margin-top: 40px;
+}
+.floor_05 ul li p{
+	font-size: 20px;
+	text-align: left;
+}
+
+.floor_05 ul li{
+	overflow: hidden;
+	float: left;
+	width: 50%;
+	padding: 0 5px;
+} 
+.floor_05 .zxbm_btn{
+	background: #035bde;
+	color: #fff;
+	border: 1px solid #035bde;
+	margin-top: 78px;
+}
+/************************************官方授权，内部资料，毕业有保障************************************/
+.floor_06{
+	background: #eeeeee;
+	padding: 85px;
+}
+.floor_06 .middle-page{
+	width: 1200px;
+	text-align: center;
+}
+.floor_06 ul{
+	overflow: hidden;
+}
+.floor_06 ul li{
+	overflow: hidden;
+	float: left;
+	width: 50%;
+	padding: 20px 30px;
+
+} 
+.floor_06 ul li .item{
+	height: 400px;
+	width: 100%;
+	box-shadow: 0 0 20px #888888;
+}
+.floor_06 ul li p{
+	padding: 43px 0 39px;
+}
+.floor_06 .zxbm_btn{
+	background: #035bde;
+	color: #fff;
+	border: 1px solid #035bde;
+}
+/************************************拿学历，这些问题你应该关注************************************/
+.floor_07{
+	padding: 85px;
+	text-align: center;
+}
+.floor_07 ul.questions {
+	overflow: hidden;
+	margin-top: 40px;
+}
+.floor_07 ul.questions p{
+	font-size: 18px;
+	padding-top: 20px;
+
+}
+.floor_07 ul.questions li {
+	float: left;
+	width: 33.3333%;
+	margin-bottom: 30px;
+}
+.floor_07 ul.questions li .item{
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+/*问答*/
+.floor_07 ul.qas{
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+.floor_07 ul.qas li{
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.floor_07 ul.qas li .item{
+	background: #eee;
+}
+.floor_07 ul.qas li .item .q p{
+	font-size: 26px;
+}
+.floor_07 ul.qas li .item .q{
+	height: 168px;
+	background: #035bde;
+	color: #fff;
+	padding: 20px 30px;
+}
+.floor_07 ul.qas li .item .a{
+	font-size: 18px;
+	padding: 30px 20px;
+	height: 300px;
+}
+.floor_07 .zxbm_btn{
+	background: #035bde;
+	color: #fff;
+	border: 1px solid #035bde;
+}
+/*学长有话说*/
+
+.xbyhs-bg {
+    background: #035bde;
+    width: 100%;
+    overflow-y: auto;
+    margin: 80px 0 50px;
+    height: 300px;
+}
+.xbyhs-bg p{
+	font-size: 16px;
+}
+.xbyhs-bg ul {
+    color: #fff;
+    padding: 0 12%;
+}
+
+.xbyhs-bg ul li {
+    margin: 15px;
+    overflow: hidden;
+}
+
+.xbyhs-bg ul li .text {
+    margin-left: 20px;
+    float: left;
+    width: 84%;
+    height: 80px;
+    /*line-height: 80px;*/
+}
+.xbyhs-bg ul li .xbtx {
+    float: left;
+    height: 80px;
+    width: 80px;
+    background: #000;
+    border-radius: 40px;
+}
+
+.p {
+    width: 70%;
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #5e5e5e;
+}
+
+.p .line {
+    margin-top: 5px;
+    border-bottom: 2px solid #c8c8c8;
+    width: 7%;
+}
+
+.djzx-btn {
+    width: 16%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/************************************学会计拿学历，到誉财有保障************************************/
+.floor_08{
+	background: #035bde;
+	padding: 85px;
+	text-align: center;
+}
+.floor_08 input{
+	width: 300px;
+    line-height: 50px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    font-size: 16px;
+    margin: 60px 20px; 
 }

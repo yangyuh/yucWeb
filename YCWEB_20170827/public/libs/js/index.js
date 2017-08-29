@@ -193,7 +193,7 @@ function ViewMSZBContent() {
 }
 
 // 加载精品录播模块
-function ViewJPLBontent() {
+function ViewJPLBContent() {
     var view = $("#floor2ContentView");
     var tpl = $("#jplbTpl").html();
     laytpl(tpl).render([], function(html) {
@@ -203,5 +203,14 @@ function ViewJPLBontent() {
         //  var myPlayer = this;
         //  myPlayer.play();
         // });
+    });
+}
+
+// 加载智能题库模块
+function ViewZLTkContent() {
+    var view = $("#floor2ContentView");
+    var tpl = $("#zntkTpl").html();
+    laytpl(tpl).render([], function(html) {
+        view.html(html);
     });
 }
