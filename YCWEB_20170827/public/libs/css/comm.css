@@ -25,9 +25,18 @@ ul.oh li{
 .fr{
     float: right;
 }
+/*蓝色字体*/
+.blue-text{
+    color: #005bd9;
+}
 /*页面中间部分*/
 .middle-page {
     width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.middle-page-1200 {
+    width: 1200px;
     overflow: hidden;
     margin: 0 auto;
 }
