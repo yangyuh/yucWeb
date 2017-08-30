@@ -16,6 +16,9 @@ a:hover {
 .oh{
     overflow: hidden;
 }
+ul.oh li{
+    float: left;
+}
 .fl{
     float: left;
 }
