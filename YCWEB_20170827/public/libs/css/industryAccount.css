@@ -1,0 +1,47 @@
+/*模块标题*/
+.module-title{
+	text-align: center;
+	padding: 106px 0;
+}
+.module-title h1{
+	font-size: 70px;
+	font-weight: bolder;
+	padding-bottom: 18px;
+}
+.module-title span{
+	display: inline-block;
+	width: 160px;
+	height: 2px;
+	background: #035bde;
+}
+/*点击咨询按钮*/
+.btn-style{
+	width: 300px;
+	height: 76px;
+	line-height: 76px;
+	background: #035bde;
+	transition: all 0.5s;
+	border-radius: 4px; 
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	font-size: 28px;
+	margin: 0 auto;
+}
+
+/*********************************工业实账的特点*********************************/
+#section1{
+
+}
+/*********************************工业实账的难点*********************************/
+#section2{
+	
+}
+/*********************************工业实账的流程*********************************/
+#section3{
+	
+}
+/*********************************我们能够给你带来的保障*********************************/
+#section4{
+	
+}

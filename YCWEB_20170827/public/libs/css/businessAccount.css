@@ -1,0 +1,118 @@
+.content{
+	margin: auto;
+	text-align: center;
+}
+.content-flowsheet{
+	margin: 60px auto;
+
+	text-align: center;
+}
+.font{
+	padding: 20px 0;
+	font-size: 50px;
+	color: #035ade;
+	font-weight: bolder;
+}
+.blue-bottom{
+	width: 100%;
+}
+.font-backgroundC{
+	background-color: #b7b7b7;
+}
+.span-font-color{
+	color:#555;
+}
+.about-detail{
+	background-color: #035ade;
+	color: #fff;
+	padding: 10px 50px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+}
+.background-img-style{
+	height: 1153px;
+	margin-top: -72px;
+	line-height: 1153px;
+}
+.background-img-three-style{
+	height: 1095px;
+	margin-top: -72px;
+	line-height: 1095px;
+}
+.background-img-four-style{
+	height: 1247px;
+	margin-top: -72px;
+	line-height: 1247px;
+}
+.background-img-five-style{
+	height: 1336px;
+	margin-top: -72px;
+	line-height: 1336px;
+}
+.background-img-six-style{
+	height: 1034px;
+	margin-top: -72px;
+	line-height: 1034px;
+}
+.step-three{
+	position: relative;
+}
+.step-six{
+	/*margin-bottom: 60px;*/
+}
+.books-one{
+	position: absolute;
+	top: 18.6%;
+	right: 11%;
+	width: 880px;
+	height: 630px;
+}
+.books-two{
+	position: absolute;
+	bottom: 6%;
+	left: 10%;
+	width: 880px;
+	height: 630px;
+}
+.book-one{
+	position: absolute;
+	top: 14.6%;
+	right: 10%;
+	width: 880px;
+	height: 630px;
+}
+.book-two{
+	position: absolute;
+	bottom: 6.5%;
+	left: 15%;
+	width: 880px;
+	height: 630px;
+}
+.step-four{
+	position: relative;
+}
+.part-one{
+	position: absolute;
+	left: 5%;
+	top:5%;
+}
+.step-one-background{
+	background: url(../imgs/识别原始凭证bj_06.jpg);	
+    /*background-size: contain; */
+}
+.step-two-background{
+	background: url(../imgs/登记记账凭证bj_08.jpg);
+}
+.step-three-background{
+	background: url(../imgs/登记账薄bj_10.jpg);	
+}
+.step-four-background{
+	background: url(../imgs/编制报表_12.jpg);
+}
+.step-five-background{
+	background: url(../imgs/纳税申报bj_14.jpg);
+}
+.step-six-background{
+	background: url(../imgs/财务软件实训bj_16.jpg);
+}

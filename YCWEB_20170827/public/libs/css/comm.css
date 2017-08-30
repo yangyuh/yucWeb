@@ -1,6 +1,7 @@
+/*********************************public*********************************/
 body {
     font-size: 14px;
-    font-family: '微软雅黑';
+    font-family: Arial, "Microsoft YaHei", sans-serif, "Helvetica Neue", Helvetica, Arial;
     min-width: 1240px;
     padding-top: 98px;
 }
@@ -11,6 +12,7 @@ a {
 a:hover {
     color: #035ade;
 }
+/*浮动*/
 .oh{
     overflow: hidden;
 }
@@ -20,53 +22,11 @@ a:hover {
 .fr{
     float: right;
 }
-/*********************************public*********************************/
-
+/*页面中间部分*/
 .middle-page {
     width: 1000px;
     overflow: hidden;
     margin: 0 auto;
-}
-/*模块标题*/
-.module-title {
-    position: relative;
-    text-align: center;
-    padding: 122px 0 40px 0;
-}
-.module-title h3 {
-    font-size: 30px;
-    color: #494747;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-.module-title span {
-    display: inline-block;
-    color: #787878;
-    font-size: 16px;
-    margin-bottom: 44px;
-}
-.module-title-style{
-    background: url('../imgs/main-titlestyle.jpg');
-    width: 633px;
-    height: 18px;
-    margin: 0 auto;
-}
-.module-title-more {
-    height: 20px;
-    padding-right: 20px;
-    position: absolute;
-    right: 0;
-    color: #787878;
-    bottom: 40px;
-    font-size: 16px;
-}
-.module-title-more a {
-    color: #787878;
-    text-decoration: none;
-}
-.module-title-more a:hover {
-    text-decoration: underline;
-    color: #035ade;
 }
 
 /*********************************header*********************************/
@@ -162,28 +122,30 @@ a:hover {
 .ejmeun-group {
     float: left;
 }
-ul.ejmeun-leftnav {
+/*左边导航*/
+.ejmeun-leftnav {
     width: 172px;
 }
-ul.ejmeun-leftnav li {
+.ejmeun-leftnav li {
     line-height: 40px;
     height: 25%;
     border-bottom: 1px solid #b9b9b9;
     text-align: center;
     cursor: pointer;
 }
-ul.ejmeun-leftnav li:hover {
-    background: #035ade;
-    color: #fff;
-}
-ul.ejmeun-leftnav li:hover a{
-    color: #fff;
+.ejmeun-leftnav li a{
+    display: block;
     text-decoration: none;
 }
-ul.ejmeun-leftnav li.active {
+.ejmeun-leftnav li.active a{
     background: #035ade;
     color: #fff;
 }
+.ejmeun-leftnav li:hover a{
+    background: #035ade;
+    color: #fff;
+}
+/*开班*/
 .ejmeun-group {
     padding-left: 18px;
     width: 828px;

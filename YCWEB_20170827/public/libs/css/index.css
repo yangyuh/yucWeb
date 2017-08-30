@@ -1,4 +1,44 @@
-
+/*模块标题*/
+.module-title {
+    position: relative;
+    text-align: center;
+    padding: 122px 0 40px 0;
+}
+.module-title h3 {
+    font-size: 30px;
+    color: #494747;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.module-title span {
+    display: inline-block;
+    color: #787878;
+    font-size: 16px;
+    margin-bottom: 44px;
+}
+.module-title-style{
+    background: url('../imgs/main-titlestyle.jpg');
+    width: 633px;
+    height: 18px;
+    margin: 0 auto;
+}
+.module-title-more {
+    height: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+    color: #787878;
+    bottom: 40px;
+    font-size: 16px;
+}
+.module-title-more a {
+    color: #787878;
+    text-decoration: none;
+}
+.module-title-more a:hover {
+    text-decoration: underline;
+    color: #035ade;
+}
 /*********************************精品面授课程*********************************/
 .floor1 {
     width: 1238px;
