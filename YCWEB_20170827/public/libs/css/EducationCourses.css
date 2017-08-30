@@ -161,7 +161,7 @@ p.blu{
 
 /************************************西南财经大学自考本科获取流程************************************/
 .section4{
-	background: url("../imgs/xlkc/floor_04_bg.jpg");
+	background: url("../imgs/educationCourses/floor_04_bg.jpg");
 	height: 1541px;
 	width: 100%;
 	text-align: center;
@@ -179,7 +179,7 @@ p.blu{
 .section4_list li .item{
 	width: 254px;
 	height: 254px;
-	background: url("../imgs/xlkc/floor_04_li.png");
+	background: url("../imgs/educationCourses/floor_04_li.png");
 	line-height: 254px;
 	text-align: center;
 	font-size: 16px;
