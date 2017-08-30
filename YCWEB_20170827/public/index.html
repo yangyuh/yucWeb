@@ -3,6 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--禁止缩放-->
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <!--去除默认的数字拨号链接-->
+    <meta content="telephone=no" name="format-detection">
+    <!--开启浏览器对webapp的支持-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>誉财教育</title>
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="libs/css/video-js.css">
@@ -31,9 +37,9 @@
                     <div class="nav-logo"><img src="libs/imgs/logo_03.png"></div>
                     <ul class="nav-list">
                         <li class="active"><a href="index.html">首页</a></li>
-                        <li class="showem"><a href="AccountanterReg.html">会计课程</a></li>
-                        <li class="showem"><a href="EducationCourses.html">学历课程</a></li>
-                        <li class="showem"><a href="#">财税实账</a></li>
+                        <li class="showem"><a href="javascript:volid(0);">会计课程</a></li>
+                        <li class="showem"><a href="javascript:volid(0);">学历课程</a></li>
+                        <li class="showem"><a href="javascript:volid(0);">财税实账</a></li>
                         <li><a href="#">在线教育</a></li>
                         <li><a href="#">新闻咨询</a></li>
                         <li><a href="#">校区</a></li>
@@ -48,37 +54,50 @@
             <div class="ejmeun">
                 <div class="middle-page">
                     <ul class="ejmeun-leftnav">
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
+                        <li><a href="#">初级会计课程</a></li>
+                        <li><a href="#">中级会计课程</a></li>
+                        <li><a href="AccountanterReg.html">注册会计课程</a></li>
+                        <li><a href="businessAccount.html">商贸会计课程</a></li>
+                        <li><a href="industryAccount.html">工业会计课程</a></li>
                     </ul>
                     <div class="ejmeun-group">
                         <p>选择班型：</p>
                         <ul>
                             <li>
-                                <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
+                                <a href="businessAccount.html">
+                                    <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                    <p>注册会计一班</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
+                                <a href="industryAccount.html">
+                                    <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                    <p>注册会计一班</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
+                                <a href="AccountanterReg.html">
+                                    <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                    <p>注册会计一班</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
+                                <a href="educationCourses.html">
+                                    <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                    <p>注册会计一班</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
+                                <a href="">
+                                    <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                    <p>注册会计一班</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
+                                <a href="">
+                                    <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                    <p>注册会计一班</p>
+                                </a>
                             </li>
                         </ul>
                     </div>

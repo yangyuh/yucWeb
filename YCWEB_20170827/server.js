@@ -7,3 +7,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(serverport,function(){
 	console.log("server start " + serverport)
 })
+<<<<<<< HEAD
+=======
+
+>>>>>>> 不能推送
