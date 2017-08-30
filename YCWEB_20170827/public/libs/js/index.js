@@ -6,7 +6,7 @@ $(function() {
     })
 
     // 精品面授过程阴影过渡效果
-    $(".floor1-list li").hover(function() {
+    $(".section1-list li").hover(function() {
         $(this).find(".shadow").stop()
         $(this).find(".shadow").fadeIn(500)
     }, function() {
@@ -15,8 +15,8 @@ $(function() {
     })
 
     // 誉财网络学院 导航选中操作 
-    $(".floor2-content-nav li").on("click", function() {
-        $(".floor2-content-nav").find("li").removeClass("active");
+    $(".section2-content-nav li").on("click", function() {
+        $(".section2-content-nav").find("li").removeClass("active");
         $(this).addClass("active");
     })
 
@@ -31,8 +31,8 @@ $(function() {
     })
 
     // 校区开班动态 导航选中操作 
-    $(".floor3_01-nav ul li").on("click", function() {
-        $(".floor3_01-nav ul").find("li").removeClass("active");
+    $(".section3_01-nav ul li").on("click", function() {
+        $(".section3_01-nav ul").find("li").removeClass("active");
         $(this).addClass("active");
     })
 
@@ -50,7 +50,7 @@ $(function() {
 
 
     // 名师团队阴影过渡效果
-    $(".floor4-list li").hover(function() {
+    $(".section4-list li").hover(function() {
         $(this).find(".shadow").stop();
         $(this).find(".shadow").fadeIn(500);
     }, function() {
@@ -59,7 +59,7 @@ $(function() {
     })
 
     // 明星学员风采过渡效果
-    $(".floor6-list li").hover(function() {
+    $(".section6-list li").hover(function() {
         if ($(this).attr('class') != 'center') {
             $(this).find("img").stop()
             $(this).find("img").eq(1).fadeIn(800);
@@ -74,7 +74,7 @@ $(function() {
     })
 
     // 誉财教育之道过渡效果
-    $(".floor8-list li").hover(function() {
+    $(".section8-list li").hover(function() {
         $(this).find(".hidea").stop();
         $(this).find(".showa").stop();
         $(this).find(".hidea").fadeIn(300);
@@ -87,28 +87,28 @@ $(function() {
     })
 
     // 誉财校区分布交互效果(left)
-    $("ul.floor7-xqfb-list li .xqnr-bg-l").hover(function() {
+    $("ul.section7-xqfb-list li .xqnr-bg-l").hover(function() {
         xqfbMouseenter($(this), "left");
     }, function() {
         xqfbMouseLeave($(this), "left");
     })
 
     // 誉财校区分布交互效果(right)
-    $("ul.floor7-xqfb-list li .xqnr-bg-r").hover(function() {
+    $("ul.section7-xqfb-list li .xqnr-bg-r").hover(function() {
         xqfbMouseenter($(this), "right");
     }, function() {
         xqfbMouseLeave($(this), "right");
     })
 
     // 校区图片交互效果(left)
-    $("ul.floor7-xqfb-list li.left .xq-img").hover(function() {
+    $("ul.section7-xqfb-list li.left .xq-img").hover(function() {
         xqfbMouseenter($(this).next(), "left");
     }, function() {
         xqfbMouseLeave($(this).next(), "left");
     })
 
     // 校区图片交互效果(right)
-    $("ul.floor7-xqfb-list li.right .xq-img").hover(function() {
+    $("ul.section7-xqfb-list li.right .xq-img").hover(function() {
         xqfbMouseenter($(this).prev(), "right");
     }, function() {
         xqfbMouseLeave($(this).prev(), "right");

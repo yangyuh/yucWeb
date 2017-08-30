@@ -40,15 +40,15 @@
     color: #035ade;
 }
 /*********************************精品面授课程*********************************/
-.floor1 {
+.section1 {
     width: 1238px;
     margin: 0 auto;
 }
-.floor1-list {
+.section1-list {
     overflow: hidden;
     padding: 20px;
 }
-.floor1-list li {
+.section1-list li {
     width: 364px;
     height: 325px;
     background: #f0f0f0;
@@ -62,21 +62,21 @@
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-.floor1-list li:nth-child(3),
-.floor1-list li:nth-child(6) {
+.section1-list li:nth-child(3),
+.section1-list li:nth-child(6) {
     margin-right: 0;
 }
-.floor1-list li:nth-child(4),
-.floor1-list li:nth-child(5),
-.floor1-list li:nth-child(6) {
+.section1-list li:nth-child(4),
+.section1-list li:nth-child(5),
+.section1-list li:nth-child(6) {
     margin-bottom: 0;
 }
-.floor1-list li:hover {
+.section1-list li:hover {
     -webkit-box-shadow: 0 0 10px 15px #f0f0f0;
     -moz-box-shadow: 0 0 10px 15px #f0f0f0;
     box-shadow: 0 0 20px #888888;
 }
-.floor1-list li .shadow {
+.section1-list li .shadow {
     background: rgba(3, 90, 222, 0.8);
     display: none;
     width: 364px;
@@ -97,7 +97,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.floor1-list li .shadow .shadow-btns {
+.section1-list li .shadow .shadow-btns {
     padding: 0 16%;
 }
 .shadow-btns div {
@@ -127,31 +127,31 @@
 .shadow-btns div:nth-child(1) {
     /*float: left;*/
 }
-.floor1-list li:hover .floor1-list-text p:nth-child(1) {
+.section1-list li:hover .section1-list-text p:nth-child(1) {
     color: #035ade;
 }
-.floor1-list-text {
+.section1-list-text {
     color: #656565;
 
     padding: 25px 10px 20px 20px;
 }
-.floor1-list-text p:nth-child(1) {
+.section1-list-text p:nth-child(1) {
     font-weight: 600;
     font-size: 18px;
     color: #656565;
     margin-bottom: 10px;
 }
-.floor1-list .rs {
+.section1-list .rs {
     position: absolute;
     right: 18px;
     bottom: 18px;
     color: #656565;
 }
-.floor1-list .rs p:nth-child(1) {
+.section1-list .rs p:nth-child(1) {
     color: #025ddf;
     margin-bottom: -4px;
 }
-.floor1-list .rs p:nth-child(2) span {
+.section1-list .rs p:nth-child(2) span {
     color: #484747;
     font-size: 16px;
     font-weight: 600;
@@ -160,35 +160,35 @@
 
 /*********************************誉财网络学院*********************************/
 
-.floor2 {
+.section2 {
     width: 100%;
     background: #f0f0f0;
 }
 
-.floor2-content {
+.section2-content {
     position: relative;
     height: 568px;
 }
 
-.floor2-content-live ul{
+.section2-content-live ul{
     overflow: hidden;
     padding-top: 99px;
     width: 733px;
     margin: 0 auto;
 }
-.floor2-content-live ul li{
+.section2-content-live ul li{
     float: left;
     height: 335px;
     position: relative;
 }
-.floor2-content-live .mszbimg{
+.section2-content-live .mszbimg{
     height: 335px;
     width: 543px;
     background: url("../imgs/wljx_mszb.png");
     margin: 0 auto;
     margin-top: 50px;
 }
-.floor2-content-live .enter_btn{
+.section2-content-live .enter_btn{
     cursor: pointer;
     width: 85px;
     height: 24px;
@@ -196,25 +196,25 @@
     margin: 0 auto;
     margin-top: 50px;
 }
-.floor2-content-live ul li:nth-child(1){
+.section2-content-live ul li:nth-child(1){
     height: 335px;
     width: 543px;
     background: url("../imgs/wljx_mszb.png");
 }
-.floor2-content-live ul li:nth-child(2){
+.section2-content-live ul li:nth-child(2){
     width: 190px;
 }
-.floor2-content-live ul li:nth-child(2) div.active{
+.section2-content-live ul li:nth-child(2) div.active{
     color: #035ade;
 }
-.floor2-content-live ul li:nth-child(2) div{
+.section2-content-live ul li:nth-child(2) div{
     margin-bottom: 35px;
     font-size: 16px;
 }
-.floor2-content-live ul li:nth-child(2) div:nth-child(1){
+.section2-content-live ul li:nth-child(2) div:nth-child(1){
     padding-top: 90px;
 }
-.floor2-content-live ul li:nth-child(2) div.enter_btn{
+.section2-content-live ul li:nth-child(2) div.enter_btn{
     cursor: pointer;
     width: 85px;
     height: 24px;
@@ -225,25 +225,25 @@
     margin-bottom: 0;
 }
 /*精彩录播*/
-.floor2-content-live .video-warper{
+.section2-content-live .video-warper{
     width: 543px;
     height: 335px;
     margin: 0 auto;
     margin-top: 80px;
     position: relative;
 }
-.floor2-content-live .video-warper video{
+.section2-content-live .video-warper video{
     height: 100%;
     width: 100%;
 }
-.floor2-content-live .video-warper .vjs-big-play-button{
+.section2-content-live .video-warper .vjs-big-play-button{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
 }
 /*智能题库*/
-.floor2-content-live .zntk{
+.section2-content-live .zntk{
     text-align: center;
     width: 340px;
     height: 138px;
@@ -253,17 +253,17 @@
     margin-top: -69px;
     margin-left: -175px;
 }
-.floor2-content-live .zntk .zntk_scyl{
+.section2-content-live .zntk .zntk_scyl{
     margin-right: 136px;
 }
-.floor2-content-live .zntk .zntk_scyl span{
+.section2-content-live .zntk .zntk_scyl span{
     display: inline-block;
     background: url('../imgs/zntk_01_01.png');
     width: 102px;
     height: 104px;
     margin-bottom: 10px;
 }
-.floor2-content-live .zntk .zntk_khzy span{
+.section2-content-live .zntk .zntk_khzy span{
     display: inline-block;
     background: url('../imgs/zntk_02.png');
     width: 102px;
@@ -271,16 +271,16 @@
     margin-bottom: 10px;
 }
 /*网络学院导航*/
-.floor2-content-nav {
+.section2-content-nav {
     position: absolute;
     bottom: 0;
     width: 100%;
     background: #e3e3e3;
 }
-.floor2-content-nav ul {
+.section2-content-nav ul {
     overflow: hidden;
 }
-.floor2-content-nav li {
+.section2-content-nav li {
     cursor: pointer;
     width: 20%;
     line-height: 50px;
@@ -291,11 +291,11 @@
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-.floor2-content-nav li.active {
+.section2-content-nav li.active {
     background: #035ade;
     color: #fff;
 }
-.floor2-content-nav li:hover {
+.section2-content-nav li:hover {
     background: #035ade;
     color: #fff;
 }
@@ -303,10 +303,10 @@
 
 /*********************************权威备考资料*********************************/
 
-ul.floor3-list {
+ul.section3-list {
     overflow: hidden;
 }
-ul.floor3-list li {
+ul.section3-list li {
     cursor: pointer;
     width: 33%;
     height: 578px;
@@ -318,7 +318,7 @@ ul.floor3-list li {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-ul.floor3-list li .item {
+ul.section3-list li .item {
     width: 90%;
     background: #f0f0f0;
     margin-left: 5%;
@@ -330,7 +330,7 @@ ul.floor3-list li .item {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-ul.floor3-list li .img {
+ul.section3-list li .img {
     height: 130px;
     width: 130px;
     border-radius: 65px;
@@ -342,35 +342,35 @@ ul.floor3-list li .img {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-ul.floor3-list li .img img {
+ul.section3-list li .img img {
     width: 100%;
     height: 100%
 }
-ul.floor3-list li .item h4 {
+ul.section3-list li .item h4 {
     margin-top: 30px;
     font-weight: bolder;
 }
-ul.floor3-list li .item .text {
+ul.section3-list li .item .text {
     padding: 29px;
     text-align: left;
 }
-ul.floor3-list li .item .text p:nth-child(1) {
+ul.section3-list li .item .text p:nth-child(1) {
     height: 160px;
     overflow: hidden
 }
-ul.floor3-list li .item .text p:nth-child(2) {
+ul.section3-list li .item .text p:nth-child(2) {
     text-align: right;
     margin-top: 20px;
 }
-ul.floor3-list li .item .text p:nth-child(2) span {
+ul.section3-list li .item .text p:nth-child(2) span {
     font-size: 20px;
     color: #035ade;
     font-weight: 700;
 }
-ul.floor3-list li .item .btns{
+ul.section3-list li .item .btns{
     padding-bottom: 40px;
 }
-ul.floor3-list li .item .btns div {
+ul.section3-list li .item .btns div {
     display: inline-block;
     border: 1px solid #767676;
     line-height: 24px;
@@ -384,14 +384,14 @@ ul.floor3-list li .item .btns div {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-ul.floor3-list li .item .btns div:nth-child(1) {
+ul.section3-list li .item .btns div:nth-child(1) {
     margin-right: 30px;
     transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-ul.floor3-list li .item .btns div span {
+ul.section3-list li .item .btns div span {
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -406,43 +406,43 @@ ul.floor3-list li .item .btns div span {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-ul.floor3-list li:hover .item {
+ul.section3-list li:hover .item {
     -webkit-box-shadow: 0 0 10px 15px #f0f0f0;
     -moz-box-shadow: 0 0 10px 15px #f0f0f0;
     box-shadow: 0 0 20px #888888;
 }
-ul.floor3-list li:hover .img {
+ul.section3-list li:hover .img {
     -webkit-box-shadow: 0 0 10px 15px #f0f0f0;
     -moz-box-shadow: 0 0 10px 15px #f0f0f0;
     box-shadow: 0 0 20px #888888;
 }
-ul.floor3-list .item .btns div.active{
+ul.section3-list .item .btns div.active{
     background: #035ade;
     color: #fff;
     border: 1px solid #035ade;
 }
-ul.floor3-list .item .btns div.active span{
+ul.section3-list .item .btns div.active span{
     background: #fff;
 }
 
 
 /*********************************校区开班动态*********************************/
 
-.floor3_01-nav {
+.section3_01-nav {
     width: 100%;
     background: #e3e3e3;
 }
-.floor3_01 .module-title{
+.section3_01 .module-title{
     padding-top: 60px;
 }
-.floor3_01-nav .middle-page,
-.floor3_01-table .middle-page {
+.section3_01-nav .middle-page,
+.section3_01-table .middle-page {
     width: 1106px;
 }
-.floor3_01-nav .middle-page ul {
+.section3_01-nav .middle-page ul {
     overflow: hidden;
 }
-.floor3_01-nav .middle-page ul li {
+.section3_01-nav .middle-page ul li {
     float: left;
     cursor: pointer;
     width: 158px;
@@ -454,39 +454,39 @@ ul.floor3-list .item .btns div.active span{
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-.floor3_01-nav .middle-page ul li.active {
+.section3_01-nav .middle-page ul li.active {
     background: #035ade;
     color: #fff;
 }
-.floor3_01-nav .middle-page ul li:hover {
+.section3_01-nav .middle-page ul li:hover {
     background: #035ade;
     color: #fff;
 }
-.floor3_01-table {
+.section3_01-table {
     padding: 30px 0;
     background: #f0f0f0;
 }
-.floor3_01-table-box {
+.section3_01-table-box {
     height: 400px;
     overflow-y: hidden;
 }
-.floor3_01-table-box ul {
+.section3_01-table-box ul {
     font-size: 16px;
 }
-.floor3_01-table-box ul li {
+.section3_01-table-box ul li {
     height: 40px;
     width: 100%;
     line-height: 40px;
 }
-.floor3_01-table-box ul li div {
+.section3_01-table-box ul li div {
     display: inline-block;
     width: 270px;
     text-align: center;
 }
-.floor3_01-table-box ul li div:nth-child(1) {
+.section3_01-table-box ul li div:nth-child(1) {
     text-align: left;
 }
-.floor3_01-table ul li div span {
+.section3_01-table ul li div span {
     display: block;
     height: 24px;
     width: 84px;
@@ -497,40 +497,40 @@ ul.floor3-list .item .btns div.active span{
     margin: 0 auto;
     cursor: pointer;
 }
-.floor3_01-table table tr {
+.section3_01-table table tr {
     line-height: 45px;
 }
 
 
 /*********************************誉财名师团队*********************************/
 
-.floor4 .middle-page {
+.section4 .middle-page {
     width: 1120px;
 }
-ul.floor4-list {
+ul.section4-list {
     overflow: hidden;
 }
-ul.floor4-list li {
+ul.section4-list li {
     width: 50%;
     float: left;
     padding: 20px;
 }
-ul.floor4-list li:hover .szinfo h3 {
+ul.section4-list li:hover .szinfo h3 {
     color: #035ade;
 }
-ul.floor4-list li .item {
+ul.section4-list li .item {
     height: 100%;
     width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
     padding-left: 50px;
 }
-ul.floor4-list li .item .img {
+ul.section4-list li .item .img {
     position: relative;
     float: left;
     cursor: pointer;
 }
-ul.floor4-list li .item .img .shadow {
+ul.section4-list li .item .img .shadow {
     width: 185px;
     height: 185px;
     line-height: 185px;
@@ -544,39 +544,39 @@ ul.floor4-list li .item .img .shadow {
     display: none;
     color: #fff;
 }
-ul.floor4-list li .item .szinfo {
+ul.section4-list li .item .szinfo {
     float: left;
     width: 260px;
     padding-left: 30px;
 }
-ul.floor4-list li .item .szinfo h3 {
+ul.section4-list li .item .szinfo h3 {
     border-bottom: 1px solid #bababa;
     padding: 40px 0 8px 0;
     margin-bottom: 10px;
 }
-ul.floor4-list li .item .szinfo p {
+ul.section4-list li .item .szinfo p {
     padding: 3px 0;
 }
-.floor4-kb {
+.section4-kb {
     background: #f0f0f0;
     width: 100%;
 }
-.floor4-kb ul {
+.section4-kb ul {
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 30px;
 }
-.floor4-kb ul li {
+.section4-kb ul li {
     float: left;
     width: 33.3%;
 }
-.floor4-kb ul li p {
+.section4-kb ul li p {
     color: #8c8c8c;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
 }
-.floor4-kb ul li p span {
+.section4-kb ul li p span {
     color: #035ade;
     font-size: 50px;
     font-weight: bolder;
@@ -585,13 +585,13 @@ ul.floor4-list li .item .szinfo p {
 
 /*********************************行业新闻咨询*********************************/
 
-.floor5 .middle-page {
+.section5 .middle-page {
     width: 1200px;
 }
-ul.floor5-list {
+ul.section5-list {
     overflow: hidden;
 }
-ul.floor5-list li {
+ul.section5-list li {
     float: left;
     width: 50%;
     padding: 10px;
@@ -601,7 +601,7 @@ ul.floor5-list li {
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-ul.floor5-list li .floor5-list-item {
+ul.section5-list li .section5-list-item {
     background: #f0f0f0;
     height: 100%;
     width: 100%;
@@ -613,16 +613,16 @@ ul.floor5-list li .floor5-list-item {
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-.floor5-list-item .img {
+.section5-list-item .img {
     width: 213px;
     height: 140px;
     float: left;
 }
-.floor5-list-item .img img {
+.section5-list-item .img img {
     width: 100%;
     height: 100%;
 }
-.floor5-list-item .time {
+.section5-list-item .time {
     padding: 0 30px;
     float: left;
     transition: all 0.5s ease-in-out 0s;
@@ -630,21 +630,21 @@ ul.floor5-list li .floor5-list-item {
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-.floor5-list-item .time p:nth-child(1) {
+.section5-list-item .time p:nth-child(1) {
     font-size: 25px;
 }
-.floor5-list-item .xwnr {
+.section5-list-item .xwnr {
     float: left;
     width: 200px;
 }
-.floor5-list-item .xwnr .p {
+.section5-list-item .xwnr .p {
     padding: 30px 0 0 0;
     line-height: 22px;
     height: 153px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.floor5-list-item .more-btn {
+.section5-list-item .more-btn {
     border: 1px solid #035bde;
     width: 87px;
     text-align: center;
@@ -656,99 +656,99 @@ ul.floor5-list li .floor5-list-item {
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-ul.floor5-list li:hover .floor5-list-item {
+ul.section5-list li:hover .section5-list-item {
     -webkit-box-shadow: 0 0 10px 15px #f0f0f0;
     -moz-box-shadow: 0 0 10px 15px #f0f0f0;
     box-shadow: 0 0 20px #888888;
 }
-.floor5-list-item .xwnr h3 {
+.section5-list-item .xwnr h3 {
     transition: all 0.5s ease-in-out 0s;
     -moz-transition: all 0.5s ease-in-out 0s;
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-ul.floor5-list li:hover .floor5-list-item .more-btn {
+ul.section5-list li:hover .section5-list-item .more-btn {
     background: #035bde;
     color: #fff;
 }
-ul.floor5-list li:hover .floor5-list-item .xwnr h3 {
+ul.section5-list li:hover .section5-list-item .xwnr h3 {
     color: #035bde;
 }
-ul.floor5-list li:hover .floor5-list-item .time {
+ul.section5-list li:hover .section5-list-item .time {
     color: #035bde;
 }
-.floor5-zxtitle {
+.section5-zxtitle {
     padding: 50px 30px 30px 30px;
     font-weight: bold;
 }
-.floor5-zxcontent {
+.section5-zxcontent {
     color: #787878;
     font-size: 14px;
     background: #f0f0f0;
     padding: 40px 38px;
     overflow: hidden;
 }
-.floor5-zxcontent #zxwd_Scroll {
+.section5-zxcontent #zxwd_Scroll {
     height: 153px;
     width: 48%;
     float: left;
     overflow-y: hidden;
 }
-.floor5-zxcontent-text {
+.section5-zxcontent-text {
     padding-left: 20px;
 }
-.floor5-zxcontent-text li {
+.section5-zxcontent-text li {
     height: 30px;
 }
-.floor5-zxcontent-text li a {
+.section5-zxcontent-text li a {
     height: 30px;
     color: #787878;
 }
-.floor5-zxcontent-text li a:hover {
+.section5-zxcontent-text li a:hover {
     color: #035bde;
 }
-.floor5-zxcontent-wdpic {
+.section5-zxcontent-wdpic {
     width: 50%;
     float: right;
 }
 
 
 /*********************************明星学员风采*********************************/
-.floor6 .middle-page {
+.section6 .middle-page {
     width: 1200px;
 }
-ul.floor6-list {
+ul.section6-list {
     overflow: hidden;
 }
-ul.floor6-list li {
+ul.section6-list li {
     width: 240px;
     height: 238px;
     float: left;
     position: relative;
 }
-ul.floor6-list li img {
+ul.section6-list li img {
     position: absolute;
     top: 0;
     left: 0;
 }
-ul.floor6-list li img:nth-child(2) {
+ul.section6-list li img:nth-child(2) {
     display: none;
 }
 
 /*********************************誉财校区分布*********************************/
-.floor7-xqfb {}
-ul.floor7-xqfb-list li {
+.section7-xqfb {}
+ul.section7-xqfb-list li {
     height: 172px;
     overflow: hidden;
 }
-ul.floor7-xqfb-list li div {
+ul.section7-xqfb-list li div {
     float: left;
 }
-ul.floor7-xqfb-list li .xq-img {
+ul.section7-xqfb-list li .xq-img {
     height: 172px;
     cursor: pointer;
 }
-ul.floor7-xqfb-list li .xqnr-bg-l {
+ul.section7-xqfb-list li .xqnr-bg-l {
     cursor: pointer;
     display: inline-block;
     width: 278px;
@@ -762,7 +762,7 @@ ul.floor7-xqfb-list li .xqnr-bg-l {
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-ul.floor7-xqfb-list li .xqnr-bg-r {
+ul.section7-xqfb-list li .xqnr-bg-r {
     cursor: pointer;
     display: inline-block;
     width: 278px;
@@ -776,7 +776,7 @@ ul.floor7-xqfb-list li .xqnr-bg-r {
     -webkit-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
 }
-ul.floor7-xqfb-list li .xqnr-bg-l .shadow {
+ul.section7-xqfb-list li .xqnr-bg-l .shadow {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -788,7 +788,7 @@ ul.floor7-xqfb-list li .xqnr-bg-l .shadow {
     filter: alpha(opacity=0);
     background: url('../imgs/hover_bg_l.png');
 }
-ul.floor7-xqfb-list li .xqnr-bg-r .shadow {
+ul.section7-xqfb-list li .xqnr-bg-r .shadow {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -800,29 +800,29 @@ ul.floor7-xqfb-list li .xqnr-bg-r .shadow {
     filter: alpha(opacity=0);
     background: url('../imgs/hover_bg_r.png');
 }
-ul.floor7-xqfb-list li .xqnr-bg-l .shadow-btns,
-ul.floor7-xqfb-list li .xqnr-bg-r .shadow-btns{
+ul.section7-xqfb-list li .xqnr-bg-l .shadow-btns,
+ul.section7-xqfb-list li .xqnr-bg-r .shadow-btns{
     z-index: 1000;
     right: -5px;
     display: none;
 }
 
-ul.floor7-xqfb-list li .xqnr-bg-l p:nth-child(1),
-ul.floor7-xqfb-list li .xqnr-bg-r p:nth-child(1) {
+ul.section7-xqfb-list li .xqnr-bg-l p:nth-child(1),
+ul.section7-xqfb-list li .xqnr-bg-r p:nth-child(1) {
     font-size: 18px;
     margin-bottom: 16px;
 }
-ul.floor7-xqfb-list li .xqnr-bg-l p:nth-child(2),
-ul.floor7-xqfb-list li .xqnr-bg-r p:nth-child(2) {
+ul.section7-xqfb-list li .xqnr-bg-l p:nth-child(2),
+ul.section7-xqfb-list li .xqnr-bg-r p:nth-child(2) {
     margin-bottom: 5px;
 }
-ul.floor7-xqfb-list li .time-axis {
+ul.section7-xqfb-list li .time-axis {
     position: relative;
     height: 100%;
     width: 26px;
     margin: 0 15px;
 }
-ul.floor7-xqfb-list li .time-axis .line {
+ul.section7-xqfb-list li .time-axis .line {
     display: inline-block;
     border-left: 1px solid #f7f7f7;
     width: 1px;
@@ -830,7 +830,7 @@ ul.floor7-xqfb-list li .time-axis .line {
     position: absolute;
     left: 12px;
 }
-ul.floor7-xqfb-list li .time-axis .circ {
+ul.section7-xqfb-list li .time-axis .circ {
     position: absolute;
     top: 40px;
     display: inline-block;
@@ -845,20 +845,20 @@ ul.floor7-xqfb-list li .time-axis .circ {
     -o-transition: all 0.5s ease-in-out 0s;
 }
 /*左右原点线对其*/
-ul.floor7-xqfb-list li.right .time-axis .circ{
+ul.section7-xqfb-list li.right .time-axis .circ{
     left: -2px;
 }
-ul.floor7-xqfb-list li.right .time-axis .line{
+ul.section7-xqfb-list li.right .time-axis .line{
     left: 10px;
 }
 
-ul.floor7-xqfb-list li.left .xqcl {
+ul.section7-xqfb-list li.left .xqcl {
     width: 464px;
     padding: 40px 20px;
     font-size: 18px;
     color: #787878;
 }
-ul.floor7-xqfb-list li.right .xqcl {
+ul.section7-xqfb-list li.right .xqcl {
     width: 464px;
     padding: 40px 20px;
     font-size: 18px;
@@ -867,10 +867,10 @@ ul.floor7-xqfb-list li.right .xqcl {
 }
 
 /*********************************誉财教育之道*********************************/
-ul.floor8-list {
+ul.section8-list {
     overflow: hidden;
 }
-ul.floor8-list li {
+ul.section8-list li {
     width: 33.3%;
     float: left;
     overflow: hidden;
@@ -879,19 +879,19 @@ ul.floor8-list li {
     position: relative;
     cursor: pointer;
 }
-ul.floor8-list li .showa {
+ul.section8-list li .showa {
     display: block;
     position: absolute;
     top: 0;
     left: 65px;
 }
-ul.floor8-list li .hidea {
+ul.section8-list li .hidea {
     display: none;
     position: absolute;
     top: 0;
     left: 65px;
 }
-ul.floor8-list li .text p:nth-child(1) {
+ul.section8-list li .text p:nth-child(1) {
     font-size: 18px;
     margin: 10px 0px 10px 0;
     transition: all 0.3s ease-in-out 0s;
@@ -899,13 +899,13 @@ ul.floor8-list li .text p:nth-child(1) {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-ul.floor8-list li:hover .text p:nth-child(1) {
+ul.section8-list li:hover .text p:nth-child(1) {
     color: #035ade;
 }
-ul.floor8-list li div {
+ul.section8-list li div {
     float: left;
 }
-ul.floor8-list li .text {
+ul.section8-list li .text {
     color: #787878;
     height: 80px;
     padding-left: 100px;
