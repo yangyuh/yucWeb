@@ -256,12 +256,14 @@
 .section2-content-live .zntk .zntk_scyl{
     margin-right: 136px;
 }
+
 .section2-content-live .zntk .zntk_scyl span{
     display: inline-block;
-    background: url('../imgs/zntk_01_01.png');
+    background: url('../imgs/zntk_01.png');
     width: 102px;
     height: 104px;
     margin-bottom: 10px;
+    transition: all 0.8s;
 }
 .section2-content-live .zntk .zntk_khzy span{
     display: inline-block;
@@ -269,6 +271,17 @@
     width: 102px;
     height: 104px;
     margin-bottom: 10px;
+    transition: all 0.8s;
+}
+.section2-content-live .zntk .zntk_scyl span.active{
+    background: url('../imgs/zntk_01_01.png');
+}
+.section2-content-live .zntk .zntk_khzy span.active{
+    background: url('../imgs/zntk_02_01.png');
+}
+
+.section2-content-live .zntk div.active  p{
+    color: #005bd9;
 }
 /*网络学院导航*/
 .section2-content-nav {

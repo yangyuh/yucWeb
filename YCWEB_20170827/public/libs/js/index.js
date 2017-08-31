@@ -1,9 +1,5 @@
 $(function() {
     initPage();
-    // 监听窗口大小变化
-    $(window).resize(function() {
-        initPage();
-    })
 
     // 精品面授过程阴影过渡效果
     $(".section1-list li").hover(function() {
@@ -16,9 +12,10 @@ $(function() {
 
     // 誉财网络学院 导航选中操作 
     $(".section2-content-nav li").on("click", function() {
-        $(".section2-content-nav").find("li").removeClass("active");
-        $(this).addClass("active");
+        $(this).addClass("active").siblings().removeClass('active');
     })
+
+
 
     // 权威备考交互
     $("ul.floor3-list li .item").hover(function() {
@@ -32,8 +29,7 @@ $(function() {
 
     // 校区开班动态 导航选中操作 
     $(".section3_01-nav ul li").on("click", function() {
-        $(".section3_01-nav ul").find("li").removeClass("active");
-        $(this).addClass("active");
+        $(this).addClass("active").siblings().removeClass('active');
     })
 
     // 校区开班滚动
@@ -51,39 +47,33 @@ $(function() {
 
     // 名师团队阴影过渡效果
     $(".section4-list li").hover(function() {
-        $(this).find(".shadow").stop();
-        $(this).find(".shadow").fadeIn(500);
+        $(this).find(".shadow").stop().fadeIn(500);
     }, function() {
-        $(this).find(".shadow").stop();
-        $(this).find(".shadow").fadeOut(500);
+        $(this).find(".shadow").stop().fadeOut(500);
     })
 
     // 明星学员风采过渡效果
     $(".section6-list li").hover(function() {
         if ($(this).attr('class') != 'center') {
-            $(this).find("img").stop()
+            $(this).find("img").stop();
             $(this).find("img").eq(1).fadeIn(800);
             $(this).find("img").eq(0).fadeOut(800)
         }
     }, function() {
         if ($(this).attr('class') != 'center') {
-            $(this).find("img").stop()
-            $(this).find("img").eq(0).fadeIn(800)
+            $(this).find("img").stop();
+            $(this).find("img").eq(0).fadeIn(800);
             $(this).find("img").eq(1).fadeOut(800);
         }
     })
 
     // 誉财教育之道过渡效果
     $(".section8-list li").hover(function() {
-        $(this).find(".hidea").stop();
-        $(this).find(".showa").stop();
-        $(this).find(".hidea").fadeIn(300);
-        $(this).find(".showa").fadeOut(300)
+        $(this).find(".hidea").stop().fadeIn(300);
+        $(this).find(".showa").stop().fadeOut(300);
     }, function() {
-        $(this).find(".hidea").stop();
-        $(this).find(".showa").stop();
-        $(this).find(".showa").fadeIn(300)
-        $(this).find(".hidea").fadeOut(300);
+        $(this).find(".hidea").stop().fadeOut(300);
+        $(this).find(".showa").stop().fadeIn(300);
     })
 
     // 誉财校区分布交互效果(left)
@@ -159,10 +149,8 @@ function xqfbMouseenter(ele, isl) {
     } else {
         ele.prev().children().eq(1).css("background", "#035ade");
     }
-    ele.children('.shadow').stop();
-    ele.children('.shadow').animate({ opacity: 0.8 }, 500);
-    ele.children('.shadow-btns').stop();
-    ele.children('.shadow-btns').fadeIn(500);
+    ele.children('.shadow').stop().animate({ opacity: 0.8 }, 500);
+    ele.children('.shadow-btns').stop().fadeIn(500);
 }
 
 // 校区分布交互效果(鼠标离开)
@@ -172,10 +160,8 @@ function xqfbMouseLeave(ele, isl) {
     } else {
         ele.prev().children().eq(1).css("background", "#f7f7f7");
     }
-    ele.children('.shadow').stop();
-    ele.children('.shadow').animate({ opacity: 0 }, 500);
-    ele.children('.shadow-btns').stop();
-    ele.children('.shadow-btns').fadeOut(500);
+    ele.children('.shadow').stop().animate({ opacity: 0 }, 500);
+    ele.children('.shadow-btns').stop().fadeOut(500);
 }
 
 // 初始化加载
@@ -198,11 +184,6 @@ function ViewJPLBContent() {
     var tpl = $("#jplbTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
-        // var myPlayer = videojs('my-video');
-        // videojs("my-video").ready(function(){
-        //  var myPlayer = this;
-        //  myPlayer.play();
-        // });
     });
 }
 
@@ -212,5 +193,10 @@ function ViewZLTkContent() {
     var tpl = $("#zntkTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
+        $(".zntk div span").hover(function() {
+            $(this).addClass("active").siblings().addClass("blue-text");
+        },function(){
+            $(this).removeClass("active").siblings().removeClass("blue-text");
+        })
     });
 }

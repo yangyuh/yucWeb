@@ -278,7 +278,8 @@
                     <!-- 精品录播模板 -->
                     <script type="text/html" id="jplbTpl">
                         <div class="video-warper">
-                            <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" poster="libs/imgs/wljx_mszb.png" width="543" height="335">
+                            <!-- poster="libs/imgs/wljx_mszb.png" -->
+                            <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" width="543" height="335">
                                 <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
                                 <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
                                 <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
@@ -293,11 +294,11 @@
                     <script type="text/html" id="zntkTpl">
                         <div class="zntk oh">
                             <div class="zntk_scyl fl">
-                                <span></span>
-                                <p style="color: #035bde;">实操演练</p>
+                                <span class="active"></span>
+                                <p class="blue-text">实操演练</p>
                             </div>
                             <div class="zntk_khzy fl">
-                                <span></span>
+                                <span data-src="zntk_02.png"></span>
                                 <p>课后作业</p>
                             </div>
                         </div>
