@@ -236,12 +236,13 @@
     height: 100%;
     width: 100%;
 }
-.section2-content-live .video-warper .vjs-big-play-button{
-    position: absolute;
+.video-js .vjs-big-play-button {
     top: 50%;
     left: 50%;
     transform: translate(-50%);
+    border: none;
 }
+
 /*智能题库*/
 .section2-content-live .zntk{
     text-align: center;
@@ -263,7 +264,8 @@
     width: 102px;
     height: 104px;
     margin-bottom: 10px;
-    transition: all 0.8s;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 .section2-content-live .zntk .zntk_khzy span{
     display: inline-block;
@@ -271,7 +273,8 @@
     width: 102px;
     height: 104px;
     margin-bottom: 10px;
-    transition: all 0.8s;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 .section2-content-live .zntk .zntk_scyl span.active{
     background: url('../imgs/zntk_01_01.png');
