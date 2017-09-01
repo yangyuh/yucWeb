@@ -1,0 +1,67 @@
+/*模块标题*/
+.module-title{
+	text-align: center;
+	padding: 106px 0;
+}
+.module-title h1{
+	font-size: 40px;
+	font-weight: bolder;
+	padding-bottom: 18px;
+}
+.module-title p{
+	font-size: 20px;
+}
+.module-title span{
+	display: inline-block;
+	width: 90px;
+	height: 3px;
+	background: #035bde;
+}
+/*bannerbg*/
+.bannerbg{
+	background: url("../imgs/proformaData/banner_02.jpg") no-repeat;
+	background-size: contain; 
+}
+.content .middle-page{
+	width: 1200px;
+}
+.content .navlist{
+	background: #f7f7f7;
+}
+.content .navlist li{
+	width: 33.3333333333%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 60px;
+	cursor: pointer;
+}
+.content .navlist li.active{
+	color: #fff;
+	background: #035bde;
+}
+.content .navlist li:hover{
+	color: #fff;
+	background: #035bde;
+}
+/*星星列表*/
+.content .xingxing-list{
+	padding: 80px 0 100px;
+}
+.content .xingxing-list li{
+	width: 14.2857%;
+}
+.content .xingxing-list li .item{
+	width: 106px;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 3px solid #ababab; 
+}
+.content .xingxing-list li .item p{
+	font-size: 20px;
+	padding: 25px 0 40px;
+}
+/*下载列表*/
+.content .download-list li{
+	width: 25%;
+	
+}

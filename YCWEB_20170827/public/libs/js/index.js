@@ -15,15 +15,13 @@ $(function() {
         $(this).addClass("active").siblings().removeClass('active');
     })
 
-
-
     // 权威备考交互
-    $("ul.floor3-list li .item").hover(function() {
+    $("ul.section3-list li .item").hover(function() {
         $(this).children('.btns').children().eq(0).addClass("active");
     }, function() {
         $(this).children('.btns').children().removeClass("active");
     })
-    $("ul.floor3-list .item .btns div").hover(function() {
+    $("ul.section3-list .item .btns div").hover(function() {
         $(this).addClass("active").siblings().removeClass('active');
     })
 
