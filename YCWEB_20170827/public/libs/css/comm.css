@@ -406,27 +406,27 @@ footer a:hover {
     margin: 40px 0 6px 0;
 }
 
-/*********************************8年10于万80%*********************************/
-.floor4-kb {
+/*********************************8年10于万80%口碑*********************************/
+.public-praise {
     background: #f0f0f0;
     width: 100%;
 }
-.floor4-kb ul {
+.public-praise ul {
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 30px;
 }
-.floor4-kb ul li {
+.public-praise ul li {
     float: left;
     width: 33.3%;
 }
-.floor4-kb ul li p {
+.public-praise ul li p {
     color: #8c8c8c;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
 }
-.floor4-kb ul li p span {
+.public-praise ul li p span {
     color: #035ade;
     font-size: 50px;
     font-weight: bolder;

@@ -1,4 +1,133 @@
-.banner{
+/*.middle-page-1200,{
+	width: 1200px;
+}*/
+/*模块标题*/
+.module-title{
+	text-align: center;
+	padding: 80px 0;
+}
+.module-title h1{
+	font-size: 40px;
+	font-weight: bolder;
+	padding-bottom: 18px;
+}
+.module-title p{
+	font-size: 20px;
+	/*color: #f7f7f7;*/
+}
+.newsInfobanner{
 	background: url("../imgs/newsInfo/banner_01.jpg") no-repeat;
 	background-size: contain; 
+}
+
+.content{
+	font-size: 18px;
+}
+
+.content ul.topnav li{
+	width: 33.333333%;
+	text-align: center;
+	height: 60px;
+	cursor: pointer;
+}
+.content ul.topnav li:hover span{
+	border-bottom: 3px solid #0b53de;
+}
+.content ul.topnav li span{
+	padding-bottom: 10px;
+	border-bottom: 3px solid #fff; 
+}
+.content ul.topnav li.active span{
+	border-bottom: 3px solid #0b53de;
+}
+/*table*/
+.table-list li{
+	width: 50%;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.table-list li .item{
+	line-height: 40px;
+	padding: 10px;
+	transition: all 0.5s;
+}
+.table-list li:hover .item{
+	-webkit-box-shadow: 0 0 10px 15px #f0f0f0;
+    -moz-box-shadow: 0 0 10px 15px #f0f0f0;
+    box-shadow: 0 0 10px #888888;
+}
+
+.content2{
+	padding-bottom: 100px;
+	font-size: 18px;
+}
+.content2 ul.newsInfo-nav li{
+	width: 12.5%;
+	text-align: center;
+	height: 60px;
+	cursor: pointer;
+}
+.content2 ul.newsInfo-nav li span{
+	padding-bottom: 10px;
+	border-bottom: 3px solid #fff; 
+}
+.content2 ul.newsInfo-nav li.active span{
+	padding-bottom: 10px;
+	border-bottom: 3px solid #0b53de; 
+	color: #0b53de; 
+}
+.content2 ul.newsInfo-nav li:hover span{
+	color: #0b53de;
+	border-bottom: 3px solid #0b53de;
+}
+/*新闻内容列表*/
+.content2 ul.newsInfo-list li {
+	width: 100%;
+	padding: 15px;
+	border-bottom: 1px solid #ccc; 
+	cursor: pointer;
+	padding-bottom: 30px;
+	padding-top: 70px;
+}
+.content2 ul.newsInfo-list li .item{
+	width: 100%;
+	height: 147px;
+	transition: all 0.5s;
+}
+.content2 ul.newsInfo-list li:hover .item{
+    -webkit-box-shadow: 0 0 10px 15px #f0f0f0;
+    -moz-box-shadow: 0 0 10px 15px #f0f0f0;
+    box-shadow: 0 0 20px #888888;
+}
+.content2 ul.newsInfo-list li .item .img{
+	width: 220px;
+}
+.content2 ul.newsInfo-list li .item .text{
+	width: 930px;
+}
+.content2 ul.newsInfo-list li .item .text h3{
+	color: #0b53de;
+}
+.content2 ul.newsInfo-list li .item .text p{
+	font-size: 16px;
+}
+.content2 ul.newsInfo-list li .item .text div:nth-child(1){
+	padding: 10px 0 25px 0;
+}
+
+
+/*分页*/
+.fenye-list{
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.fenye-list li{
+	width: 80px;
+	text-align: center;
+	cursor: pointer;
+}
+.fenye-list li.page-num{
+	width: 20px;
 }

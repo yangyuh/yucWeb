@@ -108,30 +108,31 @@
                 <li></li>
             </ul>
         </div>
-        <!-- main-1_02 -->
-        <div>
-            <img src="libs/imgs/main-1_02.jpg" width="100%">
-        </div>
-        <div class="floor4-kb">
-            <ul class="middle-page">
-                <li>
-                    <p><span>9</span>年</p>
-                    <p>时间的积累沉淀</p>
-                </li>
-                <li>
-                    <p><span>10</span>余万</p>
-                    <p>财会学员顺利毕业</p>
-                </li>
-                <li>
-                    <p><span>87.5</span>%</p>
-                    <p>学员来自口碑转介</p>
-                </li>
-            </ul>
-        </div>
+        <!-- 中国注册会计师 -->
+        <section class="section1"></section>
+        <!-- 口碑 -->
+        <section class="section2">
+            <div class="public-praise">
+                <ul class="middle-page">
+                    <li>
+                        <p><span>9</span>年</p>
+                        <p>时间的积累沉淀</p>
+                    </li>
+                    <li>
+                        <p><span>10</span>余万</p>
+                        <p>财会学员顺利毕业</p>
+                    </li>
+                    <li>
+                        <p><span>87.5</span>%</p>
+                        <p>学员来自口碑转介</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!-- 课程体验卷 -->
-        <div class="tyj">
-            <img src="libs/imgs/main-2_04.jpg" width="100%">
-            <div class="tyj-froms">
+        <section class="section3">
+            <!-- <img src="libs/imgs/main-2_04.jpg" width="100%"> -->
+            <div class="section3-froms">
                 <p>以领取<span>162</span>份体验卷</p>
                 <div class="line"></div>
                 <ul>
@@ -165,23 +166,25 @@
                     </ul>
                 </marquee>
             </div>
-        </div>
-        <div>
-            <img src="libs/imgs/main-3_05.jpg" width="100%">
-            <img src="libs/imgs/main-4-yucaimingshi_07.jpg" width="100%" height="100%">
-            <img src="libs/imgs/main-5-sandabanxing_09.jpg" width="100%">
-            <img src="libs/imgs/main-6-liucenghuhang_11.jpg" width="100%">
-        </div>
-        <div>
-            <img src="libs/imgs/main-7_12.jpg" width="100%">
-        </div>
-        <div class="xbyhs">
+        </section>
+        <!-- 西南地区顶级CPA..... -->
+        <section class="section4"></section>
+        <!-- 誉财名师鼎力助阵 -->
+        <section class="section5"></section>
+        <!-- 三大经典热门培训班 -->
+        <section class="section6"></section>
+        <!-- 六层护航轻松通关 -->
+        <section class="section7"></section>
+        <!-- 合理规划2018年... -->
+        <section class="section8"></section> 
+        <!--  -->
+        <section class="section9">
             <img src="libs/imgs/main-8.jpg" width="100%">
             <div class="p">
                 <span>学霸有话说</span>
                 <div class="line"></div>
             </div>
-            <div class="xbyhs-bg">
+            <div class="section9-bg">
                 <ul>
                     <li>
                         <div class="xbtx"></div>
@@ -202,11 +205,11 @@
             <div class="djzx-btn">
                 <input type="button" name="" value="点击咨询">
             </div>
-        </div>
-        <div>
-            <img src="libs/imgs/main-9_14.jpg" width="100%">
-        </div>
-        <div class="xqxcbm">
+        </section>
+        <!-- 2018年誉财毕业典礼有你一席 -->
+        <section class="section10"></section>
+        <!-- 誉财六大校区，均可现场报名 -->
+        <section class="section11">
             <div class="middle-page">
                 <p class="title">誉财六大校区，均可现场报名</p>
                 <ul>
@@ -260,27 +263,12 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
         <!-- bottom-photo -->
-        <!-- bottom photo -->
         <div class="bottom-photo">
             <div class="blackimg"></div>
             <div class="colorimg"></div>
         </div>
-        <!-- <div class="bottom-photo-test">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div> -->
         <footer>
             <div class="middle-page" style="width: 1080px">
                 <ul class="footer-list">
@@ -370,6 +358,23 @@
     <script type="text/javascript" src="libs/js/scroll.js"></script>
     <script type="text/javascript" src="libs/js/laytpl.js"></script>
     <script type="text/javascript" src="libs/js/comm.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            initbgh();
+            $(window).resize(function(){
+                initbgh();
+            })
+        })
+        function initbgh(){
+            var bgeles = ["1-722","3-788","4-769","5-759","6-1433","7-1257","8-1736","10-672"];
+            for(var i in bgeles){
+                var s = bgeles[i].split("-")[0];
+                var h = bgeles[i].split("-")[1]-0;
+                var ele = $(".section" + s);
+                getdblHeight(ele,h)
+            }
+        }
+    </script>
 </body>
 
 </html>
