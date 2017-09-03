@@ -173,7 +173,7 @@
                 <h1>工业实账的难点</h1>
                 <span></span>
             </div>
-            <div class="content">
+            <div class="content2">
                 <!--  <div class="middle-page">
                     <p>1、工业实账的难点工业实账的难点</p>
                     <p>2、工业实账的难点工业实账的难点</p>
@@ -242,7 +242,39 @@
                 <h1>我们能够给你带来的保障</h1>
                 <span></span>
             </div>
-            <div class="content"></div>
+            <div class="content4"></div>
+            <ul class="hj oh">
+                <li><img src="libs/imgs/educationCourses/保障-环境pic_35.jpg"></li>
+                <li><img src="libs/imgs/educationCourses/保障-环境pic_35.jpg"></li>
+                <li><img src="libs/imgs/educationCourses/保障-环境pic_35.jpg"></li>
+                <li><img src="libs/imgs/educationCourses/保障-环境pic_35.jpg"></li>
+                <li><img src="libs/imgs/educationCourses/保障-环境pic_35.jpg"></li>
+                <li><img src="libs/imgs/educationCourses/保障-环境pic_35.jpg"></li>
+            </ul>
+            <!-- 留言栏 -->
+            <div class="leave-msg-wraper">
+                <ul>
+                    <li>
+                        <div class="head-img fl">
+                            <img src="libs/imgs/educationCourses/下方留言头像pic.png">
+                        </div>
+                        <div class="text fr">留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏</div>
+                    </li>
+                    <li>
+                        <div class="head-img fl">
+                            <img src="libs/imgs/educationCourses/下方留言头像pic.png">
+                        </div>
+                        <div class="text fr">留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏</div>
+                    </li>
+                    <li>
+                        <div class="head-img fl">
+                            <img src="libs/imgs/educationCourses/下方留言头像pic.png">
+                        </div>
+                        <div class="text fr">留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏留言栏</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-style">点击咨询</div>
         </section>
         <!-- 
 
@@ -377,13 +409,22 @@
     <script src="libs/js/scroll.js"></script>
     <script src="libs/js/laytpl.js"></script>
     <script src="libs/js/comm.js"></script>
-    <script>
-    $(function() {
-        getdblHeight($(".banner"), 570);
-        $(window).resize(function(){
-            getdblHeight($(".banner"), 570);
+   <script type="text/javascript">
+        $(function() {
+            initbgh1();
+            $(window).resize(function(){
+                initbgh1();
+            })
         })
-    })
+        function initbgh1(){
+            var bgeles = ["2-875", "4-484"];
+            for(var i in bgeles){
+                var s = bgeles[i].split("-")[0];
+                var h = bgeles[i].split("-")[1]-0;
+                var ele = $(".content" + s);
+                getdblHeight(ele,h)
+            }
+        }
     </script>
 </body>
 

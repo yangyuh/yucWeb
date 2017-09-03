@@ -162,7 +162,8 @@ p.blu{
 /************************************西南财经大学自考本科获取流程************************************/
 .section4{
 	background: url("../imgs/educationCourses/floor_04_bg.jpg");
-	height: 1541px;
+	background-size: 100% 100%; 
+	height: 1300px;
 	width: 100%;
 	text-align: center;
 	color: #fff;

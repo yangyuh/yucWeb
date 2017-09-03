@@ -64,7 +64,7 @@
 	margin: 20px auto 35px;
 }
 /*********************************工业实账的难点*********************************/
-.section2 .content{
+.section2 .content2{
 	background: url("../imgs/industryAccount/工业实账难点pic_11.jpg");
     background-size: contain; 
 }
@@ -106,7 +106,17 @@
 	width: 448px;
 }
 /*********************************我们能够给你带来的保障*********************************/
-.section4 .content{
+.section4{
+	padding-bottom: 100px; 
+}
+.section4 .content4{
 	background: url("../imgs/industryAccount/保障pic_32.jpg");
     background-size: contain; 
+}
+.section4 ul.hj{
+	margin: 0 auto;
+	width: 1200px;
+}
+.section4 ul.hj li{
+	padding: 25px 5px;
 }

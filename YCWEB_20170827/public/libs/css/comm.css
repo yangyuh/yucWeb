@@ -457,3 +457,35 @@ footer a:hover {
     width: 100%;
     height: 100%;
 }
+
+
+/*********************************留言栏*********************************/
+.leave-msg-wraper{
+    width: 1197px;
+    height: 264px;
+    margin: 0 auto;
+    background: url("../imgs/industryAccount/留言栏pic_52.jpg");
+    background-size: contain;
+    padding: 15px 100px;
+    overflow-y: auto; 
+}
+.leave-msg-wraper ul{
+    color: #fff;
+    font-size: 18px;
+}
+.leave-msg-wraper ul li{
+    overflow: hidden;
+    margin-bottom: 34px;
+}
+.leave-msg-wraper ul li:last-child{
+    margin-bottom: 0;
+}
+.leave-msg-wraper ul li div.head-img{
+    width: 98px;
+    height: 98px;
+}
+.leave-msg-wraper ul li div.text{
+    width: 86%;
+    height: 98px;
+    padding: 26px 0;
+}

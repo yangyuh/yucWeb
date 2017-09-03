@@ -4,9 +4,13 @@
     padding: 100px 0 60px;
 }
 .module-title h1{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bolder;
-    padding-bottom: 18px;
+    padding-bottom: 40px;
+}
+.module-title p{
+    font-size: 28px;
+    color: #7b7b7b;
 }
 .module-title .h1-white{
     /*color: #fff;*/
@@ -17,26 +21,27 @@
     background: #fff;
     border-radius: 4px;
     color: #035bde;
-    height: 68px;
-    line-height: 68px;
-    width: 288px;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
     text-align: center;
     outline: none;
     border: 1px solid #fff;
-    font-size: 28px;
+    font-size: 18px;
 }
 .btn-style-blue{
     background: #035bde;
     border-radius: 4px;
     color: #fff;
-    height: 68px;
-    line-height: 68px;
-    width: 288px;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
     text-align: center;
     outline: none;
     border: 1px solid #035bde;
-    font-size: 28px;
+    font-size: 18px;
     margin: 0 auto;
+    cursor: pointer;
 }
 /*底部阴影*/
 .top-shadow{
@@ -58,7 +63,7 @@
 .section1 .enter{
     width: 514px;
     height: 400px;
-    margin: 0 auto 43px; 
+    margin: 0 auto 43px auto; 
 }
 /*********************************竞争日趋激烈，初级会计职称是必要的/*********************************/
 .section2{
@@ -107,19 +112,207 @@
 }
 /*********************************学不会， 听不懂，考不过的烦恼将不会出/*********************************/
 .section5{
-        
+    background: #f0f0f0;
+    position: relative;
+    padding-bottom: 50px;
 }
+.section5 ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+.section5 ul li {
+    overflow: hidden;
+    height: 356px;
+    margin-bottom: 30px;
+}
+.section5 ul li .img{
+    width: 543px;
+    position: relative;
+    cursor: pointer;
+}
+.section5 ul li .img:hover .shadow{
+    opacity: 1;
+}
+.section5 ul li .img .shadow{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(3, 90, 222, 0.8);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.section5 ul li .img .shadow .zxbtn{
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    width: 180px;
+    line-height: 50px;
+    border-radius: 4px; 
+    text-align: center;
+    padding-right: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.section5 ul li .text{
+    width: 657px;
+    height: 100%;
+    padding: 30px 90px 30px 30px; 
+    background: #fff;
+    font-size: 16px;
+    color: #797979;
+
+    position: relative;
+
+}
+.section5 ul li .text h3:nth-child(1){
+    font-size: 30px;
+}
+.section5 ul li .text h3:nth-child(2){
+    margin-top: 20px;
+    color: #787878;
+}
+.section5 ul li .text p{
+    font-size: 16px;
+    padding-top: 30px;
+}
+.section5 ul li .text .bmrs{
+    position:absolute;
+    right: 90px;
+    bottom:30px;
+}
+
 /*********************************在线网课/*********************************/
 .section6{
-        
+   background: url("../imgs/juniorAccountant/在线网课pic_09.jpg");
+    background-size: contain;  
 }
 /*********************************实战讲师授课、/*********************************/
 .section7{
-        
+    background: #f0f0f0;
+    position: relative; 
+    padding-bottom: 50px;
 }
+.section7 ul{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+.section7 ul li{
+    width: 50%;
+}
+.section7 ul li:nth-child(1){
+    padding-top: 8px;
+}
+.section7 ul li .item{
+    width: 325px;
+    margin: 0 auto;
+    position: relative;
+}
+.section7 ul li .item .content{
+    width: 100%;
+    position: absolute;
+    bottom: -180px;
+    transition: all 1s;
+}
+.section7 ul li .item .content:hover{
+    bottom: 0;
+}
+.section7 ul li .item .content:hover #triangle-bottomright{
+    border-bottom: 120px solid #035bde;
+}
+.section7 ul li .item .content:hover .sjh3{
+    opacity: 0;
+}
+.section7 ul li .item .content:hover #text{
+    background: #035bde;
+}
+.section7 ul li .item .content .sjh3{
+    text-align: right;
+    color: #fff;
+    margin-bottom: -100px;
+    padding-right: 15px;
+    font-size: 40px;
+    transition: all 1s;
+}
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid #787878;
+    border-left: 325px solid transparent;
+    transition: all 1s;
+}
+.section7 ul li .item .content #text{
+    height: 180px;
+    width: 100%;
+    background: #787878;
+    color: #fff;
+    padding: 25px 15px;
+    transition: all 1s;
+}
+.section7 ul li .item .content #text h3{
+    margin-bottom: 10px;
+}
+.section7 ul li .item .content #text p{
+    font-size: 16px;
+    height: 88px;
+    text-overflow: hidden;
+}
+
 /*********************************良好的学习环境/*********************************/
 .section8{
-        
+    position: relative;
+    background: #f0f0f0;
+    padding-bottom: 60px;
+}
+.section8 .bigimg{
+    width: 1178px;
+    height: 839px;
+    margin: 0 auto;
+}
+.section8 .smallimg{
+    background: #f9f9f9;
+    width: 1160px;
+    margin: 30px auto 50px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.section8 .smallimg .pre{
+    width: 50px;
+    height: 100%;
+    background: url("../imgs/juniorAccountant/pre.png") no-repeat center;
+    position: absolute;
+    left: 0;
+
+}
+.section8 .smallimg ul{
+}
+.section8 .smallimg ul li{
+    width: 20%;
+    padding: 20px 0;
+}
+
+.section8 .smallimg ul li .item{
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+}
+.section8 .smallimg ul li .item:hover{
+    background: #035bde; 
+}
+.section8 .smallimg .next{
+    width: 50px;
+    height: 100%;
+    background: url("../imgs/juniorAccountant/next.png") no-repeat center;
+    position: absolute;
+    right: 0;
+
 }
 /*********************************学员评价，誉财帮你实现梦想/*********************************/
 .section9{
