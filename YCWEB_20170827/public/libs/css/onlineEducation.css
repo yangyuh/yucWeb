@@ -1,0 +1,77 @@
+
+html,body{
+	width: 100%;
+	height: 100%;
+	padding-top: 0;
+}
+.top{
+	background: rgba(0,0,0,0.36);
+	color: #fff;
+}
+.nav-box,
+.ejmeun{
+	background: none;
+	color: #fff;
+	z-index: 1000;
+}
+.nav-box a,
+.nav-list li a{
+	color: #fff;
+
+}
+.page{
+	width: 100%;
+	height: 100%;
+	background: url("../imgs/onlineEducation/在线教育页面bj.jpg");
+	background-size: contain; 
+}
+.content-list {
+	width: 1100px;
+	height: 300px;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-20%);
+}
+.content-list li{
+	width: 20%;
+	text-align: center;
+}
+.content-list li div.icon-wraper{
+	margin-bottom: 10px;
+	width: 122px;
+	height: 122px;
+	margin: 0 auto;
+	position: relative;
+
+}
+.showimg{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.hideimg{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.one-level-icons span{
+	transition: all 0.5s;
+}
+/*二级图标*/
+.content-list li .two-level-icons{
+	width: 100%;
+	padding-top: 20px;
+	display: none;
+}
+.content-list li  .two-level-icons .item{
+	width: 50%;
+	text-align: center;
+}
+.content-list li  .two-level-icons .item p{
+	padding-bottom: 10px;
+}
