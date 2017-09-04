@@ -131,7 +131,7 @@ $(function() {
     // 监听scroll方法
     $(window).scroll(function() {
         var scrollTop = $(document).scrollTop();
-        if (scrollTop > 1000) {
+        if (scrollTop > 0) {
             $(".right-nav").show();
         } else {
             $(".right-nav").hide();
