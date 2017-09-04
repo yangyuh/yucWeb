@@ -102,7 +102,7 @@
                     <span>在线实操</span>
                 </div>
                 <!-- 二级图标 -->
-                <div class="two-level-icons oh">
+                <!-- <div class="two-level-icons oh">
                     <div class="item fl">
                         <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
                         <span>真题演练</span>
@@ -111,7 +111,7 @@
                         <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
                         <span>课后作业</span>
                     </div>
-                </div>
+                </div> -->
             </li>
             <li>
                 <div class="one-level-icons">
@@ -123,7 +123,7 @@
                 </div> 
                 
                 <!-- 二级图标 -->
-                <div class="two-level-icons oh">
+                <!-- <div class="two-level-icons oh">
                     <div class="item fl">
                         <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
                         <span>真题演练</span>
@@ -132,7 +132,7 @@
                         <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
                         <span>课后作业</span>
                     </div>
-                </div>
+                </div> -->
             </li>
             <li>
                 <div class="one-level-icons">
@@ -144,7 +144,7 @@
                 </div>
                 
                 <!-- 二级图标 -->
-                <div class="two-level-icons oh">
+                <!-- <div class="two-level-icons oh">
                     <div class="item fl">
                         <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
                         <span>真题演练</span>
@@ -153,7 +153,7 @@
                         <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
                         <span>课后作业</span>
                     </div>
-                </div>
+                </div> -->
             </li>
             <li>
                 <div class="one-level-icons">
@@ -166,11 +166,17 @@
                 <!-- 二级图标 -->
                 <div class="two-level-icons oh">
                     <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
+                        <p class="icons">
+                            <img src="libs/imgs/onlineEducation/two-icon1.png">
+                            <img src="libs/imgs/onlineEducation/two-icon2_1.png">
+                        </p>
                         <span>真题演练</span>
                     </div>
                     <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
+                        <p class="icons">
+                            <img src="libs/imgs/onlineEducation/two-icon2.png">
+                            <img src="libs/imgs/onlineEducation/two-icon1_1.png">
+                        </p>
                         <span>课后作业</span>
                     </div>
                 </div>
@@ -184,7 +190,7 @@
                     <span>模拟报税</span>
                 </div>
                 <!-- 二级图标 -->
-                <div class="two-level-icons oh">
+                <!-- <div class="two-level-icons oh">
                     <div class="item fl">
                         <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
                         <span>真题演练</span>
@@ -193,7 +199,7 @@
                         <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
                         <span>课后作业</span>
                     </div>
-                </div>
+                </div> -->
             </li>
         </ul>
     </div>
@@ -207,6 +213,7 @@
 <script type="text/javascript">
     
     getdblHeight($(".page"),1080);
+    // 一级图标
     $(".one-level-icons").hover(function(){
         $(this).children().children().eq(0).stop().fadeOut(500);
         $(this).children().children().eq(1).stop().fadeIn(500);
@@ -218,10 +225,26 @@
         $(this).children().eq(1).removeClass('blue-text');
         $(this).next().stop().fadeOut(500);
     })
-    $(".two-level-icons").hover(function(){
-        $(this).stop().fadeIn(500);
+
+    // 二级图标交互 
+    $(".two-level-icons .item").hover(function(){
+        $(this).children().children().eq(0).stop().fadeOut(500);
+        $(this).children().children().eq(1).stop().fadeIn(500);
+        $(this).children().eq(1).addClass('blue-text');
+        $(this).parent().stop().fadeIn(500);
+
+        $(this).parent().prev().children().children().eq(0).stop().fadeOut(500)
+        $(this).parent().prev().children().children().eq(1).stop().fadeIn(500);
+        $(this).parent().prev().children().eq(1).addClass('blue-text');
     },function(){
-        $(this).stop().fadeOut(500);
+        $(this).children().children().eq(0).stop().fadeIn(500);
+        $(this).children().children().eq(1).stop().fadeOut(500);
+        $(this).children().eq(1).removeClass('blue-text');
+        $(this).parent().stop().fadeOut(500);
+
+        $(this).parent().prev().children().children().eq(0).stop().fadeIn(500);
+        $(this).parent().prev().children().children().eq(1).stop().fadeOut(500);
+        $(this).parent().prev().children().eq(1).removeClass('blue-text');
     })
 
 </script>

@@ -25,6 +25,7 @@
 	padding: 10px 50px;
 	border-radius: 10px;
 	outline: none;
+	transition: all 0.5s;
 }
 .detail_btn:hover{
 	background: none;

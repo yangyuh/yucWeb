@@ -69,6 +69,11 @@
     color: #fff;
     outline: none;
     border: 1px solid #b7042e;
+    transition: all 0.5s;
+}
+.section3-froms ul li:nth-child(4) input:hover{
+    background: #fff;
+    color: #b7042e;
 }
 .section3-froms ul li:nth-child(1) select {
     width: 49%;
@@ -203,6 +208,11 @@
     padding: 10px;
     border-radius: 5px;
     outline: none;
+    transition: all 0.5s;
+}
+.section9 .djzx-btn input:hover{
+    background: #fff;
+    color: #b7042e;
 }
 
 
@@ -252,4 +262,9 @@
     border: 1px solid #b7042e;
     border-radius: 5px;
     padding: 3px 25px;
+    transition: all 0.5s;
+}
+.section11 ul li input:hover{
+    background: #fff;
+    color: #b7042e;
 }

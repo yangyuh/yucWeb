@@ -24,6 +24,7 @@
 	height: 76px;
 	line-height: 76px;
 	background: #035bde;
+	border: 1px solid #035bde;
 	transition: all 0.5s;
 	border-radius: 4px; 
 	cursor: pointer;
@@ -31,6 +32,10 @@
 	color: #fff;
 	font-size: 28px;
 	margin: 115px auto 0;
+}
+.btn-style:hover{
+	background: none;
+	color: #035bde;
 }
 
 /*********************************工业实账的特点*********************************/

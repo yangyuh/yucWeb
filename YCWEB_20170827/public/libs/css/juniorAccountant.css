@@ -42,6 +42,11 @@
     font-size: 18px;
     margin: 0 auto;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.btn-style-blue:hover{
+    background: none;
+    color: #035bde;
 }
 /*底部阴影*/
 .top-shadow{
@@ -95,7 +100,7 @@
 .section3 .btn-style-blue{
     position: absolute;
     left: 50%;
-    margin-left: -144px;
+    transform: translateX(-50%);
     bottom: 60px; 
 }
 /*********************************拿下初级会计职称证书，升值加薪不是梦！/*********************************/
@@ -107,8 +112,8 @@
 .section4 .btn-style-blue{
     position: absolute;
     left: 50%;
-    margin-left: -144px;
     bottom: 60px; 
+    transform: translateX(-50%);
 }
 /*********************************学不会， 听不懂，考不过的烦恼将不会出/*********************************/
 .section5{
@@ -186,8 +191,15 @@
 
 /*********************************在线网课/*********************************/
 .section6{
-   background: url("../imgs/juniorAccountant/在线网课pic_09.jpg");
+    position: relative;
+    background: url("../imgs/juniorAccountant/在线网课pic_09.jpg");
     background-size: contain;  
+}
+.section6 .btn-style-blue{
+    position: absolute;
+    left: 50%;
+    bottom: 60px; 
+    transform: translateX(-50%);
 }
 /*********************************实战讲师授课、/*********************************/
 .section7{
