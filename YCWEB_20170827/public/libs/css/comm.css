@@ -494,11 +494,12 @@ footer a:hover {
 .login-reg-shadow{
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.6);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100000;
+    display: none;
 }
 .login-reg-wraper{
     width: 410px;
@@ -542,7 +543,8 @@ footer a:hover {
     color: rgb(3,90,222);
 }
 .form_outer{
-    height: 100%;
+    padding-top: 32px;
+    height: 325px;
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -551,12 +553,12 @@ footer a:hover {
     width: 200%;
     overflow: hidden;
     position: absolute;
-    left: -100%;
+    left: 0;
 }
 .form_outer .form_inner ul{
     width: 50%;
     float: left;
-    padding: 40px;
+    padding: 0 40px;
 }
 .form_outer .form_inner ul li{
     height: 43px;
@@ -622,4 +624,34 @@ ul#reg li:nth-child(4) input[type="checkbox"]{
     top: 50%;
     transform: translateY(-50%);
     margin-top: 0;
+}
+
+/*第三方登录*/
+.three-party-login{
+ 
+}
+.three-party-login .fgx{
+    padding: 0 40px;
+}
+.three-party-login .fgx span{
+    display: inline-block;
+}
+.three-party-login .fgx span:nth-child(2){
+    /*padding-top: 10px;*/
+    color: #797979
+}
+.three-party-login .fgx span:nth-child(1),
+.three-party-login .fgx span:nth-child(3){
+    width: 105px;
+    height: 1px;
+    background: #d2d2d2;
+    margin-bottom: 5px;
+}
+.threef-icons{
+    padding: 10px 40px;
+}
+.threef-icons a {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
 }

@@ -1,0 +1,74 @@
+.middle-page-1200,
+.oh{
+	height: 100%;
+}
+.content{
+	background: url("../imgs/studentStyle/bj_02.jpg");
+	background-size: contain; 
+}
+
+.content ul li {
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+
+.content ul li:nth-child(1) .li_wraper{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top: -300px;
+	padding-left: 100px;
+	width: 510px;
+}
+.li_wraper .li_wrapertop{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #e1e1e1; 
+	padding-bottom: 20px;
+}
+.li_wraper .li_wrapertop .name{
+	width: 48px; 
+	margin: 10px auto;
+	color: rgb(73,73,73);
+}
+.li_wraper .li_wrapertop p{
+	font-size: 18px;
+}
+.li_wraper .li_wrapertop .name h1{
+	font-size: 40px;
+}
+.li_wraper .text{
+	padding: 32px 0;
+}
+
+.btn-style{
+	width: 138px;
+	height: 32px;
+	line-height: 30px;
+	background: #035bde;
+	border: 1px solid #035bde;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 4px; 
+	transition: all 0.5s;
+	margin: 0 auto;
+}
+.btn-style:hover{
+	background: #fff;
+	color: #035bde;
+}
+.content ul li:nth-child(2){
+	width: 40%;
+    margin-top: 3%;
+}
+.content ul li:nth-child(2) .bigimg_wraper{
+	height: 55%;
+}
+
+.content ul li:nth-child(2) ul li{
+	margin-top: 0; 
+	width: 50%;
+	height: 28%;
+}

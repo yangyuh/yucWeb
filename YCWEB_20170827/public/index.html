@@ -38,16 +38,16 @@
                         <div class="nav-logo"><img src="libs/imgs/logo_03.png"></div>
                         <ul class="nav-list">
                             <li class="active"><a href="index.html">首页</a></li>
-                            <li class="showem"><a href="javascript:volid(0);">会计课程</a></li>
-                            <li class="showem"><a href="javascript:volid(0);">学历课程</a></li>
-                            <li class="showem"><a href="javascript:volid(0);">财税实账</a></li>
+                            <li class="showem"><a href="javascript:void(0);">会计课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">学历课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">财税实账</a></li>
                             <li><a href="onlineEducation.html">在线教育</a></li>
                             <li><a href="newsInfo.html">新闻咨询</a></li>
                             <li><a href="#xiaoqufb">校区</a></li>
                         </ul>
                         <ul class="nav-login">
-                            <li><a href="#">注册</a></li>
-                            <li><a href="#">登录</a></li>
+                            <li><a href="javascript:void(0);">登录</a></li>
+                            <li><a href="javascript:void(0);">注册</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1201,11 +1201,17 @@
         <div class="login-reg-shadow">
             <div class="login-reg-wraper">
                 <ul class="tag-title oh">
-                    <li data-sid="login" class="active"><a href="#login">登录</a></li>
-                    <li data-sid="reg"><a href="#reg">注册</a></li>
+                    <li data-sid="login" class="active"><a href="javascript:void(0);">登录</a></li>
+                    <li data-sid="reg"><a href="javascript:void(0);">注册</a></li>
                 </ul>
                 <div class="form_outer">
                     <div class="form_inner">
+                        <ul id="login" class="form">
+                            <li><input type="text" name="h" placeholder="请输入手机号"></li>
+                            <li><input type="password" name="h" placeholder="请输入密码"></li>
+                            <li><a href="#">忘记密码</a></li>
+                            <li><button>点击登录</button></li>
+                        </ul>
                         <ul id="reg" class="form">
                             <li><input type="text" name="h" placeholder="请输入手机号"></li>
                             <li class="oh">
@@ -1216,15 +1222,22 @@
                             <li><input type="checkbox" name=""><a href="#">我已经阅读并同意《誉财教育服务协议》</a></li>
                             <li><button>点击登录</button></li>
                         </ul>
-                        <ul id="login" class="form">
-                            <li><input type="text" name="h" placeholder="请输入手机号"></li>
-                            <li><input type="text" name="h" placeholder="请输入密码"></li>
-                            <li><a href="#">忘记密码</a></li>
-                            <li><button>点击登录</button></li>
-                        </ul>
                     </div>
                 </div>
                 <div class="close_btn"></div>
+                <div class="three-party-login">
+                    <div class="fgx oh">
+                        <span></span>
+                        <span> 合作网站账号登录 </span>
+                        <span></span>
+                    </div>
+                    <div class="threef-icons">
+                        <a href="#"><img src="libs/imgs/微信icon.png"></a>
+                        <a href="#"><img src="libs/imgs/QQ-icon.png"></a>
+                        <a href="#"><img src="libs/imgs/新浪微博icon.png"></a>
+                        <a href="#"><img src="libs/imgs/腾讯微博icon.png"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

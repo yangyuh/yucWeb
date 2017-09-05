@@ -67,6 +67,38 @@ $(function() {
         $(this).children().eq(1).fadeOut(1000);
         $(this).children().eq(0).fadeIn(1000);
     });
+
+    // 登录框
+    $(".login-reg-wraper .tag-title").on("click","li",function(){
+        $(this).addClass("active").siblings().removeClass('active');
+        console.log($(this).data("sid"))
+        if($(this).data("sid") == "reg"){
+            $(".form_inner").animate({
+                left: "-100%"
+            },500)
+        } else {
+            $(".form_inner").animate({
+                left: "0"
+            },500)
+        }
+    })
+    // 登录按钮
+    $(".nav-login").on("click","li",function(){
+        if($(this).children().html() == "登录"){
+            $(".form_inner").animate({
+                left: "0"
+            },500)
+        } else {
+            $(".form_inner").animate({
+                left: "-100%"
+            },500)
+        }
+        $(".login-reg-shadow").fadeIn(500)
+    })
+    // 关闭登录框
+    $(".close_btn").click(function(){
+        $(".login-reg-shadow").fadeOut(500);
+    })
 })
 
 // 移动动画
@@ -137,4 +169,9 @@ function initbgh() {
 function getdblHeight(ele, imgheight) {
     var h = $(document).innerWidth() * imgheight / 1920;
     ele.css("height", h + "px");
+}
+
+// 关闭登录框
+function close(){
+    $(".login-reg-shadow").fadeOut(500);
 }

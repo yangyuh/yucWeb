@@ -5,7 +5,6 @@
 .content{
 	background: url("../imgs/personage/bj_02.jpg") no-repeat;
 	background-size: contain; 
-	/*min-height: 651px;*/
 }
 .content .middle-page{
 	width: 1200px;
