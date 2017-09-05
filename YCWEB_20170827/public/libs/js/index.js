@@ -138,6 +138,21 @@ $(function() {
         }
     })
 
+    // 登录框
+    $(".login-reg-wraper .tag-title").on("click","li",function(){
+        $(this).addClass("active").siblings().removeClass('active');
+        console.log($(this).data("sid"))
+        if($(this).data("sid") == "reg"){
+            $(".form_inner").animate({
+                left: "-100%"
+            },500)
+        } else {
+            $(".form_inner").animate({
+                left: "0"
+            },500)
+        }
+        
+    })
 });
 
 // 校区分布交互效果(鼠标进入)

@@ -7,6 +7,9 @@
 	background-size: contain; 
 	/*min-height: 651px;*/
 }
+.content .middle-page{
+	width: 1200px;
+}
 .content ul li {
 	width: 50%;
 	height: 100%;
@@ -19,6 +22,7 @@
 	width: 100%;
 	top: 50%;
 	margin-top: -300px;
+	padding-left: 100px;
 }
 .content ul li:nth-child(1) h1{
 	width: 120px;
@@ -33,7 +37,7 @@
 	font-size: 20px;
 }
 .content ul li:nth-child(1) p{
-	font-size: 20px;
+	font-size: 18px;
 }
 .content ul li:nth-child(1) .btns{
 	padding-top: 50px;
@@ -71,10 +75,9 @@
 .content ul li:nth-child(2) .img_wraper{
 	width: 100%;
 	position: absolute;
-	background: url("../imgs/personage/陈老师pic.png") no-repeat right 0; 
-	background-size: contain; 
+	padding-left: 80px;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-55%);
 }
 
 .content ul li:nth-child(2) .stbtn{
@@ -82,13 +85,13 @@
 	border: 1px solid #184ab6;
 	color: #184ab6;
 	background: #fff;
-	height: 36px;
+	height: 38px;
 	line-height: 36px;
 	border-radius: 3px;
 	text-align: center;
 	position: absolute;
-	right: 55%;
-	bottom: 28px;
+	right: 60%;
+	bottom: 7.5%;
 	cursor: pointer;
 	transition: all 0.5s;
 }
