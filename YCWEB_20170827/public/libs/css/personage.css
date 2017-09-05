@@ -38,6 +38,9 @@
 .content ul li:nth-child(1) .btns{
 	padding-top: 50px;
 }
+.content ul li:nth-child(1) .btns img{
+	cursor: pointer;
+}
 
 @media screen and (max-width: 1400px) {
 	.content ul li:nth-child(1) .li_wraper{

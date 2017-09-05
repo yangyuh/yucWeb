@@ -63,7 +63,7 @@
    
 }
 .section1 .enter{
-    width: 80%;
+    width: 1000px;
     margin: 0 auto;
     padding: 60px 0;
 }
@@ -345,7 +345,7 @@
     background: url("../imgs/juniorAccountant/pre.png") no-repeat center;
     position: absolute;
     left: 0;
-
+    cursor: pointer;
 }
 .section8 .smallimg ul{
 }
@@ -359,6 +359,7 @@
     margin: 0 auto;
     padding: 10px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .section8 .smallimg ul li .item:hover{
     background: #035bde; 
@@ -369,7 +370,7 @@
     background: url("../imgs/juniorAccountant/next.png") no-repeat center;
     position: absolute;
     right: 0;
-
+    cursor: pointer;
 }
 /*********************************学员评价，誉财帮你实现梦想/*********************************/
 .section9{

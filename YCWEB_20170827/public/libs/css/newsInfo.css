@@ -32,10 +32,12 @@
 }
 .content ul.topnav li:hover span{
 	border-bottom: 3px solid #0b53de;
+	color: #0b53de; 
 }
 .content ul.topnav li span{
 	padding-bottom: 10px;
 	border-bottom: 3px solid #fff; 
+	transition: all 0.5s;
 }
 .content ul.topnav li.active span{
 	border-bottom: 3px solid #0b53de;
@@ -72,6 +74,7 @@
 .content2 ul.newsInfo-nav li span{
 	padding-bottom: 10px;
 	border-bottom: 3px solid #fff; 
+	transition: all 0.5s; 
 }
 .content2 ul.newsInfo-nav li.active span{
 	padding-bottom: 10px;
