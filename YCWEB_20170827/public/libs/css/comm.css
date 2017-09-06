@@ -437,7 +437,8 @@ footer a:hover {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    display: none;
+    /*display: none;*/
+    background: #fff;
 }
 .right-nav li{
     border: 1px solid #9d9d9d;
@@ -519,6 +520,10 @@ footer a:hover {
     right: 16px;
     top: 16px;
     cursor: pointer;
+    transition: all 0.5s,
+}
+.login-reg-wraper .close_btn:hover{
+    background: url("../imgs/close_icon_1.png");
 }
 .login-reg-wraper .tag-title{
     padding: 40px 0px 0 40px;

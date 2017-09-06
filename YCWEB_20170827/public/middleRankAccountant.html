@@ -260,8 +260,9 @@
                 <img src="libs/imgs/juniorAccountant/良好学习环境pic1_12.jpg">
             </div>
             <div class="smallimg middle-page-1200">
-                <div class="pre"></div>
-                <div class="next"></div>
+                <div class="pre" onclick="pre()"></div>
+                <div class="next" onclick="next()"></div>
+                <div class="">   </div>
                 <ul class="oh">
                     <li>
                         <div class="item">
@@ -442,21 +443,29 @@
             getdblHeight($(".section1 .tbtx"),860);
             getdblHeight($(".section3"),1073);
             getdblHeight($(".section4"),1234);
-
             getdblHeight($(".section6"),619);
-           
             getdblHeight($(".section9 .content"),882);
             getdblHeight($(".section10"),1185);
-            
+
+
 
             $(window).resize(function(){
                 getdblHeight($(".top-shadow"),60);
-                
+                getdblHeight($(".section1 .tbtx"),860);
+                getdblHeight($(".section3"),1073);
+                getdblHeight($(".section4"),1234);
+                getdblHeight($(".section6"),619);
                 getdblHeight($(".section9 .content"),882);
                 getdblHeight($(".section10"),1185);
-                getdblHeight($(".section6"),619);
             })
         })
+
+        function pre(){
+            console.log(1111)
+        }
+        function next(){
+            console.log(222)
+        }
     </script>
 </body>
 
