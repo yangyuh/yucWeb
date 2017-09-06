@@ -166,85 +166,80 @@
 }
 
 .section2-content {
-    position: relative;
-    height: 568px;
+    /*position: relative;*/
+    /*height: 568px;*/
 }
 
-.section2-content-live ul{
-    overflow: hidden;
-    padding-top: 99px;
-    width: 733px;
-    margin: 0 auto;
-}
-.section2-content-live ul li{
-    float: left;
-    height: 335px;
+
+/*名师直播背景*/
+.section2-content .mszbbg{
+    background: url("../imgs/mszb_bg.jpg") no-repeat;
+    background-size: contain; 
     position: relative;
 }
-.section2-content-live .mszbimg{
-    height: 335px;
-    width: 543px;
-    background: url("../imgs/wljx_mszb.png");
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.section2-content-live .enter_btn{
-    cursor: pointer;
-    width: 85px;
-    height: 24px;
-    background: url("../imgs/wljx_btn.png");
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.section2-content-live ul li:nth-child(1){
-    height: 335px;
-    width: 543px;
-    background: url("../imgs/wljx_mszb.png");
-}
-.section2-content-live ul li:nth-child(2){
-    width: 190px;
-}
-.section2-content-live ul li:nth-child(2) div.active{
-    color: #035ade;
-}
-.section2-content-live ul li:nth-child(2) div{
-    margin-bottom: 35px;
-    font-size: 16px;
-}
-.section2-content-live ul li:nth-child(2) div:nth-child(1){
-    padding-top: 90px;
-}
-.section2-content-live ul li:nth-child(2) div.enter_btn{
-    cursor: pointer;
-    width: 85px;
-    height: 24px;
-    background: url("../imgs/wljx_btn.png");
+.section2-content .wraper{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 500px;
     position: absolute;
-    bottom: 0;
-    right: 5px;
-    margin-bottom: 0;
-}
-/*精彩录播*/
-.section2-content-live .video-warper{
-    width: 543px;
-    height: 335px;
-    margin: 0 auto;
-    margin-top: 80px;
-    position: relative;
-}
-.section2-content-live .video-warper video{
-    height: 100%;
-    width: 100%;
-}
-.video-js .vjs-big-play-button {
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
-    border: none;
+    transform: translate(-50%,-50%);
+}
+.section2-content .wraper h1{
+    font-size: 36px;
+}
+.section2-content .wraper p{
+    padding: 30px 0;
+}
+.section2-content .wraper .btns{
+    width: 100px;
+    height: 98px;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.section2-content .wraper .btns img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section2-content .wraper .btns img:nth-child(2){
+    display: none;
+}
+.section2-content .wraper .enter-btn{
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #fff; 
+    color: #fff;
+    line-height: 45px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: all .5s;
+}
+.section2-content .wraper .enter-btn:hover{
+    color: #035ade;
+    border: 1px solid #035ade; 
+}
+
+/*精彩录播*/
+.section2-content .jclbbg{
+    position: relative;
+    background: url("../imgs/jplb_bg.jpg") no-repeat;
+    background-size: contain; 
 }
 
 /*智能题库*/
-.section2-content-live .zntk{
+.section2-content .zntkbg{
+    position: relative;
+    background: url("../imgs/zntk_bg.jpg") no-repeat;
+    background-size: contain; 
+}
+/*.section2-content-live .zntk{
     text-align: center;
     width: 340px;
     height: 138px;
@@ -285,11 +280,9 @@
 
 .section2-content-live .zntk div.active  p{
     color: #005bd9;
-}
+}*/
 /*网络学院导航*/
 .section2-content-nav {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background: #e3e3e3;
 }

@@ -257,39 +257,55 @@
                 <h1 class="h1-white"><span class="blue-text">良好的学习环境</span>是誉财教育的有效保障</h1>
             </div>
             <div class="bigimg">
-                <img src="libs/imgs/juniorAccountant/良好学习环境pic1_12.jpg">
+                <img src="libs/imgs/juniorAccountant/良好学习环境pic1_12.jpg" width="1178" height="839">
             </div>
             <div class="smallimg middle-page-1200">
                 <div class="pre" onclick="pre()"></div>
                 <div class="next" onclick="next()"></div>
-                <div class="">   </div>
-                <ul class="oh">
-                    <li>
-                        <div class="item">
-                            <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item">
-                            <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item">
-                            <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item">
-                            <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item">
-                            <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
-                        </div>
-                    </li>
-                </ul>
+                <div class="outer_wraper">
+                    <ul class="oh">
+                        <li>
+                            <div class="item">
+                                <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="libs/imgs/middleRankAccountant/良好的学习环境pic_28.jpg" width="100%">
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="item">
+                                <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="libs/imgs/middleRankAccountant/良好的学习环境pic_28.jpg" width="100%">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="libs/imgs/juniorAccountant/良好学习环境pic2_16.jpg" width="100%">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="btn-style-blue">点击报名</div>
         </section>
@@ -447,8 +463,6 @@
             getdblHeight($(".section9 .content"),882);
             getdblHeight($(".section10"),1185);
 
-
-
             $(window).resize(function(){
                 getdblHeight($(".top-shadow"),60);
                 getdblHeight($(".section1 .tbtx"),860);
@@ -457,6 +471,20 @@
                 getdblHeight($(".section6"),619);
                 getdblHeight($(".section9 .content"),882);
                 getdblHeight($(".section10"),1185);
+            })
+            $(".outer_wraper ul").on("click","li",function(){
+                var length = $(".outer_wraper ul").children().length;
+                var src = $(this).children().children('img').attr("src");
+                $(this).addClass('active').siblings().removeClass('active');
+                // 设置大图片背景
+                $(".bigimg").children('img').attr("src",src);
+                console.log($(this).index())
+                var num = 0;
+                if($(this).index() + 1 >=5){
+                    num +=1;
+                    console.log(num)
+                    $(".outer_wraper ul").animate({"left": -212*num +"px"},1000)
+                }
             })
         })
 

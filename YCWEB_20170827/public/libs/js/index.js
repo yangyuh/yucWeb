@@ -3,16 +3,22 @@ $(function() {
 
     // 精品面授过程阴影过渡效果
     $(".section1-list li").hover(function() {
-        $(this).find(".shadow").stop()
-        $(this).find(".shadow").fadeIn(500)
+        $(this).find(".shadow").stop().fadeIn(500)
     }, function() {
-        $(this).find(".shadow").stop()
-        $(this).find(".shadow").fadeOut(500)
+        $(this).find(".shadow").stop().fadeOut(500)
     })
 
     // 誉财网络学院 导航选中操作 
     $(".section2-content-nav li").on("click", function() {
         $(this).addClass("active").siblings().removeClass('active');
+    })
+    // 播放图标交互效果
+    $(".wraper .btns").hover(function(){
+        $(this).children().eq(0).stop().fadeOut(300);
+        $(this).children().eq(1).stop().fadeIn(300);
+    },function(){
+        $(this).children().eq(0).stop().fadeIn(300);
+        $(this).children().eq(1).stop().fadeOut(300);
     })
 
     // 权威备考交互
@@ -128,17 +134,11 @@ $(function() {
         $(this).children().eq(0).children('img').attr("src", newSrc);
     });
 
-    // 监听scroll方法
-    $(window).scroll(function() {
-        var scrollTop = $(document).scrollTop();
-        // if (scrollTop > 0) {
-        //     $(".right-nav").show();
-        // } else {
-        //     $(".right-nav").hide();
-        // }
+    $(window).resize(function(){
+        getdblHeight($('.mszbbg'),519);
+        getdblHeight($('.jclbbg'),519);
+        getdblHeight($('.zntkbg'),519);
     })
-
-
 });
 
 // 校区分布交互效果(鼠标进入)
@@ -166,14 +166,39 @@ function xqfbMouseLeave(ele, isl) {
 // 初始化加载
 function initPage() {
     ViewMSZBContent();
+    ViewKJKC();
 }
-
+// 二级菜单会计课程模块
+function ViewKJKC() {
+    var view = $("#kclistView");
+    var tpl = $("#kjkcTpl").html();
+    laytpl(tpl).render([], function(html) {
+        view.html(html);
+    });
+}
+// 二级菜单会计课程模块
+function ViewXLKC() {
+    var view = $("#kclistView");
+    var tpl = $("#xlkcTpl").html();
+    laytpl(tpl).render([], function(html) {
+        view.html(html);
+    });
+}
+// 二级菜单财税实账模块
+function ViewCSSZ() {
+    var view = $("#kclistView");
+    var tpl = $("#csszTpl").html();
+    laytpl(tpl).render([], function(html) {
+        view.html(html);
+    });
+}
 // 加载名师直播模块
 function ViewMSZBContent() {
     var view = $("#floor2ContentView");
     var tpl = $("#mszbTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
+        getdblHeight($('.mszbbg'),519);
     });
 }
 
@@ -183,6 +208,7 @@ function ViewJPLBContent() {
     var tpl = $("#jplbTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
+        getdblHeight($('.jclbbg'),519);
     });
 }
 
@@ -192,10 +218,17 @@ function ViewZLTkContent() {
     var tpl = $("#zntkTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
-        $(".zntk div span").hover(function() {
-            $(this).addClass("active").siblings().addClass("blue-text");
-        },function(){
-            $(this).removeClass("active").siblings().removeClass("blue-text");
-        })
+        getdblHeight($('.zntkbg'),519);
     });
+}
+
+// 显示视频播放窗口
+function showVideoWraper(){
+    $("#video_shadow").fadeIn(300);
+}
+// 关闭视频播放窗口
+function closeVideoWraper(){
+    var myPlayer = videojs('my-video');
+    myPlayer.pause();
+    $("#video_shadow").fadeOut(300);
 }

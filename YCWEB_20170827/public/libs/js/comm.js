@@ -98,6 +98,15 @@ $(function() {
     // 关闭登录框
     $(".close_btn").click(function(){
         $(".login-reg-shadow").fadeOut(500);
+    });
+    // 监听scroll方法
+    $(window).scroll(function() {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 10) {
+            $(".right-nav li:last-child").css({bottom: "-58px"});
+        } else {
+            $(".right-nav li:last-child").css({bottom: "-200px"});
+        }
     })
 })
 

@@ -55,52 +55,136 @@
                 <div class="ejmeun">
                     <div class="middle-page">
                         <ul class="ejmeun-leftnav">
-                            <li><a href="juniorAccountant.html">初级会计课程</a></li>
-                            <li><a href="middleRankAccountant.html">中级会计课程</a></li>
-                            <li><a href="AccountanterReg.html">注册会计课程</a></li>
-                            <li><a href="businessAccount.html">商贸会计课程</a></li>
-                            <li><a href="industryAccount.html">工业会计课程</a></li>
+                            <li onclick="ViewKJKC()"><a href="javascript:void(0);">会计课程</a></li>
+                            <li onclick="ViewXLKC()"><a href="javascript:void(0);">学历课程</a></li>
+                            <li onclick="ViewCSSZ()"><a href="javascript:void(0);">财税实账</a></li>
                         </ul>
                         <div class="ejmeun-group">
                             <p>选择班型：</p>
-                            <ul>
-                                <li>
-                                    <a href="businessAccount.html">
-                                        <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                        <p>注册会计一班</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="industryAccount.html">
-                                        <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                        <p>注册会计一班</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="AccountanterReg.html">
-                                        <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                        <p>注册会计一班</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="educationCourses.html">
-                                        <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                        <p>注册会计一班</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                        <p>注册会计一班</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                        <p>注册会计一班</p>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div id="kclistView"></div>
+                            <!-- 会计课程 -->
+                            <script type="text/html" id="kjkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 学历课程 -->
+                            <script type="text/html" id="xlkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 财税实账 -->
+                            <script type="text/html" id="csszTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -271,37 +355,44 @@
             </div>
             <div class="section2">
                 <div class="section2-content">
-                    <div id="floor2ContentView" class="section2-content-live middle-page"></div>
+                    <div id="floor2ContentView" class="section2-content-live"></div>
                     <!-- 名师直播模板 -->
                     <script type="text/html" id="mszbTpl">
-                        <div class="mszbimg"></div>
-                        <div class="enter_btn"></div>
+                        <div class="mszbbg">
+                            <div class="wraper">
+                                <h1>名师直播</h1>
+                                <p>名师授课，权威指导</p>
+                                <div class="btns" onclick="showVideoWraper()">
+                                    <img src="libs/imgs/player_btn.png">
+                                    <img src="libs/imgs/plyer_btn_01.png">
+                                </div>
+                            </div>
+                        </div>
                     </script>
                     <!-- 精品录播模板 -->
                     <script type="text/html" id="jplbTpl">
-                        <div class="video-warper">
-                            <!-- poster="libs/imgs/wljx_mszb.png" -->
-                            <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" width="543" height="335">
-                                <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-                                <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
-                                <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
-                                <p class="vjs-no-js">
-                                    To view this video please enable JavaScript, and consider upgrading to a web browser that
-                                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                                </p>
-                            </video>
+                        <div class="jclbbg">
+                            <div class="wraper">
+                                <h1>精品录播</h1>
+                                <p>满足您所有的做题需求</p>
+                                <div class="btns" onclick="showVideoWraper()">
+                                    <img src="libs/imgs/player_btn.png">
+                                    <img src="libs/imgs/plyer_btn_01.png">
+                                </div>
+                            </div>
                         </div>
                     </script>
                     <!-- 智能题库模板 -->
                     <script type="text/html" id="zntkTpl">
-                        <div class="zntk oh">
-                            <div class="zntk_scyl fl">
-                                <span></span>
-                                <p>实操演练</p>
-                            </div>
-                            <div class="zntk_khzy fl">
-                                <span data-src="zntk_02.png"></span>
-                                <p>课后作业</p>
+                        <div class="zntkbg">
+                            <div class="wraper">
+                                <h1>精品录播</h1>
+                                <p>满足您所有的做题需求</p>
+                                <div class="enter-btn">点击进入</div>
+                                <!-- <div class="btns" onclick="showVideoWraper()">
+                                    <img src="libs/imgs/player_btn.png">
+                                    <img src="libs/imgs/plyer_btn_01.png">
+                                </div> -->
                             </div>
                         </div>
                     </script>
@@ -1238,6 +1329,21 @@
                         <a href="#"><img src="libs/imgs/腾讯微博icon.png"></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- 视频内容-->
+        <div id="video_shadow">
+            <div class="video_wraper">
+                <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" width="1000" height="564">
+                    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                    <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                <div class="close-btn" onclick="closeVideoWraper()">×</div>
             </div>
         </div>
     </div>
