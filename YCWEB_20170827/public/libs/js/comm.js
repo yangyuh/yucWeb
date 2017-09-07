@@ -1,9 +1,15 @@
 $(function() {
-    initbgh();
+    // 设置轮播背景图片高度
+    getdblHeight($(".banner"), 470);
+    // 设置底部背景图片高度
+    getdblHeight($(".bottom-photo"), 438);
 
     // 监听窗口变化
     $(window).resize(function(event) {
-        initbgh();
+        // 设置轮播背景图片高度
+        getdblHeight($(".banner"), 470);
+        // 设置底部背景图片高度
+        getdblHeight($(".bottom-photo"), 438);
     });
 
     // banner轮播
@@ -82,6 +88,7 @@ $(function() {
             },500)
         }
     })
+
     // 登录按钮
     $(".nav-login").on("click","li",function(){
         if($(this).children().html() == "登录"){
@@ -95,10 +102,27 @@ $(function() {
         }
         $(".login-reg-shadow").fadeIn(500)
     })
+
     // 关闭登录框
     $(".close_btn").click(function(){
         $(".login-reg-shadow").fadeOut(500);
     });
+
+    // 图片切换
+    $(".outer_wraper ul").on("click","li",function(){
+        var length = $(".outer_wraper ul").children().length;
+        var src = $(this).children().children('img').attr("src");
+        $(this).addClass('active').siblings().removeClass('active');
+        $(".bigimg").children('img').attr("src",src);
+        var index = $(this).index();
+        if(index > 3){
+            $(".outer_wraper ul").stop();
+            $(".outer_wraper ul").animate({"left": -212*(index-3) + "px"},500);
+        } else {
+            $(".outer_wraper ul").animate({"left":  "0px"},500);
+        }
+    })
+
     // 监听scroll方法
     $(window).scroll(function() {
         var scrollTop = $(document).scrollTop();
@@ -166,14 +190,6 @@ function backTop() {
     $('html, body').mouseenter()
 }
 
-// 初始化加载
-function initbgh() {
-    // 设置轮播背景图片高度
-    getdblHeight($(".banner"), 470);
-    // 设置底部背景图片高度
-    getdblHeight($(".bottom-photo"), 438);
-}
-
 // 获取背景图片等比例高度
 function getdblHeight(ele, imgheight) {
     var h = $(document).innerWidth() * imgheight / 1920;
@@ -183,4 +199,22 @@ function getdblHeight(ele, imgheight) {
 // 关闭登录框
 function close(){
     $(".login-reg-shadow").fadeOut(500);
+}
+
+
+// 图片切换回到第一张
+function pre(){
+    var left = $(".outer_wraper ul").css("left").replace('px','');
+    console.log(left)
+    if(left < 0){
+        left = 0;
+        $(".outer_wraper ul").animate({"left":  left + "px"},500);
+    }
+}
+
+// 图片切换最后一张
+function next(){
+    var length = $(".outer_wraper ul").children().length;
+    var left = length*-212 + 212*5;
+    $(".outer_wraper ul").animate({"left":  left + "px"},500);
 }

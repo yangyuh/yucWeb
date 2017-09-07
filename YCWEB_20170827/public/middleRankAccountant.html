@@ -471,28 +471,8 @@
                 getdblHeight($(".section9 .content"),882);
                 getdblHeight($(".section10"),1185);
             })
-            $(".outer_wraper ul").on("click","li",function(){
-                var length = $(".outer_wraper ul").children().length;
-                var src = $(this).children().children('img').attr("src");
-                $(this).addClass('active').siblings().removeClass('active');
-                // 设置大图片背景
-                $(".bigimg").children('img').attr("src",src);
-                var index = $(this).index()
-
-                if(index + 1 >= 5){
-                    console.log(index + 1)
-
-                    $(".outer_wraper ul").stop()
-                    $(".outer_wraper ul").animate({"left": -212*(index-3) + "px"},1000)
-                }
-            })
         })
-        function pre(){
-            console.log(1111)
-        }
-        function next(){
-            console.log(222)
-        }
+        
     </script>
 </body>
 

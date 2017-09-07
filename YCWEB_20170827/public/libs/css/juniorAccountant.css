@@ -292,7 +292,6 @@
     position: relative;
     padding-left: 50px;
     padding-right: 50px;
-
 }
 .section8 .smallimg .pre{
     width: 50px;
@@ -301,15 +300,24 @@
     position: absolute;
     left: 0;
     cursor: pointer;
-
+}
+.outer_wraper{
+    width:100%;
+    position: relative;
+    height: 189px;
+    overflow: hidden;
 }
 .section8 .smallimg ul{
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .section8 .smallimg ul li{
-    width: 20%;
+    width: 212px;
     padding: 20px 0;
 }
-
 .section8 .smallimg ul li .item{
     width: 200px;
     margin: 0 auto;
@@ -318,6 +326,9 @@
     transition: all 0.5s;
 }
 .section8 .smallimg ul li .item:hover{
+    background: #035bde; 
+}
+.section8 .smallimg ul li.active .item{
     background: #035bde; 
 }
 .section8 .smallimg .next{
