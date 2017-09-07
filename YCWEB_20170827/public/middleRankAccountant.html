@@ -462,7 +462,6 @@
             getdblHeight($(".section6"),619);
             getdblHeight($(".section9 .content"),882);
             getdblHeight($(".section10"),1185);
-
             $(window).resize(function(){
                 getdblHeight($(".top-shadow"),60);
                 getdblHeight($(".section1 .tbtx"),860);
@@ -478,16 +477,16 @@
                 $(this).addClass('active').siblings().removeClass('active');
                 // 设置大图片背景
                 $(".bigimg").children('img').attr("src",src);
-                console.log($(this).index())
-                var num = 0;
-                if($(this).index() + 1 >=5){
-                    num +=1;
-                    console.log(num)
-                    $(".outer_wraper ul").animate({"left": -212*num +"px"},1000)
+                var index = $(this).index()
+
+                if(index + 1 >= 5){
+                    console.log(index + 1)
+
+                    $(".outer_wraper ul").stop()
+                    $(".outer_wraper ul").animate({"left": -212*(index-3) + "px"},1000)
                 }
             })
         })
-
         function pre(){
             console.log(1111)
         }
