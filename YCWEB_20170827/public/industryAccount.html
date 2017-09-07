@@ -414,20 +414,12 @@
     <script src="libs/js/comm.js"></script>
    <script type="text/javascript">
         $(function() {
-            initbgh1();
+            var contents = ["2-875", "4-484"];
+            set_contents_h(contents);
             $(window).resize(function(){
-                initbgh1();
+                set_contents_h(contents);
             })
         })
-        function initbgh1(){
-            var bgeles = ["2-875", "4-484"];
-            for(var i in bgeles){
-                var s = bgeles[i].split("-")[0];
-                var h = bgeles[i].split("-")[1]-0;
-                var ele = $(".content" + s);
-                getdblHeight(ele,h)
-            }
-        }
     </script>
 </body>
 

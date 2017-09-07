@@ -347,22 +347,16 @@
     <script src="libs/js/comm.js"></script>
     <script type="text/javascript">
         $(function() {
-            initbgh1();
+            var sections = ["2-1110","3-1324","4-1191","5-1247","6-1322","7-1034"];
+            set_sections_h(sections);
+            /*顶部蓝色尖角*/
+            getdblHeight($(".top-blue-bg"), 96);
             $(window).resize(function(){
-                initbgh1();
+                set_sections_h(sections);
+                /*顶部蓝色尖角*/
+                getdblHeight($(".top-blue-bg"), 96);
             })
         })
-        function initbgh1(){
-            var bgeles = ["2-1110","3-1324","4-1191","5-1247","6-1322","7-1034"];
-            for(var i in bgeles){
-                var s = bgeles[i].split("-")[0];
-                var h = bgeles[i].split("-")[1]-0;
-                var ele = $(".section" + s);
-                getdblHeight(ele,h)
-            }
-            /*顶部蓝色jian角*/
-            getdblHeight($(".top-blue-bg"), 96);
-        }
     </script>
 </body>
 

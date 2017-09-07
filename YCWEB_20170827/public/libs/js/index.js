@@ -108,32 +108,9 @@ $(function() {
         xqfbMouseLeave($(this).prev(), "right");
     })
 
-    // 侧边固定导航交互效果
-    $(".right-nav li").hover(function() {
-        // 边框变化
-        $(this).css({
-            border: "1px solid #035ade",
-            color: "#035ade"
-        });
-        $(this).next().css({
-            borderTop: "1px solid #035ade",
-        });
-        // 图标变换
-        var newSrc = $(this).children().eq(0).children('img').attr("src").replace(/\.png/, "");
-        $(this).children().eq(0).children('img').attr("src", newSrc + "_01.png");
-    }, function() {
-        $(this).css({
-            border: "1px solid #9d9d9d",
-            color: "#7c7c7c"
-        });
-        $(this).next().css({
-            borderTop: "1px solid #9d9d9d",
-        });
-        // 图标变换
-        var newSrc = $(this).children().eq(0).children('img').attr("src").replace(/_01/, "");
-        $(this).children().eq(0).children('img').attr("src", newSrc);
-    });
+    
 
+    // 网络学院背景图片自适应
     $(window).resize(function(){
         getdblHeight($('.mszbbg'),519);
         getdblHeight($('.jclbbg'),519);
@@ -168,6 +145,7 @@ function initPage() {
     ViewMSZBContent();
     ViewKJKC();
 }
+
 // 二级菜单会计课程模块
 function ViewKJKC() {
     var view = $("#kclistView");
@@ -176,6 +154,7 @@ function ViewKJKC() {
         view.html(html);
     });
 }
+
 // 二级菜单会计课程模块
 function ViewXLKC() {
     var view = $("#kclistView");
@@ -184,6 +163,7 @@ function ViewXLKC() {
         view.html(html);
     });
 }
+
 // 二级菜单财税实账模块
 function ViewCSSZ() {
     var view = $("#kclistView");
@@ -222,13 +202,3 @@ function ViewZLTkContent() {
     });
 }
 
-// 显示视频播放窗口
-function showVideoWraper(){
-    $("#video_shadow").fadeIn(300);
-}
-// 关闭视频播放窗口
-function closeVideoWraper(){
-    var myPlayer = videojs('my-video');
-    myPlayer.pause();
-    $("#video_shadow").fadeOut(300);
-}

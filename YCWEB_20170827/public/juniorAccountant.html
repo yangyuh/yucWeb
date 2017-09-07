@@ -314,17 +314,6 @@
         </section>
         <!-- 大家说好的课程，才是真的好课程 -->
         <section class="section10"></section>
-
-        <!-- 
-
-
-
-        
-            这里添加内容
-        
-
-
-         -->
         <!-- 底部黑白照片渐变彩色 -->
         <div class="bottom-photo">
             <div class="blackimg"></div>
@@ -450,19 +439,14 @@
     <script src="libs/js/comm.js"></script>
     <script>
         $(function() {
+            var sections = ["3-1139","4-1234","6-619","10-1185"];
+            set_sections_h(sections);
             getdblHeight($(".top-shadow"),60);
-            getdblHeight($(".section3"),1139);
-            getdblHeight($(".section4"),1234);
-            getdblHeight($(".section6"),619);
             getdblHeight($(".section9 .content"),882);
-            getdblHeight($(".section10"),1185);
             $(window).resize(function(){
+                set_sections_h(sections);
                 getdblHeight($(".top-shadow"),60);
-                getdblHeight($(".section3"),1139);
-                getdblHeight($(".section4"),1234);
                 getdblHeight($(".section9 .content"),882);
-                getdblHeight($(".section10"),1185);
-                getdblHeight($(".section6"),619);
             })
         })
     </script>

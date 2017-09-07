@@ -75,63 +75,89 @@ $(function() {
     });
 
     // 登录框
-    $(".login-reg-wraper .tag-title").on("click","li",function(){
+    $(".login-reg-wraper .tag-title").on("click", "li", function() {
         $(this).addClass("active").siblings().removeClass('active');
         console.log($(this).data("sid"))
-        if($(this).data("sid") == "reg"){
+        if ($(this).data("sid") == "reg") {
             $(".form_inner").animate({
                 left: "-100%"
-            },500)
+            }, 500)
         } else {
             $(".form_inner").animate({
                 left: "0"
-            },500)
+            }, 500)
         }
     })
 
     // 登录按钮
-    $(".nav-login").on("click","li",function(){
-        if($(this).children().html() == "登录"){
+    $(".nav-login").on("click", "li", function() {
+        if ($(this).children().html() == "登录") {
             $(".form_inner").animate({
                 left: "0"
-            },500)
+            }, 500)
         } else {
             $(".form_inner").animate({
                 left: "-100%"
-            },500)
+            }, 500)
         }
         $(".login-reg-shadow").fadeIn(500)
     })
 
     // 关闭登录框
-    $(".close_btn").click(function(){
+    $(".close_btn").click(function() {
         $(".login-reg-shadow").fadeOut(500);
     });
 
-    // 图片切换
-    $(".outer_wraper ul").on("click","li",function(){
+    // 环境图片切换
+    $(".outer_wraper ul").on("click", "li", function() {
         var length = $(".outer_wraper ul").children().length;
         var src = $(this).children().children('img').attr("src");
         $(this).addClass('active').siblings().removeClass('active');
-        $(".bigimg").children('img').attr("src",src);
+        $(".bigimg").children('img').attr("src", src);
         var index = $(this).index();
-        if(index > 3){
+        if (index > 3) {
             $(".outer_wraper ul").stop();
-            $(".outer_wraper ul").animate({"left": -212*(index-3) + "px"},500);
+            $(".outer_wraper ul").animate({ "left": -212 * (index - 3) + "px" }, 500);
         } else {
-            $(".outer_wraper ul").animate({"left":  "0px"},500);
+            $(".outer_wraper ul").animate({ "left": "0px" }, 500);
         }
-    })
+    });
 
-    // 监听scroll方法
+    // 侧边固定导航交互效果
+    $(".right-nav li").hover(function() {
+        // 边框变化
+        $(this).css({
+            border: "1px solid #035ade",
+            color: "#035ade"
+        });
+        $(this).next().css({
+            borderTop: "1px solid #035ade",
+        });
+        // 图标变换
+        var newSrc = $(this).children().eq(0).children('img').attr("src").replace(/\.png/, "");
+        $(this).children().eq(0).children('img').attr("src", newSrc + "_01.png");
+    }, function() {
+        $(this).css({
+            border: "1px solid #9d9d9d",
+            color: "#7c7c7c"
+        });
+        $(this).next().css({
+            borderTop: "1px solid #9d9d9d",
+        });
+        // 图标变换
+        var newSrc = $(this).children().eq(0).children('img').attr("src").replace(/_01/, "");
+        $(this).children().eq(0).children('img').attr("src", newSrc);
+    });
+
+    // 返回顶部按钮动画
     $(window).scroll(function() {
         var scrollTop = $(document).scrollTop();
         if (scrollTop > 10) {
-            $(".right-nav li:last-child").css({bottom: "-58px"});
+            $(".right-nav li:last-child").css({ bottom: "-58px" });
         } else {
-            $(".right-nav li:last-child").css({bottom: "-200px"});
+            $(".right-nav li:last-child").css({ bottom: "-200px" });
         }
-    })
+    });
 })
 
 // 移动动画
@@ -197,24 +223,56 @@ function getdblHeight(ele, imgheight) {
 }
 
 // 关闭登录框
-function close(){
+function close_longin() {
     $(".login-reg-shadow").fadeOut(500);
 }
 
+// 显示视频播放窗口
+function showVideoWraper() {
+    $("#video_shadow").fadeIn(300);
+}
+
+// 关闭视频播放窗口
+function closeVideoWraper() {
+    var myPlayer = videojs('my-video');
+    myPlayer.pause();
+    $("#video_shadow").fadeOut(300);
+}
 
 // 图片切换回到第一张
-function pre(){
-    var left = $(".outer_wraper ul").css("left").replace('px','');
-    console.log(left)
-    if(left < 0){
+function pre() {
+    var left = $(".outer_wraper ul").css("left").replace('px', '');
+    if (left < 0) {
         left = 0;
-        $(".outer_wraper ul").animate({"left":  left + "px"},500);
+        $(".outer_wraper ul").animate({ "left": left + "px" }, 500);
     }
 }
 
 // 图片切换最后一张
-function next(){
+function next() {
     var length = $(".outer_wraper ul").children().length;
-    var left = length*-212 + 212*5;
-    $(".outer_wraper ul").animate({"left":  left + "px"},500);
+    var left = length * -212 + 212 * 5;
+    $(".outer_wraper ul").animate({ "left": left + "px" }, 500);
+}
+
+// 设置大背景图片高度
+function set_sections_h(sections){
+    var bgeles = sections;
+    for(var i in bgeles){
+        var s = bgeles[i].split("-")[0];
+        var h = bgeles[i].split("-")[1]-0;
+        var ele = $(".section" + s);
+        getdblHeight(ele,h)
+    }
+}
+
+// 设置大背景图片高度
+function set_contents_h(contents){
+    var bgeles = contents;
+    for(var i in bgeles){
+        var s = bgeles[i].split("-")[0];
+        var h = bgeles[i].split("-")[1]-0;
+        var ele = $(".content" + s);
+        getdblHeight(ele,h)
+    }
 }
