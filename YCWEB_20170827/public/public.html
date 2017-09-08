@@ -266,15 +266,15 @@
     <script src="libs/js/comm.js"></script>
     <!-- <script src="libs/js/index.js"></script> -->
     <script type="text/javascript">
-        $(function() {
+    $(function() {
+        getdblHeight($(".content"), 918);
+        getdblHeight($(".img_wraper"), 560);
+
+        $(window).resize(function() {
             getdblHeight($(".content"), 918);
             getdblHeight($(".img_wraper"), 560);
-
-            $(window).resize(function(){
-                getdblHeight($(".content"), 918);
-                getdblHeight($(".img_wraper"), 560);
-            })
         })
+    })
     </script>
 </body>
 

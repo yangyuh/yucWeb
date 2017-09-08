@@ -256,23 +256,23 @@ function next() {
 }
 
 // 设置大背景图片高度
-function set_sections_h(sections){
+function set_sections_h(sections) {
     var bgeles = sections;
-    for(var i in bgeles){
+    for (var i in bgeles) {
         var s = bgeles[i].split("-")[0];
-        var h = bgeles[i].split("-")[1]-0;
+        var h = bgeles[i].split("-")[1] - 0;
         var ele = $(".section" + s);
-        getdblHeight(ele,h)
+        getdblHeight(ele, h)
     }
 }
 
 // 设置大背景图片高度
-function set_contents_h(contents){
+function set_contents_h(contents) {
     var bgeles = contents;
-    for(var i in bgeles){
+    for (var i in bgeles) {
         var s = bgeles[i].split("-")[0];
-        var h = bgeles[i].split("-")[1]-0;
+        var h = bgeles[i].split("-")[1] - 0;
         var ele = $(".content" + s);
-        getdblHeight(ele,h)
+        getdblHeight(ele, h)
     }
 }

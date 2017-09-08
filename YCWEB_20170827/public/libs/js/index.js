@@ -13,10 +13,10 @@ $(function() {
         $(this).addClass("active").siblings().removeClass('active');
     })
     // 播放图标交互效果
-    $(".wraper .btns").hover(function(){
+    $(".wraper .btns").hover(function() {
         $(this).children().eq(0).stop().fadeOut(300);
         $(this).children().eq(1).stop().fadeIn(300);
-    },function(){
+    }, function() {
         $(this).children().eq(0).stop().fadeIn(300);
         $(this).children().eq(1).stop().fadeOut(300);
     })
@@ -108,13 +108,13 @@ $(function() {
         xqfbMouseLeave($(this).prev(), "right");
     })
 
-    
+
 
     // 网络学院背景图片自适应
-    $(window).resize(function(){
-        getdblHeight($('.mszbbg'),519);
-        getdblHeight($('.jclbbg'),519);
-        getdblHeight($('.zntkbg'),519);
+    $(window).resize(function() {
+        getdblHeight($('.mszbbg'), 519);
+        getdblHeight($('.jclbbg'), 519);
+        getdblHeight($('.zntkbg'), 519);
     })
 });
 
@@ -178,7 +178,7 @@ function ViewMSZBContent() {
     var tpl = $("#mszbTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
-        getdblHeight($('.mszbbg'),519);
+        getdblHeight($('.mszbbg'), 519);
     });
 }
 
@@ -188,7 +188,7 @@ function ViewJPLBContent() {
     var tpl = $("#jplbTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
-        getdblHeight($('.jclbbg'),519);
+        getdblHeight($('.jclbbg'), 519);
     });
 }
 
@@ -198,7 +198,6 @@ function ViewZLTkContent() {
     var tpl = $("#zntkTpl").html();
     laytpl(tpl).render([], function(html) {
         view.html(html);
-        getdblHeight($('.zntkbg'),519);
+        getdblHeight($('.zntkbg'), 519);
     });
 }
-

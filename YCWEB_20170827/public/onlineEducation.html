@@ -91,7 +91,6 @@
                 </div>
             </div>
         </div>
-
         <ul class="content-list oh">
             <li>
                 <div class="one-level-icons">
@@ -120,8 +119,7 @@
                         <img src="libs/imgs/onlineEducation/icon2_1.png" height="122" width="122" class="hideimg">
                     </div>
                     <span>精品录播</span>
-                </div> 
-                
+                </div>
                 <!-- 二级图标 -->
                 <!-- <div class="two-level-icons oh">
                     <div class="item fl">
@@ -142,7 +140,6 @@
                     </div>
                     <span>名师直播</span>
                 </div>
-                
                 <!-- 二级图标 -->
                 <!-- <div class="two-level-icons oh">
                     <div class="item fl">
@@ -203,7 +200,6 @@
             </li>
         </ul>
     </div>
-    
 </body>
 <script src="libs/js/jquery-2.2.3.min.js"></script>
 <script src="libs/js/video.min.js"></script>
@@ -211,40 +207,40 @@
 <script src="libs/js/laytpl.js"></script>
 <script src="libs/js/comm.js"></script>
 <script type="text/javascript">
-    getdblHeight($(".page"),1080);
-    // 一级图标
-    $(".one-level-icons").hover(function(){
-        $(this).children().children().eq(0).stop().fadeOut(500);
-        $(this).children().children().eq(1).stop().fadeIn(500);
-        $(this).children().eq(1).addClass('blue-text');
-        $(this).next().stop().fadeIn(500);
-    },function(){
-        $(this).children().children().eq(0).stop().fadeIn(500);
-        $(this).children().children().eq(1).stop().fadeOut(500);
-        $(this).children().eq(1).removeClass('blue-text');
-        $(this).next().stop().fadeOut(500);
-    })
+getdblHeight($(".page"), 1080);
+// 一级图标
+$(".one-level-icons").hover(function() {
+    $(this).children().children().eq(0).stop().fadeOut(500);
+    $(this).children().children().eq(1).stop().fadeIn(500);
+    $(this).children().eq(1).addClass('blue-text');
+    $(this).next().stop().fadeIn(500);
+}, function() {
+    $(this).children().children().eq(0).stop().fadeIn(500);
+    $(this).children().children().eq(1).stop().fadeOut(500);
+    $(this).children().eq(1).removeClass('blue-text');
+    $(this).next().stop().fadeOut(500);
+})
 
-    // 二级图标交互 
-    $(".two-level-icons .item").hover(function(){
-        $(this).children().children().eq(0).stop().fadeOut(500);
-        $(this).children().children().eq(1).stop().fadeIn(500);
-        $(this).children().eq(1).addClass('blue-text');
-        $(this).parent().stop().fadeIn(500);
+// 二级图标交互 
+$(".two-level-icons .item").hover(function() {
+    $(this).children().children().eq(0).stop().fadeOut(500);
+    $(this).children().children().eq(1).stop().fadeIn(500);
+    $(this).children().eq(1).addClass('blue-text');
+    $(this).parent().stop().fadeIn(500);
 
-        $(this).parent().prev().children().children().eq(0).stop().fadeOut(500)
-        $(this).parent().prev().children().children().eq(1).stop().fadeIn(500);
-        $(this).parent().prev().children().eq(1).addClass('blue-text');
-    },function(){
-        $(this).children().children().eq(0).stop().fadeIn(500);
-        $(this).children().children().eq(1).stop().fadeOut(500);
-        $(this).children().eq(1).removeClass('blue-text');
-        $(this).parent().stop().fadeOut(500);
+    $(this).parent().prev().children().children().eq(0).stop().fadeOut(500)
+    $(this).parent().prev().children().children().eq(1).stop().fadeIn(500);
+    $(this).parent().prev().children().eq(1).addClass('blue-text');
+}, function() {
+    $(this).children().children().eq(0).stop().fadeIn(500);
+    $(this).children().children().eq(1).stop().fadeOut(500);
+    $(this).children().eq(1).removeClass('blue-text');
+    $(this).parent().stop().fadeOut(500);
 
-        $(this).parent().prev().children().children().eq(0).stop().fadeIn(500);
-        $(this).parent().prev().children().children().eq(1).stop().fadeOut(500);
-        $(this).parent().prev().children().eq(1).removeClass('blue-text');
-    })
-
+    $(this).parent().prev().children().children().eq(0).stop().fadeIn(500);
+    $(this).parent().prev().children().children().eq(1).stop().fadeOut(500);
+    $(this).parent().prev().children().eq(1).removeClass('blue-text');
+})
 </script>
+
 </html>

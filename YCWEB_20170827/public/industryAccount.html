@@ -163,7 +163,6 @@
                             <div></div>
                             <p>经营周期长，资金周转慢</p>
                             <p>生产成本及经营成本核算</p>
-
                         </div>
                     </div>
                 </li>
@@ -412,14 +411,14 @@
     <script src="libs/js/scroll.js"></script>
     <script src="libs/js/laytpl.js"></script>
     <script src="libs/js/comm.js"></script>
-   <script type="text/javascript">
-        $(function() {
-            var contents = ["2-875", "4-484"];
+    <script type="text/javascript">
+    $(function() {
+        var contents = ["2-875", "4-484"];
+        set_contents_h(contents);
+        $(window).resize(function() {
             set_contents_h(contents);
-            $(window).resize(function(){
-                set_contents_h(contents);
-            })
         })
+    })
     </script>
 </body>
 

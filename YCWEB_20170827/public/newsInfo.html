@@ -434,12 +434,12 @@
     <script src="libs/js/comm.js"></script>
     <!-- <script src="libs/js/index.js"></script> -->
     <script type="text/javascript">
-        $(function() {
+    $(function() {
+        getdblHeight($(".newsInfobanner"), 570);
+        $(window).resize(function() {
             getdblHeight($(".newsInfobanner"), 570);
-            $(window).resize(function(){
-                getdblHeight($(".newsInfobanner"), 570);
-            })
         })
+    })
     </script>
 </body>
 

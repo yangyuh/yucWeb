@@ -127,19 +127,27 @@
             <ul class="oh middle-page-1200">
                 <li>
                     <div class="fl img"><img src="libs/imgs/juniorAccountant/main2-pic1.png"></div>
-                    <div class="fr text"><p>会计证取消，初级成为必备证书！ !</p></div>
+                    <div class="fr text">
+                        <p>会计证取消，初级成为必备证书！ !</p>
+                    </div>
                 </li>
                 <li>
                     <div class="fl img"><img src="libs/imgs/juniorAccountant/main2-pic2.png"></div>
-                    <div class="fr text"><p>会计考试改革，初级考核要求上升! !</p></div>
+                    <div class="fr text">
+                        <p>会计考试改革，初级考核要求上升! !</p>
+                    </div>
                 </li>
                 <li>
                     <div class="fl img"><img src="libs/imgs/juniorAccountant/main2-pic3.png"></div>
-                    <div class="fr text"><p>通过初级会计，增加继续教育学分! !</p></div>
+                    <div class="fr text">
+                        <p>通过初级会计，增加继续教育学分! !</p>
+                    </div>
                 </li>
                 <li>
                     <div class="fl img"><img src="libs/imgs/juniorAccountant/main2-pic1.png"></div>
-                    <div class="fr text"><p>扩大就业机会，提供更多升值空间! !</p></div>
+                    <div class="fr text">
+                        <p>扩大就业机会，提供更多升值空间! !</p>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -177,7 +185,8 @@
                         <h3>课程内容</h3>
                         <p>《初级会计实务》主要是根据一些法律法规和会计资格考试大纲编写， 用于初级会计职称考试。初级会计实务是根据国家颁布的《物权法》、《初级会计实务》主要是根据一些法律法规和会计资格考试大纲编写， 用于初级会计职称考试。初级会计实务是根据国家颁布的《物权法》、</p>
                         <div class="bmrs">
-                            <span class="blue-text">面授</span><br>
+                            <span class="blue-text">面授</span>
+                            <br>
                             <span>已报名<span style="font-size:20px;">250</span>人</span>
                         </div>
                     </div>
@@ -194,7 +203,8 @@
                         <h3>课程内容</h3>
                         <p>《经济法基础》本书严格按照《全国会计专业技术资格考试大纲》的要 求编写，对初级经济法基础的考试大纲、复习指导用书和历年真题进行《经济法基础》本书严格按照《全国会计专业技术资格考试大纲》的要 求编写，对初级经济法基础的考试大纲、复习指导用书和历年真题进行</p>
                         <div class="bmrs">
-                            <span class="blue-text">面授</span><br>
+                            <span class="blue-text">面授</span>
+                            <br>
                             <span>已报名<span style="font-size:20px;">250</span>人</span>
                         </div>
                     </div>
@@ -225,7 +235,6 @@
                                 <p>誉财会计教育创始人之一，誉 财会计教育教学总监，会计师， 会计实战派讲师，专业从事财 会理论，实践课程教学......</p>
                             </div>
                         </div>
-                        
                     </div>
                 </li>
                 <li>
@@ -310,7 +319,6 @@
                 <h1 class="h1-white">学员评价，<span class="blue-text">誉财帮你实现梦想</span></h1>
             </div>
             <div class="content"></div>
-            
         </section>
         <!-- 大家说好的课程，才是真的好课程 -->
         <section class="section10"></section>
@@ -438,17 +446,17 @@
     <script src="libs/js/laytpl.js"></script>
     <script src="libs/js/comm.js"></script>
     <script>
-        $(function() {
-            var sections = ["3-1139","4-1234","6-619","10-1185"];
+    $(function() {
+        var sections = ["3-1139", "4-1234", "6-619", "10-1185"];
+        set_sections_h(sections);
+        getdblHeight($(".top-shadow"), 60);
+        getdblHeight($(".section9 .content"), 882);
+        $(window).resize(function() {
             set_sections_h(sections);
-            getdblHeight($(".top-shadow"),60);
-            getdblHeight($(".section9 .content"),882);
-            $(window).resize(function(){
-                set_sections_h(sections);
-                getdblHeight($(".top-shadow"),60);
-                getdblHeight($(".section9 .content"),882);
-            })
+            getdblHeight($(".top-shadow"), 60);
+            getdblHeight($(".section9 .content"), 882);
         })
+    })
     </script>
 </body>
 
