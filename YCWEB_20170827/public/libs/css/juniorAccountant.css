@@ -6,11 +6,20 @@
 .module-title h1{
     font-size: 50px;
     font-weight: bolder;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
 }
 .module-title p{
-    font-size: 28px;
-    color: #7b7b7b;
+    font-size: 26px;
+    color: #215cb6;
+}
+.module-title p span{
+    width: 80px;
+    display: inline-block;
+    height: 1px;
+    background: #215cb6;
+    margin: 0 10px;
+    margin-bottom: 8px;
+
 }
 .module-title .h1-white{
     /*color: #fff;*/
@@ -21,9 +30,9 @@
     background: #fff;
     border-radius: 4px;
     color: #035bde;
-    height: 50px;
-    line-height: 50px;
-    width: 200px;
+    height: 46px;
+    line-height: 46px;
+    width: 180px;
     text-align: center;
     outline: none;
     border: 1px solid #fff;
@@ -33,9 +42,9 @@
     background: #035bde;
     border-radius: 4px;
     color: #fff;
-    height: 50px;
-    line-height: 50px;
-    width: 200px;
+    height: 46px;
+    line-height: 46px;
+    width: 180px;
     text-align: center;
     outline: none;
     border: 1px solid #035bde;
@@ -62,13 +71,54 @@
 
 /*********************************2018年初级会计师职称，报名已经开始/*********************************/
 .section1{
-    background: #f1f1f1;
-    padding-bottom: 80px;
+    background: url("../imgs/juniorAccountant/报名开始bj_03.jpg");
+    position: relative;
+    background-size: contain;
+}
+.section1 ul{
+    width: 1150px;
+    margin: 0 auto;
+    height: 470px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.section1 ul li:nth-child(1){
+    width: 523px;
+    height: 100%;
+    padding-top: 155px;
+    position: relative;
+    z-index: 1
+}
+.section1 ul li:nth-child(1) .bmksbg{
+    width: 523px;
+    height: 166px;
+    background: url("../imgs/juniorAccountant/bmks.png") no-repeat;
+}
+.section1 ul li:nth-child(1) .btn-style-blue{
+    position: absolute;
+    right: 85px;
+    bottom: 30px;
+}
+.section1 ul li:nth-child(2){
+    width: 507px;
+    height: 400px;
+    background: #d9d9d9;
+    position: absolute;
+    z-index: 0;
+    left: 450px;
+    top: 80px;
+}
+.section1 ul li:nth-child(3){
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
 }
 .section1 .enter{
     width: 514px;
     height: 400px;
-    margin: 0 auto 43px auto; 
 }
 /*********************************竞争日趋激烈，初级会计职称是必要的/*********************************/
 .section2{
@@ -345,13 +395,35 @@
         
 }
 .section9 .content{
-    background: url("../imgs/juniorAccountant/学员评价pic_32.jpg");    
-    background-size: contain; 
+    /*position: relative;*/
+}
+.section9 .content ul{
+    width: 90%;
+    height: 674px;
+    position: relative;
+    margin: 0 auto;
+}
+.section9 .content ul li {
+    position: absolute;
+}
+.section9 .content ul li:nth-child(1){
+    left: 0;
+    top: 10%;
+}
+.section9 .content ul li:nth-child(2){
+    left: 120px;
+    top: 10%;
+}
+.section9 .content ul li:nth-child(3){
+    right: -6%;
 }
 /*********************************大家说好的课程，才是真的好课程/*********************************/
 .section10{
-    position: relative;
-    background: url("../imgs/juniorAccountant/大家说好的课程pic_34.jpg");    
-    background-size: contain;  
+    padding-bottom: 70px;
 }
-
+.section10 .module-title{
+    padding: 0 0 80px;
+}
+.section10 .module-title h1{
+    padding-bottom: 100px;
+}

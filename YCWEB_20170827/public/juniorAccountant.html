@@ -110,13 +110,18 @@
         </div>
         <!-- 2018年初级会计师职称，报名已经开始 -->
         <section class="section1">
-            <div class="module-title">
-                <h1>2018年初级会计师职称，<span class="blue-text">报名已经开始</span></h1>
-            </div>
-            <div class="enter">
-                <img src="libs/imgs/juniorAccountant/main1-报名入口.png">
-            </div>
-            <div class="btn-style-blue">点击报名</div>
+            <ul class="oh">
+                <li>
+                    <div class="bmksbg"></div>
+                    <div class="btn-style-blue">点击报名</div>
+                </li>
+                <li></li>
+                <li>
+                    <div class="enter">
+                        <img src="libs/imgs/juniorAccountant/main1-报名入口.png">
+                    </div>
+                </li>
+            </ul>
         </section>
         <!-- 竞争日趋激烈，初级会计职称是必要的 -->
         <section class="section2">
@@ -314,14 +319,30 @@
         </section>
         <!-- 学员评价，誉财帮你实现梦想 -->
         <section class="section9">
-            <div class="top-shadow"></div>
+            <!-- <div class="top-shadow"></div> -->
             <div class="module-title">
-                <h1 class="h1-white">学员评价，<span class="blue-text">誉财帮你实现梦想</span></h1>
+                <h1 class="h1-white">学员评价</h1>
+                <p class="blue-text"><span></span>誉财帮你实现梦想<span></span></p>
             </div>
-            <div class="content"></div>
+            <div class="content">
+                <ul class="oh">
+                    <li><img src="libs/imgs/juniorAccountant/学员评价.png" width="82%"></li>
+                    <li><img src="libs/imgs/juniorAccountant/学员评价_16.jpg" width="90%"></li>
+                    <li><img src="libs/imgs/juniorAccountant/学员评价框.png" width="78%"></li>
+                </ul>
+            </div>
         </section>
         <!-- 大家说好的课程，才是真的好课程 -->
-        <section class="section10"></section>
+        <section class="section10">
+            <div class="module-title">
+                <h1 class="h1-white">大家说好的课程，才是真的好课程</h1>
+                <div>
+                    <img src="libs/imgs/juniorAccountant/大家说好的课程就是好课程ｐｉｃ_20.jpg">
+                </div>
+                <!-- <p class="blue-text"><span></span>誉财帮你实现梦想<span></span></p> -->
+            </div>
+            <div class="btn-style-blue">了解详情</div>
+        </section>
         <!-- 底部黑白照片渐变彩色 -->
         <div class="bottom-photo">
             <div class="blackimg"></div>
@@ -397,9 +418,15 @@
                     </ul>
                     <ul>
                         <li>关注誉财：</li>
-                        <li><a href="#"><img src="libs/imgs/header-icon.png"></a></li>
-                        <li><a href="#"><img src="libs/imgs/header-icon1.png"></a></li>
-                        <li><a href="#"><img src="libs/imgs/header-icon2.png"></a></li>
+                        <li>
+                            <a href="#"><img src="libs/imgs/header-icon.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="libs/imgs/header-icon1.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="libs/imgs/header-icon2.png"></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="copyright">
@@ -447,14 +474,12 @@
     <script src="libs/js/comm.js"></script>
     <script>
     $(function() {
-        var sections = ["3-1139", "4-1234", "6-619", "10-1185"];
+        var sections = ["1-820", "3-1139", "4-1234", "6-619"];
         set_sections_h(sections);
         getdblHeight($(".top-shadow"), 60);
-        getdblHeight($(".section9 .content"), 882);
         $(window).resize(function() {
             set_sections_h(sections);
             getdblHeight($(".top-shadow"), 60);
-            getdblHeight($(".section9 .content"), 882);
         })
     })
     </script>
