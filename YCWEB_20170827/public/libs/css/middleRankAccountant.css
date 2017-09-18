@@ -6,7 +6,7 @@
 .module-title h1{
     font-size: 50px;
     font-weight: bolder;
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
 }
 .module-title p{
     font-size: 28px;
@@ -58,10 +58,6 @@
     top: 0;
     left: 0;
 }
-
-.section1{
-   
-}
 .section1 .enter{
     width: 1000px;
     margin: 0 auto;
@@ -104,7 +100,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
 }
 .section1 .tbtx-bg h1{
     padding: 70px 0;
@@ -140,26 +135,57 @@
 /*********************************有誉财，通过任何考试都是必然的/*********************************/
 .section3{
     position: relative;
-    background: url("../imgs/middleRankAccountant/誉财资深考证pic_17.jpg");    
+    background: url("../imgs/middleRankAccountant/main4_bj_02.png");    
     background-size: contain; 
 }
-.section3 .btn-style-blue{
+.section3_wraper{
     position: absolute;
+    width: 1200px;
+    height: 626px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: 35px; 
+    margin-top: -313px;
+    margin-left: -600px;
+}
+.section3 .module-title{
+    padding: 0;
+}
+.section3 .module-title h1{
+    font-size: 32px;
+    color: #fff;
+}
+.section3 .module-title p{
+    color: #fff;
+    font-size: 22px;
+    padding: 50px;
+}
+.section3 ul li{
+    width: 25%;
+    text-align: center;
+    padding: 0 18px;
+}
+.section3 ul li h4{
+    font-size: 22px;
+    color: #fff;
+    padding: 30px 0;
+}
+.section3 ul li p{
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+}
+.section3 .btn-style-blue{
+    margin-top: 50px;
 }
 /*********************************拿下初级会计职称证书，升值加薪不是梦！/*********************************/
 .section4{
     position: relative;
-    background: url("../imgs/juniorAccountant/main4_03.jpg");    
-    background-size: contain;
+}
+.section4 .module-title h1{
+    margin-bottom: 50px;
 }
 .section4 .btn-style-blue{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 60px; 
+   margin-bottom: 70px;
 }
 /*********************************学不会， 听不懂，考不过的烦恼将不会出/*********************************/
 .section5{

@@ -21,13 +21,9 @@
     margin-bottom: 8px;
 
 }
-.module-title .h1-white{
-    /*color: #fff;*/
-}
 .middle-page-1200{
     padding: 35px 0;
 }
-
 /*按钮风格*/
 .btn-style-white{
     background: #fff;
@@ -164,41 +160,85 @@
 /*********************************有誉财，通过任何考试都是必然的/*********************************/
 .section3{
     position: relative;
-    background: url("../imgs/juniorAccountant/main3_02.jpg");    
+    background: url("../imgs/juniorAccountant/main3_bj_02.png") no-repeat;    
     background-size: contain; 
 }
-.section3 .btn-style-blue{
+.section3_wraper{
     position: absolute;
+    width: 1200px;
+    height: 626px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: 60px; 
+    margin-top: -313px;
+    margin-left: -600px;
+}
+.section3 .module-title{
+    padding: 0;
+}
+.section3 .module-title h1{
+    font-size: 32px;
+    color: #fff;
+}
+.section3 .module-title p{
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 50px;
+}
+.section3 ul li{
+    width: 25%;
+    text-align: center;
+    padding: 0 18px;
+}
+.section3 ul li h4{
+    font-size: 22px;
+    color: #fff;
+    padding: 30px 0;
+}
+.section3 ul li p{
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+}
+.section3 .btn-style-blue{
+    margin-top: 50px;
 }
 /*********************************拿下初级会计职称证书，升值加薪不是梦！/*********************************/
-.section4{
-
-}
 .section4 .btn-style-blue{
     margin-bottom: 70px;
 }
 /*********************************学不会， 听不懂，考不过的烦恼将不会出/*********************************/
 .section5{
-    background: #f0f0f0;
     position: relative;
     padding-bottom: 50px;
 }
 .section5 ul{
     width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto 0;
 }
 .section5 ul li {
-    overflow: hidden;
+    background: #f0f0f0;
     height: 356px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    position: relative;
+}
+.section5 ul li .waper_border{
+    width: 506px;
+    height: 300px;
+    background: #f0f0f0;
+    border: 5px solid #d4d3d3;
+    position: absolute;
+    bottom: 38px;
+    left: 35px; 
 }
 .section5 ul li .img{
-    width: 543px;
-    position: relative;
+    width: 500px;
+    position: absolute;
     cursor: pointer;
+    top: -36px;
+    left: 20px;
+}
+.section5 ul li .img img{
+    width: 100%;
 }
 .section5 ul li .img:hover .shadow{
     opacity: 1;
@@ -233,9 +273,8 @@
     background: #fff;
     font-size: 16px;
     color: #797979;
-
     position: relative;
-
+    background: #f0f0f0;
 }
 .section5 ul li .text h3:nth-child(1){
     font-size: 30px;
@@ -257,14 +296,32 @@
 /*********************************在线网课/*********************************/
 .section6{
     position: relative;
-    background: url("../imgs/juniorAccountant/在线网课pic_09.jpg");
+    background: url("../imgs/juniorAccountant/main6_bj_04.png") no-repeat;
     background-size: contain;  
 }
-.section6 .btn-style-blue{
+.section6 .module-title{
+    width: 1200px;
+    padding: 0;
     position: absolute;
+    top: 50%;
     left: 50%;
-    bottom: 60px; 
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
+}
+.section6 .module-title h1{
+    font-size: 36px;
+    color: #fff;
+}
+.section6 .module-title p{
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 50px;
+}
+.section6 .module-title .p1{
+    font-size: 16px;
+    color: #fff;
+}
+.section6 .btn-style-blue{
+    margin-top: 60px; 
 }
 /*********************************实战讲师授课、/*********************************/
 .section7{
@@ -296,7 +353,6 @@
     top: -45px;
     left: 50%;
     transform: translateX(-50%);
-    
 }
 .section7 .content ul li {
     margin-bottom: 20px;
@@ -317,7 +373,6 @@
     background: #215eb6;
     padding: 45px 80px 0 45px;
     margin: 0 30px;
-
 }
 .section7 .content ul li .text h3{
     font-size: 38px;
@@ -339,7 +394,11 @@
     font-size: 36px;
     color: #fff;
     font-weight: 600;
-    padding-top: 128px
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    z-index: 1
 }
 .section8 .btn-style-blue{
     margin-top: 100px;
@@ -371,7 +430,7 @@
     position: absolute;
     width: 1060px;
     left: 50%;
-    margin-left: -500px;
+    margin-left: -530px;
     bottom: 142px;
     padding-left: 30px;
     padding-right: 29px;
@@ -458,10 +517,6 @@
 /*********************************学员评价，誉财帮你实现梦想/*********************************/
 .section9{
     position: relative;
-        
-}
-.section9 .content{
-    /*position: relative;*/
 }
 .section9 .content ul{
     width: 90%;
@@ -473,15 +528,21 @@
     position: absolute;
 }
 .section9 .content ul li:nth-child(1){
+    width: 22%;
     left: 0;
     top: 10%;
 }
 .section9 .content ul li:nth-child(2){
-    left: 120px;
-    top: 10%;
+    width: 82%;
+    left: 10%;
+    top: 10.1%;
 }
 .section9 .content ul li:nth-child(3){
-    right: -6%;
+    width: 26%;
+    right: 0;
+}
+.section9 .content ul li img{
+    width: 100%;
 }
 /*********************************大家说好的课程，才是真的好课程/*********************************/
 .section10{
