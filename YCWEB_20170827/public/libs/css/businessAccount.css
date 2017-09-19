@@ -1,224 +1,88 @@
-.middle-page-1200{
-	/*margin: auto;*/
-	text-align: center;
-}
-/*模块标题*/
 .module-title{
+	padding: 1rem;
 	text-align: center;
-	padding: 15px 0;
 }
-.module-title .font{
-	padding: 20px 0;
-	font-size: 50px;
-	color: #035ade;
-	font-weight: bolder;
+.module-title h1{
+	font-size: 0.48rem;
+	color: #787878;
+	font-weight: 600;
 }
-.module-title .span-font-color{
-	color:#555;
+.module-title p{
+	width: 2.9rem;
+	border-top: 1px solid #494949;
+	border-bottom: 1px solid #494949;
+	color: #494949;
+	margin: 0 auto;
+	line-height: 0.45rem;
+	font-size: 0.22rem;
+	font-weight: bold;
+	margin-top: 0.25rem;
 }
 
-/*了解详情按钮*/
-.detail_btn{
-	background-color: #035ade;
-	border: 1px solid #fff;
-	color: #fff;
-	padding: 10px 50px;
-	border-radius: 10px;
-	outline: none;
-	transition: all 0.5s;
+/*按钮风格*/
+.btn-style-blue{
+    width: 2rem;
+    height: 0.52rem;
+    line-height: 0.5rem;
+    background: #3584e6;
+    border-radius: 0.04rem;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    border: 1px solid #035bde;
+    font-size: 0.22rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.5s;
 }
-.detail_btn:hover{
-	background: none;
-	border: 1px solid #035ade;
-	color: #035ade;
-}
-/*顶部蓝色jian角*/
-.top-blue-bg{
-	width: 100%;
-	background: url(../imgs/businessAccount/蓝色底边pic.png);	
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
+.btn-style-blue:hover{
+    background: none;
+    color: #035bde;
 }
 
 /*做账流程简化看*/
 .section1{
-	margin: 60px auto;
 	text-align: center;
 }
-.section1 p{
-	padding: 20px 0;
-	font-size: 50px;
-	color: #035ade;
-	font-weight: bolder;
+.section1 .content-img{
+	width: 12.96rem;
+	height: 7.06rem;
+	background: url("../imgs/businessAccount/main1.png");
+	background-size: 100% auto; 
+	margin: 0 auto;
+} 
+.section1 button{
+	margin-top: 1.14rem;
 }
-
-
-/*步凑1*/
+/*step1识别原始凭证*/
 .section2{
-    position: relative;
-	background: url(../imgs/businessAccount/识别原始凭证bj_06.jpg);	
-    background-size: contain;
+
 }
-.section2-content{
-	width: 86%;
-	height: 90%;
-	background: rgba(205,211,213,0.3);
-	padding: 10px;
+.section2 .imgs-wraper{
+	position: relative;
+	width: 12.11rem;
+	height: 6.51rem;
+	margin: 0 auto;
+}
+.section2 .imgs-wraper .bg{
+	background: url("../imgs/businessAccount/main2_step1_bj_pic_03.png");
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -48.5%);
+	width: 12.11rem;
+	height: 5.01rem;
+	bottom: 0;
+	z-index: -1;
 }
-.section2-content ul{
+.section2 .imgs-wraper ul{
+	width: 9.36rem;
+	margin: 0 auto;
+}
+
+.section2 .imgs-wraper ul li {
+	width: 4.66rem;
+	height: 6rem;
+	/*width: 50%;*/
+	text-align: center;
+}
+.section2 .imgs-wraper ul li img{
 	width: 100%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-.section2-content ul li{
-	text-align: center;
-	width: 50%;
-	height: 100%;
-}
-/*步凑2*/
-.section3{
-	background: url(../imgs/businessAccount/登记记账凭证bj_08.jpg);	
-    background-size: contain;
-    position: relative;
-}
-.section3-content{
-	width: 86%;
-	height: 90%;
-	background: rgba(205,211,213,0.3);
-	padding: 10px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -48.5%);
-}
-.section3-content div{
-	height:55%;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 50%;
-	margin-top: -32%;
-}
-.section3-content p{
-	position: absolute;
-	top: 66%;
-	width: 60%;
-	font-size: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-}
-
-/*步凑3*/
-.section4{
-    position: relative;
-	background: url(../imgs/businessAccount/登记账薄bj_10.jpg);	
-    background-size: contain;
-}
-.section4-content{
-	width: 86%;
-	height: 75%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	/*margin-top: -22%;*/
-	background: rgba(205,211,213,0.3);
-	padding: 10px;
-}
-.section4-content div:nth-child(1){
-	position: absolute;
-	right: 10px;
-	width: 50%;
-}
-.section4-content div:nth-child(2){
-	position: absolute;
-	z-index: 1;
-	bottom: 20px;
-	left: 20px;
-	width: 55%
-}
-
-/*步凑4*/
-.section5{
-	background: url(../imgs/businessAccount/编制报表_12.jpg);	
-    background-size: contain;
-    position: relative;
-}
-.section5-content{
-	width: 86%;
-	height: 75%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%);
-	margin-top: -28%;
-	background: rgba(205,211,213,0.3);
-	padding: 10px;
-}
-.section5-content ul li{
-	width: 50%;
-	padding-bottom: 20px;
-	font-size: 20px;
-	text-align: center;
-}
-
-/*步凑5*/
-.section6{
-	background: url(../imgs/businessAccount/纳税申报bj_14.jpg);	
-    background-size: contain;
-    position: relative;
-}
-.section6-content{
-	width: 86%;
-	height: 80%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background: rgba(205,211,213,0.3);
-	padding: 10px;
-}
-.section6-content div:nth-child(1){
-	position: absolute;
-	right: 10px;
-	width: 65%;
-}
-.section6-content div:nth-child(2){
-	position: absolute;
-	z-index: 1;
-	bottom: 20px;
-	left: 20px;
-	width: 65%
-}
-/*步凑6*/
-.section7{
-	background: url(../imgs/businessAccount/财务软件实训bj_16.jpg);	
-    background-size: contain;
-    position: relative;
-}
-.section7-content{
-	width: 68%;
-	height: 80%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background: rgba(205,211,213,0.3);
-	padding: 30px;
-}
-.section7-content img{
-	width: 90%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
 }
