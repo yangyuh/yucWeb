@@ -1,0 +1,176 @@
+/*模块标题*/
+.module-title{
+	text-align: center;
+	padding: 106px 0;
+}
+.module-title h1{
+	font-size: 40px;
+	font-weight: bolder;
+	padding-bottom: 18px;
+}
+.module-title p{
+	font-size: 20px;
+}
+.module-title span{
+	display: inline-block;
+	width: 90px;
+	height: 3px;
+	background: #035bde;
+}
+/*bannerbg*/
+.bannerbg{
+	background: url("../imgs/proformaData/banner_02.jpg") no-repeat;
+	background-size: contain; 
+}
+.content .middle-page{
+	width: 1200px;
+}
+.content .navlist{
+	background: #f7f7f7;
+}
+.content .navlist li{
+	width: 33.3333333333%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 60px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.content .navlist li.active{
+	color: #fff;
+	background: #035bde;
+}
+.content .navlist li:hover{
+	color: #fff;
+	background: #035bde;
+}
+/*星星列表*/
+.content .xingxing-list{
+	padding: 80px 0 100px;
+}
+.content .xingxing-list li{
+	width: 14.2857%;
+}
+.content .xingxing-list li .item{ 
+	width: 106px;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 3px solid #ababab; 
+	transition: all 0.5s;
+}
+.content .xingxing-list li:hover .item{
+	background: #035bde;
+	color: #fff;
+	cursor: pointer;
+	border-bottom: 3px solid #035bde; 
+}
+.content .xingxing-list li .item span{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+}
+.content .xingxing-list li .item span img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.5s;
+}
+.content .xingxing-list li .item span img:nth-child(2){
+	opacity: 0;
+}
+.content .xingxing-list li .item p{
+	font-size: 20px;
+	padding: 25px 0 40px;
+}
+/*下载列表*/
+.content .download-list li{
+	width: 25%;
+	padding: 16px 21px; 
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+.content .download-list li .item{
+	transition: all 0.5s;
+}
+.content .download-list li:hover .item{
+	-webkit-box-shadow: 0 0 10px 15px #f0f0f0;
+    -moz-box-shadow: 0 0 10px 15px #f0f0f0;
+    box-shadow: 0 0 10px #888888;
+}
+.content .download-list li .item:hover span img:nth-child(1){
+	opacity: 0;
+}
+.content .download-list li .item:hover span img:nth-child(2){
+	opacity: 1;
+}
+.content .download-list li .item .img_wraper{
+	width: 258px;
+	height: 202px;
+	position: relative;
+	margin: 0 auto;
+}
+.content .download-list li .item .img_wraper img{
+	position: absolute;
+	top: 0; 
+	left: 0;
+}
+.img_wraper .p-shadow{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0; 
+	left: 0;
+	color:#fff;
+	font-size: 18px;
+	padding-top: 48px;
+	transition: all 0.5s;
+}
+.img_wraper .blue-shadow{
+	width: 100%;
+	height: 100%;
+	background: rgba(3, 90, 222, 0.8);
+	position: absolute;
+	text-align: center;
+	top: 0; 
+	left: 0;
+	transition: all 0.5s;
+	opacity: 0;
+
+}
+.content .download-list li:hover .p-shadow{
+	opacity: 0;
+}
+.content .download-list li:hover .blue-shadow{
+	opacity: 1;
+}
+.img_wraper .blue-shadow img{
+	padding-top: 76px;
+	padding-left: 104px;
+}
+.img_wraper .p-shadow p{
+	padding-top: 10px;
+}
+.content .download-list li .item .text{
+	width: 258px;
+	margin: 0 auto;
+	height: 52px;
+	line-height:52px;
+	background: #f1f1f1;
+	font-size: 16px;
+	color: #787878;
+	overflow: hidden;
+	padding: 0 20px;
+}
+/*分页*/
+.fenye{
+	margin: -30px 0 50px;
+}
+.fenye div{
+	/*width: 50%;*/
+	font-size: 16px;
+	padding: 0 21px;
+}

@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--禁止缩放-->
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <!--去除默认的数字拨号链接-->
+    <meta content="telephone=no" name="format-detection">
+    <!--开启浏览器对webapp的支持-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>誉财教育</title>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/video-js.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/comm.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/index.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="public_wraper">
+            <!-- header -->
+            <div class="top">
+                <div class="middle-page">
+                    <div class="top-right">
+                        <span>免费咨询电话：400-999-8640</span>
+                        <span><a href="#"><img src="libs/imgs/header-icon.png"></a></span>
+                        <span><a href="#"><img src="libs/imgs/header-icon1.png"></a></span>
+                        <span><a href="#"><img src="libs/imgs/header-icon2.png"></a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航 -->
+            <div class="nav-box">
+                <div class="middle-page">
+                    <div class="nav">
+                        <div class="nav-logo"><img src="libs/imgs/logo_03.png"></div>
+                        <ul class="nav-list">
+                            <li class="active"><a href="index.html">首页</a></li>
+                            <li class="showem"><a href="javascript:void(0);">会计课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">学历课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">财税实账</a></li>
+                            <li><a href="onlineEducation.html">在线教育</a></li>
+                            <li><a href="newsInfo.html">新闻咨询</a></li>
+                            <li><a href="#xiaoqufb">校区</a></li>
+                        </ul>
+                        <ul class="nav-login">
+                            <li><a href="javascript:void(0);">登录</a></li>
+                            <li><a href="javascript:void(0);">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 二级导航 -->
+                <div class="ejmeun">
+                    <div class="middle-page">
+                        <ul class="ejmeun-leftnav">
+                            <li onclick="ViewKJKC()"><a href="javascript:void(0);">会计课程</a></li>
+                            <li onclick="ViewXLKC()"><a href="javascript:void(0);">学历课程</a></li>
+                            <li onclick="ViewCSSZ()"><a href="javascript:void(0);">财税实账</a></li>
+                        </ul>
+                        <div class="ejmeun-group">
+                            <p>选择班型：</p>
+                            <div id="kclistView"></div>
+                            <!-- 会计课程 -->
+                            <script type="text/html" id="kjkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 学历课程 -->
+                            <script type="text/html" id="xlkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 财税实账 -->
+                            <script type="text/html" id="csszTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner -->
+            <div class="banner">
+                <ul class="banner-imgs">
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                </ul>
+                <div class="banner-pre-btn" onclick="turnLeft()"></div>
+                <div class="banner-next-btn" onclick="turnRight()"></div>
+                <ul class="banner-btns">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 精品面授课程 -->
+        <section class="section1">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>精品面授过程</h3>
+                    <span>更多课程任你挑选</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                        <div class="module-title-more"><a href="#">更多课程＞</a></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="section1-list">
+                <li>
+                    <div class="bgimg">
+                        <img src="libs/imgs/floor1_list_01.jpg" alt="list_01" width="364px" height="208px">
+                    </div>
+                    <div class="shadow">
+                        <div class="shadow-btns">
+                            <div>马上咨询<span></span></div>
+                            <div>了解详情<span></span></div>
+                        </div>
+                    </div>
+                    <div class="section1-list-text">
+                        <p>大工业会计实账课程</p>
+                        <p>会计精英</p>
+                        <p>新手到老会计的解决方案</p>
+                    </div>
+                    <div class="rs">
+                        <p>面授</p>
+                        <p>已报名<span>398</span>人</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bgimg">
+                        <img src="libs/imgs/floor1_list_02.jpg" alt="list_01" width="364px" height="208px">
+                    </div>
+                    <div class="shadow">
+                        <div class="shadow-btns">
+                            <div>马上咨询<span></span></div>
+                            <div>了解详情<span></span></div>
+                        </div>
+                    </div>
+                    <div class="section1-list-text">
+                        <p>大工业会计实账课程</p>
+                        <p>会计精英</p>
+                        <p>新手到老会计的解决方案</p>
+                    </div>
+                    <div class="rs">
+                        <p>面授</p>
+                        <p>已报名<span>398</span>人</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bgimg">
+                        <img src="libs/imgs/floor1_list_03.jpg" alt="list_01" width="364px" height="208px">
+                    </div>
+                    <div class="shadow">
+                        <div class="shadow-btns">
+                            <div>马上咨询<span></span></div>
+                            <div>了解详情<span></span></div>
+                        </div>
+                    </div>
+                    <div class="section1-list-text">
+                        <p>大工业会计实账课程</p>
+                        <p>会计精英</p>
+                        <p>新手到老会计的解决方案</p>
+                    </div>
+                    <div class="rs">
+                        <p>面授</p>
+                        <p>已报名<span>398</span>人</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bgimg">
+                        <img src="libs/imgs/floor1_list_04.jpg" alt="list_01" width="364px" height="208px">
+                    </div>
+                    <div class="shadow">
+                        <div class="shadow-btns">
+                            <div>马上咨询<span></span></div>
+                            <div>了解详情<span></span></div>
+                        </div>
+                    </div>
+                    <div class="section1-list-text">
+                        <p>大工业会计实账课程</p>
+                        <p>会计精英</p>
+                        <p>新手到老会计的解决方案</p>
+                    </div>
+                    <div class="rs">
+                        <p>面授</p>
+                        <p>已报名<span>398</span>人</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bgimg">
+                        <img src="libs/imgs/floor1_list_05.jpg" alt="list_01" width="364px" height="208px">
+                    </div>
+                    <div class="shadow">
+                        <div class="shadow-btns">
+                            <div>马上咨询<span></span></div>
+                            <div>了解详情<span></span></div>
+                        </div>
+                    </div>
+                    <div class="section1-list-text">
+                        <p>大工业会计实账课程</p>
+                        <p>会计精英</p>
+                        <p>新手到老会计的解决方案</p>
+                    </div>
+                    <div class="rs">
+                        <p>面授</p>
+                        <p>已报名<span>398</span>人</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bgimg">
+                        <img src="libs/imgs/floor1_list_06.jpg" alt="list_01" width="364px" height="208px">
+                    </div>
+                    <div class="shadow">
+                        <div class="shadow-btns">
+                            <div>马上咨询<span></span></div>
+                            <div>了解详情<span></span></div>
+                        </div>
+                    </div>
+                    <div class="section1-list-text">
+                        <p>大工业会计实账课程</p>
+                        <p>会计精英</p>
+                        <p>新手到老会计的解决方案</p>
+                    </div>
+                    <div class="rs">
+                        <p>面授</p>
+                        <p>已报名<span>398</span>人</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- 誉财网络学院 -->
+        <section>
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>誉财网络学院</h3>
+                    <span>成功源于对根的守护和灌溉</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="section2-content">
+                    <div id="floor2ContentView" class="section2-content-live"></div>
+                    <!-- 名师直播模板 -->
+                    <script type="text/html" id="mszbTpl">
+                        <div class="mszbbg">
+                            <div class="wraper">
+                                <h1>名师直播</h1>
+                                <p>名师授课，权威指导</p>
+                                <div class="btns" onclick="showVideoWraper()">
+                                    <img src="libs/imgs/player_btn.png">
+                                    <img src="libs/imgs/plyer_btn_01.png">
+                                </div>
+                            </div>
+                        </div>
+                    </script>
+                    <!-- 精品录播模板 -->
+                    <script type="text/html" id="jplbTpl">
+                        <div class="jclbbg">
+                            <div class="wraper">
+                                <h1>精品录播</h1>
+                                <p>满足您所有的做题需求</p>
+                                <div class="btns" onclick="showVideoWraper()">
+                                    <img src="libs/imgs/player_btn.png">
+                                    <img src="libs/imgs/plyer_btn_01.png">
+                                </div>
+                            </div>
+                        </div>
+                    </script>
+                    <!-- 智能题库模板 -->
+                    <script type="text/html" id="zntkTpl">
+                        <div class="zntkbg">
+                            <div class="wraper">
+                                <h1>精品录播</h1>
+                                <p>满足您所有的做题需求</p>
+                                <div class="enter-btn">点击进入</div>
+                                <!-- <div class="btns" onclick="showVideoWraper()">
+                                    <img src="libs/imgs/player_btn.png">
+                                    <img src="libs/imgs/plyer_btn_01.png">
+                                </div> -->
+                            </div>
+                        </div>
+                    </script>
+                    <div class="section2-content-nav">
+                        <div class="middle-page">
+                            <ul>
+                                <li class="active" onclick="ViewMSZBContent()">名师直播</li>
+                                <li onclick="ViewJPLBContent()">精品录播</li>
+                                <li onclick="ViewZLTkContent()">智能题库</li>
+                                <li>作业考核</li>
+                                <li>模拟报税</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 权威备考资料 -->
+        <section class="section3">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>权威备考资料</h3>
+                    <span>更多课程任你挑选</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+                <ul class="section3-list">
+                    <li>
+                        <div class="item">
+                            <div class="img"></div>
+                            <h4>初级会计师</h4>
+                            <div class="text">
+                                <p>所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。 所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。</p>
+                                <p>资料上传数量<span>123</span>份</p>
+                            </div>
+                            <div class="btns">
+                                <div>咨询老师<span></span></div>
+                                <div>资料下载<span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img">
+                                <!-- <img src="libs/imgs/main-zxzspic.png"> --></div>
+                            <h4>初级会计师</h4>
+                            <div class="text">
+                                <p>所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。 所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。</p>
+                                <p>资料上传数量<span>123</span>份</p>
+                            </div>
+                            <div class="btns">
+                                <div>咨询老师<span></span></div>
+                                <div>资料下载<span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img"></div>
+                            <h4>初级会计师</h4>
+                            <div class="text">
+                                <p>所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。 所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。</p>
+                                <p>资料上传数量<span>123</span>份</p>
+                            </div>
+                            <div class="btns">
+                                <div>咨询老师<span></span></div>
+                                <div>资料下载<span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img"></div>
+                            <h4>初级会计师</h4>
+                            <div class="text">
+                                <p>所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。 所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。</p>
+                                <p>资料上传数量<span>123</span>份</p>
+                            </div>
+                            <div class="btns">
+                                <div>咨询老师<span></span></div>
+                                <div>资料下载<span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img"></div>
+                            <h4>初级会计师</h4>
+                            <div class="text">
+                                <p>所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。 所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。</p>
+                                <p>资料上传数量<span>123</span>份</p>
+                            </div>
+                            <div class="btns">
+                                <div>咨询老师<span></span></div>
+                                <div>资料下载<span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img"></div>
+                            <h4>初级会计师</h4>
+                            <div class="text">
+                                <p>所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。 所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。所述的香木块分别镶嵌固定在袋体侧壁和底面上。</p>
+                                <p>资料上传数量<span>123</span>份</p>
+                            </div>
+                            <div class="btns">
+                                <div>咨询老师<span></span></div>
+                                <div>资料下载<span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 校区开班动态 -->
+        <section class="section3_01">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>校区开班动态</h3>
+                    <span>为您提供更好的教育</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3_01-nav">
+                <div class="middle-page">
+                    <ul>
+                        <li class="active">天府校区</li>
+                        <li>天府校区</li>
+                        <li>天府校区</li>
+                        <li>天府校区</li>
+                        <li>天府校区</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section3_01-table">
+                <div class="middle-page">
+                    <div class="section3_01-table-box" id="xqkb_Scroll">
+                        <ul>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                            <li>
+                                <div>会计初级职称周六班</div>
+                                <div>2017-04-15</div>
+                                <div>已开班...</div>
+                                <div><span>立即咨询</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 誉财名师团队 -->
+        <section class="section4">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>誉财名师团队</h3>
+                    <span>为您提供更好的教育</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+                <ul class="section4-list">
+                    <li>
+                        <div class="item">
+                            <div class="img">
+                                <img src="libs/imgs/floor4_list_01.png" width="185px" height="185px">
+                                <a href="personage.html">
+                                    <div class="shadow">查看详情</div>
+                                </a>
+                            </div>
+                            <div class="szinfo">
+                                <h3>何荣</h3>
+                                <p>誉财会计教育创始人之一,</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img">
+                                <div class="shadow">查看详情</div>
+                                <img src="libs/imgs/floor4_list_02.png" width="185px" height="185px">
+                            </div>
+                            <div class="szinfo">
+                                <h3>何荣</h3>
+                                <p>誉财会计教育创始人之一,</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img">
+                                <div class="shadow">查看详情</div>
+                                <img src="libs/imgs/floor4_list_03.png" width="185px" height="185px">
+                            </div>
+                            <div class="szinfo">
+                                <h3>何荣</h3>
+                                <p>誉财会计教育创始人之一,</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img">
+                                <div class="shadow">查看详情</div>
+                                <img src="libs/imgs/floor4_list_04.png" width="185px" height="185px">
+                            </div>
+                            <div class="szinfo">
+                                <h3>何荣</h3>
+                                <p>誉财会计教育创始人之一,</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img">
+                                <div class="shadow">查看详情</div>
+                                <img src="libs/imgs/floor4_list_05.png" width="185px" height="185px">
+                            </div>
+                            <div class="szinfo">
+                                <h3>何荣</h3>
+                                <p>誉财会计教育创始人之一,</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="img">
+                                <div class="shadow">查看详情</div>
+                                <img src="libs/imgs/floor4_list_01.png" width="185px" height="185px">
+                            </div>
+                            <div class="szinfo">
+                                <h3>何荣</h3>
+                                <p>誉财会计教育创始人之一,</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                                <p>誉财会计教育教学总监、会计...</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="section4-kb">
+                <ul class="middle-page">
+                    <li>
+                        <p><span>8</span>年</p>
+                        <p>时间的积累</p>
+                    </li>
+                    <li>
+                        <p><span>10</span>余万</p>
+                        <p>学员顺利毕业</p>
+                    </li>
+                    <li>
+                        <p><span>80</span>%</p>
+                        <p>学员来自口碑转介</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 行业新闻资讯 -->
+        <section class="section5">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>行业新闻资讯</h3>
+                    <span>为您提供及时新闻动态及行业资讯</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+                <ul class="section5-list">
+                    <li>
+                        <div class="section5-list-item">
+                            <div class="img"><img src="libs/imgs/floor1_list_01.jpg"></div>
+                            <div class="time">
+                                <p>07.24</p>
+                                <p>2017</p>
+                            </div>
+                            <div class="xwnr">
+                                <h3>中级会计考试报名须知</h3>
+                                <div class="p">中级会计考试报考条件：报名参加会计专业技术资格考试的人员，应具备下列基本条件：1、坚持原则。具备良好的职业道德品质良好的职业道德品质敖德萨所大多撒所多中级会计考试报考条件：报名参加会计专业技术资格...</div>
+                                <div class="more-btn">查看更多</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section5-list-item">
+                            <div class="img"><img src="libs/imgs/floor1_list_01.jpg"></div>
+                            <div class="time">
+                                <p>07.24</p>
+                                <p>2017</p>
+                            </div>
+                            <div class="xwnr">
+                                <h3>中级会计考试报名须知</h3>
+                                <div class="p">中级会计考试报考条件：报名参加会计专业技术资格考试的人员，应具备下列基本条件：1、坚持原则。具备良好的职业道德品质良好的职业道德品质敖德萨所大多撒所多中级会计考试报考条件：报名参加会计专业技术资格...</div>
+                                <div class="more-btn">查看更多</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section5-list-item">
+                            <div class="img"><img src="libs/imgs/floor1_list_01.jpg"></div>
+                            <div class="time">
+                                <p>07.24</p>
+                                <p>2017</p>
+                            </div>
+                            <div class="xwnr">
+                                <h3>中级会计考试报名须知</h3>
+                                <div class="p">中级会计考试报考条件：报名参加会计专业技术资格考试的人员，应具备下列基本条件：1、坚持原则。具备良好的职业道德品质良好的职业道德品质敖德萨所大多撒所多中级会计考试报考条件：报名参加会计专业技术资格...</div>
+                                <div class="more-btn">查看更多</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section5-list-item">
+                            <div class="img"><img src="libs/imgs/floor1_list_01.jpg"></div>
+                            <div class="time">
+                                <p>07.24</p>
+                                <p>2017</p>
+                            </div>
+                            <div class="xwnr">
+                                <h3>中级会计考试报名须知</h3>
+                                <div class="p">中级会计考试报考条件：报名参加会计专业技术资格考试的人员，应具备下列基本条件：1、坚持原则。具备良好的职业道德品质良好的职业道德品质敖德萨所大多撒所多中级会计考试报考条件：报名参加会计专业技术资格...</div>
+                                <div class="more-btn">查看更多</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="section5-zxtitle">
+                    <h3>咨询问答</h3>
+                </div>
+                <div class="section5-zxcontent">
+                    <div id="zxwd_Scroll">
+                        <ul class="section5-zxcontent-text">
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>【实账培训】</span>
+                                    <span>请问双流会计实账培训什么时候上课？</span>
+                                    <span>2016.01.08</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section5-zxcontent-wdpic">
+                        <img src="libs/imgs/main-wdpic_03.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 明星学员风采 -->
+        <section class="section6">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>明星学员风采</h3>
+                    <span>为您提供及时新闻动态及行业资讯</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+                <ul class="section6-list">
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_02.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_03.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_04.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_05.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_06.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li class="center" style="width: 720px;">
+                        <img src="libs/imgs/floor6_list_00.jpg" width="100%" height="100%">
+                        <img src="libs/imgs/floor6_list_00.jpg" width="100%" height="100%">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_07.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_08.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_09.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_10.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_11.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                    <li>
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_12.jpg">
+                        <img width="240px" height="238px" src="libs/imgs/floor6_list_01_01.jpg">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 誉财校区分布 -->
+        <section class="section7" id="xiaoqufb">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>誉财校区分布</h3>
+                    <span>为您提供及时新闻动态及行业资讯</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+                <div class="section7-xqfb">
+                    <ul class="section7-xqfb-list">
+                        <li class="left">
+                            <div class="xq-img">
+                                <img src="libs/imgs/floor7_list_01.jpg" height="100%" width="184px">
+                            </div>
+                            <div class="xqnr-bg-l">
+                                <p>龙泉校区</p>
+                                <p>地址：成都市龙泉驿都东路38号锦鸿时代4楼412室</p>
+                                <p>电话：028-69686400</p>
+                                <div class="shadow-btns">
+                                    <div>马上咨询<span></span></div>
+                                    <div>了解详情<span></span></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="time-axis">
+                                <span class="line"></span>
+                                <span class="circ"></span>
+                            </div>
+                            <div class="xqcl">
+                                <p>2017.8.3</p>
+                                <p>誉财教育龙泉校区正式成立。</p>
+                            </div>
+                        </li>
+                        <li class="right">
+                            <div class="xqcl">
+                                <p>2017.8.3</p>
+                                <p>誉财教育龙泉校区正式成立。</p>
+                            </div>
+                            <div class="time-axis">
+                                <span class="line"></span>
+                                <span class="circ"></span>
+                            </div>
+                            <div class="xqnr-bg-r">
+                                <p>龙泉校区</p>
+                                <p>地址：成都市龙泉驿都东路38号锦鸿时代4楼412室</p>
+                                <p>电话：028-69686400</p>
+                                <div class="shadow-btns">
+                                    <div style="margin-left: 30px;">马上咨询<span></span></div>
+                                    <div>了解详情<span></span></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="xq-img">
+                                <img src="libs/imgs/floor7_list_01.jpg" height="100%" width="184px">
+                            </div>
+                        </li>
+                        <li class="left">
+                            <div class="xq-img">
+                                <img src="libs/imgs/floor7_list_01.jpg" height="100%" width="184px">
+                            </div>
+                            <div class="xqnr-bg-l">
+                                <p>龙泉校区</p>
+                                <p>地址：成都市龙泉驿都东路38号锦鸿时代4楼412室</p>
+                                <p>电话：028-69686400</p>
+                                <div class="shadow-btns">
+                                    <div>马上咨询<span></span></div>
+                                    <div>了解详情<span></span></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="time-axis">
+                                <span class="line"></span>
+                                <span class="circ"></span>
+                            </div>
+                            <div class="xqcl">
+                                <p>2017.8.3</p>
+                                <p>誉财教育龙泉校区正式成立。</p>
+                            </div>
+                        </li>
+                        <li class="right">
+                            <div class="xqcl">
+                                <p>2017.8.3</p>
+                                <p>誉财教育龙泉校区正式成立。</p>
+                            </div>
+                            <div class="time-axis">
+                                <span class="line"></span>
+                                <span class="circ"></span>
+                            </div>
+                            <div class="xqnr-bg-r">
+                                <p>龙泉校区</p>
+                                <p>地址：成都市龙泉驿都东路38号锦鸿时代4楼412室</p>
+                                <p>电话：028-69686400</p>
+                                <div class="shadow-btns">
+                                    <div style="margin-left: 30px;">马上咨询<span></span></div>
+                                    <div>了解详情<span></span></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="xq-img">
+                                <img src="libs/imgs/floor7_list_01.jpg" height="100%" width="184px">
+                            </div>
+                        </li>
+                        <li class="left">
+                            <div class="xq-img">
+                                <img src="libs/imgs/floor7_list_01.jpg" height="100%" width="184px">
+                            </div>
+                            <div class="xqnr-bg-l">
+                                <p>龙泉校区</p>
+                                <p>地址：成都市龙泉驿都东路38号锦鸿时代4楼412室</p>
+                                <p>电话：028-69686400</p>
+                                <div class="shadow-btns">
+                                    <div>马上咨询<span></span></div>
+                                    <div>了解详情<span></span></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="time-axis">
+                                <span class="line"></span>
+                                <span class="circ"></span>
+                            </div>
+                            <div class="xqcl">
+                                <p>2017.8.3</p>
+                                <p>誉财教育龙泉校区正式成立。</p>
+                            </div>
+                        </li>
+                        <li class="right">
+                            <div class="xqcl">
+                                <p>2017.8.3</p>
+                                <p>誉财教育龙泉校区正式成立。</p>
+                            </div>
+                            <div class="time-axis">
+                                <span class="line"></span>
+                                <span class="circ"></span>
+                            </div>
+                            <div class="xqnr-bg-r">
+                                <p>龙泉校区</p>
+                                <p>地址：成都市龙泉驿都东路38号锦鸿时代4楼412室</p>
+                                <p>电话：028-69686400</p>
+                                <div class="shadow-btns">
+                                    <div style="margin-left: 30px;">马上咨询<span></span></div>
+                                    <div>了解详情<span></span></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="xq-img">
+                                <img src="libs/imgs/floor7_list_01.jpg" height="100%" width="184px">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 誉财教育之道 -->
+        <section class="section8">
+            <div class="middle-page">
+                <div class="module-title">
+                    <h3>誉财教育之道</h3>
+                    <span>为您提供及时新闻动态及行业资讯</span>
+                    <div class="module-title-style">
+                        <div class="module-title-style"></div>
+                    </div>
+                </div>
+                <ul class="section8-list">
+                    <li class="active">
+                        <div class="showa"><img src="libs/imgs/ycjyzd_5_01.png"></div>
+                        <div class="hidea"><img src="libs/imgs/ycjyzd_5_02.png"></div>
+                        <div class="text">
+                            <p>教研</p>
+                            <p>誉财教育的核心</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="showa"><img src="libs/imgs/ycjyzd_4_01.png"></div>
+                        <div class="hidea"><img src="libs/imgs/ycjyzd_4_02.png"></div>
+                        <div class="text">
+                            <p>教学</p>
+                            <p>誉财智慧的传播</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="showa"><img src="libs/imgs/ycjyzd_3_01.png"></div>
+                        <div class="hidea"><img src="libs/imgs/ycjyzd_3_02.png"></div>
+                        <div class="text">
+                            <p>教材</p>
+                            <p>誉财知识的载体</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="showa"><img src="libs/imgs/ycjyzd_2_01.png"></div>
+                        <div class="hidea"><img src="libs/imgs/ycjyzd_2_02.png"></div>
+                        <div class="text">
+                            <p>诚信</p>
+                            <p>誉财企业的根本</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="showa"><img src="libs/imgs/ycjyzd_6_01.png"></div>
+                        <div class="hidea"><img src="libs/imgs/ycjyzd_6_02.png"></div>
+                        <div class="text">
+                            <p>文化</p>
+                            <p>誉财团队的内涵</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="showa"><img src="libs/imgs/ycjyzd_1_01.png"></div>
+                        <div class="hidea"><img src="libs/imgs/ycjyzd_1_02.png"></div>
+                        <div class="text">
+                            <p>服务</p>
+                            <p>誉财心灵的愉悦</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 底部黑白照片渐变彩色 -->
+        <div class="bottom-photo">
+            <div class="blackimg"></div>
+            <div class="colorimg"></div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="middle-page" style="width: 1080px">
+                <ul class="footer-list">
+                    <li>
+                        <div class="logo">
+                            <img src="libs/imgs/logo_03.png">
+                        </div>
+                        <p>
+                            誉财教育是西南地区一家集以科学的教学理念和雄厚的师资为根本；秉承厚基础、重技能的教学 方针；以市场需求为导向，素质教育为中心，技能开发为重点的办学理念；以职场实战的业务技能为核心；以学员持续满意的教学水为重点的会计人才专业化教育机构！
+                        </p>
+                    </li>
+                    <li>
+                        <p>走进誉财</p>
+                        <p><a href="#">誉财简介</a></p>
+                        <p><a href="#">公司文化</a></p>
+                        <p><a href="#">媒体报道</a></p>
+                    </li>
+                    <li>
+                        <p>企业动态</p>
+                        <p><a href="#">公司新闻</a></p>
+                        <p><a href="#">报考考试</a></p>
+                        <p><a href="#">就业资讯</a></p>
+                    </li>
+                    <li>
+                        <p>在线学习</p>
+                        <p><a href="#">视频课程</a></p>
+                        <p><a href="#">考试题库</a></p>
+                        <p><a href="#">资料下载</a></p>
+                    </li>
+                </ul>
+                <div class="yqlj">
+                    <ul>
+                        <li>友情链接：</li>
+                        <li><a href="#">学途网</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">成都网站制作</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">成都软装</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">武汉UI培训</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">成都职业技能培训</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">轻备学员</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">成都减肥训练营</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">成都吧</a></li>
+                        <li>
+                            <div class="line" style="">|</div>
+                        </li>
+                        <li><a href="#">南昌会计培训</a></li>
+                    </ul>
+                    <ul>
+                        <li>关注誉财：</li>
+                        <li><a href="#"><img src="libs/imgs/header-icon.png"></a></li>
+                        <li><a href="#"><img src="libs/imgs/header-icon1.png"></a></li>
+                        <li><a href="#"><img src="libs/imgs/header-icon2.png"></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>成都誉财教育咨询有限公司 ｜ 法律顾问：四川千喆律师事务所 赵江律师</p>
+                    <p>ICP蜀B2-200168574 ©️SignumlnternationalS.ar.lLuzern Branch,誉财教育旗</p>
+                </div>
+            </div>
+        </footer>
+        <!-- 侧边固定导航 -->
+        <ul class="right-nav">
+            <li>
+                <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_1.png"></span>
+                <p>你问我答</p>
+            </li>
+            <li>
+                <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_2.png"></span>
+                <p>学员作业</p>
+            </li>
+            <li>
+                <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_3.png"></span>
+                <p>考证咨询</p>
+            </li>
+            <li>
+                <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_4.png"></span>
+                <p>实账咨询</p>
+            </li>
+            <li>
+                <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_5.png"></span>
+                <p>报名预约</p>
+            </li>
+            <li>
+                <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_6.png"></span>
+                <p>誉财评价</p>
+            </li>
+            <li onclick="backTop()">
+                <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_7.png"></span>
+                <p>返回顶部</p>
+            </li>
+        </ul>
+        <!-- 登录注册 -->
+        <div class="login-reg-shadow">
+            <div class="login-reg-wraper">
+                <ul class="tag-title oh">
+                    <li data-sid="login" class="active"><a href="javascript:void(0);">登录</a></li>
+                    <li data-sid="reg"><a href="javascript:void(0);">注册</a></li>
+                </ul>
+                <div class="form_outer">
+                    <div class="form_inner">
+                        <ul id="login" class="form">
+                            <li>
+                                <input type="text" name="h" placeholder="请输入手机号">
+                            </li>
+                            <li>
+                                <input type="password" name="h" placeholder="请输入密码">
+                            </li>
+                            <li><a href="#">忘记密码</a></li>
+                            <li>
+                                <button>点击登录</button>
+                            </li>
+                        </ul>
+                        <ul id="reg" class="form">
+                            <li>
+                                <input type="text" name="h" placeholder="请输入手机号">
+                            </li>
+                            <li class="oh">
+                                <input type="text" name="h" placeholder="请输入验证码" class="fl">
+                                <button class="fr">获取验证</button>
+                            </li>
+                            <li>
+                                <input type="password" name="h" placeholder="请输入密码">
+                            </li>
+                            <li>
+                                <input type="checkbox" name=""><a href="#">我已经阅读并同意《誉财教育服务协议》</a></li>
+                            <li>
+                                <button>点击登录</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="close_btn"></div>
+                <div class="three-party-login">
+                    <div class="fgx oh">
+                        <span></span>
+                        <span> 合作网站账号登录 </span>
+                        <span></span>
+                    </div>
+                    <div class="threef-icons">
+                        <a href="#"><img src="libs/imgs/微信icon.png"></a>
+                        <a href="#"><img src="libs/imgs/QQ-icon.png"></a>
+                        <a href="#"><img src="libs/imgs/新浪微博icon.png"></a>
+                        <a href="#"><img src="libs/imgs/腾讯微博icon.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 视频内容-->
+        <div id="video_shadow">
+            <div class="video_wraper">
+                <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" width="1000" height="564">
+                    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                    <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                <div class="close-btn" onclick="closeVideoWraper()">×</div>
+            </div>
+        </div>
+    </div>
+    <script src="libs/js/jquery-2.2.3.min.js"></script>
+    <script src="libs/js/video.min.js"></script>
+    <script src="libs/js/scroll.js"></script>
+    <script src="libs/js/laytpl.js"></script>
+    <script src="libs/js/comm.js"></script>
+    <script src="libs/js/index.js"></script>
+</body>
+
+</html>

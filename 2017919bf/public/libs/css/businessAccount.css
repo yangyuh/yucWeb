@@ -1,0 +1,224 @@
+.middle-page-1200{
+	/*margin: auto;*/
+	text-align: center;
+}
+/*模块标题*/
+.module-title{
+	text-align: center;
+	padding: 15px 0;
+}
+.module-title .font{
+	padding: 20px 0;
+	font-size: 50px;
+	color: #035ade;
+	font-weight: bolder;
+}
+.module-title .span-font-color{
+	color:#555;
+}
+
+/*了解详情按钮*/
+.detail_btn{
+	background-color: #035ade;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 10px 50px;
+	border-radius: 10px;
+	outline: none;
+	transition: all 0.5s;
+}
+.detail_btn:hover{
+	background: none;
+	border: 1px solid #035ade;
+	color: #035ade;
+}
+/*顶部蓝色jian角*/
+.top-blue-bg{
+	width: 100%;
+	background: url(../imgs/businessAccount/蓝色底边pic.png);	
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*做账流程简化看*/
+.section1{
+	margin: 60px auto;
+	text-align: center;
+}
+.section1 p{
+	padding: 20px 0;
+	font-size: 50px;
+	color: #035ade;
+	font-weight: bolder;
+}
+
+
+/*步凑1*/
+.section2{
+    position: relative;
+	background: url(../imgs/businessAccount/识别原始凭证bj_06.jpg);	
+    background-size: contain;
+}
+.section2-content{
+	width: 86%;
+	height: 90%;
+	background: rgba(205,211,213,0.3);
+	padding: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -48.5%);
+}
+.section2-content ul{
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.section2-content ul li{
+	text-align: center;
+	width: 50%;
+	height: 100%;
+}
+/*步凑2*/
+.section3{
+	background: url(../imgs/businessAccount/登记记账凭证bj_08.jpg);	
+    background-size: contain;
+    position: relative;
+}
+.section3-content{
+	width: 86%;
+	height: 90%;
+	background: rgba(205,211,213,0.3);
+	padding: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -48.5%);
+}
+.section3-content div{
+	height:55%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	margin-top: -32%;
+}
+.section3-content p{
+	position: absolute;
+	top: 66%;
+	width: 60%;
+	font-size: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+/*步凑3*/
+.section4{
+    position: relative;
+	background: url(../imgs/businessAccount/登记账薄bj_10.jpg);	
+    background-size: contain;
+}
+.section4-content{
+	width: 86%;
+	height: 75%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/*margin-top: -22%;*/
+	background: rgba(205,211,213,0.3);
+	padding: 10px;
+}
+.section4-content div:nth-child(1){
+	position: absolute;
+	right: 10px;
+	width: 50%;
+}
+.section4-content div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	bottom: 20px;
+	left: 20px;
+	width: 55%
+}
+
+/*步凑4*/
+.section5{
+	background: url(../imgs/businessAccount/编制报表_12.jpg);	
+    background-size: contain;
+    position: relative;
+}
+.section5-content{
+	width: 86%;
+	height: 75%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	margin-top: -28%;
+	background: rgba(205,211,213,0.3);
+	padding: 10px;
+}
+.section5-content ul li{
+	width: 50%;
+	padding-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*步凑5*/
+.section6{
+	background: url(../imgs/businessAccount/纳税申报bj_14.jpg);	
+    background-size: contain;
+    position: relative;
+}
+.section6-content{
+	width: 86%;
+	height: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(205,211,213,0.3);
+	padding: 10px;
+}
+.section6-content div:nth-child(1){
+	position: absolute;
+	right: 10px;
+	width: 65%;
+}
+.section6-content div:nth-child(2){
+	position: absolute;
+	z-index: 1;
+	bottom: 20px;
+	left: 20px;
+	width: 65%
+}
+/*步凑6*/
+.section7{
+	background: url(../imgs/businessAccount/财务软件实训bj_16.jpg);	
+    background-size: contain;
+    position: relative;
+}
+.section7-content{
+	width: 68%;
+	height: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(205,211,213,0.3);
+	padding: 30px;
+}
+.section7-content img{
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
