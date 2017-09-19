@@ -26,28 +26,28 @@
 }
 /*按钮风格*/
 .btn-style-white{
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
     background: #fff;
     border-radius: 4px;
     color: #035bde;
-    height: 46px;
-    line-height: 46px;
-    width: 180px;
     text-align: center;
     outline: none;
     border: 1px solid #fff;
-    font-size: 18px;
+    font-size: 20px;
 }
 .btn-style-blue{
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
     background: #035bde;
     border-radius: 4px;
     color: #fff;
-    height: 46px;
-    line-height: 46px;
-    width: 180px;
     text-align: center;
     outline: none;
     border: 1px solid #035bde;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 auto;
     cursor: pointer;
     transition: all 0.5s;
@@ -66,7 +66,6 @@
     top: 0;
     left: 0;
 }
-
 
 /*********************************2018年初级会计师职称，报名已经开始/*********************************/
 .section1{
@@ -147,6 +146,10 @@
     transform: translate(-50%,-50%);
     cursor: pointer;
     z-index: 1;
+    /*transition: all 0.5s;*/
+}
+.section2 .center_btn:hover{
+    background: url("../imgs/juniorAccountant/center_btn_03_a.png");
 }
 .section2 .title {
     width: 141px;
@@ -321,6 +324,7 @@
     color: #fff;
 }
 .section6 .btn-style-blue{
+    width: 200px;
     margin-top: 60px; 
 }
 /*********************************实战讲师授课、/*********************************/
@@ -530,15 +534,15 @@
 .section9 .content ul li:nth-child(1){
     width: 22%;
     left: 0;
-    top: 10%;
+    top: 15%;
 }
 .section9 .content ul li:nth-child(2){
     width: 82%;
     left: 10%;
-    top: 10.1%;
+    top: 15%;
 }
 .section9 .content ul li:nth-child(3){
-    width: 26%;
+    width: 27%;
     right: 0;
 }
 .section9 .content ul li img{
@@ -552,5 +556,5 @@
     padding: 80px 0;
 }
 .section10 .module-title h1{
-    padding-bottom: 100px;
+    padding: 100px 0;
 }

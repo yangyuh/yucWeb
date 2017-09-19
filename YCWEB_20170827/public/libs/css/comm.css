@@ -194,24 +194,15 @@ ul.oh li{
     height: 100%;
     overflow: hidden;
     position: absolute;
+    cursor: pointer;
 }
 .banner-imgs li {
     width: 25%;
     height: 100%;
     float: left;
 }
-.banner-imgs li:nth-child(1) {
-    background: url('../imgs/banner_06.jpg') center center;
-    background-size: contain; 
-}
-.banner-imgs li:nth-child(2) {
-    background: #000;
-}
-.banner-imgs li:nth-child(3) {
-    background: red;
-}
-.banner-imgs li:nth-child(4) {
-    background: yellow;
+.banner-imgs li img{
+    width: 100%;
 }
 .banner .middle-page {
     position: relative;
@@ -222,10 +213,12 @@ ul.oh li{
     height: 71px;
     width: 71px;
     background: url('../imgs/banner-icon.png');
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 6%;
     transform: translateY(-50%);
+    transition: all 0.5s;
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -236,15 +229,22 @@ ul.oh li{
     height: 71px;
     width: 71px;
     background: url('../imgs/banner-icon1.png');
+    opacity: 0;
     position: absolute;
     top: 50%;
     right: 6%;
     transform: translateY(-50%);
+    transition: all 0.5s;
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
+.banner:hover .banner-pre-btn,
+.banner:hover .banner-next-btn{
+    opacity: 1;
+}
+
 /*轮播小圆点*/
 .banner-btns {
     position: absolute;
