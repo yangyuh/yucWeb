@@ -73,16 +73,42 @@
 	z-index: -1;
 }
 .section2 .imgs-wraper ul{
-	width: 9.36rem;
+	width: 9.82rem;
 	margin: 0 auto;
 }
-
 .section2 .imgs-wraper ul li {
 	width: 4.66rem;
 	height: 6rem;
-	/*width: 50%;*/
 	text-align: center;
+}
+.section2 .imgs-wraper ul li:nth-child(1){
+	margin-right: 0.5rem;
 }
 .section2 .imgs-wraper ul li img{
 	width: 100%;
 }
+.section2 .text-wraper{
+	width: 12.11rem;
+	margin: 0 auto;
+	padding-bottom: 0.97rem;
+}
+.section2 .text-wraper .title{
+	font-size: 0.3rem;
+	color: #3584e6;
+	font-weight: bold;
+	padding: 0.38rem 0 0.21rem;
+	border-bottom: 1px solid #535353;
+}
+.section2 .text-wraper p{
+	font-size: 0.2rem;
+	line-height: 0.45rem;
+	padding: 0.29rem 0;
+}
+/*step2登记记账凭证*/
+.section3{
+	width: 100%;
+	height: 8.33rem;
+	background: url('../imgs/businessAccount/s3bg.png');
+	background-size: auto 100%; 
+}
+

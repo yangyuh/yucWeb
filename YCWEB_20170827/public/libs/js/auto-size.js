@@ -3,6 +3,8 @@
         var winWidth = window.innerWidth;
         if(winWidth > 1240){
             doc.documentElement.style.fontSize = (winWidth / 1920) * 100 + 'px';
+        } else {
+            doc.documentElement.style.fontSize = (1240 / 1920) * 100 + 'px';
         }
     }
     var evt = 'onorientationchange' in win ? 'orientationchange' : 'resize';
