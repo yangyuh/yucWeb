@@ -133,7 +133,7 @@
         </section>
         <!-- 竞争日趋激烈，初级会计职称是必要的 -->
         <section class="section2">
-            <div class="middle-page-1200">
+            <div class="content_wraper">
                 <div class="content">
                     <div class="center_btn"></div>
                     <div class="rotate_wraper"></div>
@@ -486,56 +486,7 @@
     <script src="libs/js/scroll.js"></script>
     <script src="libs/js/laytpl.js"></script>
     <script src="libs/js/comm.js"></script>
-    <script>
-    $(function() {
-        $(".outer_wraper ul").on("click", "li", function() {
-            var length = $(".outer_wraper ul").children().length;
-            var index = $(this).index();
-            if (index > 1) {
-                $(".outer_wraper ul").stop();
-                $(".outer_wraper ul").animate({
-                    "left": -$(this).innerWidth() * (index - 1) + "px"
-                }, 500);
-            } else {
-                $(".outer_wraper ul").stop();
-                $(".outer_wraper ul").animate({
-                    "left": "0px"
-                }, 500);
-            }
-        });
-        $(".pre").click(function() {
-            var left = $(".outer_wraper ul").css("left").replace('px', '');
-            if (left < 0) {
-                left = 0;
-                $(".outer_wraper ul").stop();
-                $(".outer_wraper ul").animate({
-                    "left": left + "px"
-                }, 500);
-            }
-        });
-        $(".next").click(function() {
-            var length = $(".outer_wraper ul").children().length;
-            var w = $(".outer_wraper ul").children().eq(0).innerWidth();
-            var left = length * -w + w * 3;
-            $(".outer_wraper ul").stop();
-            $(".outer_wraper ul").animate({
-                "left": left + "px"
-            }, 500);
-        });
-        // 旋转
-        var num = 0
-        $(".center_btn").click(function() {
-            num += 1;
-            if (num == 8) {
-                num = 0;
-            }
-            $(".rotate_wraper").stop();
-            $(".rotate_wraper").animate({
-                rotate: 45 * num
-            }, 1000);
-        });
-    })
-    </script>
+    <script src="libs/js/juniorAccountant.js"></script>
 </body>
 
 </html>

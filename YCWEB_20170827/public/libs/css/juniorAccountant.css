@@ -24,20 +24,20 @@
     width: 2rem;
     height: 0.52rem;
     line-height: 0.52rem;
-    background: #035bde;
+    background: #215cb6;
     border-radius: 0.04rem;
     color: #fff;
     text-align: center;
     outline: none;
-    border: 0.01rem solid #035bde;
+    border: 0.01rem solid #215cb6;
     font-size: 0.2rem;
     margin: 0 auto;
     cursor: pointer;
     transition: all 0.5s;
 }
 .btn-style-blue:hover{
-    background: none;
-    color: #035bde;
+    background: #3583e6;
+    border: 0.01rem solid #3583e6;
 }
 
 /*********************************2018年初级会计师职称，报名已经开始/*********************************/
@@ -97,42 +97,50 @@
 .section2{
     position: relative;
     background: #e3e3e3;   
-    padding: 100px;     
+    padding: 1rem;     
 }
-
+.section2 .content_wraper{
+    width: 12rem;
+    margin: 0 auto;
+}
 .section2 .content{
-    width: 895px;
-    height: 895px;
+    width: 8.95rem;
+    height: 8.95rem;
     position: relative;
     margin: 0 250px;
 }
 .section2 .rotate_wraper{
-    width: 895px;
-    height: 895px;
-    background: url("../imgs/juniorAccountant/s2bg.png");
+    width: 8.95rem;
+    height: 8.95rem;
+    background: url("../imgs/juniorAccountant/s2bg.png") no-repeat;
+    background-size: contain; 
+
 }
 .section2 .center_btn{
-    width: 250px;
-    height: 250px;
-    background: url("../imgs/juniorAccountant/center_btn_03.png");
+    width: 2.50rem;
+    height: 2.50rem;
+    background: url("../imgs/juniorAccountant/center_btn_03.png") no-repeat;
+    background-size: contain; 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     cursor: pointer;
     z-index: 1;
-    /*transition: all 0.5s;*/
+    transition: all 0.5s;
 }
 .section2 .center_btn:hover{
-    background: url("../imgs/juniorAccountant/center_btn_03_a.png");
+    background: url("../imgs/juniorAccountant/center_btn_03_a.png") no-repeat;
+    background-size: contain; 
+    z-index: 1;
 }
 .section2 .title {
-    width: 141px;
-    height: 296px;
-    background: url("../imgs/juniorAccountant/s2_title_03.png");
+    width: 1.41rem;
+    height: 2.96rem;
+    background: url("../imgs/juniorAccountant/s2_title_03.png") no-repeat;
+    background-size: contain; 
     position: absolute;
-    top: 150px;
-    margin-left: 20px;
+    top: 1.50rem;
 }
 
 /*********************************有誉财，通过任何考试都是必然的/*********************************/
