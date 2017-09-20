@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE7"
+        on line 6 of E:\yangyh\yucWeb\YCWEB_20170827\public\industryAccount.html
+
+1: <!DOCTYPE html>
+2: <html lang="en">
+3: 
+4: <head>
+5:     <meta charset="UTF-8">
+6:     <!--禁止缩放-->
+7:     <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+8:     <!--去除默认的数字拨号链接-->
+9:     <meta content="telephone=no" name="format-detection">
+10:     <!--开启浏览器对webapp的支持-->
+11:     <meta name="apple-mobile-web-app-capable" content="yes" />
+
+Backtrace:
+E:\yangyh\yucWeb\YCWEB_20170827\public\industryAccount.html:6
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util.rb:1048:in `rescue in block in find_encoding_error'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util.rb:1045:in `block in find_encoding_error'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util.rb:1044:in `each'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util.rb:1044:in `each_with_index'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util.rb:1044:in `find_encoding_error'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/util.rb:772:in `check_sass_encoding'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:444:in `check_encoding!'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:400:in `_to_tree'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin.rb:82:in `update_stylesheets'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+D:/Program Files (x86)/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+D:/Program Files (x86)/Ruby24-x64/bin/sass:22:in `load'
+D:/Program Files (x86)/Ruby24-x64/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE7\"\A         on line 6 of E:\yangyh\yucWeb\YCWEB_20170827\public\industryAccount.html\A \A 1: <!DOCTYPE html>\A 2: <html lang=\"en\">\A 3: \A 4: <head>\A 5:     <meta charset=\"UTF-8\">\A 6:     <!--禁止缩放-->\A 7:     <meta id=\"viewport\" name=\"viewport\" content=\"width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no\">\A 8:     <!--去除默认的数字拨号链接-->\A 9:     <meta content=\"telephone=no\" name=\"format-detection\">\A 10:     <!--开启浏览器对webapp的支持-->\A 11:     <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />"; }

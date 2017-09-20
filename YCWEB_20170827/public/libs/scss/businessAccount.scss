@@ -1,4 +1,8 @@
 $color: #369; 
 body {
 	background: darken($color, 10%);
+	height: 100%;
+	h1{
+		font-size: 20px;
+	}
 }
