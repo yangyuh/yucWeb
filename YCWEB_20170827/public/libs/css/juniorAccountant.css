@@ -366,7 +366,6 @@
 /*********************************良好的学习环境/*********************************/
 .section8{
     position: relative;
-    padding-bottom: 1rem;
 }
 .section8 .hjbg{
     position: relative;
@@ -429,7 +428,7 @@
     transition: all 0.5s;
 }
 .section8 .btn-style-blue{
-    margin-top: 1rem;
+    margin-top: 1.8rem;
 }
 #triangle-bottomright {
     width: 0;
