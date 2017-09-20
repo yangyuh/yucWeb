@@ -1,53 +1,36 @@
 /*********************************模块标题/*********************************/
 .module-title{
     text-align: center;
-    padding: 100px 0 60px;
+    padding: 1rem 0 0.6rem;
 }
 .module-title h1{
-    font-size: 50px;
+    font-size: 0.5rem;
     font-weight: bolder;
-    padding-bottom: 15px;
+    padding-bottom: 0.15rem;
 }
 .module-title p{
-    font-size: 26px;
+    font-size: 0.3rem;
     color: #215cb6;
 }
 .module-title p span{
-    width: 80px;
+    width: 0.8rem;
     display: inline-block;
     height: 1px;
     background: #215cb6;
-    margin: 0 10px;
-    margin-bottom: 8px;
-
-}
-.middle-page-1200{
-    padding: 35px 0;
-}
-/*按钮风格*/
-.btn-style-white{
-    width: 180px;
-    height: 52px;
-    line-height: 52px;
-    background: #fff;
-    border-radius: 4px;
-    color: #035bde;
-    text-align: center;
-    outline: none;
-    border: 1px solid #fff;
-    font-size: 20px;
+    margin: 0 0.1rem;
+    margin-bottom: 0.08rem;
 }
 .btn-style-blue{
-    width: 180px;
-    height: 52px;
-    line-height: 52px;
+    width: 2rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
     background: #035bde;
-    border-radius: 4px;
+    border-radius: 0.04rem;
     color: #fff;
     text-align: center;
     outline: none;
-    border: 1px solid #035bde;
-    font-size: 20px;
+    border: 0.01rem solid #035bde;
+    font-size: 0.2rem;
     margin: 0 auto;
     cursor: pointer;
     transition: all 0.5s;
@@ -56,20 +39,12 @@
     background: none;
     color: #035bde;
 }
-/*底部阴影*/
-.top-shadow{
-    height: 60px;
-    width: 100%;
-    background: url("../imgs/juniorAccountant/topshadow.png");
-    background-size: contain; 
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 /*********************************2018年初级会计师职称，报名已经开始/*********************************/
 .section1{
-    background: url("../imgs/juniorAccountant/报名开始bj_03.jpg");
+    width: 100%;
+    height: 8.18rem;
+    background: url("../imgs/juniorAccountant/报名开始bj_03.jpg") no-repeat;
     position: relative;
     background-size: contain;
 }
@@ -164,46 +139,48 @@
 .section3{
     position: relative;
     background: url("../imgs/juniorAccountant/main3_bj_02.png") no-repeat;    
+    width: 100%;
+    height: 10.47rem;
     background-size: contain; 
 }
 .section3_wraper{
-    position: absolute;
-    width: 1200px;
-    height: 626px;
-    top: 50%;
-    left: 50%;
-    margin-top: -313px;
-    margin-left: -600px;
+    width: 12.15rem;
+    margin: 0 auto;
 }
 .section3 .module-title{
     padding: 0;
 }
 .section3 .module-title h1{
-    font-size: 32px;
+    padding-top: 1rem; 
+    font-size: 0.5rem;
     color: #fff;
 }
 .section3 .module-title p{
     color: #fff;
-    font-size: 22px;
-    padding: 20px 50px;
+    font-size: 0.35rem;
+    padding: 0.5rem 0 1rem;
 }
 .section3 ul li{
     width: 25%;
     text-align: center;
-    padding: 0 18px;
+    padding: 0 0.18rem;
 }
 .section3 ul li h4{
-    font-size: 22px;
+    font-size: 0.28rem;
     color: #fff;
-    padding: 30px 0;
+    padding: 0.4rem 0;
+}
+.section3 ul li img{
+    width: 1.3rem;
+    height: 1.22rem
 }
 .section3 ul li p{
-    font-size: 16px;
+    font-size: 0.2rem;
     text-align: left;
     color: #fff;
 }
 .section3 .btn-style-blue{
-    margin-top: 50px;
+    margin-top: 0.8rem;
 }
 /*********************************拿下初级会计职称证书，升值加薪不是梦！/*********************************/
 .section4 .btn-style-blue{
@@ -298,122 +275,134 @@
 
 /*********************************在线网课/*********************************/
 .section6{
-    position: relative;
+    width: 100%;
+    height: 6.19rem;
     background: url("../imgs/juniorAccountant/main6_bj_04.png") no-repeat;
     background-size: contain;  
 }
 .section6 .module-title{
-    width: 1200px;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    width: 12rem;
+    margin: 0 auto;
 }
 .section6 .module-title h1{
-    font-size: 36px;
+    font-size: 0.5rem;
     color: #fff;
 }
 .section6 .module-title p{
     color: #fff;
-    font-size: 22px;
-    padding: 20px 50px;
+    font-size: 0.3;
+    padding: 0.56rem 0.15rem;
 }
 .section6 .module-title .p1{
-    font-size: 16px;
+    font-size: 0.2rem;
     color: #fff;
 }
 .section6 .btn-style-blue{
-    width: 200px;
-    margin-top: 60px; 
+    margin-top: 1.16rem; 
 }
 /*********************************实战讲师授课、/*********************************/
 .section7{
     background: #f0f0f0;
     position: relative; 
-    padding-bottom: 50px;
+    padding-bottom: 0.6rem;
 }
 .section7 .module-title{
-    margin-bottom: 60px;
+    margin-bottom: 1rem;
 }
 .section7 .content{
-    margin-top: 60px;
+    margin-top: 0.6rem;
     background: url('../imgs/juniorAccountant/师资pic.png')no-repeat center center;
     background-size: 100% 100%; 
-    width: 1200px;
-    height: 700px;
+    width: 13.2rem;
+    height: 7rem;
     margin: 0 auto;
     position: relative;
 }
-.section7 .content .btn-style-blue{
-    position: absolute;
-    bottom: 46px;
-    left: 47.3%;
-    transform: translateX(-50%);
-}
 .section7 .content ul{
-    width: 702px;
+    width: 7.2rem;
     position: absolute;
-    top: -45px;
+    top: -0.45rem;
     left: 50%;
     transform: translateX(-50%);
 }
 .section7 .content ul li {
-    margin-bottom: 20px;
+    margin-bottom: 0.2rem;
 }
 .section7 .content ul li .img{
-    width: 242px;
-    height: 283px;
+    width: 2.42rem;
+    height: 2.83rem;
 }
 .section7 .content ul li .img img{
     width: 100%;
     height: 100%;
 }
 .section7 .content ul li .text{
-    height: 283px;
-    width: 400px;
-    font-size: 20px;
+    height: 2.83rem;
+    width: 4.00rem;
+    font-size: 0.20rem;
     color: #fff;
     background: #215eb6;
-    padding: 45px 80px 0 45px;
-    margin: 0 30px;
+    padding: 0.45rem 0.80rem 0 0.45rem;
+    margin: 0 0.30rem;
 }
 .section7 .content ul li .text h3{
-    font-size: 38px;
-    margin-bottom: 30px;
+    font-size: 0.38rem;
+    margin-bottom: 0.30rem;
 }
-
+.section7 .content .btn-style-blue{
+    position: absolute;
+    bottom: 0.44rem;
+    left: 47.3%;
+    transform: translateX(-50%);
+}
 /*********************************良好的学习环境/*********************************/
 .section8{
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 1rem;
 }
 .section8 .hjbg{
     position: relative;
     background: url("../imgs/juniorAccountant/hjbg.png") no-repeat;
+    height: 6.72rem;
     background-size: contain;
     text-align: center;
 }
 .section8 .hjbg h3{
-    font-size: 36px;
+    width: 100%;
+    font-size: 0.5rem;
     color: #fff;
     font-weight: 600;
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%,-80%);
-    z-index: 1
+    text-align: center;
+    top: 2rem;
 }
-.section8 .btn-style-blue{
-    margin-top: 100px;
+.section8 .hjimgs{
+    position: absolute;
+    width: 13.8rem;
+    left: 50%;
+    margin-left: -6.4rem;
+    bottom: -0.9rem;
+    height: 4.1rem;
+}
+.section8 .hjimgs .outer_wraper {
+    height: 100%;
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.section8 .hjimgs .outer_wraper ul{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .section8 ul{
     width: 200%;
 }
 .section8 ul li{
-    width: 333.3333px;
     text-align: center;
-    padding: 15px 0;
+    padding: 0.15rem 0.255rem;
 }
 .section8 ul li .item:hover {
     -webkit-box-shadow: 0 0 10px 15px #f0f0f0;
@@ -421,70 +410,52 @@
     box-shadow: 0 0 20px #888888;
 }
 .section8 ul li .item{
-    width: 266px;
+    width: 3.8rem;
+    height: 3.6rem;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0.1rem;
     background: #fbfbfb;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 0.5rem;
     cursor: pointer;
     transition: all 0.5s;
 }
-.section8 .hjimgs{
-    position: absolute;
-    width: 1060px;
-    left: 50%;
-    margin-left: -530px;
-    bottom: 142px;
-    padding-left: 30px;
-    padding-right: 29px;
-    height: 293px;
-}
-.section8 .hjimgs .outer_wraper {
-    height: 100%;
-    width: 1000px;
-    position: absolute;
-    left: 30px;
-    overflow: hidden;
-}
-.section8 .hjimgs .outer_wraper ul{
-    position: absolute;
-    top: 0;
-    left: 0px;
+.section8 .btn-style-blue{
+    margin-top: 1rem;
 }
 #triangle-bottomright {
     width: 0;
     height: 0;
-    border-bottom: 30px solid #215eb6;
-    border-left: 30px solid transparent;
+    border-bottom: 0.30rem solid #215eb6;
+    border-left: 0.30rem solid transparent;
     transition: all 1s;
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 0.10rem;
+    bottom: 0.10rem;
 }
 #triangle-bottomright2 {
     width: 0;
     height: 0;
-    border-bottom: 18px solid #215eb6;
-    border-left: 18px solid transparent;
+    border-bottom: 0.18rem solid #215eb6;
+    border-left: 0.18rem solid transparent;
     transition: all 1s;
     position: absolute;
     right: 0;
     bottom: 0;
 }
 .section8 .pre{
-    height: 50px;
-    width: 30px;
+    height: 0.50rem;
+    width: 0.30rem;
     background: rgba(119,119,119,0.5);
     position: absolute;
     cursor: pointer;
     top: 32%;
-    left: 0px;
+    left: 0rem;
     transition: all 0.5s;
 }
 .section8 .next{
-    height: 50px;
-    width: 30px;
+    height: 0.50rem;
+    width: 0.30rem;
     background: rgba(119,119,119,0.8);
     position: absolute;
     cursor: pointer;
@@ -523,8 +494,8 @@
     position: relative;
 }
 .section9 .content ul{
-    width: 90%;
-    height: 674px;
+    width: 14.40rem;
+    height: 6.74rem;
     position: relative;
     margin: 0 auto;
 }
@@ -532,17 +503,17 @@
     position: absolute;
 }
 .section9 .content ul li:nth-child(1){
-    width: 22%;
+    width: 3rem;
     left: 0;
-    top: 15%;
+    top: 0.98rem;
 }
 .section9 .content ul li:nth-child(2){
-    width: 82%;
+    width: 11.91rem;
     left: 10%;
-    top: 15%;
+    top: 0.98rem;
 }
 .section9 .content ul li:nth-child(3){
-    width: 27%;
+    width: 4rem;
     right: 0;
 }
 .section9 .content ul li img{
@@ -550,11 +521,11 @@
 }
 /*********************************大家说好的课程，才是真的好课程/*********************************/
 .section10{
-    padding-bottom: 70px;
+    padding-bottom: 0.7rem;
 }
 .section10 .module-title{
-    padding: 80px 0;
+    padding: 0.80rem 0;
 }
 .section10 .module-title h1{
-    padding: 100px 0;
+    padding: 1rem 0;
 }
