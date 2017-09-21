@@ -1,17 +1,6 @@
 $(function() {
-    // 设置轮播背景图片高度
-    getdblHeight($(".banner"), 470);
-    // 设置底部背景图片高度
-    getdblHeight($(".bottom-photo"), 438);
-
-    // 监听窗口变化
-    $(window).resize(function(event) {
-        // 设置轮播背景图片高度
-        getdblHeight($(".banner"), 470);
-        // 设置底部背景图片高度
-        getdblHeight($(".bottom-photo"), 438);
-    });
-
+    // 二级菜单初始化加载会计课程班级
+    ViewKJKC();
     // banner轮播
     var timer = LeftMoveAuto(4, 4000);
 
@@ -159,6 +148,34 @@ $(function() {
         }
     });
 })
+
+
+// 二级菜单会计课程模块
+function ViewKJKC() {
+    var view = $("#kclistView");
+    var tpl = $("#kjkcTpl").html();
+    laytpl(tpl).render([], function(html) {
+        view.html(html);
+    });
+}
+
+// 二级菜单会计课程模块
+function ViewXLKC() {
+    var view = $("#kclistView");
+    var tpl = $("#xlkcTpl").html();
+    laytpl(tpl).render([], function(html) {
+        view.html(html);
+    });
+}
+
+// 二级菜单财税实账模块
+function ViewCSSZ() {
+    var view = $("#kclistView");
+    var tpl = $("#csszTpl").html();
+    laytpl(tpl).render([], function(html) {
+        view.html(html);
+    });
+}
 
 // 移动动画
 function LeftMove(index) {

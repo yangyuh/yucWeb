@@ -146,32 +146,6 @@ function initPage() {
     ViewKJKC();
 }
 
-// 二级菜单会计课程模块
-function ViewKJKC() {
-    var view = $("#kclistView");
-    var tpl = $("#kjkcTpl").html();
-    laytpl(tpl).render([], function(html) {
-        view.html(html);
-    });
-}
-
-// 二级菜单会计课程模块
-function ViewXLKC() {
-    var view = $("#kclistView");
-    var tpl = $("#xlkcTpl").html();
-    laytpl(tpl).render([], function(html) {
-        view.html(html);
-    });
-}
-
-// 二级菜单财税实账模块
-function ViewCSSZ() {
-    var view = $("#kclistView");
-    var tpl = $("#csszTpl").html();
-    laytpl(tpl).render([], function(html) {
-        view.html(html);
-    });
-}
 // 加载名师直播模块
 function ViewMSZBContent() {
     var view = $("#floor2ContentView");
