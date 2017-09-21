@@ -327,6 +327,9 @@
     background-size: contain; 
     position: relative;
 }
+.section6 .module-title{
+    padding: 0.5rem 0;
+}
 .section6 .module-title h1,
 .section6 .module-title p{
     color: #fff;
@@ -340,9 +343,174 @@
     top: 4rem;
     left: 0;
 }
+.section6 .hjlist-outer{
+    width: 13.7rem;
+    height: 6rem;
+    margin: 0 auto;
+    padding: 0 0.77rem;
+    overflow: hidden;
+    position: relative;
+}
+.section6 .hjlist-outer .pre{
+    width: 0.38rem;
+    height: 0.65rem;
+    background: url("../imgs/middleRankAccountant/pre.png");
+    background-size: contain;
+    position: absolute;
+    left: 0.1rem;
+    top: 2.3rem;
+    cursor: pointer; 
+}
+.section6 .hjlist-outer .next{
+    width: 0.38rem;
+    height: 0.65rem;
+    background: url("../imgs/middleRankAccountant/next.png");
+    background-size: contain;
+    position: absolute;
+    right: 0.1rem;
+    top: 2.3rem;
+    cursor: pointer; 
+}
+.section6 .hjlist-inner{
+    overflow: hidden;
+    height: 100%;
+    width: 101%;
+    z-index: 12;
+    position: relative;
+    margin-left: -0.1rem;
+}
 .section6 ul.hjlist{
-    
+    position: absolute;
+    width: 300%;
+    padding: 0.35rem 0.1rem;
+    z-index: 0
+}
+.section6 ul.hjlist li{
+    color: white;
+    background-color: #fff;
+    width: 2.8rem;
+    height: 4.5rem;
+    text-align: center;
+    transform: skewY(-10deg);
+    cursor: pointer;
+    padding: 0.15rem 0;
+    transition: all 0.5s;
+    position: relative;
+    margin-right: 20px;
+}
+
+.section6 ul.hjlist li #triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 0.35rem solid #3584e6;
+    border-right: 0.35rem solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.section6 ul.hjlist li .img-wraper{
+    overflow: hidden;
+    width: 2.52rem;
+    margin: 0 auto;
 }
 .section6 ul.hjlist li img{
-    
+    width: 100%;
+    margin-top: -0.3rem;
+}
+.section6 ul.hjlist li .img-wraper .zhibian{
+    width: 2.52rem;
+    background: #fff;
+    height: 1.2rem;
+    transform: skewY(10deg);
+    position: absolute;
+    bottom: 0.3rem;
+    z-index: 1;
+}
+.section6 ul.hjlist li .img-wraper .zhibian p{
+    padding-top: 0.15rem;
+    position: absolute;
+    color: #494949;
+    z-index: 2
+}
+.section6 ul.hjlist li:hover{
+    box-shadow: 0 0 0.2rem #888888;
+}
+.section6 .btn-style-blue{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    margin-left: -1rem;
+    background: #f5f5f5;
+    border-color: #f5f5f5;
+    color: #3483e3;
+}
+/*学员评价*/
+.section7 .content{
+    position: relative;
+    width: 11.21rem;
+    height: 6.89rem;
+    background: url("../imgs/middleRankAccountant/s7bg1.png") no-repeat top 1.58rem left 0;
+    background-size: contain;
+    margin: 0 auto;
+}
+.section7 .content ul{
+    width: 100%;
+    margin-left: -0.38rem;
+}
+.section7 .content ul li{
+    margin-right: 1.32rem;
+    height: 2.53rem;
+}
+.section7 .content ul li .text-wraper{
+    width: 3.21rem;
+    padding: 0.16rem 0.25rem;
+    background: #3584e6;
+    color: #fff;
+    font-size: 0.14rem;
+    position: relative;
+    border-radius: 0.2rem;
+    /*height: 1.3rem;*/
+}
+.section7 .content ul li .text-wraper div.jiao{
+    width: 0.27rem;
+    height: 0.23rem;
+    background: url('../imgs/middleRankAccountant/jiao.png') no-repeat;
+    background-size: contain;
+    position: absolute; 
+    bottom: -0.23rem;
+    left: 0.5rem;
+}
+.section7 .content ul li .head-img{
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.23rem;
+    margin-left: 0.5rem;
+}
+.section7 .content ul li .head-img img{
+    width: 100%;
+}
+/*头像在上面的ul*/
+.section7 .content ul.img-top{
+    position: absolute;
+    bottom: 0.55rem;
+    left: 1.87rem;
+    height: 3rem;
+    width: 100%;
+}
+.section7 .content ul.img-top li .text-wraper .jiao{
+    width: 0.4rem;
+    height: 0.3rem;
+    top: -0.3rem;
+    background: url('../imgs/middleRankAccountant/jiaot.png') no-repeat;
+}
+.section7 .content ul.img-top li .head-img{
+    margin-bottom: 0.3rem;
+}
+.section7 .content ul.img-top li:nth-child(2){
+    position: absolute;
+    right: -0.36rem;
+    bottom: 0.4rem;
+}
+.section7 .content ul.img-top li:nth-child(2) .text-wraper{
+    width: 3.9rem;
 }
