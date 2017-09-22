@@ -88,9 +88,6 @@
     z-index: -1;
 }
 /*中级会计职称,高端财务首选*/
-.section2 .content{
-
-}
 .section2 .content ul{
     width: 14.88rem;
     margin: 0 auto;
@@ -314,7 +311,6 @@
     width: 0.45rem;
     border-top: 2px solid #494949;
     padding-bottom: 0.08rem;
-    /*background: #494949;*/
 }
 .section5 .content ul li p{
     font-size: 0.2rem;
@@ -472,7 +468,6 @@
     font-size: 0.14rem;
     position: relative;
     border-radius: 0.2rem;
-    /*height: 1.3rem;*/
 }
 .section7 .content ul li .text-wraper p.time{
     text-align: right;
