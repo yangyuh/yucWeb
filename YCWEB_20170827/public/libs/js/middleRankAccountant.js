@@ -4,10 +4,11 @@ $(function() {
     $("ul.hjlist").on("click", "li", function() {
         var length = $("ul.hjlist").children().length;
         var index = $(this).index();
+        var margin_r = $(this).css("margin-right").replace('px', '') - 0;
         if (index > 2) {
             $("ul.hjlist").stop();
             $("ul.hjlist").animate({
-                "left": -($(this).innerWidth() + 20) * (index - 2) + "px"
+                "left": -($(this).innerWidth() + margin_r) * (index - 2) + "px"
             }, 500);
         } else {
             $("ul.hjlist").stop();
@@ -30,7 +31,8 @@ $(function() {
     // 调到最后一张
     $(".next").click(function() {
         var length = $("ul.hjlist").children().length;
-        var w = $("ul.hjlist").children().eq(0).innerWidth() + 20;
+        var margin_r = $("ul.hjlist").children().eq(0).css("margin-right").replace('px', '') - 0;
+        var w = $("ul.hjlist").children().eq(0).innerWidth() + margin_r;
         var left = length * -w + w * 4;
         $("ul.hjlist").stop();
         $("ul.hjlist").animate({

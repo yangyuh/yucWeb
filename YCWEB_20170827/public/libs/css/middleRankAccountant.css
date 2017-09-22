@@ -159,6 +159,9 @@
 .section3 .content ul li.img-right .text-fly{
     left: 1.72rem;
 }
+.section3 .content ul li:nth-child(2).img-right .text-fly{
+    left: 1rem;
+}
 .section3 .content ul li.img-right .text{
     overflow: hidden;
 }
@@ -396,7 +399,7 @@
     padding: 0.15rem 0;
     transition: all 0.5s;
     position: relative;
-    margin-right: 20px;
+    margin-right: 0.32rem;
 }
 
 .section6 ul.hjlist li #triangle-bottomleft {
@@ -471,6 +474,9 @@
     border-radius: 0.2rem;
     /*height: 1.3rem;*/
 }
+.section7 .content ul li .text-wraper p.time{
+    text-align: right;
+}
 .section7 .content ul li .text-wraper div.jiao{
     width: 0.27rem;
     height: 0.23rem;
@@ -489,18 +495,24 @@
 .section7 .content ul li .head-img img{
     width: 100%;
 }
+/*头像在下面的ul*/
+.section7 .content ul.img-bottom{
+    position: absolute;
+    top: 0.35rem;
+    left: 0.03rem;
+}
 /*头像在上面的ul*/
 .section7 .content ul.img-top{
     position: absolute;
-    bottom: 0.55rem;
-    left: 1.87rem;
+    bottom: 0.5rem;
+    left: 1.83rem;
     height: 3rem;
     width: 100%;
 }
 .section7 .content ul.img-top li .text-wraper .jiao{
     width: 0.4rem;
     height: 0.3rem;
-    top: -0.3rem;
+    top: -0.29rem;
     background: url('../imgs/middleRankAccountant/jiaot.png') no-repeat;
 }
 .section7 .content ul.img-top li .head-img{
