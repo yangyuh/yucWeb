@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>誉财教育注册会计师专题</title>
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/video-js.css">
     <link rel="stylesheet" type="text/css" href="libs/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="libs/css/comm.css">
     <link rel="stylesheet" type="text/css" href="libs/css/AccountanterReg.css">
@@ -19,354 +20,551 @@
 <body>
     <div class="page">
         <!-- header -->
-        <div class="top">
-            <div class="middle-page">
-                <div class="top-right">
-                    <span>免费咨询电话：400-999-8640</span>
-                    <span><a href="#"><img src="libs/imgs/header-icon.png"></a></span>
-                    <span><a href="#"><img src="libs/imgs/header-icon1.png"></a></span>
-                    <span><a href="#"><img src="libs/imgs/header-icon2.png"></a></span>
-                </div>
-            </div>
-        </div>
-        <!-- nav -->
-        <div class="nav-box">
-            <div class="middle-page">
-                <div class="nav">
-                    <div class="nav-logo"><img src="libs/imgs/logo_03.png"></div>
-                    <ul class="nav-list">
-                        <li><a href="index.html">首页</a></li>
-                        <li class="showem active"><a href="AccountanterReg.html">会计课程</a></li>
-                        <li class="showem"><a href="educationCourses.html">学历课程</a></li>
-                        <li class="showem"><a href="#">财税实账</a></li>
-                        <li><a href="#">在线教育</a></li>
-                        <li><a href="#">新闻咨询</a></li>
-                        <li><a href="#">校区</a></li>
-                    </ul>
-                    <ul class="nav-login">
-                        <li><a href="#">注册</a></li>
-                        <li><a href="#">登录</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ejmeun">
+        <div class="public_wraper">
+            <div class="top">
                 <div class="middle-page">
-                    <ul class="ejmeun-leftnav">
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                    </ul>
-                    <div class="ejmeun-group">
-                        <p>选择班型：</p>
-                        <ul>
-                            <li>
-                                <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                        </ul>
+                    <div class="top-right">
+                        <span>免费咨询电话：400-999-8640</span>
+                        <span><a href="#"><img src="libs/imgs/header-icon.png"></a></span>
+                        <span><a href="#"><img src="libs/imgs/header-icon1.png"></a></span>
+                        <span><a href="#"><img src="libs/imgs/header-icon2.png"></a></span>
                     </div>
                 </div>
             </div>
+            <!-- 导航 -->
+            <div class="nav-box">
+                <div class="middle-page">
+                    <div class="nav">
+                        <div class="nav-logo"><img src="libs/imgs/logo_03.png"></div>
+                        <ul class="nav-list">
+                            <li class="active"><a href="index.html">首页</a></li>
+                            <li class="showem"><a href="javascript:void(0);">会计课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">学历课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">财税实账</a></li>
+                            <li><a href="onlineEducation.html">在线教育</a></li>
+                            <li><a href="newsInfo.html">新闻咨询</a></li>
+                            <li><a href="#xiaoqufb">校区</a></li>
+                        </ul>
+                        <ul class="nav-login">
+                            <li><a href="javascript:void(0);">登录</a></li>
+                            <li><a href="javascript:void(0);">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 二级导航 -->
+                <div class="ejmeun">
+                    <div class="middle-page">
+                        <ul class="ejmeun-leftnav">
+                            <li onclick="ViewKJKC()"><a href="javascript:void(0);">会计课程</a></li>
+                            <li onclick="ViewXLKC()"><a href="javascript:void(0);">学历课程</a></li>
+                            <li onclick="ViewCSSZ()"><a href="javascript:void(0);">财税实账</a></li>
+                        </ul>
+                        <div class="ejmeun-group">
+                            <p>选择班型：</p>
+                            <div id="kclistView"></div>
+                            <!-- 会计课程 -->
+                            <script type="text/html" id="kjkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 学历课程 -->
+                            <script type="text/html" id="xlkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 财税实账 -->
+                            <script type="text/html" id="csszTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner -->
+            <div class="banner">
+                <ul class="banner-imgs">
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                    <li>
+                        <img src="libs/imgs/banner_06.jpg">
+                    </li>
+                </ul>
+                <div class="banner-pre-btn" onclick="turnLeft()"></div>
+                <div class="banner-next-btn" onclick="turnRight()"></div>
+                <ul class="banner-btns">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
-        <!-- banner -->
-        <div class="banner">
-            <ul class="banner-imgs">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <!-- <div class="middle-page"> -->
-            <div class="banner-pre-btn" onclick="turnLeft()"></div>
-            <div class="banner-next-btn" onclick="turnRight()"></div>
-            <!-- </div> -->
-            <ul class="banner-btns">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <!-- 中国注册会计师 -->
-        <section class="section1"></section>
-        <!-- 口碑 -->
+        <!-- 工业实账的特点 -->
+        <section class="section1">
+            <div class="module-title">
+                <h1>工业实账的特点</h1>
+                <span></span>
+            </div>
+            <div class="content">
+                <div class="content-gray-bg"></div>
+                <ul class="oh">
+                    <li>
+                        <div class="top-triangle">
+                            <div class="linebg"></div>
+                            <div class="downbg"></div>
+                        </div>
+                        <div id="triangle-up"></div>
+                        <img src="libs/imgs/industryAccount/s1_icon_1.png">
+                        <h4>重要支柱</h4>
+                        <p>投入大，规模大 是中国经济发展的重要支柱</p>
+                    </li>
+                    <li>
+                        <div class="top-triangle">
+                            <div class="linebg"></div>
+                            <div class="downbg"></div>
+                        </div>
+                        <div id="triangle-up"></div>
+                        <img src="libs/imgs/industryAccount/s1_icon_2.png">
+                        <h4>深度加工</h4>
+                        <p>对投产的原材料进行深加工</p>
+                    </li>
+                    <li>
+                        <div class="top-triangle">
+                            <div class="linebg"></div>
+                            <div class="downbg"></div>
+                        </div>
+                        <div id="triangle-up"></div>
+                        <img src="libs/imgs/industryAccount/s1_icon_3.png">
+                        <h4>成本核算</h4>
+                        <p>经营周期长，资金周转慢 生产成本及经营成本核算</p>
+                    </li>
+                </ul>
+                <button class="btn-style-blue">点击咨询</button>
+            </div>
+        </section>
+        <!-- 工业实账的难点 -->
         <section class="section2">
-            <div class="public-praise">
-                <ul class="middle-page">
-                    <li>
-                        <p><span>9</span>年</p>
-                        <p>时间的积累沉淀</p>
-                    </li>
-                    <li>
-                        <p><span>10</span>余万</p>
-                        <p>财会学员顺利毕业</p>
-                    </li>
-                    <li>
-                        <p><span>87.5</span>%</p>
-                        <p>学员来自口碑转介</p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="oh">
+                <li><img src="libs/imgs/industryAccount/s2_left_03.png" width="100%"></li>
+                <li>
+                    <div class="module-title">
+                        <h1>工业实账的特点</h1>
+                        <span></span>
+                    </div>
+                    <p class="p1">1、原材料品种多，仓库收发存管理繁琐 </p>
+                    <p>2、生产车间多，在产品移库管理麻烦 </p>
+                    <p>3、设备、厂房等固定资产多，实物管理及盘点工作量大 </p>
+                    <p>4、实物流转环节多 </p>
+                    <p>5、工序、工艺复杂</p>
+                    <p>6、产品成本核算复杂 </p>
+                </li>
+            </ul>
         </section>
-        <!-- 课程体验卷 -->
+        <!-- 工业实账的流程 -->
         <section class="section3">
-            <!-- <img src="libs/imgs/main-2_04.jpg" width="100%"> -->
-            <div class="section3-froms">
-                <p>以领取<span>162</span>份体验卷</p>
-                <div class="line"></div>
-                <ul>
-                    <li>
-                        <select>
-                            <option>省份选择</option>
-                            <option>sss</option>
-                        </select>
-                        <select style="float: right;">
-                            <option>校区选择</option>
-                            <option>sss</option>
-                        </select>
-                    </li>
-                    <li>
-                        <input type="text" name="" placeholder="姓名">
-                    </li>
-                    <li>
-                        <input type="text" name="" placeholder="电话">
-                    </li>
-                    <li>
-                        <input type="button" name="" value="点击免费领取">
-                    </li>
-                </ul>
+            <div class="module-title">
+                <h1>工业实账的流程</h1>
+                <span></span>
             </div>
-            <div class="plxq">
-                <marquee behavior="scroll" contenteditable="true" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="6" height="100%" width="100%" onmouseover="this.stop();" onmouseout="this.start();">
-                    <ul>
-                        <li>138****9922:好激动终于领到了</li>
-                        <li>138****9922:好激动终于领到了</li>
-                        <li>138****9922:好激动终于领到了</li>
-                    </ul>
-                </marquee>
+            <ul class="oh">
+                <li>
+                    <div class="img">
+                        <img src="libs/imgs/industryAccount/s3_img_03.png">
+                    </div>
+                    <div class="text">
+                        <div class="step_number">
+                            <img src="libs/imgs/industryAccount/s3_step_03.png">
+                        </div>
+                        <p style="padding-top: 0.3rem;">根据出纳转过来的各种原 始凭证进行审核，审核无 误后，编制记账凭证。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="libs/imgs/industryAccount/s3_img_05.png">
+                    </div>
+                    <div class="text">
+                        <div class="step_number">
+                            <img src="libs/imgs/industryAccount/s3_step_05.png">
+                        </div>
+                        <p style="padding-top: 0.25rem;">根据记账凭证登记各 种明细分类账。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="libs/imgs/industryAccount/s3_img_10.png">
+                    </div>
+                    <div class="text">
+                        <div class="step_number">
+                            <img src="libs/imgs/industryAccount/s3_step_10.png">
+                        </div>
+                        <p>月末作计提、摊销、结转记账 凭证，对所有记账凭证进行汇 总，编制记账凭证汇总表，根 据记账凭证汇总表登记总帐。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="libs/imgs/industryAccount/s3_img_12.png">
+                    </div>
+                    <div class="text">
+                        <div class="step_number">
+                            <img src="libs/imgs/industryAccount/s3_step_13.png">
+                        </div>
+                        <p>结账、对帐。做到帐证相符、 帐帐相符、帐实相符;编制会计 报表，做到数字准确、内容完 整，并进行分析说明。将记账 凭证装订成册，妥善保管</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn">
+                <button class="btn-style-blue">点击咨询</button>
             </div>
         </section>
-        <!-- 西南地区顶级CPA..... -->
-        <section class="section4"></section>
-        <!-- 誉财名师鼎力助阵 -->
-        <section class="section5"></section>
-        <!-- 三大经典热门培训班 -->
-        <section class="section6"></section>
-        <!-- 六层护航轻松通关 -->
-        <section class="section7"></section>
-        <!-- 合理规划2018年... -->
-        <section class="section8"></section>
-        <!--  -->
+        <!-- 我们能够给您带来的保障 -->
+        <section class="section4">
+            <div class="gray-bg"></div>
+            <ul class="content">
+                <li>
+                    <div class="module-title">
+                        <h1>工业实账的流程</h1>
+                        <span></span>
+                    </div>
+                    <p>学完我们的工业实账课程以后，学员均可直接上手工 业企业的财会岗位，实操经验可配比1年以上实际工 业工作经验的在职人员。 </p>
+                    <div id="triangle-bottomleft"></div>
+                </li>
+                <li>
+                    <img src="libs/imgs/industryAccount/s4_img_03.png">
+                </li>
+            </ul>
+        </section>
+        <!-- 誉财教学环境 -->
+        <section class="section5">
+            <div class="module-title">
+                <h1>誉财教学环境</h1>
+                <span></span>
+            </div>
+            <ul class="oh">
+                <li>
+                    <img src="libs/imgs/industryAccount/s5_img_06.png">
+                    <p>誉财天府校区</p>
+                </li>
+                <li>
+                    <img src="libs/imgs/industryAccount/s5_img_03.png">
+                    <p>誉财天府校区咖啡厅</p>
+                </li>
+                <li class="mr_0">
+                    <img src="libs/imgs/industryAccount/s5_img_09.png">
+                    <p>誉财天府校区过道一角</p>
+                </li>
+                <li>
+                    <img src="libs/imgs/industryAccount/s5_img_16.png">
+                    <p>誉财天府校区授课教室</p>
+                </li>
+                <li>
+                    <img src="libs/imgs/industryAccount/s5_img_14.png">
+                    <p>誉财天府校区授课教室</p>
+                </li>
+                <li class="mr_0">
+                    <img src="libs/imgs/industryAccount/s5_img_17.png">
+                    <p>誉财天府校区实操教室</p>
+                </li>
+            </ul>
+        </section>
+        <!-- 学员评价 -->
+        <section class="section6">
+            <div class="module-title">
+                <h1>学员评价</h1>
+                <span></span>
+            </div>
+            <ul>
+                <li class="headimg-left">
+                    <div class="headimg"><img src="libs/imgs/industryAccount/s6_img_03.png"></div>
+                    <div class="text">
+                        <p>注会难考的点在于理解和渗透，还有考试量大。即便开卷考，你带着书进去也不可能考及格的。 因此，备考注会一定要花时间和精力。也正因为很难这个证的价值非常大。</p>
+                        <div id="triangle-left"></div>
+                    </div>
+                </li>
+                <li class="headimg-right">
+                    <div class="text">
+                        <p>注会难考的点在于理解和渗透，还有考试量大。即便开卷考，你带着书进去也不可能考及格的。 因此，备考注会一定要花时间和精力。也正因为很难这个证的价值非常大。</p>
+                        <div id="triangle-right"></div>
+                    </div>
+                    <div class="headimg"><img src="libs/imgs/industryAccount/s6_img_03.png"></div>
+                </li>
+                <li class="headimg-left">
+                    <div class="headimg"><img src="libs/imgs/industryAccount/s6_img_03.png"></div>
+                    <div class="text">
+                        <p>注会难考的点在于理解和渗透，还有考试量大。即便开卷考，你带着书进去也不可能考及格的。 因此，备考注会一定要花时间和精力。也正因为很难这个证的价值非常大。</p>
+                        <div id="triangle-left"></div>
+                    </div>
+                </li>
+                <li class="headimg-right">
+                    <div class="text">
+                        <p>注会难考的点在于理解和渗透，还有考试量大。即便开卷考，你带着书进去也不可能考及格的。 因此，备考注会一定要花时间和精力。也正因为很难这个证的价值非常大。</p>
+                        <div id="triangle-right"></div>
+                    </div>
+                    <div class="headimg"><img src="libs/imgs/industryAccount/s6_img_03.png"></div>
+                </li>
+            </ul>
+            <button class="btn-style-blue">点击咨询</button>
+        </section>
+        <!-- 实战讲师授课 -->
+        <section class="section7">
+        </section>
+        <!-- 良好的学习环境 -->
+        <section class="section8">
+        </section>
+        <!-- 学员评价，誉财帮你实现梦想 -->
         <section class="section9">
-            <img src="libs/imgs/main-8.jpg" width="100%">
-            <div class="p">
-                <span>学霸有话说</span>
-                <div class="line"></div>
-            </div>
-            <div class="section9-bg">
-                <ul>
-                    <li>
-                        <div class="xbtx"></div>
-                        <div class="text">
-                            <p>阿道夫连接链接离开了金坷垃金发科技放辣椒大概看了就爱看两个健康啦阿道夫连接链接离开了金坷垃金发科技放辣椒大概看了就爱看两个健康啦阿道夫连接链接离开了金坷垃金发科技放辣椒大概看了就爱看两个健康啦</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="xbtx"></div>
-                        <div class="text">阿道夫连接链接离开了金坷垃金发科技放辣椒大概看了就爱看两个健康啦</div>
-                    </li>
-                    <li>
-                        <div class="xbtx"></div>
-                        <div class="text">阿道夫连接链接离开了金坷垃金发科技放辣椒大概看了就爱看两个健康啦</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="djzx-btn">
-                <input type="button" name="" value="点击咨询">
-            </div>
         </section>
-        <!-- 2018年誉财毕业典礼有你一席 -->
-        <section class="section10"></section>
-        <!-- 誉财六大校区，均可现场报名 -->
-        <section class="section11">
-            <div class="middle-page">
-                <p class="title">誉财六大校区，均可现场报名</p>
-                <ul>
-                    <li>
-                        <p>誉财天府校区（天府广场）</p>
-                        <p>成都市锦江区人民东路6号SAC四川航空广场4层（地铁1、2号线天府广场站f出口）</p>
-                        <p>联系电话：028-69686658</p>
-                        <p>
-                            <input type="button" value="点击咨询" name="">
-                        </p>
-                    </li>
-                    <li>
-                        <p>誉财天府校区（天府广场）</p>
-                        <p>成都市锦江区人民东路6号SAC四川航空广场4层（地铁1、2号线天府广场站f出口）</p>
-                        <p>联系电话：028-69686658</p>
-                        <p>
-                            <input type="button" value="点击咨询" name="">
-                        </p>
-                    </li>
-                    <li>
-                        <p>誉财天府校区（天府广场）</p>
-                        <p>成都市锦江区人民东路6号SAC四川航空广场4层（地铁1、2号线天府广场站f出口）</p>
-                        <p>联系电话：028-69686658</p>
-                        <p>
-                            <input type="button" value="点击咨询" name="">
-                        </p>
-                    </li>
-                    <li>
-                        <p>誉财天府校区（天府广场）</p>
-                        <p>成都市锦江区人民东路6号SAC四川航空广场4层（地铁1、2号线天府广场站f出口）</p>
-                        <p>联系电话：028-69686658</p>
-                        <p>
-                            <input type="button" value="点击咨询" name="">
-                        </p>
-                    </li>
-                    <li>
-                        <p>誉财天府校区（天府广场）</p>
-                        <p>成都市锦江区人民东路6号SAC四川航空广场4层（地铁1、2号线天府广场站f出口）</p>
-                        <p>联系电话：028-69686658</p>
-                        <p>
-                            <input type="button" value="点击咨询" name="">
-                        </p>
-                    </li>
-                    <li>
-                        <p>誉财天府校区（天府广场）</p>
-                        <p>成都市锦江区人民东路6号SAC四川航空广场4层（地铁1、2号线天府广场站f出口）</p>
-                        <p>联系电话：028-69686658</p>
-                        <p>
-                            <input type="button" value="点击咨询" name="">
-                        </p>
-                    </li>
-                </ul>
-            </div>
+        <!-- 大家说好的课程，才是真的好课程 -->
+        <section class="section10">
         </section>
-        <!-- bottom-photo -->
-        <div class="bottom-photo">
-            <div class="blackimg"></div>
-            <div class="colorimg"></div>
+        <!-- footer -->
+        <div class="public_wraper">
+            <!-- 底部黑白照片渐变彩色 -->
+            <div class="bottom-photo">
+                <div class="blackimg"></div>
+                <div class="colorimg"></div>
+            </div>
+            <!-- footer -->
+            <footer>
+                <div class="middle-page" style="width: 1080px">
+                    <ul class="footer-list">
+                        <li>
+                            <div class="logo">
+                                <img src="libs/imgs/logo_03.png">
+                            </div>
+                            <p>
+                                誉财教育是西南地区一家集以科学的教学理念和雄厚的师资为根本；秉承厚基础、重技能的教学 方针；以市场需求为导向，素质教育为中心，技能开发为重点的办学理念；以职场实战的业务技能为核心；以学员持续满意的教学水为重点的会计人才专业化教育机构！
+                            </p>
+                        </li>
+                        <li>
+                            <p>走进誉财</p>
+                            <p><a href="#">誉财简介</a></p>
+                            <p><a href="#">公司文化</a></p>
+                            <p><a href="#">媒体报道</a></p>
+                        </li>
+                        <li>
+                            <p>企业动态</p>
+                            <p><a href="#">公司新闻</a></p>
+                            <p><a href="#">报考考试</a></p>
+                            <p><a href="#">就业资讯</a></p>
+                        </li>
+                        <li>
+                            <p>在线学习</p>
+                            <p><a href="#">视频课程</a></p>
+                            <p><a href="#">考试题库</a></p>
+                            <p><a href="#">资料下载</a></p>
+                        </li>
+                    </ul>
+                    <div class="yqlj">
+                        <ul>
+                            <li>友情链接：</li>
+                            <li><a href="#">学途网</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都网站制作</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都软装</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">武汉UI培训</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都职业技能培训</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">轻备学员</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都减肥训练营</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都吧</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">南昌会计培训</a></li>
+                        </ul>
+                        <ul>
+                            <li>关注誉财：</li>
+                            <li>
+                                <a href="#"><img src="libs/imgs/header-icon.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="libs/imgs/header-icon1.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="libs/imgs/header-icon2.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>成都誉财教育咨询有限公司 ｜ 法律顾问：四川千喆律师事务所 赵江律师</p>
+                        <p>ICP蜀B2-200168574 ©️SignumlnternationalS.ar.lLuzern Branch,誉财教育旗</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- 侧边固定导航 -->
+            <ul class="right-nav">
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_1.png"></span>
+                    <p>你问我答</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_2.png"></span>
+                    <p>学员作业</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_3.png"></span>
+                    <p>考证咨询</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_4.png"></span>
+                    <p>实账咨询</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_5.png"></span>
+                    <p>报名预约</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_6.png"></span>
+                    <p>誉财评价</p>
+                </li>
+                <li onclick="backTop()">
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_7.png"></span>
+                    <p>返回顶部</p>
+                </li>
+            </ul>
         </div>
-        <footer>
-            <div class="middle-page" style="width: 1080px">
-                <ul class="footer-list">
-                    <li>
-                        <div class="logo">
-                            <img src="libs/imgs/logo_03.png">
-                        </div>
-                        <p>
-                            誉财教育是西南地区一家集以科学的教学理念和雄厚的师资为根本；秉承厚基础、重技能的教学 方针；以市场需求为导向，素质教育为中心，技能开发为重点的办学理念；以职场实战的业务技能为核心；以学员持续满意的教学水为重点的会计人才专业化教育机构！
-                        </p>
-                    </li>
-                    <li>
-                        <p>走进誉财</p>
-                        <p><a href="#">誉财简介</a></p>
-                        <p><a href="#">公司文化</a></p>
-                        <p><a href="#">媒体报道</a></p>
-                        <!-- <p><a href="#">公司环境</a></p>
-                        <p><a href="#">合作伙伴</a></p> -->
-                    </li>
-                    <li>
-                        <p>企业动态</p>
-                        <p><a href="#">公司新闻</a></p>
-                        <p><a href="#">报考考试</a></p>
-                        <p><a href="#">就业资讯</a></p>
-                        <!-- <p><a href="#">税务政策</a></p>
-                        <p><a href="#">专题活动</a></p> -->
-                    </li>
-                    <li>
-                        <p>在线学习</p>
-                        <p><a href="#">视频课程</a></p>
-                        <p><a href="#">考试题库</a></p>
-                        <p><a href="#">资料下载</a></p>
-                    </li>
-                </ul>
-                <div class="yqlj">
-                    <ul>
-                        <li>友情链接：</li>
-                        <li><a href="#">学途网</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">成都网站制作</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">成都软装</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">武汉UI培训</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">成都职业技能培训</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">轻备学员</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">成都减肥训练营</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">成都吧</a></li>
-                        <li>
-                            <div class="line" style="">|</div>
-                        </li>
-                        <li><a href="#">南昌会计培训</a></li>
-                    </ul>
-                    <ul>
-                        <li>关注誉财：</li>
-                        <li><a href="#"><img src="libs/imgs/header-icon.png"></a></li>
-                        <li><a href="#"><img src="libs/imgs/header-icon1.png"></a></li>
-                        <li><a href="#"><img src="libs/imgs/header-icon2.png"></a></li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p>成都誉财教育咨询有限公司 ｜ 法律顾问：四川千喆律师事务所 赵江律师</p>
-                    <p>ICP蜀B2-200168574 ©️SignumlnternationalS.ar.lLuzern Branch,誉财教育旗</p>
-                </div>
-            </div>
-        </footer>
     </div>
-    <script type="text/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="libs/js/scroll.js"></script>
-    <script type="text/javascript" src="libs/js/laytpl.js"></script>
-    <script type="text/javascript" src="libs/js/comm.js"></script>
-    <script type="text/javascript">
-    $(function() {
-        var sections = ["1-722", "3-788", "4-769", "5-759", "6-1433", "7-1257", "8-1736", "10-672"];
-        set_sections_h(sections);
-        $(window).resize(function() {
-            set_sections_h(sections);
-        })
-    })
-    </script>
+    <script src="libs/js/jquery-2.2.3.min.js"></script>
+    <script src="libs/js/auto-size.js"></script>
+    <script src="libs/js/jquery.rotate.js"></script>
+    <script src="libs/js/laytpl.js"></script>
+    <script src="libs/js/comm.js"></script>
+    <script src="libs/js/AccountanterReg.js"></script>
 </body>
 
 </html>
