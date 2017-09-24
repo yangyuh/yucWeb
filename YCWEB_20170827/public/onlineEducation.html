@@ -51,45 +51,142 @@
                 </div>
             </div>
             <!-- 二级导航 -->
-            <div class="ejmeun">
-                <div class="middle-page">
-                    <ul class="ejmeun-leftnav">
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                        <li>初级会计课程</li>
-                    </ul>
-                    <div class="ejmeun-group">
-                        <p>选择班型：</p>
-                        <ul>
-                            <li>
-                                <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
-                            <li>
-                                <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
-                                <p>初级会计一班</p>
-                            </li>
+                <div class="ejmeun">
+                    <div class="middle-page">
+                        <ul class="ejmeun-leftnav">
+                            <li onclick="ViewKJKC()"><a href="javascript:void(0);">会计课程</a></li>
+                            <li onclick="ViewXLKC()"><a href="javascript:void(0);">学历课程</a></li>
+                            <li onclick="ViewCSSZ()"><a href="javascript:void(0);">财税实账</a></li>
                         </ul>
+                        <div class="ejmeun-group">
+                            <p>选择班型：</p>
+                            <div id="kclistView"></div>
+                            <!-- 会计课程 -->
+                            <script type="text/html" id="kjkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 学历课程 -->
+                            <script type="text/html" id="xlkcTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 财税实账 -->
+                            <script type="text/html" id="csszTpl">
+                                <ul>
+                                    <li>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
         <ul class="content-list oh">
             <li>
@@ -100,17 +197,6 @@
                     </div>
                     <span>在线实操</span>
                 </div>
-                <!-- 二级图标 -->
-                <!-- <div class="two-level-icons oh">
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
-                        <span>真题演练</span>
-                    </div>
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
-                        <span>课后作业</span>
-                    </div>
-                </div> -->
             </li>
             <li>
                 <div class="one-level-icons">
@@ -120,17 +206,6 @@
                     </div>
                     <span>精品录播</span>
                 </div>
-                <!-- 二级图标 -->
-                <!-- <div class="two-level-icons oh">
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
-                        <span>真题演练</span>
-                    </div>
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
-                        <span>课后作业</span>
-                    </div>
-                </div> -->
             </li>
             <li>
                 <div class="one-level-icons">
@@ -140,17 +215,6 @@
                     </div>
                     <span>名师直播</span>
                 </div>
-                <!-- 二级图标 -->
-                <!-- <div class="two-level-icons oh">
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
-                        <span>真题演练</span>
-                    </div>
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
-                        <span>课后作业</span>
-                    </div>
-                </div> -->
             </li>
             <li>
                 <div class="one-level-icons">
@@ -186,61 +250,16 @@
                     </div>
                     <span>模拟报税</span>
                 </div>
-                <!-- 二级图标 -->
-                <!-- <div class="two-level-icons oh">
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon1.png"></p>
-                        <span>真题演练</span>
-                    </div>
-                    <div class="item fl">
-                        <p><img src="libs/imgs/onlineEducation/two-icon2.png"></p>
-                        <span>课后作业</span>
-                    </div>
-                </div> -->
             </li>
         </ul>
     </div>
 </body>
 <script src="libs/js/jquery-2.2.3.min.js"></script>
+<script src="libs/js/auto-size.js"></script>
 <script src="libs/js/video.min.js"></script>
 <script src="libs/js/scroll.js"></script>
 <script src="libs/js/laytpl.js"></script>
 <script src="libs/js/comm.js"></script>
-<script type="text/javascript">
-getdblHeight($(".page"), 1080);
-// 一级图标
-$(".one-level-icons").hover(function() {
-    $(this).children().children().eq(0).stop().fadeOut(500);
-    $(this).children().children().eq(1).stop().fadeIn(500);
-    $(this).children().eq(1).addClass('blue-text');
-    $(this).next().stop().fadeIn(500);
-}, function() {
-    $(this).children().children().eq(0).stop().fadeIn(500);
-    $(this).children().children().eq(1).stop().fadeOut(500);
-    $(this).children().eq(1).removeClass('blue-text');
-    $(this).next().stop().fadeOut(500);
-})
-
-// 二级图标交互 
-$(".two-level-icons .item").hover(function() {
-    $(this).children().children().eq(0).stop().fadeOut(500);
-    $(this).children().children().eq(1).stop().fadeIn(500);
-    $(this).children().eq(1).addClass('blue-text');
-    $(this).parent().stop().fadeIn(500);
-
-    $(this).parent().prev().children().children().eq(0).stop().fadeOut(500)
-    $(this).parent().prev().children().children().eq(1).stop().fadeIn(500);
-    $(this).parent().prev().children().eq(1).addClass('blue-text');
-}, function() {
-    $(this).children().children().eq(0).stop().fadeIn(500);
-    $(this).children().children().eq(1).stop().fadeOut(500);
-    $(this).children().eq(1).removeClass('blue-text');
-    $(this).parent().stop().fadeOut(500);
-
-    $(this).parent().prev().children().children().eq(0).stop().fadeIn(500);
-    $(this).parent().prev().children().children().eq(1).stop().fadeOut(500);
-    $(this).parent().prev().children().eq(1).removeClass('blue-text');
-})
-</script>
+<script src="libs/js/onlineEducation.js"></script>
 
 </html>

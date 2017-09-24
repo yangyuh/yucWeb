@@ -1,29 +1,40 @@
+section li img,
+section img,
+section div img{
+    width: 100%;
+}
+section ul li:last-child{
+    margin-right: 0
+}
 /*模块标题*/
 .module-title{
 	text-align: center;
-	padding: 106px 0;
+	padding: 1rem 0;
 }
 .module-title h1{
-	font-size: 40px;
+	font-size: 0.4rem;
 	font-weight: bolder;
-	padding-bottom: 18px;
+	padding-bottom: 0.18rem;
 }
 .module-title p{
-	font-size: 20px;
+	font-size: 0.2rem;
+	color: #787878;
 }
 .module-title span{
 	display: inline-block;
-	width: 90px;
-	height: 3px;
+	width: 0.9rem;
+	height: 0.03rem;
 	background: #035bde;
 }
 /*bannerbg*/
 .bannerbg{
+	width: 100%;
+	height: 5.70rem;
 	background: url("../imgs/proformaData/banner_02.jpg") no-repeat;
 	background-size: contain; 
 }
 .content .middle-page{
-	width: 1200px;
+	width: 12rem;
 }
 .content .navlist{
 	background: #f7f7f7;
@@ -31,10 +42,11 @@
 .content .navlist li{
 	width: 33.3333333333%;
 	text-align: center;
-	font-size: 20px;
-	line-height: 60px;
+	font-size: 0.24rem;
+	line-height: 0.6rem;
 	cursor: pointer;
 	transition: all 0.5s;
+	color: #494949;
 }
 .content .navlist li.active{
 	color: #fff;
@@ -62,7 +74,10 @@
 	background: #035bde;
 	color: #fff;
 	cursor: pointer;
-	border-bottom: 3px solid #035bde; 
+	border-bottom: 0.03rem solid #035bde; 
+}
+.content .xingxing-list li:hover .item span img:nth-child(2){
+	opacity: 1 
 }
 .content .xingxing-list li .item span{
 	display: block;
@@ -81,23 +96,22 @@
 	opacity: 0;
 }
 .content .xingxing-list li .item p{
-	font-size: 20px;
-	padding: 25px 0 40px;
+	font-size: 0.24rem;
+	padding: 0.25rem 0 0.4rem;
 }
 /*下载列表*/
 .content .download-list li{
 	width: 25%;
-	padding: 16px 21px; 
+	padding: 0.16rem 0.21rem; 
 	cursor: pointer;
-	margin-bottom: 50px;
+	margin-bottom: 0.5rem;
 }
 .content .download-list li .item{
+	width: 2.58rem;
 	transition: all 0.5s;
 }
 .content .download-list li:hover .item{
-	-webkit-box-shadow: 0 0 10px 15px #f0f0f0;
-    -moz-box-shadow: 0 0 10px 15px #f0f0f0;
-    box-shadow: 0 0 10px #888888;
+    box-shadow: 0 0 0.1rem #888888;
 }
 .content .download-list li .item:hover span img:nth-child(1){
 	opacity: 0;
@@ -106,8 +120,8 @@
 	opacity: 1;
 }
 .content .download-list li .item .img_wraper{
-	width: 258px;
-	height: 202px;
+	width: 2.58rem;
+	height: 2.02rem;
 	position: relative;
 	margin: 0 auto;
 }
@@ -125,8 +139,8 @@
 	top: 0; 
 	left: 0;
 	color:#fff;
-	font-size: 18px;
-	padding-top: 48px;
+	font-size: 0.18rem;
+	padding-top: 0.48rem;
 	transition: all 0.5s;
 }
 .img_wraper .blue-shadow{
@@ -139,7 +153,6 @@
 	left: 0;
 	transition: all 0.5s;
 	opacity: 0;
-
 }
 .content .download-list li:hover .p-shadow{
 	opacity: 0;
@@ -148,29 +161,31 @@
 	opacity: 1;
 }
 .img_wraper .blue-shadow img{
-	padding-top: 76px;
-	padding-left: 104px;
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-top: 0.8rem;
+	margin-left: 1.06rem;
 }
 .img_wraper .p-shadow p{
-	padding-top: 10px;
+	padding-top: 0.1rem;
 }
 .content .download-list li .item .text{
-	width: 258px;
+	width: 2.58rem;
 	margin: 0 auto;
-	height: 52px;
-	line-height:52px;
+	height: 0.52rem;
+	line-height: 0.52rem;
 	background: #f1f1f1;
-	font-size: 16px;
+	font-size: 0.16rem;
 	color: #787878;
 	overflow: hidden;
-	padding: 0 20px;
+	padding: 0 0.2rem;
 }
 /*分页*/
 .fenye{
-	margin: -30px 0 50px;
+	margin: -0.3rem 0 0.5rem;
 }
 .fenye div{
 	/*width: 50%;*/
-	font-size: 16px;
-	padding: 0 21px;
+	font-size: 0.18rem;
+	padding: 0 0.21rem;
 }
