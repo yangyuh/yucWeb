@@ -1,270 +1,642 @@
-.section1{
-    background: url("../imgs/AccountanterReg/main-1_02.jpg");
-    background-size: contain;
+body,
+footer,
+.top,
+.nav-box,
+.ejmeun{
+    background: #282828;
+    color: #fff;
 }
-
-/*口碑*/
-.section2 .public-praise {
-    background: #fff;
+.nav-box a,
+footer a{
+    color: #fff !important;
 }
-.section2 .public-praise ul li p span {
-    color: #b7042e;
+/*菜单移入*/
+.nav-box a:hover,
+footer a:hover{
+    color: #b7042e !important;
 }
-
-/*课程体验卷 */
-.section3 {
-    position: relative;
-    background: url("../imgs/AccountanterReg/main-2_04.jpg");
-    background-size: contain;
+/*二级菜单*/
+.ejmeun-leftnav li.active a{
+    background: #b7042e;
 }
-
-.section3-froms {
-    position: absolute;
-    top: 12%;
-    left: 45%;
-    height: 60%;
-    width: 22%;
-    background: #fff;
-    -webkit-box-shadow: 0 0 10px 15px #e2e2e2;
-    -moz-box-shadow: 0 0 10px 15px #e2e2e2;
-    box-shadow: 0 0 20px #e2e2e2;
+.ejmeun-leftnav li:hover a{
+    color: #fff !important;
+    background: #b7042e;
 }
-.section3-froms p {
-    font-size: 18px;
-    color: #5d5d5d;
+p{
+    font-size: 0.2rem;
+}
+section li img,
+section img,
+section div img{
+    width: 100%;
+}
+section ul li:last-child{
+    margin-right: 0
+}
+/*ul最右边的li右边距为0*/
+.li_mr_0{
+    margin-right: 0 !important;
+}
+.module-title{
+    width: 12rem;
+    padding: 1rem 0;
+    margin: 0 auto;
     text-align: center;
-    padding: 10px 0 5px;
+    position: relative;
+    z-index: 100;
 }
-.section3-froms p span {
-    font-size: 35px;
+.module-title .triangle_wraper {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+}
+.module-title .triangle_wraper .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-top: 0.6rem solid #b7042e;
+}
+
+.module-title .triangle_wraper .triangle-down-kong {
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+    z-index: -1;
+}
+.module-title .triangle_wraper .triangle-down2 {
+    width: 0;
+    height: 0;
+    border-left: 0.56rem solid transparent;
+    border-right: 0.56rem solid transparent;
+    border-top: 0.56rem solid #282828;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.module-title p.aril{
+    color: #fefefe;
+    padding-top: 1.2rem;
+    font-size: 0.18rem;
+    letter-spacing: 0.13rem;
+    opacity: 0.5;
+    text-transform : uppercase
+}
+.module-title .h1{
+    position: relative;
+    width: 100%;
+}
+.module-title .h1 h1{
+    font-size: 0.36rem;
+    color: #fff;
+    padding-top: 0.25rem; 
+    text-align: center;
+}
+.module-title .h1 span{
+    display: inline-block;
+    height: 1px;
+    background: #535353;
+    width: 4.53rem;
+    top: 0.45rem;
+    position: absolute;
+}
+.module-title .h1 span:nth-child(1){
+    left: 0;
+}
+.module-title .h1 span:nth-child(3){
+    right: 0;
+}
+.module-title h4{
+    font-size: 0.24rem;
+    color: #e2e2e2;
+    padding-top: 0.24rem;
+}
+
+/*按钮风格*/
+.btn-style{
+    width: 2rem;
+    height: 0.52rem;
+    line-height: 0.5rem;
+    background: #b8032e;
+    border-radius: 0.1rem;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    border: 1px solid #b8032e;
+    font-size: 0.18rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn-style:hover{
+    background: none;
+    border: 1px solid #b8032e;
+}
+/*单一的banner*/
+.banner-single{
+    width: 100%;
+    cursor: pointer;
+}
+/*****************CPA注册会计师*/
+.section1 .content{
+    width: 100%;
+    height: 7.84rem;
+    background: url("../imgs/AccountanterReg/main1_bj_04.jpg") no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-top: -1.8rem;
+    z-index: 0;
+}
+.section1 .content .btn-style{
+    position: absolute;
+    top: 5.29rem;
+    left: 5.49rem;
+    z-index: 100
+}
+/*****************免费领取*/
+.section2 ul.form{
+    width: 4rem;
+    height: 5.08rem;
+    border: 0.01rem solid #535353;
+    border-radius: 0.2rem;
+    margin: 0 auto;
+}   
+.section2 ul.form li {
+    text-align: center;
+    margin-top: 0.35rem; 
+}
+
+.section2 ul.form li input, 
+.section2 ul.form li select{
+    width: 2.86rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    border: 0.01rem solid #535353;
+    border-radius: 0.1rem;
+    background: #282828;
+    outline: none;
+    color: #fff;
+}
+.section2 ul.form li select{
+    width: 1.43rem;
+}
+.section2 ul.form li input{
+    padding-left: 0.1rem;
+}
+.section2 ul.form li:nth-child(1) h1{
+    padding: 0.35rem 0 0.25rem;
+    font-size: 0.24rem;
+}   
+.section2 ul.form li:nth-child(1) h1 strong{
+    font-size: 0.32rem;
+    color: #b8052f;
+}
+.section2 ul.form li:nth-child(1) span{
+    width: 1.66rem;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 0.01rem solid  #535353;
+}
+.section2 .plxq{
+    width: 9.56rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background: #484848;
+    border-radius: 0.25rem;
+    margin: 0.8rem auto;
+}
+.section2 .plxq ul li{
+    width: 33.333%;
+}
+/*****************免费领取*/
+.section3{
+    width: 100%;
+    height: 10.29rem;
+    background: url("../imgs/AccountanterReg/main3_bj_06.jpg") no-repeat;
+    background-size: contain;
+}
+.section3 .module-title{
+    padding-top: 0.48rem;
+}
+.section3 .triangle_wraper{
+    top: 0.5rem;
+}
+.section3 ul{
+    width: 10.46rem;
+    height: 3.66rem;
+    position: relative;
+    margin: 0 auto;
+}
+.section3 ul li{
+  position: absolute;
+}
+.section3 ul li:nth-child(1){
+    width: 7.88rem;
+    left: 0;
+}
+.section3 ul li:nth-child(1) img{
+    width: 100%;
+}
+.section3 ul li:nth-child(2){
+    width: 7rem;
+    height: 3.16rem;
+    background: rgba(255,255,255,0.5);
+    top: 0.25rem;
+    right: 0;
+    padding: 0.6rem;
+}
+.section3 ul li:nth-child(2) h1{
+    font-size: 0.3rem;
+}
+.section3 ul li:nth-child(2) h4{
+    font-size: 0.24rem;
+    padding: 0.2rem 0 0.68rem;
+}
+.section3 .btn-wraper{
+    padding-top: 0.6rem;
+    text-align: center;
+}
+/*****************誉财名师定力相助*/
+.section4{
+    width: 100%;
+    height: 9.86rem;
+    background: url("../imgs/AccountanterReg/main4_bj.png") no-repeat;
+    background-size: contain;
+}
+.section4 .module-title{
+    padding-top: 0.48rem;
+    padding-bottom: 0.4rem;
+}
+.section4 .triangle_wraper{
+    top: 0.5rem;
+}
+.section4 ul{
+    width: 8.17rem;
+    margin: 0 auto;
+    position: relative;
+}
+.section4 ul li:nth-child(1){
+    width: 2.5rem;
+    position: absolute;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    padding: 0.3rem;
+    padding-top: 0;
+}
+.section4 ul li:nth-child(1) h4{
+    font-size: 0.18rem;
+    color: #b8032e;
+    padding: 0.3rem 0;
+}
+.section4 ul li:nth-child(1) p{
+    font-size: 0.14rem;
+}
+.section4 ul li:nth-child(2){
+    position: absolute;
+    width: 5.72rem;
+    height: 3.6rem;
+    top: 1rem;
+    right: 0;
+}
+/*****************三大经典热门培训班*/
+.section5{
+    /*width: 100%;
+    height: 9.86rem;
+    background: url("../imgs/AccountanterReg/main4_bj.png") no-repeat;
+    background-size: contain;*/
+}
+.section5 ul{
+    width: 11.52rem;
+    margin: 0 auto;
+}
+.section5 ul li{
+    width: 3.4rem;
+    margin-right: 0.66rem;
+    text-align: center;
+    background: #191919;
+    position: relative;
+}
+.section5 ul li .triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 0.25rem solid #b7042e;
+    border-left: 0.25rem solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.section5 ul li:last-child{
+    margin-right: 0
+}
+.section5 ul li .head-bg{
+    text-align: center;
+    width: 3.4rem;
+    height: 2.14rem;
+    padding-top: 0.4rem;
+    background: url("../imgs/AccountanterReg/main5_pic_09.jpg") no-repeat;
+    background-size: contain;
+}
+.section5 ul li:nth-child(2) .head-bg{
+    background: url("../imgs/AccountanterReg/main5_pic_11.jpg") no-repeat;
+}
+.section5 ul li:nth-child(3) .head-bg{
+    background: url("../imgs/AccountanterReg/main5_pic_13.jpg") no-repeat;
+}
+.section5 ul li .head-bg p{
+    font-size: 0.18rem;
+    letter-spacing: 0.02rem;
+}
+.section5 ul li .head-bg h4{
+    font-size: 0.24rem;
+    padding: 0.27rem 0 0.27rem;
+    letter-spacing: 0.08rem;
+}
+.section5 ul li .head-bg span{
+    display: block;
+    width: 0.55rem;
+    border-bottom: 0.01rem solid #fff;
+    margin: 0 auto;
+}
+.section5 ul li .content{
+    padding: 0.4rem;
+    height: 7.4rem;
+}
+.section5 ul li .content p{
+    margin-bottom: 0.1rem;
+}
+.section5 ul li .content p.p4{
+    padding-top: 0.35rem;
+    line-height: 0.35rem;
+}
+.section5 ul li .content button{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0.9rem
+}
+/*******************六层护航*/
+.section6{
+    width: 100%;
+    height: 15.56rem;
+    background: url("../imgs/AccountanterReg/main6_bj.png") no-repeat;
+    background-size: contain;
+}
+.section6 .content{
+    width: 9.82rem;
+    height: 8.46rem;
+    background: url("../imgs/AccountanterReg/s6_content_03.png") no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+/*******************六层护航*/
+.section7{
+    /*width: 100%;
+    height: 9.86rem;
+    background: url("../imgs/AccountanterReg/main4_bj.png") no-repeat;
+    background-size: contain;*/
+}
+.section7 ul{
+     width: 12.23rem;
+     margin: 0 auto;
+}
+.section7 ul li{
+    width: 3.81rem;
+    text-align: center;
+    position: relative;
+    margin-right: 0.4rem; 
+}
+.section7 ul li .head-bg{
+    width: 100%;
+    height: 2.31rem;
+    background: url("../imgs/AccountanterReg/main7_pic_19_01.png") no-repeat;
+    background-size: 100%;
+    padding-top: 0.45rem;
+    position: relative;
+    cursor: pointer;
+}
+.section7 ul li .head-bg:hover .head-bg-hover{
+    opacity: 1;
+}
+.section7 ul li.active .head-bg-hover{
+    opacity: 1;
+}
+.head-bg-hover{
+    padding-top: 0.45rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #b80434;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.section7 .head-bg .head-bg-hover p{
+    color: #fff;
+}
+.section7 ul li .head-bg p{
+    font-size: 0.24rem;
     font-weight: bolder;
-    color: #b7042e;
+    color: #b8032e;
 }
-.section3-froms .line {
-    border-bottom: 1px solid #c8c8c8;
-    width: 35%;
+.section7 ul li .head-bg h4{
+    font-size: 0.30rem;
+    padding: 0.47rem 0 0.24rem;
+}
+.section7 ul li .head-bg span{
+    display: block;
+    width: 0.55rem;
+    border-bottom: 0.01rem solid #fff;
     margin: 0 auto;
 }
-.section3-froms ul {
-    width: 60%;
-    margin: 0 auto;
-}
-.section3-froms ul li input {
+.section7 ul li .content{
     width: 100%;
-    border-radius: 3px;
-    outline: none;
-    border: 1px solid #c8c8c8;
-    padding: 10px 15px;
-    margin-bottom: 15px;
+    height: 11.87rem;
+    background: #191919;
+    text-align: left;
+    padding: 0.94rem 0.4rem;
 }
-.section3-froms ul li:nth-child(1) {
-    overflow: hidden;
-    margin-top: 20px;
+.section7 ul li .content p{
+    font-size: 0.2rem;
+    margin-bottom: 0.15rem;
 }
-.section3-froms ul li:nth-child(4) {
-    /*margin-top: 15px;*/
+.section7 ul li:nth-child(2) .content p{
+    font-size: 0.2rem;
+    margin-bottom: 0.05rem;
 }
-.section3-froms ul li:nth-child(4) input {
-    background: #b7042e;
-    color: #fff;
-    outline: none;
-    border: 1px solid #b7042e;
-    transition: all 0.5s;
-}
-.section3-froms ul li:nth-child(4) input:hover{
-    background: #fff;
-    color: #b7042e;
-}
-.section3-froms ul li:nth-child(1) select {
-    width: 49%;
-    border: 1px solid #c8c8c8;
-    padding: 5px 0;
-    margin-bottom: 20px;
-    line-height: 30px;
-    border-radius: 3px;
-    outline: none;
-}
-.section3 .plxq {
-    background: #fff;
-    height: 9%;
-    width: 50%;
+.section7 ul li .content button{
     position: absolute;
-    bottom: 5%;
-    left: 32%;
+    bottom: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
 }
-.section3 .plxq ul {
-    overflow: hidden;
+.section7 ul li.active .content button{
+    background: #b8032e;
 }
-.section3 .plxq ul li {
-    line-height: 50px;
-    float: left;
-    width: 33.3%;
+.section7 ul li .content button:hover{
+    background: #b8032e;
+}
+.section7 ul li.active .content button:hover{
+    background: none;
+}
+/*******************学员评价*/
+.section8 .content{
+    width: 10.35rem;
+    height: 5.78rem;
+    margin: 0 auto;
+}
+/*******************学员评价*/
+.section9 ul{
+    width: 10.82rem;
+    margin: 0 auto 1rem;
+    padding-bottom: 0.55rem;
+}
+.section9 ul li{
+    width: 3.14rem;
+    position: relative;
+    margin-right: 0.7rem; 
+}
+.section9 ul li .text{
+    background: #373737;
+    font-size: 0.14rem;
+    padding: 0.35rem 0.3rem 0.8rem;
+    border-radius: 0.3rem; 
+}
+.section9 ul li .text p{
+    line-height: 0.35rem;
+}
+.section9 ul li .head-img{
+    width: 1.10rem;
+    height: 1.10rem;
+    position: absolute;
+    bottom: -0.55rem;
+    left: 50%;
+    margin-left: -0.55rem;
+}
+.btn-wraper{
     text-align: center;
+    margin-bottom: 0.8rem;
 }
-
-
-/*西南地区顶级CPA..... */
-.section4 {
-    background: url("../imgs/AccountanterReg/main-3_05.jpg");
+.btn-wraper button{
+    background: none;
+}
+.btn-wraper button:hover{
+    background: #b8032e;
+}
+/*2018年9月18日誉财毕业典礼*/
+.section10{
+    width: 100%;
+    height: 4.8rem;
+    background: url("../imgs/AccountanterReg/s10_bg_02.png") no-repeat;
     background-size: contain;
 }
-
-/* 誉财名师鼎力助阵 */
-.section5 {
-    background: url("../imgs/AccountanterReg/main-4-yucaimingshi_07.jpg");
-    background-size: contain;
+.section10 .module-title{
+    padding-top: 0;
 }
-
-/* 誉财名师鼎力助阵 */
-.section6 {
-    background: url("../imgs/AccountanterReg/main-5-sandabanxing_09.jpg");
-    background-size: contain;
+.section10 .module-title .h1 h1{
+    color: #fefefe;
+    opacity: 0.5;
+    font-size: 0.3rem;
 }
-
-/* 六层护航轻松通关 */
-.section7 {
-    background: url("../imgs/AccountanterReg/main-6-liucenghuhang_11.jpg");
+/*2018年9月18日誉财毕业典礼*/
+.section11{
+    width: 100%;
+    height: 18.16rem;
+    background: url("../imgs/AccountanterReg/main10_bj_lingxing.png") no-repeat;
     background-size: contain;
+    margin-bottom: 0.3rem;
 }
-
-/* 合理规划2018年... */
-.section8 {
-    background: url("../imgs/AccountanterReg/main-7_12.jpg");
+.section11 .module-title{
+    padding: 0.5rem;
+}
+.section11 .module-title .triangle_wraper{
+    top: 0.5rem;
+}
+.section11 ul{
+    padding-top: 1.2rem;
+    padding-bottom: 2.33rem;
+    width: 12.89rem;
+    margin: 0 auto;
+}
+.section11 ul li{
+    width: 3.83rem;
+    height: 5rem;
+    background: url("../imgs/AccountanterReg/main10_pic2.png");
     background-size: contain;
+    margin-right: 0.7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
 }
-
-/*2018年誉财毕业典礼有你一席*/
-.section10 {
-    background: url("../imgs/AccountanterReg/main-9_14.jpg");
-    background-size: contain;
+.section11 ul li .hover-li-bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
-
-/*xbyhs*/
-
-.section9 {
+.section11 ul li:hover{
+    background: none;
+}
+.section11 ul li:hover .hover-li-bg{
+    opacity: 1;
+}
+.section11 ul li:hover .img img:nth-child(2){
+    opacity: 1;
+}
+.section11 ul li:hover button{
+    bottom: 0.3rem;
+    background: #b8032e;
+}
+.section11 ul li .img{
+    width: 2.92rem;
+    height: 2.41rem;
+    margin: -1.2rem auto 0;
     position: relative;
 }
-
-.section9-bg {
+.section11 ul li .img img{
     position: absolute;
-    background: url('../imgs/main-8-xbyhs_15.jpg');
-    width: 70%;
-    height: 21%;
-    bottom: 12%;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow-y: auto;
+    top: 0;
+    left: 0;
 }
-
-.section9-bg ul {
-    color: #fff;
-    padding: 0 12%;
-}
-.section9-bg ul li {
-    margin-top: 15px;
-    overflow: hidden;
-}
-.section9-bg ul li .text {
-    margin-left: 20px;
-    float: left;
-    width: 84%;
-    height: 80px;
-}
-.section9-bg ul li .xbtx {
-    float: left;
-    height: 80px;
-    width: 80px;
-    background: #000;
-    border-radius: 40px;
-}
-.section9 .p {
-    width: 70%;
-    position: absolute;
-    bottom: 36%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 16px;
-    font-weight: bold;
-    color: #5e5e5e;
-}
-.section9 .p .line {
-    margin-top: 5px;
-    border-bottom: 2px solid #c8c8c8;
-    width: 7%;
-}
-.section9 .djzx-btn {
-    width: 16%;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.section9 .djzx-btn input {
-    background: #b7042e;
-    color: #fff;
-    border: 1px solid #b7042e;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
+.section11 ul li .img img:nth-child(2){
+    opacity: 0;
     transition: all 0.5s;
 }
-.section9 .djzx-btn input:hover{
-    background: #fff;
-    color: #b7042e;
+.section11 ul li .text{
+    padding: 0.55rem;
 }
-
-
-/*校区现场报名*/
-.section11 {
-    background: #f2f2f2;
+.section11 ul li h4{
+    font-size: 0.24rem;
+    color: #ccc;
+    padding-bottom: 0.5rem;
 }
-
-.section11 p.title {
-    font-size: 70px;
-    font-weight: bold;
-    color: #b7042e;
-    text-align: center;
-    padding: 50px 0;
+.section11 ul li p{
+    font-size: 0.18rem;
+    color: #ccc;
+    line-height: 0.35rem;
+    padding-bottom: 0.3rem;
 }
-
-.section11 ul {
-    overflow: hidden;
+.section11 ul li button{
+    width: 1.2rem;
+    height: 0.3rem;
+    line-height: 0.28rem;
+    position: absolute;
+    bottom: 0.05rem;
+    font-size: 0.14rem;
+    left: 50%;
+    margin-left: -0.6rem;
+    background: none;
 }
-
-.section11 ul li {
-    float: left;
-    width: 33.3%;
-    padding: 10px 30px;
-    margin-bottom: 30px;
-}
-
-.section11 ul li p {
-    margin-bottom: 5px;
-}
-
-.section11 ul li p:nth-child(1) {
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.section11 ul li p:last-child {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.section11 ul li input {
-    outline: none;
-    background: #b7042e;
-    color: #fff;
-    border: 1px solid #b7042e;
-    border-radius: 5px;
-    padding: 3px 25px;
-    transition: all 0.5s;
-}
-.section11 ul li input:hover{
-    background: #fff;
-    color: #b7042e;
+.section11 ul li button:hover{
+    background: #b8032e;
 }

@@ -52,7 +52,7 @@ ul.oh li{
     color: #787878;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 10000;
 }
 .top-right {
     float: right;
@@ -72,7 +72,7 @@ ul.oh li{
     position: fixed;
     top: 33px;
     left: 0;
-    z-index: 100;
+    z-index: 10000;
     background: #fff;
 }
 .nav {
