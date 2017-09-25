@@ -40,7 +40,7 @@ section ul li:last-child{
 }
 .module-title{
     width: 12rem;
-    padding: 1rem 0;
+    padding: 1.3rem 0;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -120,9 +120,9 @@ section ul li:last-child{
     width: 2rem;
     height: 0.52rem;
     line-height: 0.5rem;
-    background: #b8032e;
+    background: none;
     border-radius: 0.1rem;
-    color: #fff;
+    color: #b8032e;
     text-align: center;
     outline: none;
     border: 1px solid #b8032e;
@@ -132,8 +132,9 @@ section ul li:last-child{
     transition: all 0.5s;
 }
 .btn-style:hover{
-    background: none;
+    background: #b8032e;
     border: 1px solid #b8032e;
+    color: #fff;
 }
 /*单一的banner*/
 .banner-single{
@@ -154,9 +155,13 @@ section ul li:last-child{
     position: absolute;
     top: 5.29rem;
     left: 5.49rem;
-    z-index: 100
+    z-index: 100;
 }
 /*****************免费领取*/
+.section2 .module-title .h1 span:nth-child(1),
+.section2 .module-title .h1 span:nth-child(3){
+    width: 5rem;
+}
 .section2 ul.form{
     width: 4rem;
     height: 5.08rem;
@@ -219,10 +224,14 @@ section ul li:last-child{
     background-size: contain;
 }
 .section3 .module-title{
-    padding-top: 0.48rem;
+    padding-top: 0.6rem;
+}
+.section3 .module-title .h1 span:nth-child(1),
+.section3 .module-title .h1 span:nth-child(3){
+    width: 4.7rem;
 }
 .section3 .triangle_wraper{
-    top: 0.5rem;
+    top: 0.6rem;
 }
 .section3 ul{
     width: 10.46rem;
@@ -266,12 +275,16 @@ section ul li:last-child{
     background: url("../imgs/AccountanterReg/main4_bj.png") no-repeat;
     background-size: contain;
 }
+.section4 .module-title .h1 span:nth-child(1),
+.section4 .module-title .h1 span:nth-child(3){
+    width: 4.3rem;
+}
 .section4 .module-title{
-    padding-top: 0.48rem;
+    padding-top: 0.9rem;
     padding-bottom: 0.4rem;
 }
 .section4 .triangle_wraper{
-    top: 0.5rem;
+    top: 0.8rem;
 }
 .section4 ul{
     width: 8.17rem;
@@ -307,6 +320,10 @@ section ul li:last-child{
     height: 9.86rem;
     background: url("../imgs/AccountanterReg/main4_bj.png") no-repeat;
     background-size: contain;*/
+}
+.section5 .module-title .h1 span:nth-child(1),
+.section5 .module-title .h1 span:nth-child(3){
+    width: 4.15rem;
 }
 .section5 ul{
     width: 11.52rem;
@@ -375,19 +392,24 @@ section ul li:last-child{
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    bottom: 0.9rem
+    bottom: 0.9rem;
 }
 /*******************六层护航*/
+.section6 .module-title .h1 span:nth-child(1),
+.section6 .module-title .h1 span:nth-child(3){
+    width: 5rem;
+}
 .section6{
     width: 100%;
     height: 15.56rem;
     background: url("../imgs/AccountanterReg/main6_bj.png") no-repeat;
     background-size: contain;
+    padding-top: 0.3rem
 }
 .section6 .content{
-    width: 9.82rem;
-    height: 8.46rem;
-    background: url("../imgs/AccountanterReg/s6_content_03.png") no-repeat;
+    width: 10.02rem;
+    height: 8.68rem;
+    background: url("../imgs/AccountanterReg/main6_pic.png") no-repeat;
     background-size: contain;
     margin: 0 auto;
 }
@@ -397,6 +419,10 @@ section ul li:last-child{
     height: 9.86rem;
     background: url("../imgs/AccountanterReg/main4_bj.png") no-repeat;
     background-size: contain;*/
+}
+.section7 .module-title .h1 span:nth-child(1),
+.section7 .module-title .h1 span:nth-child(3){
+    width: 3.75rem;
 }
 .section7 ul{
      width: 12.23rem;
@@ -489,11 +515,19 @@ section ul li:last-child{
     height: 5.78rem;
     margin: 0 auto;
 }
+.section8 .module-title .h1 span:nth-child(1),
+.section8 .module-title .h1 span:nth-child(3){
+    width: 3.95rem;
+}
 /*******************学员评价*/
 .section9 ul{
     width: 10.82rem;
     margin: 0 auto 1rem;
     padding-bottom: 0.55rem;
+}
+.section9 .module-title .h1 span:nth-child(1),
+.section9 .module-title .h1 span:nth-child(3){
+    width: 5rem;
 }
 .section9 ul li{
     width: 3.14rem;
@@ -501,6 +535,7 @@ section ul li:last-child{
     margin-right: 0.7rem; 
 }
 .section9 ul li .text{
+    min-height: 3.5rem;
     background: #373737;
     font-size: 0.14rem;
     padding: 0.35rem 0.3rem 0.8rem;
@@ -550,6 +585,10 @@ section ul li:last-child{
     background-size: contain;
     margin-bottom: 0.3rem;
 }
+.section11 .module-title .h1 span:nth-child(1),
+.section11 .module-title .h1 span:nth-child(3){
+    width: 3.5rem;
+}
 .section11 .module-title{
     padding: 0.5rem;
 }
@@ -596,6 +635,7 @@ section ul li:last-child{
 .section11 ul li:hover button{
     bottom: 0.3rem;
     background: #b8032e;
+    color: #fff;
 }
 .section11 ul li .img{
     width: 2.92rem;
@@ -636,7 +676,4 @@ section ul li:last-child{
     left: 50%;
     margin-left: -0.6rem;
     background: none;
-}
-.section11 ul li button:hover{
-    background: #b8032e;
 }
