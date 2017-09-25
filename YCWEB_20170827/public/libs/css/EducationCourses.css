@@ -413,9 +413,13 @@
 	padding: 85px;
 	text-align: center;
 	color: #fff;
+	position: relative;
 }
 .section8 .btn-style-white{
-	margin-top: 2rem;
+	position: absolute;
+	bottom: 0.8rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .section8 input{
 	width: 300px;
