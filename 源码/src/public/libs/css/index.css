@@ -745,7 +745,9 @@ ul.section6-list li img:nth-child(2) {
 }
 
 /*********************************誉财校区分布*********************************/
-.section7-xqfb {}
+.section7 .middle-page {
+    width: 1000px;
+}
 ul.section7-xqfb-list li {
     height: 172px;
     overflow: hidden;
