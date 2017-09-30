@@ -92,6 +92,7 @@ ul.oh li{
 .nav-list li {
     padding: 0 18px;
     float: left;
+    
 }
 .nav-list li.active a {
     color: #035ade;

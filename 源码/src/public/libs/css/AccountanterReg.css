@@ -412,6 +412,7 @@ section ul li:last-child{
     background: url("../imgs/AccountanterReg/main6_pic.png") no-repeat;
     background-size: contain;
     margin: 0 auto;
+    cursor: pointer;
 }
 /*******************六层护航*/
 .section7{

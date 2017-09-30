@@ -43,7 +43,7 @@
                             <li class="showem"><a href="javascript:void(0);">财税实账</a></li>
                             <li><a href="onlineEducation.html">在线教育</a></li>
                             <li><a href="newsInfo.html">新闻咨询</a></li>
-                            <li><a href="#xiaoqufb">校区</a></li>
+                            <li><a href="index.html#xiaoqufb">校区</a></li>
                         </ul>
                         <ul class="nav-login">
                             <li><a href="javascript:void(0);">登录</a></li>
@@ -438,7 +438,7 @@
                 </div>
                 <h4>轻松通关</h4>
             </div>
-            <div class="content"></div>
+            <div class="content" onclick="showVideoWraper()"></div>
         </section>
         <!-- 合理规划2018年学习计划 -->
         <section class="section7">
@@ -873,10 +873,26 @@
                     <p>返回顶部</p>
                 </li>
             </ul>
+            <!-- 视频内容-->
+            <div id="video_shadow">
+                <div class="video_wraper">
+                    <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" width="1000" height="564">
+                        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                        <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                        <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                    <div class="close-btn" onclick="closeVideoWraper()">×</div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="libs/js/jquery-2.2.3.min.js"></script>
     <script src="libs/js/auto-size.js"></script>
+    <script src="libs/js/video.min.js"></script>
     <script src="libs/js/jquery.rotate.js"></script>
     <script src="libs/js/laytpl.js"></script>
     <script src="libs/js/comm.js"></script>
