@@ -1,66 +1,57 @@
-
+.banner {
+    height: 5.7rem;
+}
+section .middle-page{
+	width: 12rem;
+}
 /*模块标题*/
 .module-title h1{
-	font-size: 0.6rem;
+	font-size: 0.4rem;
 	font-weight: bolder; 
 	padding-bottom: 0.4rem;
 	text-align: center;
-	color: rgb(73,73,73);
+	color: #787878;
 }
 .module-title p{
-	font-size: 0.3rem;
+	font-size: 0.24rem;
 	padding-bottom: 0.1rem;
 	text-align: center;
-	color: rgb(94,94,94);
+	color: #494949;
+}
+.module-title span {
+    width: 1.5rem;
+    display: inline-block;
+    height: 1px;
+    background: #494949;
 }
 /*按钮风格*/
-.btn-style-white{
-	background: #fff;
-	border-radius: 0.04rem;
-	color: #035bde;
-	height: 0.62rem;
-	line-height: 0.6rem;
-	width: 2.8rem;
-	text-align: center;
-	outline: none;
-	border: 1px solid #fff;
-	font-size: 0.22rem;
-	transition: all 0.5s;
-	margin-bottom: 1px;
-}
-.btn-style-white:hover{
-	background: #035bde;
-	border: 1px solid #fff;
-	color: #fff;
-}
 .btn-style-blue{
-	background: #035bde;
+	background: #3583e6;
 	border-radius: 0.04rem;
 	color: #fff;
-	height: 0.62rem;
-	line-height: 0.6rem;
-	width: 2.8rem;
+	height: 0.52rem;
+	line-height: 0.5rem;
+	width: 1.8rem;
 	text-align: center;
 	outline: none;
-	border: 1px solid #035bde;
-	font-size: 0.22rem;
+	border: 1px solid #3583e6;
+	font-size: 0.2rem;
 	transition: all 0.5s;
 	margin-bottom: 1px;
 }
 .btn-style-blue:hover{
-	background: #fff;
-	color: #035bde;
+	background: #2367be;
 }
 /************************************学历依然敲门砖，高学历有优势************************************/
 .section1{
 	text-align: center;
 	position: relative;
-	padding-top: 110px;
-	padding-bottom: 46px;
+	padding-top: 1.1rem;
+	padding-bottom: 1.36rem;
 }
 .section1 ul.university-list{
 	overflow: hidden;
-	padding: 110px 0 55px;
+	padding: 1.1rem 0 0.55rem;
 }
 .section1 ul.university-list li{
 	width: 33.33333%;
@@ -68,118 +59,116 @@
 	float: left;
 }
 .section1 ul.university-list li .item{
-	height: 520px;
+	height: 6rem;
 	width: 100%;
-	background: #fff;
-	padding-bottom: 20px;
+	background: #f6f6f6;
+	padding-bottom: 0.2rem;
 }
 .section1 ul.university-list li .item h4{
-	font-size: 0.28rem;
-	color: #797979;
-	padding-top: 30px;
+	font-size: 0.24rem;
+	color: #787878;
+	padding-top: 0.3rem;
+}
+.section1 ul.university-list li .item span{
+	width: 0.8rem;
+    display: inline-block;
+    height: 1px;
+    background: #767676;
+    margin-top: 0.2rem;
 }
 .section1 ul.university-list li .item p {
 	font-size: 0.22rem;
 	line-height: 0.38rem;
-	padding: 44px 20px;
-	color: rgb(73,73,73)
+	padding: 0.44rem 0.25rem;
+	color: #494949;
 }
-/*底部蓝色背景*/
-.section1_blue_bg{
-	position: absolute;
-	background: #035bde;
-	width: 100%;
-	height: 520px;
-	top: 650px;
-	z-index: -2;
-}
-
 
 /************************************西南财经大学2017年学历报名************************************/
 .section2{
 	text-align: center;
-	padding: 107px 0;
 }
-.section2 .module-title{
-	padding-top: 1rem;
+.section2 ul{
+	width: 11.58rem;
+	margin: 1.12rem auto;
 }
-.section2 ul.input-info-list{
-	margin-top: 100px;
-	font-size: 20px;
-	border-radius: 10px;
-	padding: 105px 200px 45px;
-	-webkit-box-shadow: 0 0 10px 20px #f0f0f0;
-    -moz-box-shadow: 0 0 10px 20px #f0f0f0;
-    box-shadow: 0 0 40px #888888;
-
+.section2 ul li:nth-child(1){
+	width: 4.5rem;
+	height: 6.47rem;
+	margin-right: 1rem;
+	padding-top: 0.8rem;
 }
-.section2 ul.input-info-list li{
-	margin-bottom: 40px;
-}
-.section2 ul.input-info-list li:nth-child(1){
-	font-size: 40px;
-	color: #035bda;
-}
-.section2 ul.input-info-list li:last-child{
-	color: #585858;
-}
-.section2 ul.input-info-list li label{
-	width: 120px;
-	text-align: right;
-	line-height: 50px;
+.section2 ul li:nth-child(1) h4{
+	font-size: 0.3rem;
 	color: #494949;
-	padding-right: 25px;
+	padding-bottom: 0.7rem;
 }
-.section2 ul.input-info-list li input{
-	width: 300px;
-	line-height: 50px;
-	padding-left: 10px;
-	border-radius: 4px;
-	border: 1px solid #bfbfbf;
+.section2 ul li:nth-child(1) input{
+	width: 4rem;
+	height: 0.58rem;
+	line-height: 0.58rem;
+	margin-bottom: 0.5rem;
+	padding-left: 0.1rem;
+	border-radius: 0.1rem;
+	border: 1px solid #c2c2c2;
+	outline: none;
 }
-
-
+.section2 ul li:nth-child(1) p{
+	color: #585858;
+	font-size: 0.2rem;
+	padding-bottom: 0.57rem;
+}
+.section2 ul li:nth-child(2){
+	width: 6.08rem;
+	height: 6.47rem;
+	/*float: right;*/
+}
+.section2 ul li:nth-child(2) img{
+	width: 100%;
+	height: 100%;
+}
 /************************************热门专业及学制************************************/
 .section3{
 	text-align: center;
-	background: #f6f9f9;
-	padding: 100px 0;
+	/*background: #f6f9f9;*/
+	padding-bottom: 1.36rem;
+}
+.section3 .module-title h1{
+	padding-bottom: 0.1rem;
 }
 .section3 table{
-	border: 1px solid #bfbfbf;
-	font-size: 16px;
+	margin-top: 0.76rem;
+	margin-bottom: 0.56rem;
+	width: 100%;
 }
 .section3 table th{
 	text-align: center;
-	line-height: 60px;
-	background: #035bde;
-	color: #fff;
+	font-size: 0.24rem;
+	color: #787878;
+}
+.section3 table tr{
+	border-bottom: 1px solid #efefef; 
+	height: 0.7rem;
+	line-height: 0.7rem;
 }
 .section3 table td{
-	line-height: 50px;
-
+	font-size: 0.2rem;
+	color: #494949;
 }
-.section3 table td .ckkc_btn{
-	background: #fff;
-	border-radius: 4px;
-	color: #fff;
-	text-align: center;
+.section3 table td button{
+	height: 0.39rem;
+	width: 1.5rem;
+	line-height: 0.36rem;
+	background: none;
+	color: #3583e6;
+	border: 1px solid #3583e6;
+	border-radius: 0.1rem; 
 	outline: none;
-	border: 1px solid #035bde;
-	background: #035bde;
-	height: 30px;
-	line-height: 30px;
-	padding: 0 15px;
 	transition: all 0.5s;
 }
-.section3 table td .ckkc_btn:hover{
-	background: none;
-	color: #035bde;
+.section3 table td button:hover{
+	background: #3583e6;
+	color: #fff;
 }
-.section3 .btns {
-	padding-top: 65px;
-}
-
 
 /************************************西南财经大学自考本科获取流程************************************/
 .section4{
@@ -190,29 +179,6 @@
 	text-align: center;
 	color: #fff;
 	padding-top: 85px;
-}
-.section4_list {
-	padding-top: 85px;
-}
-.section4_list li{
-	width: 33.33333%;
-	float: left;
-	margin-bottom: 60px;
-}
-.section4_list li .item{
-	width: 250px;
-	height: 250px;
-	background: url("../imgs/educationCourses/floor_04_li.png");
-	background-size: 100% 100%; 
-	line-height: 250px;
-	text-align: center;
-	font-size: 30px;
-	margin: 0 auto;
-}
-.section4_list li p{
-	width: 254px;
-	margin: 30px auto 0;
-	font-size: 20px;
 }
 
 
@@ -254,30 +220,6 @@
 	background: #eeeeee;
 	padding: 85px;
 }
-.section6 .middle-page{
-	width: 1200px;
-	text-align: center;
-}
-.section6 ul{
-	overflow: hidden;
-	margin-top: 50px;
-}
-.section6 ul li{
-	overflow: hidden;
-	float: left;
-	width: 50%;
-	padding: 20px 30px;
-
-} 
-.section6 ul li .item{
-	height: 400px;
-	width: 100%;
-	box-shadow: 0 0 20px #888888;
-}
-.section6 ul li p{
-	padding: 43px 0 39px;
-	font-size: 20px;
-}
 
 
 /************************************拿学历，这些问题你应该关注************************************/
@@ -285,124 +227,6 @@
 	padding: 85px;
 	text-align: center;
 }
-.section7 ul.questions {
-	overflow: hidden;
-	margin-top: 40px;
-}
-.section7 ul.questions p{
-	font-size: 18px;
-	padding-top: 20px;
-	transition: all 0.5s;
-
-}
-.section7 ul.questions li {
-	float: left;
-	width: 33.3333%;
-	margin-bottom: 30px;
-}
-.section7 ul.questions li .item{
-	width: 200px;
-	margin: 0 auto;
-	text-align: center;
-	cursor: pointer;
-}
-.section7 ul.questions li .item .icons{
-	width: 126px;
-	height: 110px;
-	position: relative;
-	margin: 0 auto;
-}
-.section7 ul.questions li .item .icons img:nth-child(2){
-	display: none;
-}
-.section7 ul.questions li .item .icons img{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-/*问答*/
-.section7 ul.qas{
-	overflow: hidden;
-	margin-bottom: 100px;
-}
-.section7 ul.qas li{
-	float: left;
-	width: 25%;
-	padding: 10px;
-}
-.section7 ul.qas li .item{
-	background: #eee;
-}
-.section7 ul.qas li .item .q p{
-	font-size: 26px;
-}
-.section7 ul.qas li .item .q{
-	height: 168px;
-	background: #035bde;
-	color: #fff;
-	padding: 20px 30px;
-}
-.section7 ul.qas li .item .a{
-	font-size: 18px;
-	padding: 30px 20px;
-	height: 300px;
-}
-.section7 .zxbm_btn{
-	background: #035bde;
-	color: #fff;
-	border: 1px solid #035bde;
-}
-/*学长有话说*/
-.xbyhs-bg {
-    background: #035bde;
-    width: 1198px;
-    overflow-y: auto;
-    margin: 80px auto;
-    height: 300px;
-    background: url("../imgs/educationCourses/学长要说的话-pic_19.jpg");
-}
-.xbyhs-bg p{
-	font-size: 16px;
-}
-.xbyhs-bg ul {
-    color: #fff;
-    padding: 0 12%;
-}
-.xbyhs-bg ul li {
-    margin: 15px;
-    overflow: hidden;
-}
-.xbyhs-bg ul li .text {
-    margin-left: 20px;
-    float: left;
-    width: 84%;
-    height: 80px;
-    padding: 20px 0;
-    font-size: 16px;
-}
-.xbyhs-bg ul li .xbtx {
-    float: left;
-    height: 80px;
-    width: 80px;
-    background: #000;
-    border-radius: 40px;
-}
-.p {
-    width: 70%;
-    position: absolute;
-    bottom: 36%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 16px;
-    font-weight: bold;
-    color: #5e5e5e;
-}
-.p .line {
-    margin-top: 5px;
-    border-bottom: 2px solid #c8c8c8;
-    width: 7%;
-}
-
 
 /************************************学会计拿学历，到誉财有保障************************************/
 .section8{
@@ -414,21 +238,4 @@
 	text-align: center;
 	color: #fff;
 	position: relative;
-}
-.section8 .btn-style-white{
-	position: absolute;
-	bottom: 0.8rem;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.section8 input{
-	width: 300px;
-    line-height: 50px;
-    padding-left: 10px;
-    border-radius: 4px;
-    border: 1px solid #bfbfbf;
-    font-size: 16px;
-    margin: 85px 20px; 
-    color: #000;
-    outline: none;
 }
