@@ -4,6 +4,9 @@
 section .middle-page{
 	width: 12rem;
 }
+.mr0{
+	margin-right: 0 !important;
+}
 /*模块标题*/
 .module-title h1{
 	font-size: 0.4rem;
@@ -19,7 +22,7 @@ section .middle-page{
 	color: #494949;
 }
 .module-title span {
-    width: 1.5rem;
+    width: 0.6rem;
     display: inline-block;
     height: 1px;
     background: #494949;
@@ -172,70 +175,249 @@ section .middle-page{
 
 /************************************西南财经大学自考本科获取流程************************************/
 .section4{
-	background: url("../imgs/educationCourses/floor_04_bg.jpg");
+	background: url("../imgs/educationCourses/main4_bj_18.jpg");
 	background-size: 100% 100%; 
-	height: 1300px;
+	height: 14.97rem;
 	width: 100%;
 	text-align: center;
-	color: #fff;
-	padding-top: 85px;
+	padding-top: 0.6rem;
 }
+.section4 .module-title{
+	text-align: right;
+	width: 12.15rem;
+}
+.section4 .module-title h1,
+.section4 .module-title p{
+	text-align: right;
+	padding-right: 1.8rem;
+}
+.section4 ul{
+	width: 12.15rem;
+	text-align: right;
+	color: #fff;
+}
+.section4 ul li{
+	position: relative;
+	height: 1.3rem;
+	padding-right: 1.8rem;
+	margin-top: 0.6rem;
 
+}
+.section4 ul li h4{
+	font-size: 0.24rem;
+	padding: 0.28rem 0 0.2rem;
+}
+.section4 ul li p{
+	font-size: 0.2rem;
+}
+.section4 ul li .stepimg{
+	width: 1.26rem;
+	height: 1.3rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.section4 ul li .stepimg img{
+	width: 100%;
+}
+.section4 ul li .btn-style-blue{
+	background: #fff;
+	color: #3583e6;
+	border: 1px solid #fff;
+	margin-right: 2.5rem;
+}
+.section4 ul li .btn-style-blue:hover{
+	background: #3583e6;
+	color: #fff;
+	border: 1px solid #3583e6;
 
+}
 /************************************官方授权，内部资料，毕业有保障************************************/
 .section5{
 	text-align: center;
-	padding: 106px 0;
+	padding: 1.06rem 0;
 }
 .section5 ul{
-	overflow: hidden;
-	padding: 42px 0;
-}
-.section5 ul.first-child{
-	border-bottom: 1px solid #eee;
-	margin-top: 40px;
-}
-.section5 ul li p{
-	font-size: 20px;
-	text-align: left;
-}
-.section5 ul li p.blu{
-	color: #035bde;
-	padding-bottom: 20px;
-	font-size: 24px;
+	width: 9.7rem;
+	margin: 0 auto; 
+	padding-top: 0.55rem;
 }
 .section5 ul li{
+	padding: 0.3rem; 
+	text-align: center;
+	height: 3.46rem;
 	overflow: hidden;
 	float: left;
 	width: 50%;
-	padding: 0 5px;
 } 
-.section5 .btn-style-blue{
-	margin-top: 100px;
+.section5 ul li h4{
+	font-size: 0.24rem;
+	padding: 0.3rem 0;
+	color: #787878;
 }
+.section5 ul li p{
+	font-size: 0.2rem;
+	color: #494949;
+	line-height: 0.4rem;
+}
+.section5 .btn-style-blue{
+	margin-top: 1rem;
+}
+.section5 ul li.border-right{
+	border-right: 1px solid #ececec;
+}
+.section5 ul li.border-bottom{
+	border-bottom: 1px solid #ececec;
+}
+.section5 ul li.height2{
+	height: 3rem
+}
+
 
 
 /************************************官方授权，内部资料，毕业有保障************************************/
 .section6{
-	background: #eeeeee;
-	padding: 85px;
+	text-align: center;
+	padding-bottom: 1.65rem;
 }
-
+.section6 .content{
+	width: 10.42rem;
+	height: 4.26rem;
+	background: url("../imgs/educationCourses/main6_pic_2.png");
+	background-size: contain; 
+	text-align: center;
+	margin: 0.55rem auto 1rem; 
+}
 
 /************************************拿学历，这些问题你应该关注************************************/
 .section7{
-	padding: 85px;
+	width: 100%;
+	height: 8.66rem;
 	text-align: center;
+	background: url("../imgs/educationCourses/main6_bj_24.jpg") no-repeat;
+	background-size: contain; 
+}
+.section7 .module-title h1{
+	color: #fff;
+	padding-bottom: 0.25rem;
+	padding-top: 0.9rem;
+}
+.section7 .module-title span{
+	background: #fff;
+}
+.section7 .content ul{
+	width: 12rem;
+	margin: 1rem auto 0;
+}
+.section7 .content ul li{
+	width: 3rem;
+	margin-right: 1.5rem;
+}
+.section7 .content ul li .head{
+	height: 1.7rem;
+	background: rgba(53,131,230,0.8);
+	font-size: 0.24rem;
+	color: #fff;
+	padding: 0.4rem 0.6rem;
+}
+.section7 .content ul li p{
+	height: 3.17rem;
+	background: rgba(220,220,220,0.5);
+	font-size: 0.18rem;
+	color: #fff;
+	line-height: 0.45rem;
+	padding: 0.3rem 0.22rem;
+}
+.section7-icons {
+	width: 11.48rem;
+	margin: -0.65rem auto 1.38rem; 
+}
+.section7-icons li{
+	width: 1.33rem;
+	text-align: center;
+	margin-right: 0.7rem;
+}
+.section7-icons li img{
+	width: 0.96rem;
+}
+.section7-icons li p{
+	color: #3583e6;
+	font-size: 0.18rem;
 }
 
-/************************************学会计拿学历，到誉财有保障************************************/
+/************************************学长有话说************************************/
 .section8{
-	background: #035bde;
-	background: url("../imgs/educationCourses/到誉财有保障-pic_21.jpg");
-	background-size: 100% 100%;
-	height: 669px;
-	padding: 85px;
 	text-align: center;
-	color: #fff;
 	position: relative;
+	padding-bottom: 1.24rem;
+}
+.section8 ul{
+	padding-top: 0.6rem;
+	width: 12rem;
+	margin: 1rem auto; 
+}
+.section8 ul li{
+	width: 3rem;
+	height: 4rem;
+	background: #609eec;
+	border-radius: 0.25rem; 
+	color: #fff;
+	font-size: 0.18rem;
+	margin-right: 1.5rem;
+}
+.section8 ul li p{
+	padding: 0.3rem 0.3rem 0;
+	line-height: 0.35rem;
+	text-align: left;
+
+}
+.section8 ul li img{
+	width: 1.17rem;
+	margin-top: -0.59rem;
+}
+/*学会计拿学历，到誉财有保障*/
+.section9{
+	width: 100%;
+	height: 4.44rem;
+	background: url("../imgs/educationCourses/main8_bj_26.jpg");
+	background-size: 100% 100%;
+	text-align: center;
+}
+.section9 .module-title h1{
+	color: #fff;
+	padding-bottom: 0.25rem;
+	padding-top: 0.6rem;
+}
+.section9 .module-title span{
+	background: #fff;
+}
+.section9 .module-title p{
+	color: #fff;
+}
+.section9 input{
+	width: 4rem;
+    height: 0.58rem;
+    line-height: 0.58rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    padding-left: 0.1rem;
+    border-radius: 0.1rem;
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+.section9 input::-webkit-input-placeholder {
+ 	color: #fff;
+}
+.section9 .btn-style-blue{
+	background: #fff;
+	color: #3583e6;
+	border: 1px solid #fff;
+}
+.section9 .btn-style-blue:hover{
+	background: #3583e6;
+	color: #fff;
+	border: 1px solid #3583e6;
+
 }
