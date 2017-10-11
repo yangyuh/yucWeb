@@ -1,14 +1,6 @@
 $(function() {
-	// 誉财资讯点击事件
-    // $(".topnav").on('click', 'li', function() {
-    // 	$(this).addClass('active').siblings().removeClass('active');
-    // });
-    // // 新闻导航点击事件
-    // $(".newsInfo-nav").on('click', 'li', function() {
-    // 	$(this).addClass('active').siblings().removeClass('active');
-    // })
     var uls = [$(".topnav"),$(".newsInfo-nav")];
-    addActiveClass(uls)
+    // addActiveClass(uls)
 })
 
 function addActiveClass(uls){

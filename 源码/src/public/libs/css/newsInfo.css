@@ -50,23 +50,31 @@
 }
 .content ul.topnav li.active span{
 	border-bottom: 3px solid #3583e6;
+	color: #3583e6;
 }
 /*table*/
 .table-list li{
 	width: 50%;
-	padding: 10px;
+	padding: 0.1rem;
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
+	font-size: 0.18rem;
 }
 .table-list li .item{
 	line-height: 0.4rem;
-	padding: 10px;
 	transition: all 0.5s;
 }
+.table-list li .mr05{
+	margin-right: 0.5rem;
+}
+.table-list li .ml05{
+	margin-left: 0.5rem;
+}
+
 .table-list li:hover .item{
-	-webkit-box-shadow: 0 0 10px 15px #f0f0f0;
+	/*-webkit-box-shadow: 0 0 10px 15px #f0f0f0;
     -moz-box-shadow: 0 0 10px 15px #f0f0f0;
-    box-shadow: 0 0 10px #888888;
+    box-shadow: 0 0 10px #888888;*/
     color: #3583e6;
 }
 /*新闻内容部分*/
@@ -74,16 +82,17 @@
 	padding-bottom: 1rem;
 	font-size: 0.2rem;
 	background: url("../imgs/newsInfo/main_bj_04.jpg")no-repeat center center;
+	background-size: 100% 100%;
 }
 .content2 .module-title{
-	padding: 1.3rem 0 0.6rem;
+	padding: 1rem 0 0.5rem;
 }
 .content2 .module-title h1{
 	color: #787878;
 	text-align: left;
 	border-bottom: 1px solid #ebebeb;
 	font-size: 0.3rem;
-	font-weight: bold;
+	font-weight: normal;
 }
 /*新闻内容列表*/
 .content2 .newsInfo-nav{
@@ -112,21 +121,20 @@
 }
 .content2 ul.newsInfo-list li {
 	width: 100%;
-	padding: 0.15rem;
 	border-bottom: 1px solid #ccc; 
 	cursor: pointer;
-	padding-bottom: 0.3rem;
+	padding-bottom: 0.1rem;
 }
 .content2 ul.newsInfo-list li .item{
 	width: 100%;
 	transition: all 0.5s;
 	padding: 0.2rem;
 }
-.content2 ul.newsInfo-list li:hover .item{
+/*.content2 ul.newsInfo-list li:hover .item{
     -webkit-box-shadow: 0 0 10px 15px #f0f0f0;
     -moz-box-shadow: 0 0 10px 15px #f0f0f0;
     box-shadow: 0 0 20px #888888;
-}
+}*/
 .content2 ul.newsInfo-list li:hover .item .text h3,
 .content2 ul.newsInfo-list li:hover .item .text span{
 	color: #3583e6;
@@ -158,18 +166,18 @@
 
 /*分页*/
 .fenye-list{
-	width: 8.5rem;
+	width: 5rem;
 	margin: 0 auto;
 	padding-top: 0.7rem;
-	float: right;
+	/*float: right;*/
 }
 .fenye-list li{
-	width: 80px;
+	width: 0.8rem;
 	text-align: center;
 	cursor: pointer;
 }
 .fenye-list li.page-num{
-	width: 20px;
+	width: 0.2rem;
 }
 .fenye-list li:hover{
 	text-decoration: underline;

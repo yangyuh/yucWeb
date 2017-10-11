@@ -158,15 +158,16 @@ section .middle-page{
 	color: #494949;
 }
 .section3 table td button{
-	height: 0.39rem;
+	height: 0.36rem;
 	width: 1.5rem;
-	line-height: 0.36rem;
+	line-height: 0.34rem;
 	background: none;
 	color: #3583e6;
 	border: 1px solid #3583e6;
 	border-radius: 0.1rem; 
 	outline: none;
 	transition: all 0.5s;
+	font-size: 0.18rem;
 }
 .section3 table td button:hover{
 	background: #3583e6;
@@ -226,12 +227,12 @@ section .middle-page{
 	border: 1px solid #fff;
 	margin-right: 2.5rem;
 }
-.section4 ul li .btn-style-blue:hover{
+/*.section4 ul li .btn-style-blue:hover{
 	background: #3583e6;
 	color: #fff;
 	border: 1px solid #3583e6;
 
-}
+}*/
 /************************************官方授权，内部资料，毕业有保障************************************/
 .section5{
 	text-align: center;
@@ -415,9 +416,8 @@ section .middle-page{
 	color: #3583e6;
 	border: 1px solid #fff;
 }
-.section9 .btn-style-blue:hover{
+/*.section9 .btn-style-blue:hover{
 	background: #3583e6;
 	color: #fff;
 	border: 1px solid #3583e6;
-
-}
+}*/
