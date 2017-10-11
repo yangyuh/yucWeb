@@ -103,6 +103,9 @@
 .content2 ul.newsInfo-nav li:hover{
 	color: #3583e6;
 }
+.content2 .newsInfo-nav li.active{
+	color: #3583e6;
+}
 .content2 .newsInfo-list {
 	width: 9.9rem;
 	float: left;
