@@ -6,6 +6,12 @@ section div img{
 section ul li:last-child{
     margin-right: 0
 }
+.blue-line{
+	width: 0.5rem;
+	height: 2px;
+	background: #035bde; 
+	position: absolute;
+}
 .btn-style{
 	width: 2rem;
 	height: 0.52rem;
@@ -55,6 +61,16 @@ section ul li:last-child{
 	color: #494949;
 	padding: 0.2rem 0.6rem 0 0.9rem;
 	line-height: 0.3rem;
+}
+.content ul li:nth-child(1) .blue-line{
+	right: -0.18rem;
+	bottom: 1rem;
+	z-index: 20
+}
+.content ul li:nth-child(2) .blue-line{
+	left: -0.18rem;
+	top: 0.6rem;
+	z-index: 20
 }
 .content ul li:nth-child(2){
 	width: 6.6rem;

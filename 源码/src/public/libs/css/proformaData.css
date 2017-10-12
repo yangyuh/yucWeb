@@ -58,7 +58,7 @@ section ul li:last-child{
 }
 /*星星列表*/
 .content .xingxing-list{
-	padding: 80px 0 100px;
+	padding: 0 0 1rem;
 }
 .content .xingxing-list li{
 	width: 14.2857%;
@@ -67,22 +67,24 @@ section ul li:last-child{
 	width: 106px;
 	margin: 0 auto;
 	text-align: center;
-	border-bottom: 3px solid #ababab; 
 	transition: all 0.5s;
+	padding-top: 0.1rem;
 }
 .content .xingxing-list li:hover .item{
 	background: #035bde;
 	color: #fff;
 	cursor: pointer;
-	border-bottom: 0.03rem solid #035bde; 
+}
+.content .xingxing-list li:hover .item span.line{
+	background: #035bde;
 }
 .content .xingxing-list li:hover .item span img:nth-child(2){
 	opacity: 1 
 }
 .content .xingxing-list li .item span{
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 0.3rem;
+	height: 0.3rem;
 	margin: 0 auto;
 	position: relative;
 }
@@ -96,8 +98,16 @@ section ul li:last-child{
 	opacity: 0;
 }
 .content .xingxing-list li .item p{
-	font-size: 0.24rem;
+	font-size: 0.20rem;
+	color: #494949;
 	padding: 0.25rem 0 0.4rem;
+}
+.content .xingxing-list li .item span.line{
+	display: block;
+	width: 0.5rem;
+	height: 3px;
+	background: #ababab;
+	transition: all 0.5s;
 }
 /*下载列表*/
 .content .download-list li{
