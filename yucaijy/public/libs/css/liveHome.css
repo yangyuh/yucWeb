@@ -1,0 +1,312 @@
+/*模块标题*/
+.module-title{
+	text-align: center;
+	padding: 0.8rem 0 0.3rem;
+}
+
+.module-title h1{
+	font-size: 0.3rem;
+	font-weight: bolder;
+	padding-bottom: 0.01rem;
+	color: #787878;
+}
+.module-title span{
+	display: inline-block;
+	height: 0.04rem;
+	width: 0.6rem;
+	background: #3583e6;
+}
+/*banner下面的list*/
+.section1{
+	/*margin-bottom: 1rem;*/
+}
+.section1 .list-content {
+	width: 13.5rem;
+	position: relative;
+	margin: 0 auto; 
+}
+.section1 .list-content .list-outer{
+	width: 13.04rem;
+	margin: 0 auto; 
+	position: relative;
+	overflow: hidden;
+	height: 1.35rem;
+	padding: 0.1rem 0 0.2rem;
+}
+.section1 .list-content ul{
+	width: 200%;
+	position: absolute;
+	left: 0;
+}
+.section1 .list-content ul li{
+	width: 2.608rem;
+	text-align: center;
+	cursor: pointer;
+}
+.section1 .list-content ul li:hover .item h4{
+	color: #3583e6;
+
+}
+.section1 .list-content ul li .item img{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.section1 .list-content ul li .item h4{
+	font-size: 0.18rem;
+	color: #494949;
+	padding: 0.1rem;
+}
+.section1 .list-content ul li .item p{
+	font-size: 0.14rem;
+	color: #787878;
+}
+
+.section1 .list-content .prebtn{
+	width: 0.2rem;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	color: #fff;
+	background: #3583e6;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -0.33rem;
+	cursor: pointer;
+}
+.section1 .list-content .nextbtn{
+	width: 0.2rem;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	color: #fff;
+	background: #3583e6;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -0.33rem;
+	cursor: pointer;
+}
+/*最新直播动态*/
+.section2{
+	/*margin-bottom: 1rem;*/
+}
+.section2 .list-content {
+	width: 13.5rem;
+	position: relative;
+	margin: 0 auto; 
+}
+.section2 .list-content .list-outer{
+	width: 13.04rem;
+	margin: 0 auto; 
+	position: relative;
+	overflow: hidden;
+	height: 3.05rem;
+}
+.section2 .list-content ul{
+	width: 200%;
+	position: absolute;
+	left: 0;
+}
+.section2 .list-content ul li{
+	padding: 0.2rem;
+	cursor: pointer;
+}
+.section2 .list-content ul li:hover .item{
+	box-shadow: 0 0 0.2rem #888888;
+}
+.section2 .list-content ul li:hover .item h4{
+	color: #3583e6;
+}
+.section2 .list-content ul li .item{
+	padding: 0.1rem;
+	transition: all 0.5s;
+	position: relative;
+}
+.section2 .list-content ul li .item .bfc{
+	overflow: hidden;
+}
+.section2 .list-content ul li .item .yynumber{
+	z-index: 1;
+	position: absolute;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	font-size: 0.12rem;
+	padding: 0.05rem 0.3rem;
+	top: 0.3rem;
+}
+.section2 .list-content ul li .item img{
+	width: 2.66rem;
+	height: 1.70rem;
+}
+.section2 .list-content ul li .item h4{
+	color: #494949;
+	font-size: 0.18rem;
+	padding: 0.13rem 0;
+}
+.section2 .list-content ul li .item p{
+	font-size: 0.14rem;
+	color: #787878;
+
+}
+.section2 .list-content ul li .item p.fr{
+	color: #3583e6;
+}
+.section2 .list-content .prebtn{
+	width: 0.2rem;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	color: #fff;
+	background: #3583e6;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -0.33rem;
+	cursor: pointer;
+}
+.section2 .list-content .nextbtn{
+	width: 0.2rem;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	color: #fff;
+	background: #3583e6;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -0.33rem;
+	cursor: pointer;
+}
+/*时间轴*/
+.section2 .time-list{
+	width: 13.5rem;
+	margin: 0 auto; 
+	padding: 0 0.2rem;
+	overflow: hidden;
+	height: 1rem;
+	position: relative;
+}
+.section2 .time-list ul{
+	width: 200%;
+	position: absolute;
+	left: 0;
+}
+.section2 .time-list ul li {
+	width: 3.26rem;
+	text-align: center;
+	padding-top: 0.1rem;
+}
+.section2 .time-list ul li .bule-line{
+	border-top: 1px solid #3584e6;
+	position: relative;
+	margin-bottom: 0.2rem;
+}
+.section2 .time-list ul li .bule-line span{
+	display: block;
+	width: 0.2rem;
+	height: 0.2rem;
+	border-radius: 0.1rem; 
+	background: #3584e6;
+	position: absolute;
+	left: 50%;
+	margin-top: -0.1rem;
+}
+.section2 .time-list ul li p{
+	padding-left: 0.1rem;
+	font-size: 0.2rem;
+	color: #787878;
+	line-height: 0.3rem;
+}
+/*精品直播课程*/
+.section3 .list-content{
+	width: 13.04rem;
+	margin: 0 auto 0.75rem;
+}
+.section3 .list-content .bfc{
+	overflow: hidden;
+}
+.section3 .list-content .bfc div:nth-child(1){
+	font-size: 0.24rem;
+	color: #494949;
+	margin-left: 0.3rem;
+	padding-left: 0.1rem;
+	border-left: 0.06rem solid  #3583e6;
+	/*font-weight: 600;*/
+}
+.section3 .list-content .bfc div:nth-child(2){
+	font-size: 0.16rem;
+	color: #494949;
+	margin-right: 0.3rem;
+}
+.section3 .list-content ul{
+	width: 13.04rem;
+	margin: 0 auto; 
+}
+.section3 .list-content ul li{
+	padding: 0.2rem;
+	cursor: pointer;
+}
+.section3 .list-content ul li:hover .item{
+	box-shadow: 0 0 0.2rem #888888;
+}
+.section3 .list-content ul li:hover .item h4{
+	color: #3583e6;
+}
+.section3 .list-content ul li .item{
+	padding: 0.1rem;
+	transition: all 0.5s;
+	position: relative;
+}
+.section3 .list-content ul li .item .bfc{
+	overflow: hidden;
+}
+.section3 .list-content ul li .item .yynumber{
+	z-index: 1;
+	position: absolute;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	font-size: 0.12rem;
+	padding: 0.05rem 0.3rem;
+	top: 0.3rem;
+}
+.section3 .list-content ul li .item img{
+	width: 2.66rem;
+	height: 1.70rem;
+}
+.section3 .list-content ul li .item h4{
+	color: #494949;
+	font-size: 0.18rem;
+	padding: 0.13rem 0;
+}
+.section3 .list-content ul li .item p{
+	font-size: 0.14rem;
+	color: #787878;
+
+}
+.section3 .list-content ul li .item p.fr{
+	color: #3583e6;
+}
+/*誉财直播课程八大优势*/
+.section4{
+	text-align: center;
+}
+.section4 .module-title{
+	padding-top: 0;
+}
+.section4 .zktbn{
+	background: #2c83f1;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	text-align: center;
+	color: #fff;
+	border: none;
+	font-size: 0.18rem;
+	width: 3.15rem;
+	margin-bottom: 0.5rem;
+}
+/*图文*/
+.section5 .imgs{
+	text-align: center;
+	padding-bottom: 1.65rem;
+}

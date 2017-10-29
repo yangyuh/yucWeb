@@ -1,0 +1,238 @@
+body,
+.nav-box,
+.ejmeun{
+	background: #f6f6f6;
+}
+.middle-pagewraper{
+	width: 12rem;
+	margin: 0 auto; 
+}
+.titlewraper{
+	padding: 0.5rem 0 ;
+}
+.titlewraper h1{
+	font-size: 0.3rem;
+	color: #787878;
+	font-weight: bolder;
+}
+.titlewraper span{
+	display: block;
+	width: 0.55rem;
+	height: 0.04rem;
+	background: #3584e6;
+	margin-top: 0.2rem;
+}
+/*课程详情头部分*/
+.zbkcnavlist{
+	line-height: 0.6rem;height: 0.6rem;background: #fff;
+	overflow: hidden;
+	font-size: 0.18rem;
+	color: #494949;
+}
+.zbkcnavlist div:nth-child(1){
+	color: #3583e6;
+	width: 1.55rem;
+	cursor: pointer;
+}
+.zbkcnavlist div:nth-child(2){
+	width: 1.55rem;
+	cursor: pointer;
+}
+.zbkcnavlist div:nth-child(3){
+	background: url('../imgs/liveDetails/main1_icon1.png') no-repeat center left 0;
+	padding-left: 0.38rem
+}
+.zbkcnavlist div{
+	width: 1.55rem;
+	cursor: pointer;
+	text-align: center;
+}
+.details-header{
+	background: #fff;
+	padding: 0.3rem 0.25rem 0.1rem;
+	border-bottom: 1px solid #eee;
+}
+.details-header ul.head{
+	/*height: 4.12rem*/
+}
+.details-header ul.head li:nth-child(1){
+	width: 5.3rem;
+	border: 1px solid #000;
+}
+.details-header ul.head li:nth-child(1) .video-wraper{
+	width: 100%;
+	height: 3rem;
+	background: #000;
+}
+.details-header ul.head li:nth-child(2){
+	width: 6.2rem;
+	/*padding: 0 0.5rem;*/
+	padding-left: 0.4rem;
+}
+.details-header ul.head li:nth-child(2) h1{
+	font-size: 0.3rem;
+	color: #494949;
+	padding-bottom: 0.3rem;
+}
+.jsinfo{
+	overflow: hidden;
+}
+.jsinfo .usernum{
+	width: 33.3%;
+	position: relative;
+	color: #787878;
+}
+.jsinfo .usernum  span{
+	display: inline-block;
+	line-height: 21px;
+	position: absolute;
+	top: 0.05rem;
+	font-size: 0.18rem;
+}
+.jsinfo div:nth-child(2){
+	width: 33.3%;
+}
+.jsinfo div:nth-child(3) p{
+	text-align: right;
+	font-size: 0.18rem;
+	color: #494949;
+	line-height: 0.35rem;
+}
+.continfo{
+	margin-top: 0.2rem;
+}
+.continfo p{
+	font-size: 0.14rem;
+	margin-bottom: 0.1rem;
+}
+.btns button{
+	width: 1.5rem;
+	height: 0.42rem;
+	line-height: 0.42rem
+	font-size: 0.18rem;
+	border: none;
+	border-radius: 0.21rem;
+	color: #fff; 
+	margin-right: 0.38rem;
+	outline: none;
+	border: 1px solid #3583e6; 
+
+}
+.btns {
+	margin: 0.35rem 0;
+}
+.btns button:nth-child(1){
+	background: #3583e6;
+
+}
+.btns button:nth-child(2){
+	background: #fff;
+	color: #3583e6; 
+}
+/*内容*/
+.details-content{
+	overflow: hidden;
+	margin-top: 0.2rem;
+	padding-bottom: 1rem;
+}
+.details-content .left{
+	width: 7.4rem;
+	background: #fff;
+}
+.details-content .right{
+	width: 4.3rem;
+	padding-bottom: 1rem;
+}
+.details-content .right ul.jslist li{
+	text-align: center;
+	padding: 0.3rem 0 0.6rem;
+	background: #fff;
+	margin-bottom: 0.15rem;
+}
+.details-content .right ul.jslist li .img{
+	width: 2rem;
+	height: 2rem;
+	margin: 0 auto;
+}
+.details-content .right ul.jslist li .img img{
+	width: 100%;
+	height: 100%;
+}
+.details-content .right ul.jslist li h4{
+	font-size: 0.24rem;
+	color: #494949;
+	padding: 0.25rem;
+	border-bottom: 1px solid #eee;
+}
+.details-content .right ul.jslist li p{
+	font-size: 0.14rem;
+	color: #494949;
+	padding: 0.2rem 0.44rem 0;
+	line-height: 0.32rem;
+}
+/* 评价 */
+.details-content .right .pjtitle{
+	margin-top: 0.3rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+	font-size: 0.24rem;
+	color: #494949;
+	padding-left: 0.25rem;
+}
+.details-content .right ul.pjlist{
+	background: #fff;
+	padding-bottom: 0.7rem;
+}	
+.details-content .right ul.pjlist li{
+	padding: 0 0.3rem;
+	margin-bottom: 0.2rem;
+}	
+.details-content .right ul.pjlist li .userinfo{
+	overflow: hidden;
+}
+.details-content .right ul.pjlist li .userinfo div:nth-child(2){
+	padding-top: 0.35rem;
+	padding-left: 0.1rem;
+}
+.details-content .right ul.pjlist li .userinfo div:nth-child(3){
+	padding-top: 0.65rem;
+	padding-right: 0.2rem;
+	color: #787878;
+}
+.details-content .right ul.pjlist li .pcont{
+	font-size: 0.14rem;
+	color: #494949;
+	line-height: 0.3rem;
+	padding-left: 0.2rem;
+}
+
+/*注册会计师样式表*/
+.kcjjwraper{
+	padding: 0.58rem 0.3rem 0.2rem;
+}
+.kcjjwraper h4{
+	font-size: 0.24rem;
+	color: #494949;
+	padding-bottom: 0.32rem;
+}
+.kcjjwraper p{
+	font-size: 0.14rem;
+	color: #494949;
+	line-height: 0.3rem;
+}
+.bootomTexts{
+	height: 2.3rem;
+	background: #3584e6;
+	text-align: center;
+	color: #fff;
+	padding-top: 0.7rem;
+}
+.bootomTexts p{
+	font-size: 0.24rem;
+}
+.bootomTexts h4{
+	font-size: 0.34rem;
+	padding-top: 0.15rem;
+}

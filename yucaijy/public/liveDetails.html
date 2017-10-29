@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="libs/css/video-js.css">
     <link rel="stylesheet" type="text/css" href="libs/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="libs/css/comm.css">
-    <link rel="stylesheet" type="text/css" href="libs/css/index.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/liveDetails.css">
 </head>
 
 <body>
@@ -213,32 +213,222 @@
                     </div>
                 </div>
             </div>
-            <!-- banner -->
-            <!-- banner的高度为图片的高度/100加上rem -->
-            <div class="banner" style="height: 4.7rem">
-                <ul class="banner-imgs">
-                    <li>
-                        <img src="libs/imgs/banner_06.jpg">
-                    </li>
-                    <li>
-                        <img src="libs/imgs/banner_06.jpg">
-                    </li>
-                    <li>
-                        <img src="libs/imgs/banner_06.jpg">
-                    </li>
-                    <li>
-                        <img src="libs/imgs/banner_06.jpg">
-                    </li>
-                </ul>
-                <div class="banner-pre-btn" onclick="turnLeft()"></div>
-                <div class="banner-next-btn" onclick="turnRight()"></div>
-                <ul class="banner-btns">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+        </div>
+        <div class="middle-pagewraper">
+            <div class="titlewraper">
+                <h1>课程详情</h1>
+                <span></span>
             </div>
+            <section class="details-header">
+                <ul class="head oh">
+                    <li>
+                        <div class="video-wraper"></div>
+                    </li>
+                    <li>
+                        <h1>全国注册会计职称直播精讲班</h1>
+                        <div class="jsinfo">
+                            <div class="usernum fl">
+                                <img src="libs/imgs/liveDetails/main1_icon2.png">
+                                <!-- <img src=""> -->
+                                <span>12345</span>
+                            </div>
+                            <div class="fl">
+                                <span><img src="libs/imgs/liveDetails/main1_icon3.png"></span>
+                                <span><img src="libs/imgs/liveDetails/main1_icon3.png"></span>
+                                <span><img src="libs/imgs/liveDetails/main1_icon3.png"></span>
+                                <span><img src="libs/imgs/liveDetails/main1_icon3.png"></span>
+                                <span><img src="libs/imgs/liveDetails/main1_icon3.png"></span>
+                                <span>95%</span>
+                            </div>
+                            <div class="fr">
+                                <p>讲师：何荣老师</p>
+                                <p>何荣老师</p>
+                                <p>何荣老师</p>
+                            </div>
+                        </div>
+                        <div class="continfo">
+                            <p>
+                                <span style="color: #494949">适合人群：</span>
+                                <span style="color: #787878">入职不足1年想要提升会计能力或有意向从事会计行业的人员。</span>
+                            </p>
+                            <p>
+                                <span style="color: #494949">特色服务：</span>
+                                <span style="color: #787878">提升职业竞争力，提升管理思维，提升财务分析技能，获得为公司赚钱的能力。</span>
+                            </p>
+                            <p>
+                                <span style="color: #494949">有效期：</span>
+                                <span style="color: #787878">12个月</span>
+                            </p>
+                        </div>
+                        <div class="btns">
+                            <button>立即参加</button>
+                            <button>在线咨询</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="zbkcnavlist" style="">
+                <div class="fl">直播课程介绍</div>
+                <div class="fl">直播目录</div>
+                <div class="fr">联系老师</div>
+            </section>
+            <!-- 内容 -->
+            <section class="details-content">
+                <div class="left fl" id="detailsLeftView">
+                    
+                </div>
+                <!-- 初级会计师模板 -->
+                <script type="text/html" id="cjTpl">
+                    <div class="kcjjwraper">
+                        <h4>课程简介</h4>
+                        <p>通过实操项目案例讲解，讲解不同风格的设计理念、材料运用、颜色搭配 细微到案例灯管的粗细、长度、 布线等专业知识 ，学习最新设计理念，亲身体会真实设计案例带来的设计乐趣，为学员走向设计师踏出坚 实的一步。
+                        </p>
+                    </div>
+                    <div class="imgTexts">
+                        <img src="libs/imgs/liveDetails/chujikuaiji/pic1_10.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/chujikuaiji/pic2_11.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/chujikuaiji/pic3_12.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/chujikuaiji/pic4_13.jpg" width="100%">
+                    </div>
+                    <div class="bootomTexts">
+                        <p>无论您此时此刻身在何方，无论您此时此刻身为何人，</p>
+                        <h4>誉财会计教育都会用心给予您最好的服务</h4>
+                    </div>
+                </script>
+                <!-- 中级会计师模板 -->
+                <script type="text/html" id="zjTpl">
+                    <div class="kcjjwraper">
+                        <h4>课程简介</h4>
+                        <p>通过实操项目案例讲解，讲解不同风格的设计理念、材料运用、颜色搭配 细微到案例灯管的粗细、长度、 布线等专业知识 ，学习最新设计理念，亲身体会真实设计案例带来的设计乐趣，为学员走向设计师踏出坚 实的一步。
+                        </p>
+                    </div>
+                    <div class="imgTexts">
+                        <img src="libs/imgs/liveDetails/zhongji/pic1_11.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhongji/pic2_12.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhongji/pic3_14.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhongji/pic4_18.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhongji/pic5_21.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhongji/pic6_25.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhongji/pic7_26_26.jpg" width="100%">
+                    </div>
+                    <div class="bootomTexts" style="background: #e74825">
+                        <p>无论您此时此刻身在何方，无论您此时此刻身为何人，</p>
+                        <h4>誉财会计教育都会用心给予您最好的服务</h4>
+                    </div>
+                </script>
+                <!-- 注册会计师模板 -->
+                <script type="text/html" id="zcTpl">
+                    <div class="kcjjwraper">
+                        <h4>课程简介</h4>
+                        <p>通过实操项目案例讲解，讲解不同风格的设计理念、材料运用、颜色搭配 细微到案例灯管的粗细、长度、 布线等专业知识 ，学习最新设计理念，亲身体会真实设计案例带来的设计乐趣，为学员走向设计师踏出坚 实的一步。
+                        </p>
+                    </div>
+                    <div class="imgTexts">
+                        <img src="libs/imgs/liveDetails/zhukuai/main2_pic1_07.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhukuai/main2_pic2_10.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhukuai/main2_pic3_11.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhukuai/main2_pic4_12.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/zhukuai/main2_pic5_13.jpg" width="100%">
+                    </div>
+                    <div class="bootomTexts">
+                        <p>无论您此时此刻身在何方，无论您此时此刻身为何人，</p>
+                        <h4>誉财会计教育都会用心给予您最好的服务</h4>
+                    </div>
+                </script>
+                <!-- 右边部分 -->
+                <div class="right fr">
+                    <ul class="jslist">
+                        <li>
+                            <div class="img"><img src="libs/imgs/liveDetails/main3_teacher_pic.png"></div>
+                            <h4>何荣</h4>
+                            <p>誉财会计教育创始人之一，誉财会计教育教学总监、 中国注册会计师、会计师、会计实战派讲师，专业从 事财会理论，实践课程教学与研发，千场次的面授经 验，数万名学生的口碑成就了“老何讲会计”。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="img"><img src="libs/imgs/liveDetails/main3_teacher_pic.png"></div>
+                            <h4>何荣</h4>
+                            <p>誉财会计教育创始人之一，誉财会计教育教学总监、 中国注册会计师、会计师、会计实战派讲师，专业从 事财会理论，实践课程教学与研发，千场次的面授经 验，数万名学生的口碑成就了“老何讲会计”。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="img"><img src="libs/imgs/liveDetails/main3_teacher_pic.png"></div>
+                            <h4>何荣</h4>
+                            <p>誉财会计教育创始人之一，誉财会计教育教学总监、 中国注册会计师、会计师、会计实战派讲师，专业从 事财会理论，实践课程教学与研发，千场次的面授经 验，数万名学生的口碑成就了“老何讲会计”。
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- 评论 -->
+                    <div class="pjtitle">评价</div>
+                    <ul class="pjlist">
+                        <li>
+                            <div class="userinfo">
+                                <div class="headimg fl">
+                                    <img src="libs/imgs/liveDetails/main4_xueyuan_pic.png">
+                                </div>
+                                <div class="fl">
+                                    <p style="color: #3583e6">xfdffsdf</p>
+                                    <p>
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                    </p>
+                                </div>
+                                <div class="fr">
+                                    2017.2.2
+                                </div>
+                            </div>
+                            <p class="pcont">课程内容挺好的，值得花时间好好学学，改变下自己的 会计思维。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="userinfo">
+                                <div class="headimg fl">
+                                    <img src="libs/imgs/liveDetails/main4_xueyuan_pic.png">
+                                </div>
+                                <div class="fl">
+                                    <p style="color: #3583e6">xfdffsdf</p>
+                                    <p>
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                    </p>
+                                </div>
+                                <div class="fr">
+                                    2017.2.2
+                                </div>
+                            </div>
+                            <p class="pcont">课程内容挺好的，值得花时间好好学学，改变下自己的 会计思维。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="userinfo">
+                                <div class="headimg fl">
+                                    <img src="libs/imgs/liveDetails/main4_xueyuan_pic.png">
+                                </div>
+                                <div class="fl">
+                                    <p style="color: #3583e6">xfdffsdf</p>
+                                    <p>
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                        <img src="libs/imgs/liveDetails/main1_icon3.png">
+                                    </p>
+                                </div>
+                                <div class="fr">
+                                    2017.2.2
+                                </div>
+                            </div>
+                            <p class="pcont">课程内容挺好的，值得花时间好好学学，改变下自己的 会计思维。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
         <!-- pages
 
@@ -247,7 +437,6 @@
 
 
          -->
-       
         <!-- footer -->
         <div class="public_wraper">
             <!-- 底部黑白照片渐变彩色 -->
@@ -445,7 +634,7 @@
     <script src="libs/js/scroll.js"></script>
     <script src="libs/js/laytpl.js"></script>
     <script src="libs/js/comm.js"></script>
-    <script src="libs/js/index.js"></script>
+    <script src="libs/js/liveDetails.js"></script>
 </body>
 
 </html>
