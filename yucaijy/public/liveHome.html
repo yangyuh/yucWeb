@@ -38,11 +38,12 @@
                     <div class="nav">
                         <div class="nav-logo"><img src="libs/imgs/logo_03.png"></div>
                         <ul class="nav-list">
-                            <li class="active"><a href="index.html">首页</a></li>
+                            <li><a href="index.html">首页</a></li>
                             <li class="showem"><a href="javascript:void(0);">会计课程</a></li>
                             <li class="showem"><a href="javascript:void(0);">学历课程</a></li>
                             <li class="showem"><a href="javascript:void(0);">财税实账</a></li>
                             <li><a href="onlineEducation.html">在线教育</a></li>
+                            <li class="active"><a href="liveHome.html">直播课程</a></li>
                             <li><a href="newsInfo.html">新闻咨询</a></li>
                             <li><a href="index.html#xiaoqufb">校区</a></li>
                         </ul>
@@ -214,16 +215,16 @@
                 </div>
             </div>
             <!-- banner -->
-            <div class="banner" style="height: 5.73rem;">
+            <div class="banner" style="height: 5.73rem;cursor: pointer;">
                 <img src="libs/imgs/liveHome/banner_02.jpg" width="100%" height="100%">
             </div>
         </div>
         <section class="section1">
             <div class="list-content">
-                <div class="prebtn"><strong>＜</strong></div>
-                <div class="nextbtn"><strong>＞</strong></div>
+                <div class="prebtn" onClick="prev($(this),'left1')"><strong>＜</strong></div>
+                <div class="nextbtn" onClick="next($(this),'left1')"><strong>＞</strong></div>
                 <div class="list-outer">
-                    <ul class="oh">
+                    <ul class="oh" id="main1_list">
                         <li>
                             <div class="item">
                                 <img src="libs/imgs/liveHome/main1_icon1.png" alt="">
@@ -277,12 +278,19 @@
                 <span></span>
             </div>
             <div class="list-content">
-                <div class="prebtn"><strong>＜</strong></div>
-                <div class="nextbtn"><strong>＞</strong></div>
+                <div class="prebtn" onClick="prev($(this),left2)"><strong>＜</strong></div>
+                <div class="nextbtn" onClick="next($(this),left2)"><strong>＞</strong></div>
                 <div class="list-outer">
-                    <ul class="oh">
+                    <ul class="oh" id="main2_list">
                         <li>
                             <div class="item">
+                                <div class="bluebg">
+                                    <h5>全国初级会计职称直播</h5>
+                                    <div class="bfc">
+                                        <p class="fl">何荣老师</p>
+                                        <p class="fr" style="color: #fff;">免费</p>
+                                    </div>
+                                </div>
                                 <div class="yynumber">已预约0人</div>
                                 <img src="libs/imgs/liveHome/main2_pic_05.jpg" width="100%">
                                 <h4>全国初级会计职称直播精讲班</h4>
@@ -294,6 +302,13 @@
                         </li>
                         <li>
                             <div class="item">
+                                <div class="bluebg">
+                                    <h5>全国初级会计职称直播</h5>
+                                    <div class="bfc">
+                                        <p class="fl">何荣老师</p>
+                                        <p class="fr" style="color: #fff;">免费</p>
+                                    </div>
+                                </div>
                                 <div class="yynumber">已预约0人</div>
                                 <img src="libs/imgs/liveHome/main2_pic_07.jpg" width="100%">
                                 <h4>全国初级会计职称直播精讲班</h4>
@@ -305,6 +320,13 @@
                         </li>
                         <li>
                             <div class="item">
+                                <div class="bluebg">
+                                    <h5>全国初级会计职称直播</h5>
+                                    <div class="bfc">
+                                        <p class="fl">何荣老师</p>
+                                        <p class="fr" style="color: #fff;">免费</p>
+                                    </div>
+                                </div>
                                 <div class="yynumber">已预约0人</div>
                                 <img src="libs/imgs/liveHome/main2_pic_09.jpg" width="100%">
                                 <h4>全国初级会计职称直播精讲班</h4>
@@ -316,6 +338,13 @@
                         </li>
                         <li>
                             <div class="item">
+                                <div class="bluebg">
+                                    <h5>全国初级会计职称直播</h5>
+                                    <div class="bfc">
+                                        <p class="fl">何荣老师</p>
+                                        <p class="fr" style="color: #fff;">免费</p>
+                                    </div>
+                                </div>
                                 <div class="yynumber">已预约0人</div>
                                 <img src="libs/imgs/liveHome/main2_pic_11.jpg" width="100%">
                                 <h4>全国初级会计职称直播精讲班</h4>
@@ -327,6 +356,13 @@
                         </li>
                         <li>
                             <div class="item">
+                                <div class="bluebg">
+                                    <h5>全国初级会计职称直播</h5>
+                                    <div class="bfc">
+                                        <p class="fl">何荣老师</p>
+                                        <p class="fr" style="color: #fff;">免费</p>
+                                    </div>
+                                </div>
                                 <div class="yynumber">已预约0人</div>
                                 <img src="libs/imgs/liveHome/main2_pic_05.jpg" width="100%">
                                 <h4>全国初级会计职称直播精讲班</h4>
@@ -338,6 +374,31 @@
                         </li>
                         <li>
                             <div class="item">
+                                <div class="bluebg">
+                                    <h5>全国初级会计职称直播</h5>
+                                    <div class="bfc">
+                                        <p class="fl">何荣老师</p>
+                                        <p class="fr" style="color: #fff;">免费</p>
+                                    </div>
+                                </div>
+                                <div class="yynumber">已预约0人</div>
+                                <img src="libs/imgs/liveHome/main2_pic_05.jpg" width="100%">
+                                <h4>全国初级会计职称直播精讲班</h4>
+                                <div class="bfc">
+                                    <p class="fl">何荣老师</p>
+                                    <p class="fr">免费</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="bluebg">
+                                    <h5>全国初级会计职称直播</h5>
+                                    <div class="bfc">
+                                        <p class="fl">何荣老师</p>
+                                        <p class="fr" style="color: #fff;">免费</p>
+                                    </div>
+                                </div>
                                 <div class="yynumber">已预约0人</div>
                                 <img src="libs/imgs/liveHome/main2_pic_05.jpg" width="100%">
                                 <h4>全国初级会计职称直播精讲班</h4>
@@ -351,30 +412,40 @@
                 </div>
             </div>
             <div class="time-list">
-                <ul class="oh">
+                <ul class="oh" id="time-list">
                     <li>
                         <div class="bule-line"><span></span></div>
-                        <p>11月20日</p>
+                        <p>1月20日</p>
                         <p>11:00~12:00</p>
                     </li>
                     <li>
                         <div class="bule-line"><span></span></div>
-                        <p>11月20日</p>
+                        <p>2月20日</p>
                         <p>11:00~12:00</p>
                     </li>
                     <li>
                         <div class="bule-line"><span></span></div>
-                        <p>11月20日</p>
+                        <p>3月20日</p>
                         <p>11:00~12:00</p>
                     </li>
                     <li>
                         <div class="bule-line"><span></span></div>
-                        <p>11月20日</p>
+                        <p>4月20日</p>
                         <p>11:00~12:00</p>
                     </li>
                     <li>
                         <div class="bule-line"><span></span></div>
-                        <p>11月20日</p>
+                        <p>5月20日</p>
+                        <p>11:00~12:00</p>
+                    </li>
+                    <li>
+                        <div class="bule-line"><span></span></div>
+                        <p>6月20日</p>
+                        <p>11:00~12:00</p>
+                    </li>
+                    <li>
+                        <div class="bule-line"><span></span></div>
+                        <p>7月20日</p>
                         <p>11:00~12:00</p>
                     </li>
                 </ul>
@@ -601,7 +672,7 @@
                 <h1>誉财直播课程八大优势</h1>
                 <span></span>
             </div>
-            <button class="zktbn" onclick="shoeImgTextContent($(this))">点击展开内容</button>
+            <button class="zktbn" onclick="showImgTextContent($(this))">点击展开内容</button>
         </section>
         <!-- 展开内容图文 -->
         <section class="section5" id="imgTextView"></section>

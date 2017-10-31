@@ -29,20 +29,14 @@ body,
 	font-size: 0.18rem;
 	color: #494949;
 }
-.zbkcnavlist div:nth-child(1){
+.zbkcnavlist li.active{
 	color: #3583e6;
-	width: 1.55rem;
-	cursor: pointer;
 }
-.zbkcnavlist div:nth-child(2){
-	width: 1.55rem;
-	cursor: pointer;
-}
-.zbkcnavlist div:nth-child(3){
+.zbkcnavlist li:nth-child(3){
 	background: url('../imgs/liveDetails/main1_icon1.png') no-repeat center left 0;
-	padding-left: 0.38rem
+	padding-left: 0.28rem
 }
-.zbkcnavlist div{
+.zbkcnavlist li{
 	width: 1.55rem;
 	cursor: pointer;
 	text-align: center;
@@ -78,7 +72,7 @@ body,
 	overflow: hidden;
 }
 .jsinfo .usernum{
-	width: 33.3%;
+	width: 33%;
 	position: relative;
 	color: #787878;
 }
@@ -87,16 +81,15 @@ body,
 	line-height: 21px;
 	position: absolute;
 	top: 0.05rem;
-	font-size: 0.18rem;
 }
 .jsinfo div:nth-child(2){
-	width: 33.3%;
+	width: 40%;
 }
-.jsinfo div:nth-child(3) p{
-	text-align: right;
+.jsinfo div:nth-child(4) p{
 	font-size: 0.18rem;
 	color: #494949;
-	line-height: 0.35rem;
+	/*line-height: 0.35rem;*/
+	margin-bottom: 0.05rem;
 }
 .continfo{
 	margin-top: 0.2rem;
@@ -116,7 +109,14 @@ body,
 	margin-right: 0.38rem;
 	outline: none;
 	border: 1px solid #3583e6; 
-
+	transition: all 0.5s;
+}
+.btns button.blue:hover{
+	background: #256ac2;
+}
+.btns button.white:hover{
+	background: #3583e6;
+	color: #fff;
 }
 .btns {
 	margin: 0.35rem 0;
@@ -128,6 +128,35 @@ body,
 .btns button:nth-child(2){
 	background: #fff;
 	color: #3583e6; 
+}
+/*免费班级论坛*/
+.banjlt{
+	margin-top: -0.55rem;
+}
+.banjlt span{
+	display: inline-block;
+	font-size: 0.14rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	padding-top: 0.01rem;
+	width: 25%;
+}
+.banjlt span:nth-child(1){
+	font-size: 0.3rem;
+	font-weight: bolder;
+	color: #3583e6;
+}
+.banjlt span:nth-child(2){
+	background: url("../imgs/liveDetails/icon1.png") no-repeat center left 0;
+	padding-left: 0.25rem;
+	cursor: pointer;
+	color: #787878;
+}
+.banjlt span:nth-child(3){
+	background: url("../imgs/liveDetails/icon2.png") no-repeat center left 0;
+	padding-left: 0.25rem;
+	cursor: pointer;
+	color: #787878;
 }
 /*内容*/
 .details-content{

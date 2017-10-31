@@ -1,3 +1,10 @@
+$(function(){
+	 $(".zbkcnavlist li.fl").on("click", function() {
+        $(".zbkcnavlist").find("li.fl").removeClass("active");
+        $(this).addClass("active");
+    })
+})
+
 // 进入详情页面先判断课程内容cj初级，zj中级，zc注册   
 // liveDetails.html?type=cj
 var type = GetRequest().type || 'zj' 
