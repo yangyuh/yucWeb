@@ -11,10 +11,7 @@ $(function() {
     });
 })
 
-
-
 // 进入详情页面先判断课程内容cj初级，zj中级，zc注册   
-// liveDetails.html?type=cj
 var type = GetRequest().type || 'cj'
 $(function() {
     getDetailsLeftView(type);
