@@ -276,15 +276,15 @@
             </section>
             <section>
                 <ul class="zbkcnavlist" style="">
-                    <li class="active fl">直播课程介绍</li>
-                    <li class="fl">直播目录</li>
+                    <li class="fl"><a href="javascript:void(0)" class="active">直播课程介绍</a></li>
+                    <li class="fl"><a href="#zbml">直播目录</a></li>
+                    <li class="fl"><a href="#gmxy">学员购买情况</a></li>
                     <li class="fr" style="font-size: 0.14rem">联系老师</li>
                 </ul>
             </section>
             <!-- 内容 -->
             <section class="details-content">
-                <div class="left fl" id="detailsLeftView">
-                </div>
+                <div class="left fl" id="detailsLeftView" id="kcjs"></div>
                 <!-- 初级会计师模板 -->
                 <script type="text/html" id="cjTpl">
                     <div class="kcjjwraper">
@@ -293,14 +293,155 @@
                         </p>
                     </div>
                     <div class="imgTexts">
-                        <img src="libs/imgs/liveDetails/chujikuaiji/pic1_10.jpg" width="100%">
-                        <img src="libs/imgs/liveDetails/chujikuaiji/pic2_11.jpg" width="100%">
-                        <img src="libs/imgs/liveDetails/chujikuaiji/pic3_12.jpg" width="100%">
-                        <img src="libs/imgs/liveDetails/chujikuaiji/pic4_13.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main1_pic_01.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main2_pic_02.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main3_pic_03_1.png" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main4_pic_04_1.png" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main5_pic_05.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main6_pic_06.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main7_pic_08.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main8_pic_09.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main9_pic_11.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main10_pic_12.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main11_pic_13.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main12_pic_14.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main12_pic_15.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main13_pic_16.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main13_pic_17.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main14_pic_18.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main15_pic_20.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main14_pic_21.jpg" width="100%">
+                        <img src="libs/imgs/liveDetails/new/main15_pic_22.jpg" width="100%">
                     </div>
-                    <div class="bootomTexts">
+                    <!-- <div class="bootomTexts">
                         <p>无论您此时此刻身在何方，无论您此时此刻身为何人，</p>
                         <h4>誉财会计教育都会用心给予您最好的服务</h4>
+                    </div> -->
+                    <div style="margin-bottom: 0.5rem;" id="zbml">
+                        <img src="libs/imgs/liveDetails/new/main16_pic_23.jpg" width="100%">
+                    </div>
+                    <!-- 初级会计实务 -->
+                    <div class="kcap_table">
+                        <ul class="oh">
+                            <li class="title">初级会计实务</li>
+                            <li class="hiddentable" onclick="showTable($(this))">收起</li>
+                        </ul>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="80%">第一节 货币资金、第二节 应收及预付款项款项、第三节 交易性金融资产</td>
+                                    <td width="80%">
+                                        <p>2017-11-12</p> 
+                                        <p>19:00~20:30</p>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td width="80%">第一节 货币资金、第二节 应收及预付款项款项、第三节 交易性金融资产</td>
+                                    <td width="80%">
+                                        <p>2017-11-12</p> 
+                                        <p>19:00~20:30</p>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td width="80%">第一节 货币资金、第二节 应收及预付款项款项、第三节 交易性金融资产</td>
+                                    <td width="80%">
+                                        <p>2017-11-12</p> 
+                                        <p>19:00~20:30</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 经济法基础 -->
+                    <div class="kcap_table">
+                        <ul class="oh">
+                            <li class="title">经济法基础</li>
+                            <li class="hiddentable" onclick="showTable($(this))">收起</li>
+                        </ul>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="80%">第一节 货币资金、第二节 应收及预付款项款项、第三节 交易性金融资产</td>
+                                    <td width="80%">
+                                        <p>2017-11-12</p> 
+                                        <p>19:00~20:30</p>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td width="80%">第一节 货币资金、第二节 应收及预付款项款项、第三节 交易性金融资产</td>
+                                    <td width="80%">
+                                        <p>2017-11-12</p> 
+                                        <p>19:00~20:30</p>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td width="80%">第一节 货币资金、第二节 应收及预付款项款项、第三节 交易性金融资产</td>
+                                    <td width="80%">
+                                        <p>2017-11-12</p> 
+                                        <p>19:00~20:30</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 购买学员绝对信赖 -->
+                    <div class="buy_student_say" id="gmxy">
+                        <div class="title">购买学员绝对信赖</div>
+                        <ul>
+                            <li>
+                                <div class="fl">
+                                    <img src="libs/imgs/liveDetails/new/main16_icon1.png">
+                                </div>
+                                <div class="fl">
+                                    <h4>酸牛奶88</h4>
+                                    <p>加入了初级会计师-名师无忧取证班（直播）</p>
+                                </div>
+                                <div class="fr">
+                                    <h4></h4>
+                                    <p>今天</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fl">
+                                    <img src="libs/imgs/liveDetails/new/main16_icon1.png">
+                                </div>
+                                <div class="fl">
+                                    <h4>酸牛奶88</h4>
+                                    <p>加入了初级会计师-名师无忧取证班（直播）</p>
+                                </div>
+                                <div class="fr">
+                                    <h4></h4>
+                                    <p>今天</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fl">
+                                    <img src="libs/imgs/liveDetails/new/main16_icon1.png">
+                                </div>
+                                <div class="fl">
+                                    <h4>酸牛奶88</h4>
+                                    <p>加入了初级会计师-名师无忧取证班（直播）</p>
+                                </div>
+                                <div class="fr">
+                                    <h4></h4>
+                                    <p>今天</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fl">
+                                    <img src="libs/imgs/liveDetails/new/main16_icon1.png">
+                                </div>
+                                <div class="fl">
+                                    <h4>酸牛奶88</h4>
+                                    <p>加入了初级会计师-名师无忧取证班（直播）</p>
+                                </div>
+                                <div class="fr">
+                                    <h4></h4>
+                                    <p>今天</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="morebtn">加载更多</button>
                     </div>
                 </script>
                 <!-- 中级会计师模板 -->

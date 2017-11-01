@@ -30,10 +30,11 @@ body,
 	font-size: 0.18rem;
 	color: #494949;
 }
-.zbkcnavlist li.active{
+.zbkcnavlist li a.active{
 	color: #3583e6;
+	/*border-bottom: 1px solid #3583e6;*/
 }
-.zbkcnavlist li:nth-child(3){
+.zbkcnavlist li:last-child{
 	background: url('../imgs/liveDetails/main1_icon1.png') no-repeat center left 0;
 	padding-left: 0.28rem
 }
@@ -41,6 +42,20 @@ body,
 	width: 1.55rem;
 	cursor: pointer;
 	text-align: center;
+}
+.zbkcnavlist li a {
+	color: #494949;
+	/*padding-bottom: 0.05rem;*/
+	display: block;
+	text-decoration: none;
+}
+.zbkcnavlist li a:hover{
+	color: #3583e6;
+	/*border-bottom: 1px solid #3583e6;*/
+
+}
+.zbkcnavlist li span{
+	border-bottom: 1px solid #3583e6;
 }
 .details-header{
 	background: #fff;
@@ -265,4 +280,108 @@ body,
 .bootomTexts h4{
 	font-size: 0.34rem;
 	padding-top: 0.15rem;
+}
+
+/*课程安排表*/
+.kcap_table{
+	font-size: 0.14rem;
+	color: #787878;
+	margin-bottom: 0.7rem;
+}
+.kcap_table table{
+	width: 95%;
+	padding: 0 0.2rem;
+	margin: 0 auto; 
+}
+.kcap_table table tr{
+	line-height: 0.32rem;
+	border-bottom: 1px solid #d3d3d3; 
+}
+.kcap_table table tr td p{
+	text-align: right;
+}
+.kcap_table ul{
+	width: 95%;
+	margin: 0 auto; 
+	border-bottom: 1px solid #d3d3d3; 
+}
+.kcap_table ul li{
+	font-size: 0.2rem;
+	color: #494949;
+	width: 50%;
+	padding-bottom: 0.06rem;
+}
+.kcap_table ul .title{
+	text-align: left;
+}
+.kcap_table ul .hiddentable{
+	text-align: right;
+	background: url("../imgs/liveDetails/new/icon.png") top 0 right 0 no-repeat;
+	padding-right: 25px;
+	cursor: pointer;
+	width: 20%;
+	float: right;
+}
+/*购买学员绝对信赖*/
+.buy_student_say{
+	width: 95%;
+	margin: 0 auto; 
+}
+.buy_student_say .title{
+	width: 2.65rem;
+	font-size: 0.3rem;
+	font-weight: bolder;
+	color: #3583e6; 
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 0.05rem;
+	margin-bottom: 0.1rem;
+}
+.buy_student_say ul li{
+	overflow: hidden;
+	border-bottom: 1px solid #d7d7d7;
+	padding: 0.15rem 0;
+} 
+.buy_student_say ul li div{
+	height: 0.8rem;
+}
+.buy_student_say ul li div:nth-child(1){
+	width: 0.76rem;
+	height: 0.8rem;
+} 
+.buy_student_say ul li div img{
+	width: 100%;
+	height: 100%;
+}
+.buy_student_say ul li div h4{
+	font-size: 0.18rem;
+}
+.buy_student_say ul li div p{
+	font-size: 0.14rem;
+	color: #787878;
+	padding: 0.1rem 0;
+}
+.buy_student_say ul li div:nth-child(2){
+	padding: 0.15rem;
+}
+.buy_student_say ul li div:nth-child(3){
+	line-height: 0.8rem;
+}
+/*加载更多*/
+.buy_student_say .morebtn{
+	display: block;
+	border-radius: 0.2rem;
+	height: 0.4rem;
+	line-height: 0.2rem;
+	border: 1px solid #3583e6; 
+	width: 1.4rem;
+	background: #fff;
+	color: #3583e6;
+	text-align: center;
+	margin: 0.28rem auto; 
+	outline: none;
+}
+.buy_student_say .morebtn:hover{
+	background: #3583e6;
+	color: #fff;
+	transition: all 0.5s;
 }
