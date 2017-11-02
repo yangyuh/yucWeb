@@ -107,7 +107,7 @@ body,
 	overflow: hidden;
 }
 .jsinfo .usernum{
-	width: 33%;
+	width: 32%;
 	position: relative;
 	color: #787878;
 }
@@ -183,13 +183,13 @@ body,
 }
 .banjlt span:nth-child(2){
 	background: url("../imgs/liveDetails/icon1.png") no-repeat center left 0;
-	padding-left: 0.25rem;
+	padding-left: 0.3rem;
 	cursor: pointer;
 	color: #787878;
 }
 .banjlt span:nth-child(3){
 	background: url("../imgs/liveDetails/icon2.png") no-repeat center left 0;
-	padding-left: 0.25rem;
+	padding-left: 0.3rem;
 	cursor: pointer;
 	color: #787878;
 }
@@ -325,7 +325,7 @@ body,
 .kcap_table{
 	font-size: 0.14rem;
 	color: #787878;
-	margin-bottom: 0.7rem;
+	margin-bottom: 0.5rem;
 }
 .kcap_table table{
 	width: 95%;

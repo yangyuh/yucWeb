@@ -62,7 +62,7 @@ function GetRequest() {
 // 展开表格
 function showTable($this) {
 	if($this.html() == '收起') {
-		$this.html('展开');
+		$this.html('共18节课');
 		$this.parents().next('table').hide();
 		$this.css('background', 'url("libs/imgs/liveDetails/new/icon.png") top 0 right 0 no-repeat');
 	} else {
