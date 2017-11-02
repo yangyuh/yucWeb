@@ -1,0 +1,116 @@
+body,
+.nav-box,
+.ejmeun{
+	background: #f4f4f4;
+}
+/*模块标题*/
+.module-title{
+	text-align: center;
+	padding: 0.8rem 0 0.3rem;
+}
+.module-title h1{
+	font-size: 0.3rem;
+	font-weight: bolder;
+	padding-bottom: 0.01rem;
+	color: #787878;
+}
+.module-title span{
+	display: inline-block;
+	height: 0.04rem;
+	width: 0.6rem;
+	background: #3583e6;
+}
+/*内容部分*/
+.content{
+	width: 12rem;
+	margin: 0 auto;
+	background: #fff;
+	margin-bottom: 2rem;
+	padding-bottom: 0.3rem;
+}
+.class-name{
+	background: #fff;
+	padding: 0.3rem 0.36rem;
+	font-size: 0.2rem;
+}
+.class-name strong{
+	font-size: 0.3rem;
+}
+/*视频容器*/
+.playback_video{
+	width: 100%;
+	height: 6.74rem;
+	background: #494949;
+}
+/*回放导航*/
+.playback_nav{
+	background: #FFF;
+	border-bottom: 1px solid #bfbfbf;
+}
+.playback_nav li{
+	width: 16.6666%;
+	text-align: center;
+	line-height: 0.7rem;
+	height: 0.7rem;
+	cursor: pointer; 
+}
+/*回放列表*/
+.playback_list{
+	background: #fff;
+	padding: 0.36rem 0.94rem;
+}
+.playback_list li:hover{
+	color: #fff;
+}
+.playback_list li:hover .bluebg{
+	opacity: 1;
+}
+.playback_list li .bluebg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background: #3584e6;
+	transition: all 0.5s;
+	color: #fff;
+	padding-top: 0.1rem;
+}
+.playback_list li.active .bluebg{
+	opacity: 1;
+}
+.playback_list li{
+	position: relative;
+	width: 2.38rem;
+	height: 1.36rem;
+	box-shadow: 0 0 10px #ccc;
+	text-align: center;
+	padding-top: 0.1rem;
+	margin-right: 0.2rem; 
+	margin-bottom: 0.2rem;
+	cursor: pointer;
+}
+.playback_list li:nth-child(4n+0){
+	margin-right: 0;
+}
+/*加载更多*/
+.morebtn{
+	display: block;
+	border-radius: 0.25rem;
+	height: 0.5rem;
+	line-height: 0.48rem;
+	border: 1px solid #3583e6; 
+	width: 2.38rem;
+	background: #fff;
+	color: #3583e6;
+	text-align: center;
+	margin: 0.38rem auto; 
+	outline: none;
+	cursor: pointer;
+}
+.morebtn:hover{
+	background: #3583e6;
+	color: #fff;
+	transition: all 0.5s;
+}

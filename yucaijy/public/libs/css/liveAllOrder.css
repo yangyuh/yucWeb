@@ -1,0 +1,226 @@
+.banner{
+	background: url("../imgs/liveMyclass/header_pic1_02.jpg");
+	background-size: 100% 100%;
+}
+.banner ul{
+	width: 12rem;
+	margin: 0.4rem auto; 
+}
+.banner ul li{
+	overflow: hidden;
+	color: #fff;
+	font-size: 0.22rem;
+}
+.banner ul li:nth-child(1) img{
+	width: 1.26rem;
+	height: 1.22rem;
+}
+.banner ul li:nth-child(1) div:nth-child(2) p{
+	margin-bottom: 0.1rem
+}
+.banner ul li:nth-child(1) div:nth-child(2){
+	height: 1.22rem;
+	padding: 0.06rem 0.2rem;
+}
+.banner ul li:nth-child(2){
+	float: right;
+}
+.banner ul li:nth-child(2) div {
+	width: 1.5rem;
+	text-align: center;
+	padding-top: 0.35rem;
+}
+.banner ul li:nth-child(2) span{
+	font-size: 0.35rem;
+}
+/*内容*/
+.content{
+	width: 12rem;
+	margin: 0 auto; 
+	min-height: 10.69rem;
+	overflow: hidden;
+}
+.content-left{
+	width: 2.2rem;
+	float: left;
+	border-right: 1px solid #b3b3b3;
+	min-height: 10.69rem;
+
+}
+.content-left .muenlist{
+	padding-top: 0.8rem;
+}
+.content-left .muenlist li{
+	margin-bottom: 0.6rem;
+}
+.content-left .muenlist li h4{
+	width: 100%;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	font-size: 0.24rem;
+	background: url("../imgs/liveMyclass/icon1.png") top -0.03rem left 0 no-repeat;
+	background-size: 0.32rem 0.32rem; 
+	padding-left: 0.36rem;
+	margin-bottom: 0.2rem;
+}
+.content-left .muenlist li p{
+	padding-left: 0.36rem;
+	font-size: 0.2rem;
+	margin: 0.1rem 0; 
+	cursor: pointer;
+	position: relative;
+}
+.content-left .muenlist li p span{
+	display: inline-block;
+	position: absolute;
+	width: 0.26rem;
+	height: 0.26rem;
+	border-radius: 0.13rem;
+	background: #2a83f2;
+	color: #fff;
+	line-height: 0.26rem;
+	text-align: center;
+	right: 0.5rem; 
+}
+/*右边*/
+.content-right{
+	float: left;
+	padding-top: 0.8rem;
+	padding-left: 0.6rem;
+	width: 9.8rem;
+}
+.orderlist-nav{
+	padding-top: 0.3rem;
+	border-bottom: 1px solid #b3b3b3;
+}
+.orderlist-nav li{
+	font-size: 0.2rem;
+	padding: 0.1rem 0.5rem 0.1rem 0.08rem;
+	position: relative;
+	cursor: pointer;
+    transition: all .4s;
+}
+.orderlist-nav li.active{
+	color: #3583e6;
+}
+.orderlist-nav li.active i{
+    width: 80%;
+}
+.orderlist-nav li i{
+	position: absolute;
+    bottom: 0;
+   	left: 0;
+   	display: block;
+    height: 2px;
+    width: 0;
+    background: #3583e6;
+    transition: all .4s;
+}
+.orderlist-nav li:hover{
+	color: #3583e6;
+}
+.orderlist-nav li:hover i{
+	width: 80%;
+}
+/*订单列表*/
+.orderlist{
+}
+.orderlist li{
+	width: 100%;
+	overflow: hidden;
+	padding: 0.3rem 0 0.16rem;
+	border-bottom: 1px solid #d9d9d9; 
+}
+.orderlist li div:nth-child(1){
+	width: 1.7rem;
+	height: 1.06rem;
+	margin-right: 0.4rem;
+}
+.orderlist li div:nth-child(1) img{
+	width: 100%;
+	height: 100%;
+}
+.orderlist li div:nth-child(2) h4{
+	font-size: 0.24rem;
+	margin-bottom: 0.19rem;
+	font-weight: bolder;
+}
+.orderlist li div:nth-child(2) p{
+	margin-bottom: 0.1rem;
+	color: #787878;
+}
+.orderlist li div:nth-child(3) p{
+	text-align: right;
+	margin-bottom: 0.18rem;
+}
+.orderlist li div:nth-child(3) p:nth-child(1){
+	color: #3583e6;
+}
+.taitol{
+	text-align: right;
+	padding-top: 0.36rem;
+}
+.taitol span{
+	font-size: 0.24rem;
+}
+/*我的课程列表*/
+.my-class-list{
+	padding-top: 0.3rem;
+}
+.my-class-list li{
+	cursor: pointer;
+	margin-right: 0.8rem;
+}
+.my-class-list li:nth-child(3n+0){
+	margin-right: 0;
+}
+.my-class-list li div{
+	width: 2.5rem;
+	height: 1.55rem;
+	position: relative;
+}
+.my-class-list li div img{
+	width: 100%;
+	height: 100%
+}
+.my-class-list li:hover .bluebg{
+	opacity: 1;
+}
+.my-class-list li:hover p{
+	color: #3583e6;
+}
+.my-class-list li div .bluebg{
+	width: 100%;
+	height: 100%;
+	background: rgba(53, 131, 230,0.8);
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.my-class-list li div .bluebg button{
+	width: 0.95rem;
+	height: 0.32rem;
+	border-radius: 0.16rem;
+	line-height: 0.3rem;
+	text-align: center;
+	font-size: 0.14rem; 
+	color: #fff;
+	border: 1px solid #fff;
+	margin-left: 0.18rem;
+	margin-top: 0.615rem;
+	outline: none;
+}
+.my-class-list li div .bluebg button:nth-child(1){
+	background: none;
+}
+.my-class-list li div .bluebg button:nth-child(2){
+	background: #fff;
+	color: #3583e6;
+}
+.my-class-list li p{
+	padding: 0.15rem 0;
+	font-size: 0.2rem; 
+	margin-bottom: 0.5rem;
+	transition: all 0.5s;
+}
