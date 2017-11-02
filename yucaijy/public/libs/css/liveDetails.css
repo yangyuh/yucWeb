@@ -24,6 +24,14 @@ body,
 	margin-top: 0.2rem;
 }
 /*课程详情头部分*/
+#detailNav{
+	
+}
+.fixed_detailnav{
+	position: fixed;
+	top: 98px;
+	width: 12rem;
+}
 .zbkcnavlist{
 	line-height: 0.6rem;height: 0.6rem;background: #fff;
 	overflow: hidden;
@@ -33,6 +41,19 @@ body,
 .zbkcnavlist li a.active{
 	color: #3583e6;
 	/*border-bottom: 1px solid #3583e6;*/
+}
+.zbkcnavlist li a i{
+	position: absolute;
+    bottom: 0;
+   	left: 0;
+   	display: block;
+    height: 2px;
+    width: 0;
+    background: #3583e6;
+    transition: all .4s;
+}
+.zbkcnavlist li a.active i{
+	width: 100%;
 }
 .zbkcnavlist li:last-child{
 	background: url('../imgs/liveDetails/main1_icon1.png') no-repeat center left 0;
@@ -45,17 +66,15 @@ body,
 }
 .zbkcnavlist li a {
 	color: #494949;
-	/*padding-bottom: 0.05rem;*/
-	display: block;
 	text-decoration: none;
+	position: relative;
+	padding-bottom: 0.1rem;
 }
 .zbkcnavlist li a:hover{
 	color: #3583e6;
-	/*border-bottom: 1px solid #3583e6;*/
-
 }
-.zbkcnavlist li span{
-	border-bottom: 1px solid #3583e6;
+.zbkcnavlist li a:hover i{
+	width: 100%;
 }
 .details-header{
 	background: #fff;
@@ -283,6 +302,26 @@ body,
 }
 
 /*课程安排表*/
+#zbml{
+	width: 95%;
+	margin: 0.1rem auto 0.5rem;
+	
+}
+#zbml .title{
+	width: 3rem;
+	font-size: 0.3rem;
+	font-weight: bolder;
+	color: #3583e6; 
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 0.05rem;
+	margin-bottom: 0.1rem;
+}
+#zbml h1{
+	color: #e5e5e5;
+	font-size: 0.3rem;
+	padding-left: 0.5rem;
+	font-weight: bolder;
+}
 .kcap_table{
 	font-size: 0.14rem;
 	color: #787878;
@@ -306,7 +345,7 @@ body,
 	border-bottom: 1px solid #d3d3d3; 
 }
 .kcap_table ul li{
-	font-size: 0.2rem;
+	font-size: 0.18rem;
 	color: #494949;
 	width: 50%;
 	padding-bottom: 0.06rem;
@@ -316,7 +355,7 @@ body,
 }
 .kcap_table ul .hiddentable{
 	text-align: right;
-	background: url("../imgs/liveDetails/new/icon.png") top 0 right 0 no-repeat;
+	background: url("../imgs/liveDetails/new/icon2.png") top 0 right 0 no-repeat;
 	padding-right: 25px;
 	cursor: pointer;
 	width: 20%;
