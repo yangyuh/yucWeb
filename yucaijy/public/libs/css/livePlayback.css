@@ -1,6 +1,7 @@
 body,
 .nav-box,
-.ejmeun{
+.ejmeun,
+.module-title{
 	background: #f4f4f4;
 }
 /*模块标题*/
@@ -30,22 +31,36 @@ body,
 }
 .class-name{
 	background: #fff;
-	padding: 0.3rem 0.36rem;
-	font-size: 0.2rem;
+	padding: 0.2rem 0.36rem;
+	font-size: 0.18rem;
 }
 .class-name strong{
-	font-size: 0.3rem;
+	font-size: 0.24rem;
 }
 /*视频容器*/
 .playback_video{
 	width: 100%;
 	height: 6.74rem;
+	position: relative;
 	background: #494949;
+}
+.playback_video .online-answer{
+	background: #3584e6;
+	color: #fff;
+	width: 0.65rem;
+	text-align: center;
+	padding: 0.35rem 0;
+	cursor: pointer;
+	position: absolute;
+	right: -0.65rem;
+	bottom: 0;
+
 }
 /*回放导航*/
 .playback_nav{
 	background: #FFF;
-	border-bottom: 1px solid #bfbfbf;
+	padding-bottom: 0.1rem
+	/*border-bottom: 1px solid #bfbfbf;*/
 }
 .playback_nav li{
 	width: 16.6666%;
@@ -53,11 +68,39 @@ body,
 	line-height: 0.7rem;
 	height: 0.7rem;
 	cursor: pointer; 
+	position: relative;
+	border-bottom: 1px solid #bfbfbf;
+}
+.playback_nav li.active{
+	color: #3583e6;
+}
+.playback_nav li.active i{
+	width: 1rem;
+}
+.playback_nav li:hover{
+	color: #3583e6;
+}
+.playback_nav li:hover i{
+	width: 1rem;
+}
+.playback_nav li i{
+	display: block;
+	width: 0;
+	height: 3px;
+	background: #3583e6;
+	position: absolute;
+	bottom: -0.05rem;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.5s;
 }
 /*回放列表*/
 .playback_list{
 	background: #fff;
 	padding: 0.36rem 0.94rem;
+}
+.playback_list .text-wraper{
+	width:100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);
 }
 .playback_list li:hover{
 	color: #fff;
