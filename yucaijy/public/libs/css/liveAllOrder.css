@@ -9,7 +9,7 @@
 .banner ul li{
 	overflow: hidden;
 	color: #fff;
-	font-size: 0.22rem;
+	font-size: 0.18rem;
 }
 .banner ul li:nth-child(1) img{
 	width: 1.26rem;
@@ -20,7 +20,7 @@
 }
 .banner ul li:nth-child(1) div:nth-child(2){
 	height: 1.22rem;
-	padding: 0.06rem 0.2rem;
+	padding: 0.12rem 0.2rem;
 }
 .banner ul li:nth-child(2){
 	float: right;
@@ -31,7 +31,7 @@
 	padding-top: 0.35rem;
 }
 .banner ul li:nth-child(2) span{
-	font-size: 0.35rem;
+	font-size: 0.36rem;
 }
 /*内容*/
 .content{
@@ -45,23 +45,39 @@
 	float: left;
 	border-right: 1px solid #b3b3b3;
 	min-height: 10.69rem;
-
 }
 .content-left .muenlist{
 	padding-top: 0.8rem;
 }
 .content-left .muenlist li{
 	margin-bottom: 0.6rem;
+	cursor: pointer;
 }
 .content-left .muenlist li h4{
 	width: 100%;
 	height: 0.32rem;
 	line-height: 0.32rem;
 	font-size: 0.20rem;
+	color: #494949;
 	background: url("../imgs/liveMyclass/icon1.png") top -0.03rem left 0 no-repeat;
 	background-size: 0.32rem 0.32rem; 
 	padding-left: 0.36rem;
 	margin-bottom: 0.2rem;
+}
+.content-left .muenlist li h4.active{
+	color: #3583e6;
+}
+.content-left .muenlist li:nth-child(2) h4{
+	background: url("../imgs/liveMyclass/icon2.png") top -0.03rem left 0 no-repeat;
+	background-size: 0.32rem 0.32rem; 
+}
+.content-left .muenlist li:nth-child(3) h4{
+	background: url("../imgs/liveMyclass/icon3.png") center left 0 no-repeat;
+	background-size: 0.32rem 0.32rem; 
+}
+.content-left .muenlist li:nth-child(4) h4{
+	background: url("../imgs/liveMyclass/icon4.png") center left 0 no-repeat;
+	background-size: 0.32rem 0.32rem; 
 }
 .content-left .muenlist li p{
 	padding-left: 0.36rem;
@@ -69,6 +85,10 @@
 	margin: 0.1rem 0; 
 	cursor: pointer;
 	position: relative;
+	color: #787878;
+}
+.content-left .muenlist li p.active{
+	color: #2b82f1;
 }
 .content-left .muenlist li p span{
 	display: inline-block;
@@ -88,6 +108,10 @@
 	padding-top: 0.8rem;
 	padding-left: 0.6rem;
 	width: 9.8rem;
+}
+.content-right h4{
+	font-size: 0.24rem;
+	color: #494949;
 }
 .orderlist-nav{
 	padding-top: 0.3rem;
@@ -141,7 +165,7 @@
 	height: 100%;
 }
 .orderlist li div:nth-child(2) h4{
-	font-size: 0.20rem;
+	font-size: 0.24rem;
 	margin-bottom: 0.19rem;
 	font-weight: bolder;
 }
@@ -154,7 +178,7 @@
 	margin-bottom: 0.18rem;
 }
 .orderlist li div:nth-child(3) p:nth-child(1){
-	color: #3583e6;
+	color: #2b82f1;
 }
 .taitol{
 	text-align: right;
@@ -183,10 +207,11 @@
 	width: 100%;
 	height: 100%
 }
-.my-class-list li:hover .bluebg{
+/*已购买鼠标移入样式*/
+.my-class-list li.already-buy:hover .bluebg{
 	opacity: 1;
 }
-.my-class-list li:hover p{
+.my-class-list li.already-buy:hover p{
 	color: #3583e6;
 }
 .my-class-list li div .bluebg{
@@ -196,6 +221,16 @@
 	position: absolute;
 	top: 0;
 	opacity: 0;
+	transition: all 0.5s;
+}
+/*没有购买灰色遮罩*/
+.my-class-list li.nobuy div .bluebg{
+	width: 100%;
+	height: 100%;
+	background: rgba(179, 179, 179,0.9);
+	position: absolute;
+	top: 0;
+	opacity: 1;
 	transition: all 0.5s;
 }
 .my-class-list li div .bluebg button{
@@ -220,7 +255,52 @@
 }
 .my-class-list li p{
 	padding: 0.15rem 0;
-	font-size: 0.18rem; 
+	font-size: 0.2rem; 
 	margin-bottom: 0.5rem;
 	transition: all 0.5s;
 }
+/*账号设置页面*/
+.formlist{
+	padding-top: 0.5rem;
+	padding-left: 0.6rem;
+}
+.formlist li{
+	margin-bottom: 0.2rem;
+}
+.formlist li label{
+	color: #494949;
+	font-weight: normal;
+	margin-right: 0.3rem;
+}
+.formlist li input{
+	width: 2.52rem;
+	height: 0.38rem;
+	line-height: 0.36rem;
+	border-radius: 0.19rem;
+	outline: none;
+	border: 1px solid #bfbfbf; 
+	padding-left: 0.19rem;
+}
+.formlist li:last-child{
+	padding-top: 0.2rem;
+}
+.formlist li:last-child label{
+	color: #fff;
+}
+.formlist li:last-child input:hover{
+	background: #3584e6;
+	color: #fff;
+
+}
+.formlist li:last-child input{
+	width: 1.5rem;
+	background: none;
+	border: 1px solid #3584e6;
+	color: #3584e6;
+	transition: all 0.5s;
+}
+.formlist li label:nth-child(3) img{
+	width: 0.4rem;
+	height: 0.4rem;
+}
+

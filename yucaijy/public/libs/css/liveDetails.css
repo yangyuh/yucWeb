@@ -103,6 +103,12 @@ body,
 	color: #494949;
 	padding-bottom: 0.3rem;
 }
+.details-header ul.head li:nth-child(2) h1 span.fr{
+	display: block;
+	line-height: 0.45rem;
+	font-size: 0.18rem;
+	cursor: pointer;
+}
 .jsinfo{
 	overflow: hidden;
 }

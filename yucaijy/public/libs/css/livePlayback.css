@@ -33,6 +33,7 @@ body,
 	background: #fff;
 	padding: 0.2rem 0.36rem;
 	font-size: 0.18rem;
+	color: #494949;
 }
 .class-name strong{
 	font-size: 0.24rem;
@@ -54,7 +55,6 @@ body,
 	position: absolute;
 	right: -0.65rem;
 	bottom: 0;
-
 }
 /*回放导航*/
 .playback_nav{
@@ -70,6 +70,7 @@ body,
 	cursor: pointer; 
 	position: relative;
 	border-bottom: 1px solid #bfbfbf;
+	color: #494949;
 }
 .playback_nav li.active{
 	color: #3583e6;

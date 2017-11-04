@@ -245,11 +245,11 @@
             <div class="content-left">
                 <ul class="muenlist">
                     <li>
-                        <h4>学习状态</h4>
-                        <p onclick="getMyClassTpl()">我的课程</p>
+                        <h4 onclick="getMyClassTpl()">学习状态</h4>
+                        <p class="active" onclick="getMyClassTpl()">我的课程</p>
                     </li>
                     <li>
-                        <h4>我的订单</h4>
+                        <h4 onclick="getMyOrderTpl()">我的订单</h4>
                         <p onclick="getMyOrderTpl()">全部订单<span>3</span></p>
                         <p>待支付订单</p>
                         <p>已支付订单</p>
@@ -258,7 +258,7 @@
                         <h4>消息中心</h4>
                     </li>
                     <li>
-                        <h4>账号设置</h4>
+                        <h4 onclick="getSetingTpl()">账号设置</h4>
                     </li>
                 </ul>
             </div>
@@ -267,9 +267,9 @@
             <script type="text/html" id="myClassTpl">
                 <h4>我的课程</h4>
                 <ul class="my-class-list oh">
-                    <li>
+                    <li class="already-buy">
                         <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
+                            <img src="libs/imgs/liveMyclass/main1_pic_07.jpg">
                             <div class="bluebg">
                                 <button>收看直播</button>
                                 <button>收看录播</button>
@@ -277,83 +277,10 @@
                         </div>
                         <p>初级会计名师直通班</p>
                     </li>
-                    <li>
+                    <li class="nobuy">
                         <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
-                        </div>
-                        <p>初级会计名师直通班</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
-                        </div>
-                        <p>初级会计名师直通班</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
-                        </div>
-                        <p>初级会计名师直通班</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
-                        </div>
-                        <p>初级会计名师直通班</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
-                        </div>
-                        <p>初级会计名师直通班</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
-                        </div>
-                        <p>初级会计名师直通班</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
-                        </div>
-                        <p>初级会计名师直通班</p>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="libs/imgs/liveMyclass/main1mengceng_pic_03.jpg">
-                            <div class="bluebg">
-                                <button>收看直播</button>
-                                <button>收看录播</button>
-                            </div>
+                            <img src="libs/imgs/liveMyclass/main1_pic_07.jpg">
+                            <div class="bluebg"></div>
                         </div>
                         <p>初级会计名师直通班</p>
                     </li>
@@ -419,6 +346,34 @@
                     </li>
                 </ul>
                 <div class="taitol">共3门课程 合计： ￥<span>3600</span>.00</div>
+            </script>
+            <!-- 账号设置模板 -->
+            <script type="text/html" id="userSetingTpl">
+                <h4>账号设置</h4>
+                <ul class="formlist">
+                    <li>
+                        <label>昵称</label>
+                        <input type="text" name="">
+                        <label><img src="libs/imgs/liveMyclass/true.png"></label>
+                    </li>
+                    <li>
+                        <label>请输入旧密码</label>
+                        <input type="text" name="">
+                        <label><img src="libs/imgs/liveMyclass/false.png"></label>
+                    </li>
+                    <li>
+                        <label>请输入新密码</label>
+                        <input type="text" name="">
+                    </li>
+                    <li>
+                        <label>请再次输入密码</label>
+                        <input type="text" name="">
+                    </li>
+                    <li>
+                        <label>入密码</label>
+                        <input type="button" name="" value="保存">
+                    </li>
+                </ul>
             </script>
         </section>
         <!-- footer -->
