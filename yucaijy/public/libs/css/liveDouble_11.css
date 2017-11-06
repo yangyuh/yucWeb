@@ -1,14 +1,17 @@
 body,
 .top,
 .nav-box,
-.ejmeun{
+.ejmeun,
+footer{
 	background: #1f0149; 
 }
 .top,
 .nav-list li a,
 .ejmeun-leftnav li a,
 .ejmeun-group p,
-.nav-login a{
+.nav-login a,
+footer a,
+footer{
 	color: #fff;
 }
 .middle-pagewraper{
