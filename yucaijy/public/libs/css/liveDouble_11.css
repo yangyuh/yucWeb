@@ -1,0 +1,203 @@
+body,
+.top,
+.nav-box,
+.ejmeun{
+	background: #1f0149; 
+}
+.top,
+.nav-list li a,
+.ejmeun-leftnav li a,
+.ejmeun-group p,
+.nav-login a{
+	color: #fff;
+}
+.middle-pagewraper{
+	width: 12rem;
+	margin: 0 auto; 
+}
+.section1{
+	width: 100%;
+	background: #1f0149 url('../imgs/liveDouble_11/main_bj1.png');
+	height: 5.1rem;
+	background-size: 100% 100%; 
+	padding-top: 0.6rem;
+	text-align: center;
+}
+.section1-text{
+	width: 5.94rem;
+	height: 4.16rem;
+	background: url('../imgs/liveDouble_11/main1_pic1.png');
+	background-size: 100% 100%; 
+	margin: 0 auto; 
+	text-align: center;
+	color: #fff;
+	padding: 0.8rem 0.88rem;
+}
+.section1-text p{
+	font-size: 0.24rem;
+	line-height: 0.52rem;
+}
+.section1-text p strong{
+	font-size: 0.3rem;
+	color: #e50154;
+	font-weight: bolder;
+}
+.section1 .time{
+	font-size: 0.3rem;
+	color: #e50154;
+	font-weight: bolder;
+}
+.section2{
+	width: 100%;
+	background: #1f0149 url('../imgs/liveDouble_11/main_bj2.png');
+	height: 19.25rem;
+	background-size: 100% 100%; 
+}
+
+/*列表样式表*/
+.section2 .list-content{
+	width: 13.04rem;
+	margin: 0 auto 0.75rem;
+	color: #fff;
+	padding-top: 0.78rem;
+}
+.section2 .list-content .bfc{
+	overflow: hidden;
+}
+.section2 .list-content .bfc div:nth-child(1){
+	font-size: 0.24rem;
+	/*color: #494949;*/
+	margin-left: 0.38rem;
+	padding-left: 0.1rem;
+	border-left: 0.06rem solid  #3583e6;
+	/*font-weight: 600;*/
+}
+.section2 .list-content .bfc div:nth-child(2){
+	font-size: 0.16rem;
+	color: #494949;
+	margin-right: 0.3rem;
+}
+.section2 .list-content ul{
+	width: 13.04rem;
+	margin: 0 auto; 
+}
+.section2 .list-content ul li{
+	padding: 0.2rem;
+	cursor: pointer;
+	width: 33.33%;
+	/*border: 1px solid #000;*/
+}
+.section2 .list-content ul li:hover .item{
+	box-shadow: 0 0 0.2rem #888888;
+}
+.section2 .list-content ul li:hover .item h4{
+	color: #3583e6;
+}
+.section2 .list-content ul li .item{
+	padding: 0.175rem;
+	transition: all 0.5s;
+	position: relative;
+	/*text-align: center;*/
+}
+.section2 .list-content ul li .item .bfc{
+	overflow: hidden;
+}
+.section2 .list-content ul li .item .yynumber{
+	z-index: 1;
+	position: absolute;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	font-size: 0.12rem;
+	padding: 0.05rem 0.3rem;
+	top: 0.3rem;
+}
+.section2 .list-content ul li .item img{
+	width: 3.58rem;
+	height: 2.29rem;
+}
+.section2 .list-content ul li .item h4{
+	font-size: 0.24rem;
+	padding: 0.2rem 0;
+}
+.section2 .list-content ul li .item p{
+	font-size: 0.18rem;
+}
+.section2 .list-content ul li .item p.fl{
+	padding-top: 0.08rem;
+}
+.section2 .list-content ul li .item p.fr{
+	font-size: 0.18rem;
+	color: #787878;
+	text-decoration: line-through;
+	position: absolute;
+	right: 0.2rem;
+	bottom: 0.18rem;
+}
+.section2 .list-content ul li .item .bluebg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(53, 131, 230,0);
+	z-index: 2;
+	top: 0;
+	left: 0;
+	transition: all 0.5s;
+	opacity: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 0.24rem;
+	padding-top: 41.9%;
+}
+.section2 .list-content ul li:hover .item .bluebg{
+	background: rgba(53, 131, 230,0.9);
+	/*opacity: 1;*/
+}
+.active-content{
+	width: 12rem;
+	height: 8.23rem;
+	background: rgba(90,41,99,0.9);
+	margin: 3.1rem auto;
+	border-radius: 0.3rem; 
+	padding-top: 0.8rem; 
+	position: relative;
+}
+.active-content div.oneline{
+	height: 0.73rem;
+	line-height: 0.73rem;
+	width: 9.5rem;
+	margin: 0 auto; 
+	margin-bottom: 0.2rem;
+	background: #d6c5d3;
+	color: #494949;
+	font-size: 0.24rem;
+	padding-left: 1rem;
+	border-radius: 0.365rem; 
+}
+.active-content div:last-child{
+	width: 9.5rem;
+	margin: 0 auto; 
+	padding: 0.36rem 0;
+	border-radius: 0.365rem; 
+	background: #d6c5d3;
+	color: #494949;
+	height: 3.86rem;
+	line-height: 0.3rem;
+	font-size: 0.24rem;
+	padding-left: 1rem;
+
+}
+.active-content div p{
+	padding-left: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+.active-content div p:nth-child(1){
+	margin-top: 0.1rem;
+}
+.qiqiu{
+	width: 2.7rem;
+	height: 2.8rem;
+	background: url(../imgs/liveDouble_11/main2_pic.png);
+	position: absolute;
+	background-size: 100% 100%; 
+	top: -2rem;
+}
