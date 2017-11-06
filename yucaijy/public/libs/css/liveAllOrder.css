@@ -298,6 +298,7 @@
 	border: 1px solid #3584e6;
 	color: #3584e6;
 	transition: all 0.5s;
+	padding: 0;
 }
 .formlist li label:nth-child(3) img{
 	width: 0.4rem;

@@ -109,6 +109,9 @@ body,
 	font-size: 0.18rem;
 	cursor: pointer;
 }
+.details-header ul.head li:nth-child(2) h1 span.fr a{
+	color: #3583e7;
+}
 .jsinfo{
 	overflow: hidden;
 }
