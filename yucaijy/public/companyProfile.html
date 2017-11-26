@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--禁止缩放-->
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <!--去除默认的数字拨号链接-->
+    <meta content="telephone=no" name="format-detection">
+    <!--开启浏览器对webapp的支持-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>誉财教育</title>
+    <script src="libs/js/auto-size.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/video-js.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/comm.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/companyProfile.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- header -->
+        <div class="public_wraper">
+            <div class="top">
+                <div class="middle-page">
+                    <div class="top-right">
+                        <span>免费咨询电话：400-999-8640</span>
+                        <span><a href="#"><img src="libs/imgs/header-icon.png"></a></span>
+                        <span><a href="#"><img src="libs/imgs/header-icon1.png"></a></span>
+                        <span><a href="#"><img src="libs/imgs/header-icon2.png"></a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航 -->
+            <div class="nav-box">
+                <div class="middle-page">
+                    <div class="nav">
+                        <div class="nav-logo"><img src="libs/imgs/logo_03.png"></div>
+                        <ul class="nav-list">
+                            <li><a href="index.html">首页</a></li>
+                            <li class="showem"><a href="javascript:void(0);">会计课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">学历课程</a></li>
+                            <li class="showem"><a href="javascript:void(0);">财税实账</a></li>
+                            <li><a href="onlineEducation.html">在线教育</a></li>
+                            <li class="active"><a href="#">公司简介</a></li>
+                            <li><a href="newsInfo.html">新闻咨询</a></li>
+                            <li><a href="index.html#xiaoqufb">校区</a></li>
+                        </ul>
+                        <ul class="nav-login">
+                            <li><a href="javascript:void(0);">登录</a></li>
+                            <li><a href="javascript:void(0);">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 二级导航 -->
+                <div class="ejmeun">
+                    <div class="middle-page">
+                        <ul class="ejmeun-leftnav">
+                            <li onclick="ViewKJKC()"><a href="javascript:void(0);">会计课程</a></li>
+                            <li onclick="ViewXLKC()"><a href="javascript:void(0);">学历课程</a></li>
+                            <li onclick="ViewCSSZ()"><a href="javascript:void(0);">财税实账</a></li>
+                        </ul>
+                        <div class="ejmeun-group">
+                            <p>选择班型：</p>
+                            <div id="kclistView"></div>
+                            <!-- 会计课程 -->
+                            <script type="text/html" id="kjkcTpl">
+                                <ul>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>注册会计一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 学历课程 -->
+                            <script type="text/html" id="xlkcTpl">
+                                <ul>
+                                    <li>
+                                        <div class="shodaw">初级</div> <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>学历课程一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                            <!-- 财税实账 -->
+                            <script type="text/html" id="csszTpl">
+                                <ul>
+                                    <li>
+                                        <div class="shodaw">初级</div> <a href="businessAccount.html">
+                                            <img alt="floor1_list_01" src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="industryAccount.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="AccountanterReg.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="educationCourses.html">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="shodaw">初级</div>
+                                        <a href="">
+                                            <img src="libs/imgs/floor1_list_01.jpg" width="135px" height="80px">
+                                            <p>财税实账一班</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 关于我们 -->
+        <section class="about-us">
+            <ul class="about-us-wrapper oh">
+                <li>
+                    <div class="yc fl">YC</div>
+                    <div class=fl>
+                        <div class="text-decorate-box">
+                            <div>
+                                <p>关于我们</p>
+                                <p>ABOUT US</p>
+                            </div>
+                        </div>
+                        <p class="active ps"><span>●</span>企业介绍</p>
+                        <p class="ps"><span>●</span>企业发展史</p>
+                    </div>
+                    <div class="big-text">ABOUT US</div>
+                </li>
+                <li>
+                    <div style="width: 100%;height:4.4rem;background: #000;"></div>
+                    <div class="big-text">ABOUT US</div>
+                </li>
+            </ul>
+        </section>
+        <!-- 企业介绍 -->
+        <section class="company-profile">
+            <ul class="oh">
+                <li>
+                    <div class="yc">YC</div>
+                    <div class="text-decorate-box">
+                        <div>
+                            <p><span>●</span>企业介绍</p>
+                            <p><span style="opacity: 0">●</span>COMPANYP ROFILE</p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        誉财教育是西南地区一家集以科学的教学理念和雄厚的 师资为根本；秉承厚基础、重技能的教学方针；以市场 需求为导向，素质教育为中心,技能开发为重点的办学理念；以职场实战的业务技能为核心；以学员持续满意的教学水平为重点的会计人才专业化教育机构。
+                    </div>
+                </li>
+                <li></li>
+            </ul>
+            <div class="big-text">COMPANYP ROFILE</div>
+        </section>
+        <!-- 公司发展经历 -->
+        <section class="section3">
+            <ul>
+                <li>
+                    <div><img src="libs/imgs/banner_06.jpg"></div>
+                    <div class="text-r">
+                        <span>●</span>
+                        <p>2008年，在国内经济大发展的趋势下， 成都誉财教育咨询有限公司诞生于中国第四大教 育培训城—成都。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="text-l">
+                        <span>●</span>
+                        <p>“十年磨一剑”，成都誉财教育咨询有限公司从创业 之初就专注于财务会计类培训，截止2013年12月， 已经成功帮助逾30000名会计考生顺利通过考试并获 得理想的工作岗位。2013年，成都誉财教育咨询有限 公司在国家政策和市场推动下，毅然决定摒弃以会计 考证为主的市场定位，全力打造以市场就业为导向、 以实操技能为教学核心的会计实训系统，开发出理论 强化、真账实操、模拟训练、经验交流、职场素养培 训、就业推荐、就业辅导等系列全方位会计人才培养 模式。切实为学员提供就业保障，为企业解决招聘难。
+                        </p>
+                    </div>
+                    <div><img src="libs/imgs/banner_06.jpg"></div>
+                </li>
+                <li>
+                    <div><img src="libs/imgs/banner_06.jpg"></div>
+                    <div class="text-r">
+                        <span>●</span>
+                        <p>成都誉财教育咨询有限公司的发展，步步稳健有力， 对职业教育探索之路，从未中断，持续延伸。目前， 已经开发会计考证系列内部教材、会计就业教育课程 体系、会计实账全套教学资料、会计网校、会计题库 等开发成果，拥有专业的课程录播室、课程直播系 统，特聘全、兼职会计讲师50余名，其中来自企业一 线的会计实账讲师30余名，会计考证系列课程讲师20 余名。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="text-l">
+                        <span>●</span>
+                        <p>在就业方面，成都誉财教育咨询有限公司联合全 省百余家企业联合打造出大型就业推荐体系、会 计人才定向培养工程等。这一切成果都诠释着誉 财人一心做好会计就业教育的决心！
+                        </p>
+                    </div>
+                    <div><img src="libs/imgs/banner_06.jpg"></div>
+                </li>
+            </ul>
+        </section>
+        <img src="libs/imgs/companyProfile/main1_02.png" width="100%">
+        <!-- 公司发展历程 -->
+        <section class="section4">
+            <div class="title">
+                <div class="yc">YC</div>
+                <div class="text-decorate-box">
+                    <div>
+                        <p><span>●</span>公司发展历程</p>
+                        <p><span style="opacity: 0">●</span>COMPANYP ROFILE</p>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div class="fl text tl" style="opacity: 0">1</div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2008</span>
+                            <div class="sub">一</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr">成都誉财教育咨询有限公司在成都市锦江区成立， 市场定位，财会考证辅导，誉财的第一个校区成立。
+                    </div>
+                </li>
+                <li>
+                    <div class="fl text tl">成都誉财教育咨询有限公司完成了新校区软、 硬件的建设。
+                    </div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2009</span>
+                            <div class="sub">二</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr" style="opacity: 0">1</div>
+                </li>
+                <li>
+                    <div class="fl text tl" style="opacity: 0">1</div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2010</span>
+                            <div class="sub">三</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr">成都誉财教育咨询有限公司教研部成功开发会计从业资 格证考试用辅导教材，并得到学员的一致好评。
+                    </div>
+                </li>
+                <li>
+                    <div class="fl text tl">2012.07.13 成都誉财龙泉校区正式成立。 2012.08.28 成都誉财双流校区正式成立。 成都誉财教育咨询有限公司将总部迁至成都市 武侯区人民南路三段37号中加大厦，对锦江校 区，龙泉校区进行集中管理，并成功建设誉财 磨子桥校区。
+                    </div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2012</span>
+                            <div class="sub">四</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr" style="height: 1.8rem;">
+                        <div class="line"></div>
+                        <div class="img"><img src="libs/imgs/fiexd_nav_3_01.png"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="fl text tl" style="height: 1.8rem;">
+                        <div class="line"></div>
+                        <div class="img"><img src="libs/imgs/fiexd_nav_3_01.png"></div>
+                    </div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2013</span>
+                            <div class="sub">五</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr">
+                        成都誉财教育咨询有限公司规模迅速增长，业务不断优化，一度成为 成都最专业的会计培训机构，是学员心中的“无广告，口碑好”的首 选财会培训机构，并成功研发出《会计电算化考试软件教程》、《会 计电算化教学视频光碟》，三合一《会计从业资格考试专用教材》、 《初级会计师考试应考内部材料》。并成功完成双流、华阳分校的建 立。
+                    </div>
+                </li>
+                <li>
+                    <div class="fl text tl">在线教育的迅速发展，成都誉财教育咨询有限公司作为内地财会培 训的领航者毅然决定调整公司发展方向，与时俱进，投资200多万 旨在完成在线教育的建设和会计实账教学体系的开发，已成功开发 会计考证系列内部教材（机考版）、会计就业教育课程体系、会计 实账全套教学资料、会计网校、会计题库等开发成果，拥有专业的 课程录播室、课程直播系统，并将总部迁至高新区天府大道1388号 美年广场7层······
+                    </div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2014</span>
+                            <div class="sub">六</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr" style="height: 1.8rem;">
+                        <div class="line"></div>
+                        <div class="img"><img src="libs/imgs/fiexd_nav_3_01.png"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="fl text tl" style="height: 1.8rem;">
+                        <div class="line"></div>
+                        <div class="img"><img src="libs/imgs/fiexd_nav_3_01.png"></div>
+                    </div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2015</span>
+                            <div class="sub">七</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr">
+                        2015.07.28   成都誉财蜀汉路校区正式成立。<br>
+                        2015.08.18   成都誉财温江校区正式成立。<br>
+                        2015.09.28   成都誉财高新校区正式成立。<br>
+                        成都誉财教育咨询有限公司各大校区持续完成升级，2015誉财人全
+                        力奋进，只为让您耳目一新，给您不一样的课堂体验······
+                    </div>
+                </li>
+                <li>
+                    <div class="fl text tl">
+                        2017.07.09   成都誉财天府校区正式成立。<br>
+                        2017.11   誉财广元校区正式成立。
+                    </div>
+                    <div class="yearcomp fl">
+                        <div class="round-wrapper">
+                            <span>2017</span>
+                            <div class="sub">八</div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div>●</div>
+                            <div class="line"></div>
+                            <div>●</div>
+                        </div>
+                    </div>
+                    <div class="fl text tr" style="height: 1.8rem;">
+                        <div class="line"></div>
+                        <div class="img"><img src="libs/imgs/fiexd_nav_3_01.png"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- footer -->
+        <div class="public_wraper">
+            <!-- 底部黑白照片渐变彩色 -->
+            <div class="bottom-photo">
+                <div class="blackimg"></div>
+                <div class="colorimg"></div>
+            </div>
+            <!-- footer -->
+            <footer>
+                <div class="middle-page" style="width: 1080px">
+                    <ul class="footer-list">
+                        <li>
+                            <div class="logo">
+                                <img src="libs/imgs/logo_03.png">
+                            </div>
+                            <p>
+                                誉财教育是西南地区一家集以科学的教学理念和雄厚的师资为根本；秉承厚基础、重技能的教学 方针；以市场需求为导向，素质教育为中心，技能开发为重点的办学理念；以职场实战的业务技能为核心；以学员持续满意的教学水为重点的会计人才专业化教育机构！
+                            </p>
+                        </li>
+                        <li>
+                            <p>走进誉财</p>
+                            <p><a href="#">誉财简介</a></p>
+                            <p><a href="#">公司文化</a></p>
+                            <p><a href="#">媒体报道</a></p>
+                        </li>
+                        <li>
+                            <p>企业动态</p>
+                            <p><a href="#">公司新闻</a></p>
+                            <p><a href="#">报考考试</a></p>
+                            <p><a href="#">就业资讯</a></p>
+                        </li>
+                        <li>
+                            <p>在线学习</p>
+                            <p><a href="#">视频课程</a></p>
+                            <p><a href="#">考试题库</a></p>
+                            <p><a href="#">资料下载</a></p>
+                        </li>
+                    </ul>
+                    <div class="yqlj">
+                        <ul>
+                            <li>友情链接：</li>
+                            <li><a href="#">学途网</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都网站制作</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都软装</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">武汉UI培训</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都职业技能培训</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">轻备学员</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都减肥训练营</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">成都吧</a></li>
+                            <li>
+                                <div class="line" style="">|</div>
+                            </li>
+                            <li><a href="#">南昌会计培训</a></li>
+                        </ul>
+                        <ul>
+                            <li>关注誉财：</li>
+                            <li><a href="#"><img src="libs/imgs/header-icon.png"></a></li>
+                            <li><a href="#"><img src="libs/imgs/header-icon1.png"></a></li>
+                            <li><a href="#"><img src="libs/imgs/header-icon2.png"></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>成都誉财教育咨询有限公司 ｜ 法律顾问：四川千喆律师事务所 赵江律师</p>
+                        <p>ICP蜀B2-200168574 ©️SignumlnternationalS.ar.lLuzern Branch,誉财教育旗</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- 侧边固定导航 -->
+            <ul class="right-nav">
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_1.png"></span>
+                    <p>你问我答</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_2.png"></span>
+                    <p>学员作业</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_3.png"></span>
+                    <p>考证咨询</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_4.png"></span>
+                    <p>实账咨询</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_5.png"></span>
+                    <p>报名预约</p>
+                </li>
+                <li>
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_6.png"></span>
+                    <p>誉财评价</p>
+                </li>
+                <li onclick="backTop()">
+                    <span class="fixed-icon"><img src="libs/imgs/fiexd_nav_7.png"></span>
+                    <p>返回顶部</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 登录注册 -->
+        <div class="login-reg-shadow">
+            <div class="login-reg-wraper">
+                <ul class="tag-title oh">
+                    <li data-sid="login" class="active"><a href="javascript:void(0);">登录</a></li>
+                    <li data-sid="reg"><a href="javascript:void(0);">注册</a></li>
+                </ul>
+                <div class="form_outer">
+                    <div class="form_inner">
+                        <ul id="login" class="form">
+                            <li>
+                                <input type="text" name="h" placeholder="请输入手机号">
+                            </li>
+                            <li>
+                                <input type="password" name="h" placeholder="请输入密码">
+                            </li>
+                            <li><a href="#">忘记密码</a></li>
+                            <li>
+                                <button>点击登录</button>
+                            </li>
+                        </ul>
+                        <ul id="reg" class="form">
+                            <li>
+                                <input type="text" name="h" placeholder="请输入手机号">
+                            </li>
+                            <li class="oh">
+                                <input type="text" name="h" placeholder="请输入验证码" class="fl">
+                                <button class="fr">获取验证</button>
+                            </li>
+                            <li>
+                                <input type="password" name="h" placeholder="请输入密码">
+                            </li>
+                            <li>
+                                <input type="checkbox" name=""><a href="#">我已经阅读并同意《誉财教育服务协议》</a></li>
+                            <li>
+                                <button>点击登录</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="close_btn"></div>
+                <div class="three-party-login">
+                    <div class="fgx oh">
+                        <span></span>
+                        <span> 合作网站账号登录 </span>
+                        <span></span>
+                    </div>
+                    <div class="threef-icons">
+                        <a href="#"><img src="libs/imgs/微信icon.png"></a>
+                        <a href="#"><img src="libs/imgs/QQ-icon.png"></a>
+                        <a href="#"><img src="libs/imgs/新浪微博icon.png"></a>
+                        <a href="#"><img src="libs/imgs/腾讯微博icon.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 视频内容-->
+        <div id="video_shadow">
+            <div class="video_wraper">
+                <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" width="1000" height="564">
+                    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                    <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                <div class="close-btn" onclick="closeVideoWraper()">×</div>
+            </div>
+        </div>
+    </div>
+    <script src="libs/js/jquery-2.2.3.min.js"></script>
+    <script src="libs/js/video.min.js"></script>
+    <script src="libs/js/scroll.js"></script>
+    <script src="libs/js/laytpl.js"></script>
+    <script src="libs/js/comm.js"></script>
+</body>
+
+</html>

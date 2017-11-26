@@ -1,0 +1,319 @@
+.yc{
+	width: 0.57rem;
+	height: 0.57rem;
+	line-height: 0.57rem;
+	color: #fff;
+	text-align: center;
+	background: #4286ea;
+	font-size: 0.28rem;
+	font-weight: bolder;
+
+
+}
+/*关于我们*/
+.about-us{
+	padding: 1rem 0;
+}
+.about-us-wrapper li{
+	width: 50%;
+	height: 5.27rem;
+	overflow: hidden;
+	position: relative;
+
+}
+.about-us-wrapper li:nth-child(1){
+	padding-left: 3.6rem;
+	padding-right: 0.6rem;
+}
+.about-us-wrapper li:nth-child(1) div:nth-child(2){
+	margin-left: 2.23rem;
+}
+.about-us-wrapper li:nth-child(1) div:nth-child(2) p span{
+	margin-right: 0.2rem;
+}
+.about-us-wrapper li:nth-child(1) div:nth-child(2) p.ps{
+	padding-left: 1rem;
+	line-height: 0.4rem;
+}
+.about-us-wrapper li:nth-child(1) div:nth-child(2) p.active{
+	color: #4286ea;
+}
+.about-us-wrapper li:nth-child(1) .text-decorate-box{
+	width: 2rem;
+	height: 1.2rem;
+	border: 0.1rem solid #f0f0f0; 
+	font-size: 0.3rem;
+	font-weight: bolder;
+	color: #787878;
+	position: relative;
+	margin-bottom: 0.4rem;
+}
+
+.about-us-wrapper li:nth-child(1) .text-decorate-box div {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -0.4rem;
+}
+.about-us-wrapper li:nth-child(1) .text-decorate-box div p:nth-child(2){
+	color: #4286ea;
+}
+.about-us-wrapper li .big-text{
+	font-size: 1.16rem;
+	font-weight: bolder;
+	color: #f5f5f5;
+	position: absolute;
+	letter-spacing: 0.06rem;
+}
+.about-us-wrapper li:nth-child(1) .big-text{
+	top: 2rem;
+	left: 0;
+}
+.about-us-wrapper li:nth-child(2) .big-text{
+	bottom: 0;
+	right: 0.7rem;
+}
+/*企业介绍*/
+.company-profile{
+	position: relative;
+}
+.company-profile .big-text{
+	font-size: 1.16rem;
+	font-weight: bolder;
+	color: #f5f5f5;
+	position: absolute;
+	letter-spacing: 0.1rem;
+	bottom: 1.5rem;
+	left: 0;
+	opacity: 0.3;
+}
+.company-profile ul li{
+	width: 50%;
+	height: 5.2rem;
+	position: relative;
+}
+.company-profile ul li:nth-child(1){
+	background: #000;
+	padding-left: 3.6rem;
+	padding-top: 0.32rem;
+}
+.company-profile ul li:nth-child(1) .text-decorate-box{
+	width: 100%;
+	height: 1.2rem;
+	border: 0.1rem solid #121212; 
+	color: #fff;
+	position: absolute;
+	left: 0;
+	padding-left: 3.6rem;
+	top: 1.5rem;
+}
+
+.company-profile ul li:nth-child(1) .text-decorate-box p span{
+	margin-right: 0.1rem;
+}
+.company-profile ul li:nth-child(1) .text-decorate-box p:nth-child(1){
+	font-size: 0.35rem;
+	font-weight: bolder;
+}
+.company-profile ul li:nth-child(1) .text-decorate-box p:nth-child(2){
+	font-size: 0.26rem;
+	font-weight: bolder;
+	color: #4286ea;
+}
+.company-profile ul li:nth-child(1) .text{
+	color: #fff;
+	position: absolute;
+	bottom: 0.68rem;
+	padding-right: 0.8rem; 
+	padding-left: 0.38rem;
+}
+.company-profile ul li:nth-child(2){
+	background: #4286ea;
+}
+/*介绍列表*/
+.section3{
+	margin-top: 0.15rem;
+}
+.section3 ul li{
+	overflow: hidden;
+}
+.section3 ul li div{
+	width: 50%;
+	height: 5.45rem;
+	float: left;
+	position: relative;
+}
+.section3 ul li img{
+	width: 100%;
+	height: 100%;
+}
+/*文字在右边*/
+.section3 ul li div.text-r{
+	padding-left: 0.45rem;
+}
+.section3 ul li div.text-r p{
+	width: 4.15rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 0.3rem;
+}
+.section3 ul li div.text-r span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.3rem;
+}
+/*文字在左边*/
+.section3 ul li div.text-l span{
+	position: absolute;
+	top: 50%;
+	right: 0.45rem;
+	transform: translateY(-50%);
+	font-size: 0.3rem;
+}
+.section3 ul li div.text-l p{
+	width: 4.15rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-right: 0.3rem;
+	right: 0.45rem;
+	text-align: right;
+}
+/*公司发展历程*/
+.section4 .middle-page {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.section4{
+
+}
+.section4 ul,
+.section4 .title{
+	width: 13rem;
+	margin: 0.89rem auto;
+}
+.section4 ul li{
+	width: 100%;
+	overflow: hidden;
+}
+
+/*中间年份*/
+.section4 ul li div.yearcomp{
+	padding: 0.1rem 0 0;
+	width: 20%;
+
+}
+.section4 ul li div.yearcomp .round-wrapper {
+	width: 0.76rem;
+	height: 0.76rem;
+	/*line-height: 0.76rem;*/
+	border-radius: 0.38rem;
+	border: 1px solid #035bde; 
+	position: relative;
+	margin: 0 auto;
+}
+.section4 ul li div.yearcomp .round-wrapper .sub{
+	width: 0.38rem;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	border-radius: 0.19rem;
+	text-align: center;
+	color: #fff !important;
+	background: #035bde;
+	position: absolute;
+	top: -0.1rem;
+	left: -0.12rem;
+}
+.section4 ul li div.yearcomp .round-wrapper span{
+	color: #035bde;
+	font-size: 0.3rem;
+	font-weight: border;
+	position: absolute;
+	right: -0.3rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.section4 ul li div.yearcomp .line-wrapper{
+	color: #035bde;
+	position: relative;
+	margin-top: 0.1rem;
+	padding-bottom: 0.15rem;
+}
+.section4 ul li div.yearcomp .line-wrapper div:nth-child(1){
+	position: absolute;
+	top: -0.15rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.section4 ul li div.yearcomp .line-wrapper div:nth-child(3){
+	position: absolute;
+	bottom: 0rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.section4 ul li div.yearcomp .line-wrapper .line{
+	width: 1px;
+	background: #035bde;
+	height: 1.13rem;
+	margin: 0 auto;
+}
+.section4 ul li div.text{
+	width: 40%;
+	position: relative;
+	/*padding-top: 0.3rem;*/
+}
+.section4 ul li div.text.tl{
+	width: 40%;
+	text-align: right;
+}
+.section4 ul li div.text .line{
+	height: 1px;
+	background: #035bde;
+	width: 1.43rem;
+	position: absolute;
+
+}
+.section4 ul li div.text .img{
+	height: 1.8rem;
+	width: 1.8rem;
+	border-radius: 0.9rem;
+	border: 3px solid #035bde;
+	overflow: hidden;
+	position: absolute;
+}
+.section4 ul li div.text .img img{
+	width: 100%;
+	height: 100%;
+}
+.section4 ul li div.text.tr .line{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.section4 ul li div.text.tr .img{
+	left: 1.43rem;
+}
+.section4 ul li div.text.tl .line{
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.section4 ul li div.text.tl .img{
+	right: 1.43rem;
+}
+.section4 .text-decorate-box p span{
+	margin-right: 0.1rem;
+}
+.section4 .text-decorate-box p:nth-child(1) {
+    font-size: 0.35rem;
+    font-weight: bolder;
+    margin: 0.4rem 0 0.1rem;
+    color: #787878;
+}
+.section4 .text-decorate-box p:nth-child(2){
+	font-size: 0.26rem;
+	font-weight: bolder;
+	color: #4286ea;
+}
