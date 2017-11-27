@@ -64,6 +64,7 @@
 	color: #f5f5f5;
 	position: absolute;
 	letter-spacing: 0.06rem;
+	opacity: 0.6;
 }
 .about-us-wrapper li:nth-child(1) .big-text{
 	top: 2rem;
