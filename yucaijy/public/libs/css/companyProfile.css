@@ -130,6 +130,17 @@
 }
 .company-profile ul li:nth-child(2){
 	background: #4286ea;
+	position: relative;
+}
+.company-profile ul li:nth-child(2) .bluebg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #4286ea;
+	z-index: 10;
+	top: 0;
+	opacity: 0.5;
+	left: 0;
 }
 /*介绍列表*/
 .section3{
